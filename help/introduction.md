@@ -1,16 +1,12 @@
 ---
 title: Introduzione all'app desktop AEM
-seo-title: Documentazione tecnica dell’app desktop Adobe Experience Manager
-description: Documentazione tecnica e supporto autonomo per comprendere in che modo l’app desktop AEM può ottimizzare il flusso di lavoro degli utenti creativi quando utilizzano risorse aziendali direttamente dal desktop.
-seo-description: Scopri in che modo l’app desktop AEM può ottimizzare il flusso di lavoro degli utenti creativi quando si utilizzano risorse aziendali direttamente dal desktop.
-contentOwner: asgupta
+description: Scopri come utilizzare l’app desktop AEM per ottimizzare i flussi di lavoro di gestione delle risorse per gli utenti creativi quando si utilizzano Risorse AEM direttamente dal desktop.
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
-index: y
-internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74a3ff5c9a25ee1433dd661a1bce677271a5ebe
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 

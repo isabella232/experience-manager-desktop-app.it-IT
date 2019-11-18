@@ -1,17 +1,15 @@
 ---
 title: Risoluzione dei problemi relativi all'app desktop AEM versione 1.x
-seo-title: Risoluzione dei problemi relativi all'app desktop AEM
 description: Risolvi i problemi relativi all'installazione, all'aggiornamento, alla configurazione dell'app desktop AEM versione 1.x e così via.
-seo-description: Risolvi i problemi relativi all'installazione, all'aggiornamento, alla configurazione dell'app desktop AEM versione 1.x e così via.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ce29042aff6d4caea0e7b8a56673d4bfed03a45
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 

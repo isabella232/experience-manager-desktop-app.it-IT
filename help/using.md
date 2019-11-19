@@ -1,5 +1,5 @@
 ---
-title: Usa app desktop AEM
+title: Usare l’app desktop AEM
 description: Scopri come installare e utilizzare l’app desktop Adobe Experience Manager per lavorare sulle risorse AEM direttamente dal desktop Win o Mac. Scopri le procedure ottimali e le informazioni sulla risoluzione dei problemi.
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
 
-# Usa app desktop AEM {#use-aem-desktop-app-v2}
+# Usare l’app desktop AEM {#use-aem-desktop-app-v2}
 
 Utilizza l’app desktop Adobe Experience Manager (AEM) per accedere facilmente alle risorse AEM sul desktop locale e utilizzarle in qualsiasi applicazione desktop. Potete aprire le risorse nelle applicazioni desktop e modificare localmente le risorse. Caricate nuovamente in AEM con il controllo delle versioni per condividere gli aggiornamenti con altri utenti. Potete inoltre caricare nuovi file e gerarchie di cartelle in AEM, creare cartelle ed eliminare risorse o cartelle da AEM.
 
@@ -22,7 +22,7 @@ Quando apri l’applicazione dopo la disconnessione o per la prima volta, immett
 
 Le attività chiave che eseguite con l'app desktop AEM sono:
 
-![Flussi di lavoro e attività eseguibili tramite l’](assets/do-not-localize/whats-new-desktop-app-v2.png "app desktop AEMFlussi di lavoro e attività eseguibili tramite l’app")desktop AEM. [Scaricate questo](assets/do-not-localize/aem_desktop_app_usecases_print.pdf) file PDF pronto per la stampa.
+![Flussi di lavoro e attività eseguibili tramite l’](assets/aem_desktop_app_usecases_v2.png "app desktop AEMFlussi di lavoro e attività eseguibili tramite l’app")desktop AEM. [Scaricate questo](assets/aem_desktop_app_usecases_print.pdf) file PDF pronto per la stampa.
 
 ## Funzionamento dell'app desktop {#how-app-works2}
 

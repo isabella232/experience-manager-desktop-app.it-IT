@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -89,15 +89,15 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 ## Problemi noti {#known-issues-v2}
 
 **Problemi relativi all’interfaccia utente:**
-* Talvolta, l’interfaccia dell’app desktop potrebbe risultare vuota. Fai clic con il pulsante destro del mouse e scegli [!UICONTROL Refresh] per caricare di nuovo l’applicazione. Tale aggiornamento ripristina lo stato dell’app e consente di partire dalla schermata di benvenuto nella pagina principale dell’archivio DAM. <!-- CQ-4270267 -->
-* Può risultare difficile spostarsi tra le cartelle e/o i risultati della ricerca senza il trackpad o la rotellina del mouse. La barra di scorrimento potrebbe non essere visualizzata quando si utilizzano mouse senza rotellina. <!-- CQ-4269947 -->
+* A volte, l'interfaccia dell'app desktop potrebbe diventare vuota. Right-click and click [!UICONTROL Refresh] to re-load the application. Dopo tale aggiornamento, si inizia dalla directory principale dell'archivio DAM. Gli aggiornamenti o gli stati delle risorse vengono conservati. <!-- CQ-4270267 -->
+* Difficile navigare tra le cartelle o cercare i risultati senza il trackpad o il puntatore del mouse. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * Di rado, la barra di avanzamento non viene visualizzata correttamente quando cambia la risorsa in fase di caricamento.
 * Dopo che l’utente applica e rimuove il filtro per trovare tutte le risorse modificate in locale, l’app non ritorna ai risultati della ricerca originale o alla vista cartelle in cui si trovava inizialmente l’utente. L’app visualizza la cartella principale dell’archivio DAM.
 * Talvolta, in caso di connessione a un URL per cui non è in esecuzione alcun server AEM, la schermata di connessione si blocca. Esci dall’applicazione e riavviala.
 
 **Problemi relativi a operazioni di creazione, lettura, aggiornamento ed eliminazione:**
 * L’applicazione prova a caricare i file anche se contengono caratteri non validi. Potrebbe verificarsi un errore di caricamento sul lato server. <!-- CQ-4273652 -->
-* Durante il caricamento di modifiche apportate a una risorsa con commenti, questi vengono memorizzati insieme alla risorsa in AEM ma non sono visibili come commenti nel controllo delle versioni (problema risolto in AEM 6.4.5 e 6.5.1). <!-- CQ-4268990 -->
+* Quando si caricano le modifiche in una risorsa con commenti, i commenti vengono memorizzati insieme alla risorsa in AEM ma non sono visibili come commenti relativi alle versioni. Questo problema è stato risolto in AEM 6.4.5 e AEM 6.5.1. Adobe consiglia vivamente di installare i Service Pack più recenti. <!-- CQ-4268990 -->
 * I trasferimenti di risorse non possono essere annullati dall’utente. Se hai attivato per errore un trasferimento di grandi dimensioni, esci dall’applicazione e riavviala. <!-- CQ-4278940 -->
 
 **Problemi relativi alla piattaforma:**

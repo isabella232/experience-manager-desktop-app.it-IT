@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -40,9 +40,9 @@ Prima di iniziare a utilizzare l'applicazione, scopri [come funziona](release-no
 
 * Lo stato del file è **[!UICONTROL Modified remotely]**: L’app indica se una risorsa scaricata è stata modificata nel server AEM. L'app offre inoltre l'opzione per scaricare la versione più recente e aggiornare la copia locale. Scopri [come evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 
-* **Check-out**: Se si sta modificando un file o si intende modificarlo, è possibile attivare o disattivare lo stato per il check-out. Aggiunge un’icona a forma di lucchetto alla risorsa nell’interfaccia Web dell’app e di AEM. L’icona a forma di lucchetto indica agli altri utenti di evitare la modifica simultanea della stessa risorsa, causando un conflitto di modifica.
+* **[!UICONTROL Check-out]**: Se si sta modificando un file o si intende modificarlo, è possibile attivare o disattivare lo stato per il check-out. Aggiunge un’icona a forma di lucchetto alla risorsa nell’interfaccia Web dell’app e di AEM. L’icona a forma di lucchetto indica agli altri utenti di evitare la modifica simultanea della stessa risorsa, causando un conflitto di modifica.
 
-* **Check-in**: Contrassegnate la risorsa come sicura che altri utenti possano modificarla senza causare conflitti di modifica. Quando caricate le modifiche, l'icona Blocca viene rimossa automaticamente. Se si attiva o disattiva lo stato del check-in, viene rimossa anche l’icona del blocco, anche se si consiglia di non eseguire manualmente il check-in senza caricare le modifiche. Se eliminate le modifiche, attivate il check-in manualmente.
+* **[!UICONTROL Check-in]**: Contrassegnate la risorsa come sicura che altri utenti possano modificarla senza causare conflitti di modifica. Quando caricate le modifiche, l'icona Blocca viene rimossa automaticamente. Se si attiva o disattiva lo stato del check-in, viene rimossa anche l’icona del blocco, anche se si consiglia di non eseguire manualmente il check-in senza caricare le modifiche. Se eliminate le modifiche, attivate il check-in manualmente.
 
 * **[!UICONTROL Open]** azione: È sufficiente aprire la risorsa per visualizzarla in anteprima nell’applicazione nativa. Si consiglia di non modificare la risorsa utilizzando questa azione, in quanto non estrae la risorsa e altri utenti possono apportare modifiche che potrebbero causare conflitti di modifica.
 

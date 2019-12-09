@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -196,11 +196,11 @@ L'app consente di estrarre i file di risorse per impedire ad altri utenti di mod
    ![Apri nel menu di scelta rapida di AEM Assets in Mac](assets/chlimage_1-5.png)
 
 1. Fai clic con il pulsante destro del mouse sulla risorsa e seleziona Ulteriori informazioni sulle risorse dal menu di scelta rapida.
-1. Nella finestra di dialogo Informazioni risorsa, toccate o fate clic sull’icona Checkout per estrarre la risorsa. Dopo aver fatto clic o toccato sull'icona Checkout, l'icona Checkout viene visualizzata sull'icona Check-Out.
+1. Nella finestra di dialogo Informazioni risorsa, toccate o fate clic sull’icona Checkout per estrarre la risorsa. Dopo aver fatto clic o toccato sull’icona Checkout, l’icona Checkout viene attivata per passare all’icona check-in.
 
    ![Passa alla risorsa da estrarre](assets/chlimage_1-6.png)
 
-1. Per archiviare la risorsa in modo che sia disponibile per gli altri utenti, toccate o fate clic sull’icona Controllo nella finestra di dialogo Informazioni risorsa.
+1. Per archiviare la risorsa in modo che sia disponibile per gli altri utenti, toccate o fate clic sull’icona di check-in nella finestra di dialogo Informazioni risorsa.
 
 ### Estrarre risorse in Windows {#check-out-assets-on-windows}
 
@@ -212,7 +212,7 @@ L'app consente di estrarre i file di risorse per impedire ad altri utenti di mod
    ![Icona Checkout](assets/chlimage_1-7.png)
 
 1. Fai clic con il pulsante destro del mouse sulla risorsa e seleziona Apri sul Web dal menu di scelta rapida.
-1. Nella finestra di dialogo Informazioni risorsa, toccate o fate clic sull’icona Checkout. L'icona Checkout (Estrazione) passa all'icona Check-in.
+1. Nella finestra di dialogo Informazioni risorsa, toccate o fate clic sull’icona Checkout. L’icona Checkout (Checkout) consente di passare all’icona Check-In.
 
    ![Icona Checkout](assets/chlimage_1-8.png)
 
@@ -221,17 +221,17 @@ L'app consente di estrarre i file di risorse per impedire ad altri utenti di mod
    >[!NOTE]
    >L'icona Blocca potrebbe essere visualizzata dopo alcuni minuti di ritardo. L'app desktop AEM memorizza nella cache le risorse per un accesso rapido, pertanto l'aggiornamento dello stato bloccato potrebbe richiedere alcuni minuti.
 
-1. Per archiviare la risorsa in modo che sia disponibile per gli altri utenti, toccate o fate clic sull’icona Controllo nella finestra di dialogo Informazioni **** risorsa.
+1. Per archiviare la risorsa in modo che sia disponibile per gli altri utenti, toccate o fate clic sull’icona di check-in nella finestra di dialogo Informazioni **** risorsa.
 
 ### Archiviare una risorsa utilizzando il Finder o Esplora risorse e l'interfaccia Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-Dopo aver modificato le risorse, salvatele nell’applicazione desktop. Dal menu di scelta rapida, selezionate Ulteriori informazioni sulle risorse e toccate o fate clic su Controllo.
+Dopo aver modificato le risorse, salvatele nell’applicazione desktop. Dal menu di scelta rapida, selezionate Ulteriori informazioni sulle risorse e toccate o fate clic sul check-in.
 
 Le risorse vengono caricate nel server AEM. Facoltativamente, potete controllare lo stato del caricamento selezionando Visualizza stato risorsa dall’icona del vassoio.
 
 ![Finestra di stato del trasferimento e del caricamento di file app AEM Desktop](assets/aem_desktopapp_upload_status.png)
 
-In alternativa, puoi archiviare una risorsa dall’interfaccia Web di AEM. Tocca o fai clic sulle risorse estratte o selezionarle. Dalla barra degli strumenti, fare clic o toccare l’icona di ![archiviazione Icona](assets/aemassets_icon_checkin.png).
+In alternativa, puoi archiviare una risorsa dall’interfaccia Web di AEM. Tocca o fai clic sulle risorse estratte o selezionarle. Dalla barra degli strumenti, tocca o fai clic sull’icona di ![check-in](assets/aemassets_icon_checkin.png).
 
 ### Caricamento in blocco di risorse e cartelle nel server AEM {#bulkupload}
 
@@ -256,7 +256,7 @@ Un'altra alternativa, se preferite lavorare sul desktop, consiste nel selezionar
 
 >[!MORELIKETHIS]
 >
->* [Introduzione all'app desktop AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+>* [Introduzione all’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
 >* [Informazioni sul check-in/check-out con l’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 >* [Risoluzione dei problemi relativi all’applicazione desktop AEM](troubleshoot-app-v1.md)
 

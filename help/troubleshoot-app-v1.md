@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -24,11 +24,11 @@ L’app desktop Adobe Experience Manager (AEM) include utility che consentono di
 
 Con questa architettura, le app desktop intercettano le chiamate del file system (aperte, vicine, lette, in scrittura, ecc.) per la condivisione di rete montata e le traducono in chiamate AEM HTTP native al server AEM. I file vengono memorizzati nella cache locale. Per ulteriori dettagli, consultate [Utilizzare l'app desktop AEM v1.x](use-app-v1.md).
 
-## Panoramica del componente App desktop {#desktop-nbsp-app-component-overview}
+## AEM desktop app component overview {#desktop-app-component-overview}
 
 l'app desktop include i seguenti componenti:
 
-* **Applicazione** desktop: Monta/smonta DAM come file system remoto e traduce le chiamate del file system tra la condivisione di rete montata localmente e l’istanza AEM remota a cui si connette.
+* **Applicazione** desktop: L'applicazione installa o smonta DAM come file system remoto e traduce le chiamate del file system tra la condivisione di rete montata localmente e l'istanza AEM remota a cui si connette.
 * **Client** WebDAV/SMB del sistema operativo: Gestisce la comunicazione tra Windows Explorer/Finder e l'app desktop. Se un file viene recuperato, creato, modificato, eliminato, spostato o copiato, il client WebDAV/SMB del sistema operativo (OS) comunica questa operazione all'app desktop. Dopo aver ricevuto la comunicazione, l'app desktop la trasforma in chiamate API remote AEM native. Ad esempio, se un utente crea un file nella directory montata, il client WebDAV/SMB avvia una richiesta che l'app desktop converte in una richiesta HTTP che crea il file in DAM. Il client WebDAV/SMB è un componente integrato del sistema operativo. Non è in alcun modo collegato all'app desktop, AEM o Adobe.
 * **Istanza** Adobe Experience Manager: Consente di accedere alle risorse memorizzate nell'archivio DAM di AEM Assets. Inoltre, esegue le azioni richieste dall'app desktop per conto delle applicazioni desktop locali che interagiscono con la condivisione di rete montata. L’istanza AEM di destinazione deve eseguire AEM versione 6.1 o successiva. Le istanze di AEM che eseguono versioni precedenti di AEM potrebbero richiedere l'installazione di pacchetti di funzioni aggiuntivi e di hotfix per diventare completamente funzionanti.
 
@@ -87,7 +87,7 @@ Ogni operazione non viene memorizzata nella cache locale. Le seguenti informazio
 
 ## Operazioni individuali {#individual-operations}
 
-Quando si risolvono problemi di prestazioni ottimizzate per singoli utenti, è necessario rivedere prima [le limitazioni](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). Le sezioni successive contengono suggerimenti per migliorare le prestazioni dei singoli utenti.
+Per la risoluzione dei problemi relativi alle prestazioni ottimizzate per singoli utenti, controlla prima [le limitazioni](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations). Le sezioni successive contengono suggerimenti per migliorare le prestazioni dei singoli utenti.
 
 ## Suggerimenti sulla larghezza di banda {#bandwidth-recommendations}
 
@@ -133,7 +133,7 @@ Puoi migliorare le prestazioni sul lato AEM abilitando flussi di lavoro transito
 
 ### Regolare la coda del flusso di lavoro transitorio di Granite {#adjust-granite-transient-workflow-queue}
 
-Un altro metodo per migliorare le prestazioni di AEM consiste nel configurare il valore dei processi paralleli massimi per il processo Coda flusso di lavoro transitoria Granite. Il valore consigliato è circa la metà del numero di CPU disponibili con il server. Per regolare il valore, effettuare le seguenti operazioni:
+Un altro metodo per migliorare le prestazioni di AEM consiste nel configurare il valore dei processi paralleli massimi per il processo Coda flusso di lavoro transitoria Granite. Il valore consigliato è circa la metà del numero di CPU disponibile con il server. Per regolare il valore, effettuare le seguenti operazioni:
 
 1. Andate a */system/console/configMgr* nell’istanza AEM da configurare (ad esempio, <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
 1. Cercate **QueueConfiguration** e fate clic per aprire ciascun processo fino a individuare il processo **Granite Transient Workflow Queue** . Fate clic sull’icona Modifica accanto a essa.
@@ -212,7 +212,7 @@ Il modo più semplice per risolvere questa situazione è aprire il file in confl
 
 La cancellazione della cache di AEM Desktop è un'attività preliminare di risoluzione dei problemi che può risolvere diversi problemi relativi a AEM Desktop.
 
-Potete cancellare la cache eliminando la directory della cache dell'applicazione nelle seguenti posizioni: Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
+Potete cancellare la cache eliminando la directory della cache dell'applicazione nelle seguenti posizioni:Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
 
 Mac: ~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/
 

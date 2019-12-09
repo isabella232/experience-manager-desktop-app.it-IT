@@ -9,22 +9,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
 
 ---
 
 
 # Note sulla versione dell’app desktop AEM v1.x{#aem-desktop-app-release-notes}
 
-## Informazioni sulla versione {#release-information}
+Per l'app desktop versione 1.x, quanto segue sono riportati i collegamenti per il download e le informazioni sulla compatibilità di AEM.
 
 | Prodotti | App desktop Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
 | Versione | 1.10 (1.10.0.3 su Mac e Windows) |
 | Tipo | Rilascio secondario |
 | Data | 31 agosto 2018 |
-| Scaricare gli URL | [Mac OS X a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows a 32 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
-| Compatibilità | AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| URL di download | [Mac OS X a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows a 32 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| Compatibilità | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
 >
@@ -35,15 +35,15 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 AEM Desktop è compatibile con i seguenti sistemi operativi:
 
 * Mac OS X 10.10 o versione successiva, con correzioni di bug più recenti.
-* Windows 7 e Windows 10 con i Service Pack più recenti e le correzioni dei bug.
+* Windows 7 e Windows 10 con Service Pack e correzioni di bug più recenti.
 
-Adobe consiglia vivamente di utilizzare la versione più recente di AEM Desktop per sfruttare le funzionalità più recenti, le correzioni di bug più recenti e le prestazioni migliori.
+Adobe consiglia vivamente di utilizzare la versione più recente dell'app desktop AEM per sfruttare le funzionalità più recenti, le correzioni di bug più recenti e le prestazioni migliori.
 
-La versione di AEM Destkop App che si intende installare sul computer locale richiede una versione specifica del server AEM/componenti aggiuntivi lato server (Service Pack, hotfix o feature pack). Prima di connettervi al server AEM per la prima volta, assicuratevi che sia configurato correttamente. Se hai bisogno di aiuto, contatta il tuo amministratore AEM.
+La versione dell’app desktop AEM che si intende installare sul computer locale richiede una versione specifica del server AEM/componenti aggiuntivi lato server (Service Pack, hotfix o feature pack). Prima di connettervi al server AEM per la prima volta, assicuratevi che sia configurato correttamente. Se hai bisogno di aiuto, contatta il tuo amministratore AEM.
 
 Consultate la matrice [di compatibilità](#compatibilitymatrix) dettagliata alla fine di questo documento per valutare i prerequisiti per la configurazione.
 
-## Novità nell’app desktop AEM 1.10 {#what-s-new-in-aem-desktop-app}
+## What's New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
 
 L’app desktop AEM 1.10 è incentrata sul miglioramento dell’esperienza utente in relazione a caricamenti di grandi dimensioni, informazioni sulle operazioni in background e un’esperienza ottimizzata quando si aprono risorse con file collegati (come InDesign).
 
@@ -113,8 +113,8 @@ Caricamenti di massa: Il caricamento di gerarchie di cartelle grandi tramite Cre
 
 **Icone per indicare lo stato delle operazioni** in background L'icona dell'applicazione indicherà lo stato delle operazioni in background per fornire agli utenti un segnale visivo migliore. Ad esempio, quando l’applicazione non è connessa ad AEM l’icona viene disattivata, quando è presente un caricamento attivo viene visualizzata una sovrapposizione "sync", ecc.
 
-**Recupero preliminare di risorse**collegate Per migliorare l’esperienza utente quando si lavora con documenti InDesign che includono risorse collegate memorizzate in AEM, l’app desktop tenterà di recuperare preventivamente questi file collegati nella cache locale prima di scaricare e aprire il documento InDesign. In questo modo l'utente potrà avere i file collegati disponibili localmente e non dovrà più aspettare per accedervi in InDesign (nel pannello Collegamenti).
-La preacquisizione funziona solo se AEM riconosce i collegamenti sul lato server. Una risorsa con collegamenti riconosciuti avrà un elenco di "Riferimenti" elencato nella vista Proprietà della risorsa InDesign.
+**Recupero preliminare di risorse**collegate Per migliorare l’esperienza utente quando lavorate con documenti InDesign che includono risorse collegate memorizzate in AEM, l’app desktop tenterà di recuperare preventivamente questi file collegati nella cache locale prima di scaricare e aprire il documento InDesign. In questo modo l'utente potrà avere i file collegati disponibili localmente e non dovrà più aspettare per accedervi in InDesign (nel pannello Collegamenti).
+Il preacquisizione funziona solo se AEM riconosce i collegamenti sul lato server. Una risorsa con collegamenti riconosciuti avrà un elenco di "Riferimenti" elencato nella vista Proprietà della risorsa InDesign.
 
 ### Miglioramenti disponibili dall’app desktop AEM 1.8.x{#enhancements-available-since-aem-desktop-app-18x}
 
@@ -130,8 +130,8 @@ L’app desktop AEM 1.8.1, che segue rapidamente, ha apportato miglioramenti all
    * alla scadenza di una sessione AEM, l'utente riceve una notifica e può fare clic sulla notifica per effettuare nuovamente l'accesso (CQ-4202028)
    * (Mac) Aggiungete il supporto per la connessione ad AEM tramite la configurazione proxy .pac (CQ-4233430)
    * (Win) risoluzione dei problemi relativi alla finestra di dialogo Avanzate - URL di accesso (CQ-4236061)
-* Bugfix:
-   * Finestra di dialogo Ulteriori informazioni sulla risorsa * a volte la barra delle azioni non era visibile (CQ-4208540)
+* Correzioni di bug:
+   * Finestra di dialogo Ulteriori informazioni sulla risorsa: talvolta la barra delle azioni non era visibile (CQ-4208540)
    * (Win) È ora possibile sincronizzare il file dopo il ripristino di una versione precedente dall'interfaccia utente di Risorse AEM (CQ-4216411)
 
 ### Miglioramenti disponibili dall’app desktop AEM 1.7{#Enhancements-Available-Since-AEM-Desktop-App-17}
@@ -293,7 +293,7 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
 
 **Utilizzare certificati SSL con firma CA.** L'app desktop AEM non supporta i certificati SSL autofirmati quando ci si connette ad AEM tramite una connessione protetta HTTPS. Per tali connessioni è necessario un certificato firmato da CA sul server. (CQ-87941)
 
-## Known issues {#known-issues}
+## Problemi noti {#known-issues}
 
 * Generale:
    * Gli URL del server devono essere indirizzati al server senza un percorso (ad es. `http://server`, `https://server`, `http://server:port`o `https://server:port`). I percorsi e le sottocartelle di contesto diversi da /content/dam non sono supportati (CQ-89343, CQ-87272)
@@ -301,9 +301,9 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
    * I nomi di file e cartelle con caratteri riservati non vengono gestiti correttamente. Accertatevi di usare nomi di file e cartelle che soddisfano i requisiti AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
    * Alcune applicazioni come Adobe Illustrator potrebbero creare file con nomi non supportati in AEM. Ad esempio, l'aggiunta `Converted` dopo la conversione di un file, ne impedisce il caricamento (CQ-4216985)
    * Le risorse con nomi internazionali possono essere visualizzate e scomparire ogni pochi secondi
-* Check-in/Checkout:
+* Check-in e check-out:
    * Una risorsa estratta da un utente non può essere aperta per un altro utente, né tramite l’azione Apri dall’interfaccia utente touch, né direttamente sul desktop. Alcune applicazioni potrebbero segnalarlo come bloccato, ma anche danneggiato o anche appeso durante il tentativo di aprire. (CQ-4199234)
-   * La modifica simultanea di file da parte di più utenti potrebbe causare la perdita di alcune modifiche. La soluzione consiste nell'utilizzare la funzionalità di archiviazione/estrazione per impedire a più utenti di modificare lo stesso file (CQ-97035)
+   * La modifica simultanea di file da parte di più utenti potrebbe causare la perdita di alcune modifiche. La soluzione consiste nell'utilizzare la funzionalità di check-in e check-out per impedire a più utenti di modificare lo stesso file (CQ-97035)
    * Alcune applicazioni non supportano correttamente il flag di sola lettura che consente all'utente di salvare un file estratto da un altro utente. Il file modificato non viene trasferito finché l'altro utente non lo controlla. Entrambe le modifiche sono disponibili in AEM come versioni diverse della risorsa (CQ-89551, CQ-87572, CQ-89615)
    * Lo stato di estrazione e di sola lettura viene riportato in modo indipendente nel Finder. Quando un utente estrae una risorsa, vengono create 2 icone di blocco (CQ-89507)
 * Integrazione con il Finder:
@@ -330,7 +330,7 @@ L'app desktop AEM funziona con diverse versioni di AEM. Visualizzare la matrice 
 
 | Versione | Revisione | Data di rilascio | Compatibilità |
 |---------|------------------------|--------------|-------------------------------------------------------------|
-| 1.10 | 1.10.0.3 (Mac e Win) | 31 agosto 2018 | AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1.10 | 1.10.0.3 (Mac e Win) | 31 agosto 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1 (Mac e Win) | 21 giugno 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0 (Mac e Win) | 28 marzo 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 | 1.7 | 1.7.0.3 (Mac e Win) | 10 gennaio 2018 |  AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |

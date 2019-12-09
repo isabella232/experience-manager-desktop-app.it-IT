@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -59,13 +59,13 @@ Nella seconda fase, l'app desktop carica il file aggiornato nel server AEM dopo 
 
 ## Connessione a un’istanza di AEM dietro un dispatcher {#connect-to-an-aem-instance-behind-a-dispatcher}
 
-I metodi Copy and Move nell’API Assets richiedono il passaggio ad AEM delle seguenti intestazioni aggiuntive:
+I metodi di copia e spostamento nell’API Assets richiedono il passaggio ad AEM delle seguenti intestazioni aggiuntive:
 
 * Destinazione X
 * Profondità X
 * Sovrascrivi X
 
-AEM Desktop si connette ad AEM utilizzando un URL che include la porta predefinita. Pertanto, l'impostazione *virtualhosts* nella configurazione dispatcher deve includere il numero di porta predefinito. Per ulteriori informazioni sulla configurazione degli host virtuali, vedere [Identificazione degli host](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuali.
+AEM Desktop si connette ad AEM utilizzando un URL che include la porta predefinita. Pertanto, l' `virtualhosts` impostazione nella configurazione del dispatcher deve includere il numero di porta predefinito. Per ulteriori informazioni sulla `virtualhosts` configurazione, consultate [Identificazione degli host](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuali.
 
 Per ulteriori informazioni sulla configurazione del dispatcher per il passaggio tra queste intestazioni aggiuntive, vedere [Specifica delle intestazioni](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
 
@@ -116,8 +116,8 @@ Per indirizzare l'applicazione a una cartella diversa o a un'altra unità, modif
 
 ## Altro materiale di riferimento {#additional-resources}
 
-* [Introduzione all'app desktop AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
-* [Usa app desktop AEM](use-app-v1.md)
+* [Introduzione all’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [Usare l’app desktop AEM](use-app-v1.md)
 
 * [Informazioni sul check-in/check-out con l’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 * [Utilizzo dell'app desktop con AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)

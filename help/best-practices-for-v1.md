@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -28,7 +28,7 @@ L’app desktop consente di installare l’archivio di Risorse AEM come condivis
 >
 >Prima di leggere questo documento, puoi consultare le best practice [generali per l’integrazione con](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM e Creative Cloud per una panoramica di livello superiore dell’argomento.
 
-## Architettura dell'app desktop AEM {#aem-desktop-app-architecture}
+## AEM desktop app architecture {#aem-desktop-app-architecture}
 
 L’app desktop AEM utilizza le condivisioni di rete WebDAV (Windows) o SMB (Mac) per il montaggio delle condivisioni di rete. La condivisione di rete installata è solo locale. L’app desktop AEM intercetta le chiamate (apertura, lettura, scrittura) e fornisce un ulteriore caching locale. Traduce le chiamate remote al server AEM Assets per ottimizzare le richieste AEM HTTP. Nel diagramma seguente è illustrata l'architettura dell'app desktop AEM.
 
@@ -64,7 +64,7 @@ Le funzionalità chiave dell'app desktop AEM includono:
 
 L'app desktop AEM fornisce l'accesso virtuale all'intero archivio DAM e potrebbe essere complicato per gli utenti creativi su desktop trovare e accedere alle risorse giuste sul loro desktop. Utilizzate queste best practice per semplificarle.
 
-* Utilizzate le funzioni di collaborazione nell'interfaccia utente Web di AEM Assets per fornire all'utente creativo un accesso più diretto alle risorse giuste. La condivisione di cartelle o raccolte, la fornitura di raccolte avanzate (ricerche salvate) o l'invio di notifiche con puntatori alle risorse giuste sono alcuni di questi elementi. Gli utenti creativi possono quindi utilizzare le azioni desktop nell’interfaccia utente Web per accedere rapidamente a tali risorse sul loro desktop.
+* Utilizzate le funzioni di collaborazione nell'interfaccia utente Web di AEM Assets per fornire all'utente creativo un accesso più diretto alle risorse giuste. La condivisione di cartelle o raccolte, la fornitura di raccolte avanzate (ricerche salvate) o l'invio di notifiche con puntatori alle risorse giuste sono alcuni di questi elementi. Gli utenti creativi possono quindi utilizzare le azioni desktop nell’interfaccia utente Web per accedere rapidamente a tali risorse sul desktop.
 * Considerate le autorizzazioni corrette per le risorse (controllo degli accessi) per semplificare la visualizzazione nell’archivio DAM per gli utenti creativi, in pratica limitandone l’accesso alle sole risorse di cui hanno bisogno/sono interessati:
 
    * Alcune aree non rilevanti per gli utenti creativi potrebbero essere rifiutate per i loro gruppi di utenti, per rimuoverli dalla loro vista, anche sul desktop
@@ -107,9 +107,11 @@ Per informazioni sulle best practice relative alla configurazione di rete di Ris
 
 * **** Usa dispatcher configurato correttamente: Utilizzate AEM Dispatcher per ulteriore sicurezza e accertatevi che sia configurato per la connessione dell'app desktop [AEM ad AEM dietro un dispatcher](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#ConnectingtoAEMBehindaDispatcher)
 
-* **** Salva larghezza di banda: È consigliabile disattivare l'anteprima dell'icona nel Finder su Mac - quando si sfoglia il repository montato tramite Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l'utente potrebbe anche ridurre l'esperienza degli utenti sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
+* **** Salva larghezza di banda: È consigliabile disattivare l'anteprima dell'icona nel Finder su Mac - quando si sfoglia il repository montato tramite Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l'utente potrebbe anche diminuire l'esperienza dell'utente sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
 
-**** Nota: Per disattivare le anteprime delle icone, nel Finder passate a Visualizza, selezionate Opzioni di visualizzazione, quindi deselezionate l'opzione "Mostra anteprima icona". Questo funziona solo per la cartella corrente; per renderla predefinita, fate clic sul pulsante "Usa come predefinito" nella stessa finestra.
+>[!NOTE]
+>
+>Per disattivare le anteprime delle icone, nel Finder passate a Visualizza, selezionate Opzioni di visualizzazione, quindi deselezionate l'opzione "Mostra anteprima icona". Questo funziona solo per la cartella corrente; per renderla predefinita, fate clic sul pulsante "Usa come predefinito" nella stessa finestra.
 
 ### Ottimizzazione delle prestazioni del server {#optimizing-server-performance}
 

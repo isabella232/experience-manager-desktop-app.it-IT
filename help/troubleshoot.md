@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
 
-# Risoluzione dei problemi relativi all'app desktop AEM {#troubleshoot-v2}
+# Troubleshoot AEM desktop app {#troubleshoot-v2}
 
 L’app desktop Adobe Experience Manager (AEM) si connette a un archivio DAM (Digital Asset Management) di una distribuzione AEM remota. L'app raccoglie informazioni sull'archivio e risultati della ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con l'interfaccia utente di Risorse AEM.
 
@@ -26,7 +26,7 @@ Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e
 
 * **Scoprite come funziona** l'app desktop: Prima di iniziare a utilizzare l'applicazione, trascorri alcuni minuti a sapere come funziona l'app. Informazioni sui collegamenti tra l'interfaccia utente Web e il desktop, la mappatura dell'archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedi [come funziona](release-notes.md#how-app-works).
 
-* **Evitate i caratteri non supportati nei nomi** delle cartelle:Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Risorse](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM. Alcuni casi di utilizzo di AEM possono essere influenzati da caratteri non supportati nel nome della cartella.
+* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Risorse](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM. Alcuni casi di utilizzo di AEM possono essere influenzati da caratteri non supportati nel nome della cartella.
 
 * **Procedure ottimali per evitare conflitti**: Per evitare potenziali conflitti durante la collaborazione su più risorse, consultate [evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 

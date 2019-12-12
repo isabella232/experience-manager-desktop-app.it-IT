@@ -8,21 +8,22 @@ discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
+mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
 
 ---
 
 
-# Note sulla versione dell’app desktop AEM {#release-notes-v2}
+# AEM desktop app release notes {#release-notes-v2}
 
 | Prodotti | App desktop Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
-| Versione dell’app (revisione) | 2.0 (2.0.0.4) |
+| Versione dell’app (revisione) | 2.0 (2.0.1.1) |
 | Versioni di AEM supportate | AEM 6.5, AEM 6.4, AEM 6.3 (con pacchetto di compatibilità) |
-| Tipo | Versione principale |
-| Data di rilascio | 30 agosto 2019 (Mac), 9 settembre 2019 (Windows) |
-| URL di download | [MacOS a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.0.4.dmg); [Windows a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.0.4.exe); [Windows a 32 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.0.4.exe) |
+| Tipo | Rilascio secondario |
+| Data di rilascio | 12 dicembre 2019 (Mac e Win) |
+| URL di download | [MacOS a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.1.1.dmg); [Windows a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.1.1.exe); [Windows a 32 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.1.1.exe) |
 
 ## Requisiti di sistema e prerequisiti {#system-requirements-and-prerequisites-v2}
 
@@ -36,12 +37,15 @@ L’app funziona con le seguenti versioni di AEM, in locale o in Adobe Managed S
 * [AEM 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) o versione successiva
 * [AEM 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o versione successiva
 * AEM 6.4.0 - 6.4.3 con [pacchetto di compatibilità](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* AEM 6.3.3.1 e versioni successive con [pacchetto di compatibilità](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
-* Per AEM 6.3 [non sono pianificati Service Pack](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html). Adobe consiglia di passare a una versione successiva di AEM.
+
+>[!NOTE]
+>
+>Il supporto per le app desktop per AEM 6.3 è obsoleto. Adobe consiglia di effettuare l'aggiornamento a una versione AEM più recente e supportata.
+>AEM 6.3.3.1 o versione successiva funziona con l'app desktop dopo l'installazione del pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilità. Questo pacchetto non è disponibile per AEM 6.3 in quanto non sono pianificati [](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)service pack.
 
 La versione dell’app che intendi installare nel computer locale richiede una versione specifica del server Adobe Experience Manager o componenti aggiuntivi lato server (Service Pack, hotfix o feature pack). Per assistenza, rivolgiti all’amministratore AEM.
 
-### Supporto per risorse e tipi di file diversi {#support-for-file-types}
+### Support for different assets and file types {#support-for-file-types}
 
 L’applicazione supporta le risorse memorizzate in AEM che rappresentano il file binario per le operazioni di base. L’apertura di file nell’applicazione desktop nativa si basa sull’associazione del sistema operativo dei tipi di file specifici, come PNG o JPG, ad applicazioni specifiche, come Mac Preview o Adobe Photoshop.
 
@@ -51,16 +55,22 @@ Alcuni tipi di file supportano il posizionamento di risorse collegate nel file b
 * File Adobe Illustrator (formato AI)
 * File Adobe Photoshop (formato PS)
 
-Questa funzione è supportata con le versioni Adobe Creative Cloud 2018 e Creative Cloud 2019 di queste applicazioni. L’app utilizza un approccio euristico, basato sulla corrispondenza migliore, per mappare i percorsi desktop locali delle risorse collegate agli URL nel server AEM. Si basa su alcuni presupposti descritti di seguito:
+Questa funzione è supportata dalle versioni di Adobe Creative Cloud 2018 e Adobe Creative Cloud 2019 dell'applicazione precedente. L’app utilizza un approccio euristico, basato sulla corrispondenza migliore, per mappare i percorsi desktop locali delle risorse collegate agli URL nel server AEM. Si basa su alcuni presupposti descritti di seguito:
 
-* I percorsi dei file inseriti nell’applicazione nativa utilizzano un percorso desktop globale (inserito dalla condivisione di rete locale visualizzata con l’opzione “Mostra”).
-* I percorsi sono memorizzati dall’app nativa nel record XMP del file.
-* AEM estrae il record XMP con i percorsi nel record dei metadati della risorsa.
-* I percorsi possono essere associati a risorse in AEM (ovvero, i file inseriti sono presenti anche in AEM in un percorso corrispondente)
+* Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
+* I percorsi vengono memorizzati nel record XMP del file dall'app nativa.
+* AEM ha estratto il record XMP con i percorsi del record di metadati della risorsa.
+* I percorsi possono essere associati alle risorse in AEM, ovvero i file inseriti si trovano anche in AEM, in un percorso corrispondente).
 
 ## Nuove funzioni e miglioramenti {#whats-new-added}
 
-Per informazioni, consulta [Novità dell’app](introduction.md#whats-new-v2).
+To know the details, see [What's new in v2.0](introduction.md#whats-new-v2).
+
+Correzioni di bug e aggiornamenti apportati nella release v 2.0.1:
+
+* Consenti di configurare la `%Temp%` directory in modo che corrisponda al `%APPDATA%` percorso. <!-- CQ-4282665 -->
+* Consentire agli utenti di accedere a AEM Author tramite l'autenticazione Okta SAML. <!-- CQ-4278134 -->
+
 
 ## Istruzioni di installazione {#installation-instructions-v2}
 
@@ -89,6 +99,7 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 ## Problemi noti {#known-issues-v2}
 
 **Problemi relativi all’interfaccia utente:**
+
 * A volte, l'interfaccia dell'app desktop potrebbe diventare vuota. Right-click and click [!UICONTROL Refresh] to re-load the application. Dopo tale aggiornamento, si inizia dalla directory principale dell'archivio DAM. Gli aggiornamenti o gli stati delle risorse vengono conservati. <!-- CQ-4270267 -->
 * Difficile navigare tra le cartelle o cercare i risultati senza il trackpad o il puntatore del mouse. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * Di rado, la barra di avanzamento non viene visualizzata correttamente quando cambia la risorsa in fase di caricamento.
@@ -96,18 +107,20 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 * Talvolta, in caso di connessione a un URL per cui non è in esecuzione alcun server AEM, la schermata di connessione si blocca. Esci dall’applicazione e riavviala.
 
 **Problemi relativi a operazioni di creazione, lettura, aggiornamento ed eliminazione:**
+
 * L’applicazione prova a caricare i file anche se contengono caratteri non validi. Potrebbe verificarsi un errore di caricamento sul lato server. <!-- CQ-4273652 -->
 * Quando si caricano le modifiche in una risorsa con commenti, i commenti vengono memorizzati insieme alla risorsa in AEM ma non sono visibili come commenti relativi alle versioni. Questo problema è stato risolto in AEM 6.4.5 e AEM 6.5.1. Adobe consiglia vivamente di installare i Service Pack più recenti. <!-- CQ-4268990 -->
 * I trasferimenti di risorse non possono essere annullati dall’utente. Se hai attivato per errore un trasferimento di grandi dimensioni, esci dall’applicazione e riavviala. <!-- CQ-4278940 -->
 
 **Problemi relativi alla piattaforma:**
+
 * In alcuni casi, in Windows, lo stato di una risorsa può cambiare immediatamente in [!UICONTROL Edited Locally] dopo l’apertura, anche se non sono state apportate modifiche. Fai clic su [!UICONTROL Refresh] per aggiornare.
 
 >[!MORELIKETHIS]
 >
 >* [Documentazione di AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
->* [Documentazione di AEM Assets 6.5](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
->* [Usare l’app desktop AEM](using.md)
+>* [Documentazione di AEM Assets 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
+>* [Come utilizzare l'app desktop AEM](using.md)
 >* [Installare e aggiornare l’app desktop](install-upgrade.md)
 >* [Best practice e suggerimenti per la risoluzione dei problemi](troubleshoot.md)
 

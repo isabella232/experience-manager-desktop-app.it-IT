@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione dell’app desktop AEM
-description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download per l’app desktop AEM.
+title: Note sulla versione dell’app desktop Adobe Experience Manager
+description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download per l’app desktop Adobe Experience Manager.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,12 +10,12 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# AEM desktop app release notes {#release-notes-v2}
+# Note sulla versione dell’app desktop Adobe Experience Manager {#release-notes-v2}
 
 | Prodotti | App desktop Adobe Experience Manager (AEM) |
 |---------------|--------------------------------------------------------------------|
@@ -27,56 +27,55 @@ source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
 
 ## Requisiti di sistema e prerequisiti {#system-requirements-and-prerequisites-v2}
 
-L’app desktop AEM è compatibile con i seguenti sistemi operativi:
+L’app desktop Adobe Experience Manager è compatibile con i seguenti sistemi operativi:
 
 * Mac OS X 10.10 o versione successiva, con correzioni di bug più recenti.
 * Windows 7 e Windows 10 con Service Pack e correzioni di bug più recenti.
 
-L’app funziona con le seguenti versioni di AEM, in locale o in Adobe Managed Services (AMS):
+L&#39;app funziona con le seguenti versioni di Experience Manager, sia che sia distribuita in sede che su Adobe Managed Services (AMS):
 
-* [AEM 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) o versione successiva
-* [AEM 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o versione successiva
-* AEM 6.4.0 - 6.4.3 con [pacchetto di compatibilità](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* [Experience Manager 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) o versione successiva
+* [Experience Manager 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) o versione successiva
+* Experience Manager 6.4.0 - 6.4.3 con pacchetto di [compatibilità](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->Il supporto per le app desktop per AEM 6.3 è obsoleto. Adobe consiglia di effettuare l'aggiornamento a una versione AEM più recente e supportata.
->AEM 6.3.3.1 o versione successiva funziona con l'app desktop dopo l'installazione del pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilità. Questo pacchetto non è disponibile per AEM 6.3 in quanto non sono pianificati [](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)service pack.
+>Il supporto delle app desktop per Experience Manager 6.3 è obsoleto. Adobe consiglia di effettuare l&#39;aggiornamento a una versione più recente e supportata di Adobe Experience Manager.
+>Experience Manager 6.3.3.1 o versione successiva funziona con l&#39;app desktop dopo l&#39;installazione del pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilità. Nessun pacchetto di questo tipo è disponibile per Experience Manager 6.3 in quanto non sono pianificati [](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)service pack.
 
-La versione dell’app che intendi installare nel computer locale richiede una versione specifica del server Adobe Experience Manager o componenti aggiuntivi lato server (Service Pack, hotfix o feature pack). Per assistenza, rivolgiti all’amministratore AEM.
+La versione dell’app che intendi installare nel computer locale richiede una versione specifica del server Adobe Experience Manager o componenti aggiuntivi lato server (Service Pack, hotfix o feature pack). Contatta il tuo amministratore Adobe Experience Manager per assistenza.
 
 ### Support for different assets and file types {#support-for-file-types}
 
-L’applicazione supporta le risorse memorizzate in AEM che rappresentano il file binario per le operazioni di base. L’apertura di file nell’applicazione desktop nativa si basa sull’associazione del sistema operativo dei tipi di file specifici, come PNG o JPG, ad applicazioni specifiche, come Mac Preview o Adobe Photoshop.
+L’applicazione supporta le risorse memorizzate in Adobe Experience Manager che rappresentano file binari per le operazioni di base. L’apertura di file nell’applicazione desktop nativa si basa sull’associazione del sistema operativo dei tipi di file specifici, come PNG o JPG, ad applicazioni specifiche, come Mac Preview o Adobe Photoshop.
 
-Alcuni tipi di file supportano il posizionamento di risorse collegate nel file binario. L’applicazione prescarica le risorse collegate se la risorsa è presente nell’archivio AEM quando tali file binari vengono aperti tramite l’app desktop. I tipi di file attualmente supportati sono:
+Alcuni tipi di file supportano il posizionamento di risorse collegate nel file binario. L’applicazione prescarica le risorse collegate se la risorsa è presente nell’archivio Experience Manager quando tali file binari vengono aperti tramite l’app desktop. I tipi di file attualmente supportati sono:
 
 * File Adobe InDesign (formato INDD)
 * File Adobe Illustrator (formato AI)
 * File Adobe Photoshop (formato PS)
 
-Questa funzione è supportata dalle versioni di Adobe Creative Cloud 2018 e Adobe Creative Cloud 2019 dell'applicazione precedente. L’app utilizza un approccio euristico, basato sulla corrispondenza migliore, per mappare i percorsi desktop locali delle risorse collegate agli URL nel server AEM. Si basa su alcuni presupposti descritti di seguito:
+Questa funzione è supportata dalle versioni di Adobe Creative Cloud 2018 e Adobe Creative Cloud 2019 dell&#39;applicazione precedente. L’app utilizza un approccio euristico e con la migliore corrispondenza per mappare i percorsi desktop locali delle risorse collegate agli URL sul server Experience Manager. Si basa su alcuni presupposti descritti di seguito:
 
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
-* I percorsi vengono memorizzati nel record XMP del file dall'app nativa.
-* AEM ha estratto il record XMP con i percorsi del record di metadati della risorsa.
-* I percorsi possono essere associati alle risorse in AEM, ovvero i file inseriti si trovano anche in AEM, in un percorso corrispondente).
+* I percorsi vengono memorizzati nel record XMP del file dall&#39;app nativa.
+* Experience Manager ha estratto il record XMP con i percorsi del record di metadati della risorsa.
+* I percorsi possono essere associati alle risorse in Experience Manager, ovvero i file inseriti si trovano anche in Experience Manager con un percorso corrispondente).
 
 ## Nuove funzioni e miglioramenti {#whats-new-added}
 
-To know the details, see [What's new in v2.0](introduction.md#whats-new-v2).
+To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
 Correzioni di bug e aggiornamenti apportati nella release v 2.0.1:
 
 * Consenti di configurare la `%Temp%` directory in modo che corrisponda al `%APPDATA%` percorso. <!-- CQ-4282665 -->
-* Consentire agli utenti di accedere a AEM Author tramite l'autenticazione Okta SAML. <!-- CQ-4278134 -->
-
+* Consentire agli utenti di accedere a AEM Author tramite l&#39;autenticazione Okta SAML. <!-- CQ-4278134 -->
 
 ## Istruzioni di installazione {#installation-instructions-v2}
 
-Per informazioni su come installare e configurare l’app, consulta [Installare l’app desktop AEM](install-upgrade.md).
+To know how to install and configure the app, see [Install Experience Manager desktop app](install-upgrade.md).
 
-Se aggiorni un’app desktop AEM precedente, segui le best practice per la transizione elencate nella sezione relativa all’[aggiornamento dalla versione precedente](install-upgrade.md#upgrade-from-previous-version).
+If you are upgrading from a previous Experience Manager desktop app, you must follow these best practices for transitioning that are listed at [upgrade from previous version](install-upgrade.md#upgrade-from-previous-version).
 
 ## Note importanti sul funzionamento dell’app {#how-app-works}
 
@@ -100,7 +99,7 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 
 **Problemi relativi all’interfaccia utente:**
 
-* A volte, l'interfaccia dell'app desktop potrebbe diventare vuota. Right-click and click [!UICONTROL Refresh] to re-load the application. Dopo tale aggiornamento, si inizia dalla directory principale dell'archivio DAM. Gli aggiornamenti o gli stati delle risorse vengono conservati. <!-- CQ-4270267 -->
+* A volte, l&#39;interfaccia dell&#39;app desktop potrebbe diventare vuota. Right-click and click [!UICONTROL Refresh] to re-load the application. Dopo tale aggiornamento, si inizia dalla directory principale dell&#39;archivio DAM. Gli aggiornamenti o gli stati delle risorse vengono conservati. <!-- CQ-4270267 -->
 * Difficile navigare tra le cartelle o cercare i risultati senza il trackpad o il puntatore del mouse. The scroll-bar might not appear with mouse devices without mouse wheel. <!-- CQ-4269947 -->
 * Di rado, la barra di avanzamento non viene visualizzata correttamente quando cambia la risorsa in fase di caricamento.
 * Dopo che l’utente applica e rimuove il filtro per trovare tutte le risorse modificate in locale, l’app non ritorna ai risultati della ricerca originale o alla vista cartelle in cui si trovava inizialmente l’utente. L’app visualizza la cartella principale dell’archivio DAM.
@@ -120,7 +119,7 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 >
 >* [Documentazione di AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
 >* [Documentazione di AEM Assets 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
->* [Come utilizzare l'app desktop AEM](using.md)
+>* [Come utilizzare l&#39;app desktop Experience Manager](using.md)
 >* [Installare e aggiornare l’app desktop](install-upgrade.md)
 >* [Best practice e suggerimenti per la risoluzione dei problemi](troubleshoot.md)
 

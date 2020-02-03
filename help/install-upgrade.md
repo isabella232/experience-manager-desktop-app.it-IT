@@ -1,6 +1,6 @@
 ---
-title: Installare e configurare l'app desktop AEM
-description: Installa e configura l’app desktop AEM per lavorare con i server Risorse AEM e scarica le risorse nel file system locale.
+title: Installare e configurare l’app desktop Adobe Experience Manager
+description: Installa e configura l’app desktop Adobe Experience Manager per lavorare con i server Risorse Adobe Experience Manager e scarica le risorse nel file system locale.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,26 +9,26 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# Installare l&#39;app desktop AEM {#install-app-v2}
+# Install Adobe Experience Manager desktop app {#install-app-v2}
 
-Utilizzando l’app desktop AEM, le risorse all’interno di AEM sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente; le modifiche vengono salvate nuovamente in AEM al momento del caricamento e viene creata una nuova versione nell’archivio.
+Utilizzando l’app desktop Adobe Experience Manager, le risorse all’interno di Experience Manager sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente; le modifiche vengono salvate in Experience Manager al momento del caricamento e viene creata una nuova versione nell’archivio.
 
-Questa integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse a livello centrale in Risorse AEM e di accedervi in Creative Cloud e altre applicazioni, semplificando al contempo il rispetto dei vari standard, compreso il branding.
+Tale integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse a livello centrale in Adobe Experience Manager Assets e di accedervi in Creative Cloud e altre applicazioni, semplificando al contempo il rispetto dei vari standard, compreso il branding.
 
-Per utilizzare l&#39;app desktop AEM,
+Per utilizzare l’app desktop Experience Manager,
 
-* Verificate che la versione del server AEM sia supportata dall&#39;app desktop AEM. Vedere la matrice [di](release-notes-of-v1.md#compatibilitymatrix)compatibilità.
+* Verifica che la versione del server Experience Manager sia supportata dall’app desktop Experience Manager. Vedere la matrice [di](release-notes-of-v1.md#compatibilitymatrix)compatibilità.
 * Scaricate e installate l&#39;applicazione.
 * Verificare la connessione utilizzando alcune risorse. Consultate [Accesso e apertura delle risorse sul desktop](use-app-v1.md#openondesktop).
 
 ## Requisiti di sistema, prerequisiti e collegamenti per il download {#tech-specs-v2}
 
-Per informazioni dettagliate, consultate le note [sulla versione dell&#39;app desktop](release-notes.md)AEM.
+Per informazioni dettagliate, consultate le note [sulla versione dell&#39;app desktop](release-notes.md)Experience Manager.
 
 ## Aggiornamento dall&#39;app v1.x all&#39;app v2 {#upgrade-from-previous-version}
 

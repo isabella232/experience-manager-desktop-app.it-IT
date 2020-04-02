@@ -1,17 +1,17 @@
 ---
 cloud: experience-cloud
 solution-title: Informazioni e supporto
-solution-hub-url: https://helpx.adobe.com/it/support/experience-manager/6-4.html
+solution-hub-url: https://helpx.adobe.com/it/support/experience-manager/6-5.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Guida introduttiva
 getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Esercitazioni
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
-mini-toc-levels: 2
+tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
+mini-toc-levels: 1
 git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.en
-index: n
+index: y
 translation-type: tm+mt
-source-git-commit: f42f9437de9d9b96d1fcf1c3e1730fd74548eec1
+source-git-commit: e5e7f60d97bfb24bb4c668cd074430218a657db4
 
 ---
 
@@ -23,9 +23,9 @@ Il file metadata.md include metadati a livello di repo che passano ai file TOC.m
 | metadata | cosa |
 |--- |--- |
 | solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| solution-hub-url | Apre la pagina centrale helpx |
+| solution-hub-url | Apre la pagina principale del supporto |
 | solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato |
-| getting-started | Link alla pagina di guida introduttiva |
+| getting-started | Link alla pagina iniziale |
 | tutorials-url | Collegamento alle esercitazioni video: esercitazioni helpx o esercitazioni KT |
 | mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. il valore predefinito è 2 |
 | git-repo | Specifica la posizione del repo principale per uso interno |

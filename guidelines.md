@@ -5,13 +5,13 @@ translation-type: tm+mt
 ---
 # Linee guida per il contributo alla documentazione di Adobe Experience Manager
 
-## Filosofia della documentazione di AEM
+## Filosofia della documentazione
 
 Sappiamo che gli utenti di Adobe Experience Manager lavorano in ambienti altamente competitivi, cercando di creare esperienze digitali che li distinguano dalla concorrenza. Pertanto, è fondamentale che quando Adobe offre nuovi strumenti avanzati in AEM, questi strumenti siano integrati da una documentazione accurata e chiara che consenta al cliente di sfruttare immediatamente il proprio investimento AEM e massimizzare il ROI.
 
 L’obiettivo della documentazione AEM è di mettere la documentazione nelle mani degli utenti AEM il prima possibile. Pertanto, diamo priorità a una documentazione accurata e utilizzabile e ci impegniamo a aggiornarla e a migliorarla continuamente.
 
-## Contributi alla documentazione di AEM
+## Contributi alla documentazione
 
 Al fine di migliorare costantemente la documentazione di AEM, l’intera community di utenti AEM è invitata a contribuire alla documentazione. Sia attraverso richieste pull o problemi, i miglioramenti alla documentazione possono essere correzioni, chiarimenti, espansioni ed esempi aggiuntivi.
 
@@ -35,7 +35,7 @@ Le eccezioni a questa regola si applicano alle note sulla versione in cui posson
 
 Eventuali idee da approfondire con la documentazione di AEM sono gradite come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo ai *contributi* . Non sono destinati a rispondere alle tue domande su come usare AEM, implementare il tuo progetto AEM o risolvere problemi tecnici.
 
-Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono essere segnalate tramite il normale processo di assistenza tramite il portale [di supporto di](https://daycare.day.com/home.html) Experience Manager o discusse nella community [di](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager/ct-p/adobe-experience-manager-community)Experience Manager.
+Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono essere segnalate tramite il normale processo di assistenza tramite il portale [di assistenza](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) Experience Cloud Enterprise o discusse nella community [di](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
 
 ***I contributi alla documentazione di AEM non sostituiscono l’Assistenza*** clienti Adobe e tutti questi contributi che richiedono risposte a domande relative al supporto verranno rifiutati.
 

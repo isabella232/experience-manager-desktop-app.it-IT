@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -183,6 +183,8 @@ Potete caricare cartelle o singoli file dal file system locale. Quando viene car
 Per visualizzare l’elenco delle risorse trasferite in una determinata sessione, fate clic su **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**. L&#39;elenco consente di visualizzare e verificare rapidamente i trasferimenti di file della sessione corrente.
 
 ![Elenco delle attività trasferite in una particolare](assets/assets_transfered_da2.png "sessioneElenco delle attività trasferite in una particolare sessione")
+
+Potete controllare la concorrenza di caricamento (accelerazione) in **[!UICONTROL Preferences]** > **[!UICONTROL Upload acceleration]** impostazione. Una maggiore concorrenza consente in genere di caricare più velocemente, ma può richiedere molte risorse e consumare più energia di elaborazione per il computer locale. Se si verifica un sistema lento, ripetete i tentativi di caricamento utilizzando un valore inferiore di concorrenza.
 
 >[!NOTE]
 >

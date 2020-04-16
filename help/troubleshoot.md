@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -24,17 +24,17 @@ Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure
 
 Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e risolvere eventuali problemi.
 
-* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorri alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra l&#39;interfaccia utente Web e il desktop, la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedi [come funziona](release-notes.md#how-app-works).
+* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorri alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra l&#39;interfaccia utente Web e il desktop, la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedete [come funziona](release-notes.md#how-app-works).
 
 * **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders). Alcuni casi di utilizzo di Adobe Experience Manager potrebbero essere influenzati da caratteri non supportati nel nome della cartella.
 
 * **Procedure ottimali per evitare conflitti**: Per evitare potenziali conflitti durante la collaborazione su più risorse, consultate [evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 
-* **Usate il caricamento delle cartelle per le cartelle** gerarchiche di grandi dimensioni: Invece di usare l’interfaccia Web di Assets o altri metodi, usa l’app desktop Experience Manager per caricare grandi cartelle. L&#39;app carica le risorse in background con registrazione e monitoraggio. Consultate Caricare [in blocco le risorse](using.md#bulk-upload-assets).
+* **Usate il caricamento delle cartelle per le cartelle** gerarchiche di grandi dimensioni: Invece di usare l’interfaccia Web di Assets o altri metodi, usa l’app desktop Experience Manager per caricare cartelle di grandi dimensioni. L&#39;app carica le risorse in background con registrazione e monitoraggio. Consultate Caricare [in blocco le risorse](using.md#bulk-upload-assets).
 
 * **Utilizzate la versione** più recente: Utilizzate la versione più recente dell&#39;app e verificate sempre la compatibilità prima di installare una nuova versione dell&#39;app o prima di eseguire l&#39;aggiornamento a una versione più recente di Adobe Experience Manager. See [release notes](release-notes.md).
 
-* **Utilizzare la stessa lettera** di unità: Utilizzate la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura su Adobe Experience Manager DAM. Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. La stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
+* **Utilizzare la stessa lettera** di unità: Utilizzate la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura su Adobe Experience Manager DAM. Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. L&#39;utilizzo della stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
 
 * **Tenere presente la rete**: Le prestazioni di rete sono fondamentali per le prestazioni dell&#39;app desktop Experience Manager. Se devi affrontare una risposta rallentata a trasferimenti di file o operazioni in blocco, disattiva le funzionalità o le app che potrebbero causare un sacco di traffico di rete.
 
@@ -46,7 +46,7 @@ Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e
 
 Per risolvere i problemi relativi all&#39;app desktop, tenete presenti le informazioni seguenti. Inoltre, se desideri ottenere assistenza, puoi trasmetterle meglio all&#39;Assistenza clienti Adobe.
 
-### Abilita modalità debug {#enable-debug-mode}
+### Abilita modalità di debug {#enable-debug-mode}
 
 Per risolvere i problemi, puoi abilitare la modalità di debug e ottenere ulteriori informazioni nei registri. Per eseguire l&#39;app in modalità di debug, utilizzate le seguenti opzioni della riga di comando in un terminale o al prompt dei comandi.
 
@@ -56,15 +56,15 @@ Per risolvere i problemi, puoi abilitare la modalità di debug e ottenere ulteri
 
 ### Posizione dei file di registro {#check-log-files-v2}
 
-I file di registro per l&#39;app desktop AEM si trovano nelle seguenti posizioni. Quando caricate molte risorse, se alcuni file non vengono caricati, consultate `backend.log` il file nella posizione sopra per identificare i caricamenti non riusciti.
+I file di registro per l&#39;app desktop AEM si trovano nelle seguenti posizioni. Quando caricate molte risorse, se alcuni file non vengono caricati, consultate `backend.log` file per identificare i caricamenti non riusciti.
 
-* In Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
+* Percorso in Windows: `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-* In Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+* Percorso in Mac: `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 >[!NOTE]
 >
->Quando lavorate con l&#39;Assistenza clienti Adobe su una richiesta di assistenza o un ticket di assistenza, potrebbe essere necessario condividere i file di registro per aiutare il team di assistenza a comprendere il problema. Archivia l’intera `Logs` cartella e condividila con l’assistenza clienti.
+>Quando lavorate con l&#39;Assistenza clienti Adobe su una richiesta di assistenza o un ticket di assistenza, potrebbe essere necessario condividere i file di registro per aiutare il team di assistenza clienti a comprendere il problema. Archivia l&#39;intera `Logs` cartella e condividila con l&#39;Assistenza clienti.
 
 ### Cancella cache {#clear-cache-v2}
 
@@ -82,7 +82,7 @@ Tuttavia, la posizione può cambiare a seconda dell’endpoint AEM configurato d
 
 ### Conoscere la versione dell&#39;app desktop AEM {#know-app-version-v2}
 
-Fai clic sul menu ![](assets/do-not-localize/more_options_da2.png) App per aprire il menu dell&#39;app e fai clic su **[!UICONTROL Help]**>**[!UICONTROL About]**.
+Fai clic sul menu ![](assets/do-not-localize/more_options_da2.png) App per aprire il menu dell&#39;app e fai clic su **[!UICONTROL Help]** > **[!UICONTROL About]**.
 
 ## Impossibile visualizzare le risorse inserite {#placed-assets-missing}
 
@@ -118,7 +118,7 @@ Le librerie utilizzate dall’app desktop AEM per la comunicazione HTTP utilizza
 
 ## L&#39;app non risponde {#unresponsive}
 
-Raramente l&#39;applicazione potrebbe non rispondere, visualizzare solo uno schermo bianco o visualizzare un errore nella parte inferiore dell&#39;interfaccia senza alcuna opzione sull&#39;interfaccia. Effettuate le seguenti operazioni nell&#39;ordine:
+Raramente l&#39;applicazione potrebbe non rispondere, visualizzare solo uno schermo bianco, o visualizzare un errore nella parte inferiore dell&#39;interfaccia senza alcuna opzione sull&#39;interfaccia. Effettuate le seguenti operazioni nell&#39;ordine:
 
 1. Fare clic con il pulsante destro del mouse sull&#39;interfaccia dell&#39;applicazione e scegliere **[!UICONTROL Refresh]**.
 1. Uscire dall’applicazione e riavviarla.

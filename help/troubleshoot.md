@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 9ae1580475569538838c58f642a7df43f2526d16
 
 ---
 
@@ -48,11 +48,25 @@ Per risolvere i problemi relativi all&#39;app desktop, tenete presenti le inform
 
 ### Abilita modalità di debug {#enable-debug-mode}
 
-Per risolvere i problemi, puoi abilitare la modalità di debug e ottenere ulteriori informazioni nei registri. Per eseguire l&#39;app in modalità di debug, utilizzate le seguenti opzioni della riga di comando in un terminale o al prompt dei comandi.
+Per risolvere i problemi, puoi abilitare la modalità di debug e ottenere ulteriori informazioni nei registri. Per utilizzare l&#39;app in modalità di debug su Mac, utilizzate le seguenti opzioni della riga di comando in un terminale o al prompt dei comandi: `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
 
-* In Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+Per abilitare la modalità di debug in Windows, procedere come segue:
 
-* In Mac: `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`
+1. Individuate `Adobe Experience Manager Desktop.exe.config` il file nella cartella di installazione dell&#39;app desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop`. Salvate e chiudete il file.
+
+1. Individuare `<level value="INFO"/>` verso la fine del file. Modificate il valore in `DEBUG`, ovvero `<level value="DEBUG"/>`.
+
+1. Individuate `logging.json` il file nella cartella di installazione dell&#39;app desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
+
+1. Nel `logging.json` file, individua tutte le istanze del `level` parametro. Modificate i valori da `info` a `debug`. Salvate e chiudete il file.
+
+1. Cancella le directory memorizzate nella cache che si trovano nel percorso impostato nelle preferenze dell&#39;app.
+
+1. Riavviate l&#39;app desktop.
+
+<!-- The Windows command doesn't work for now.
+* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+-->
 
 ### Posizione dei file di registro {#check-log-files-v2}
 

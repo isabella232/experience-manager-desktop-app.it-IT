@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 
 ---
 
@@ -33,26 +33,28 @@ Per utilizzare l’app desktop Experience Manager,
 
 Per informazioni dettagliate, consultate le note [sulla versione dell&#39;app desktop](release-notes.md)Experience Manager.
 
-## Aggiornamento dall&#39;app v1.x all&#39;app v2 {#upgrade-from-previous-version}
+## Upgrade from a previous version {#upgrade-from-previous-version}
 
-Se siete un utente esistente dell&#39;app, capite le differenze e le similitudini tra la versione precedente e quella più recente dell&#39;app. Inoltre, attenetevi alle seguenti linee guida per passare dalla versione 1.x alla versione più recente.
+Se sei un utente della versione 1.x dell’app desktop, puoi comprendere le differenze e le similitudini tra la versione precedente e quella più recente dell’app. Scopri [le novità dell&#39;app](introduction.md#whats-new-v2) desktop e [come funziona](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
->L&#39;app desktop v1.x e v2 non può coesistere su un computer. Prima di installare una versione, disinstallate l’altra versione.
+>Non è possibile coesistere due versioni dell&#39;app desktop su un computer. Prima di installare una versione, disinstallate l’altra versione.
 
-Per effettuare l&#39;aggiornamento dalla versione 1.x all&#39;ultima versione dell&#39;app, segui le istruzioni seguenti:
+Per effettuare l&#39;aggiornamento da una versione precedente dell&#39;app, segui le istruzioni seguenti:
 
-1. Prima di effettuare l’aggiornamento, sincronizzate tutte le risorse. Caricate tutte le modifiche utilizzando l&#39;app v1.x. Questo per evitare di perdere eventuali modifiche durante la disinstallazione dell&#39;app v1.x.
-1. Disinstallare l&#39;app v1.x. Durante la disinstallazione della versione 1.x, cancellare la cache.
+1. Prima di effettuare l’aggiornamento, sincronizzate tutte le risorse e caricate le modifiche in Experience Manager. Questo per evitare di perdere eventuali modifiche durante la disinstallazione dell&#39;app.
+1. Disinstallate la versione precedente dell&#39;app. Durante la disinstallazione, selezionate l&#39;opzione per cancellare la cache.
 1. Riavviate il computer.
-1. Scaricate e installate l&#39;app più recente. Seguite le istruzioni riportate di seguito.
+1. [Scaricate](release-notes.md) e [installate](#install-v2) l&#39;app più recente. Seguite le istruzioni riportate di seguito.
 
 ## Installare la versione {#install-v2}
 
 Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstallate l&#39;app desktop Adobe Experience Manager v1.x esistente prima di installare l&#39;app più recente. Per ulteriori informazioni, vedi sopra.
 
+1. Scaricate il programma di installazione più recente dalla pagina delle note sulla [versione](release-notes.md) .
 1. Tenete a portata di mano l&#39;URL e le credenziali della distribuzione Experience Manager.
+1. Se state effettuando l&#39;aggiornamento da un&#39;altra versione dell&#39;app, consultate [Aggiornare l&#39;app](#upgrade-from-previous-version)desktop.
 1. Ignora questo passaggio se utilizzi Experience Manager come servizio Cloud, Experience Manager 6.4.4 o versione successiva oppure Experience Manager 6.5.0 o versione successiva. Assicurati che la configurazione di Experience Manager soddisfi i requisiti di compatibilità indicati nelle note sulla [versione](release-notes.md). Se necessario, scaricate il pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilità applicabile e installatelo utilizzando Experience Manager Package Manager come amministratore Experience Manager. Per installare un pacchetto, consultate [Come utilizzare i pacchetti](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 1. Eseguite il programma di installazione binario e seguite le istruzioni visualizzate per eseguire l&#39;installazione.
 1. In Windows, il programma di installazione potrebbe richiedere l&#39;installazione `Visual Studio C++ Redistributable 2015`. Seguite le istruzioni visualizzate per installarlo. Se l’installazione non riesce, installatela manualmente. Scaricate il programma di installazione da [qui](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e installate sia `vc_redist.x64.exe` che `vc_redist.x86.exe` i file. Eseguite nuovamente il programma di installazione dell&#39;app desktop AEM.

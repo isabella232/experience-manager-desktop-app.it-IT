@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9ae1580475569538838c58f642a7df43f2526d16
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -26,7 +26,7 @@ Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e
 
 * **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorri alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra l&#39;interfaccia utente Web e il desktop, la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedete [come funziona](release-notes.md#how-app-works).
 
-* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders). Alcuni casi di utilizzo di Adobe Experience Manager potrebbero essere influenzati da caratteri non supportati nel nome della cartella.
+* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders). Alcuni casi di utilizzo di Adobe Experience Manager potrebbero essere influenzati da caratteri non supportati nel nome della cartella.
 
 * **Procedure ottimali per evitare conflitti**: Per evitare potenziali conflitti durante la collaborazione su più risorse, consultate [evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 

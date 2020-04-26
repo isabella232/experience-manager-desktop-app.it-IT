@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 52f70e5b95318d8b3b3930be1233cc51aa997914
 
 ---
 
@@ -75,7 +75,7 @@ L&#39;app desktop AEM fornisce l&#39;accesso virtuale all&#39;intero archivio DA
 
 Per cercare un file da aprire sul desktop:
 
-* Utilizza l’interfaccia utente Web di AEM Assets per individuare la risorsa. Non solo la ricerca in Risorse AEM è potente (facet di ricerca, ricerche salvate), ma offre anche funzionalità aggiuntive per trovare la risorsa giusta. Questi includono filtri aggiuntivi, come la possibilità di cercare risorse in base allo stato (approvazione, scadenza), raccolte, attività, notifiche e condivisione di cartelle/raccolte con altri utenti/gruppi.
+* Utilizza l’interfaccia utente Web di AEM Assets per individuare la risorsa. Non solo la ricerca in Risorse AEM è potente (facet di ricerca, ricerche salvate), ma offre anche funzionalità aggiuntive per trovare la risorsa giusta. Tra questi vi sono altri filtri, come la possibilità di cercare risorse in base allo stato (approvazione, scadenza), raccolte, attività, notifiche e condivisione di cartelle/raccolte con altri utenti/gruppi.
 * Dopo aver individuato la risorsa, utilizza Azioni desktop nell’interfaccia utente di AEM per accedere alla risorsa sul desktop.
 
 ### Aggiornamento delle risorse aperte con l&#39;app desktop AEM {#updating-assets-opened-using-aem-desktop-app}
@@ -105,7 +105,7 @@ Una buona esperienza per gli utenti che utilizzano l’app desktop AEM dipende i
 
 Per informazioni sulle best practice relative alla configurazione di rete di Risorse AEM, consulta il documento Considerazioni [sulla rete di Risorse](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) AEM. Alcuni degli aspetti importanti che consentono di ottimizzare l&#39;esperienza dell&#39;app desktop AEM per gli utenti includono:
 
-* **Usa dispatcher configurato correttamente:** Utilizzate AEM Dispatcher per ulteriore sicurezza e accertatevi che sia configurato per la connessione dell&#39;app desktop [AEM ad AEM dietro un dispatcher](using.md)
+* **Usa dispatcher configurato correttamente:** Utilizzate AEM Dispatcher per ulteriore sicurezza e accertatevi che sia configurato per la connessione dell&#39;app desktop [AEM ad AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Salva larghezza di banda:** È consigliabile disattivare l&#39;anteprima dell&#39;icona nel Finder su Mac - quando si sfoglia il repository montato tramite Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l&#39;utente potrebbe anche diminuire l&#39;esperienza dell&#39;utente sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
 

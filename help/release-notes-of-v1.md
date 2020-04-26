@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f1ea381cc88b5382288b2479d26e976dc7289b88
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
-# Note sulla versione dell’app desktop AEM v1.x{#aem-desktop-app-release-notes}
+# Note sulla versione dell’app desktop AEM v1.x {#aem-desktop-app-release-notes}
 
 Per l&#39;app desktop versione 1.x, quanto segue sono riportati i collegamenti per il download e le informazioni sulla compatibilità di AEM.
 
@@ -120,7 +120,7 @@ Caricamenti di massa: Il caricamento di gerarchie di cartelle grandi tramite Cre
 **Recupero preliminare di risorse**collegate Per migliorare l’esperienza utente quando lavorate con documenti InDesign che includono risorse collegate memorizzate in AEM, l’app desktop tenterà di recuperare preventivamente questi file collegati nella cache locale prima di scaricare e aprire il documento InDesign. In questo modo l&#39;utente potrà avere i file collegati disponibili localmente e non dovrà più aspettare per accedervi in InDesign (nel pannello Collegamenti).
 Il preacquisizione funziona solo se AEM riconosce i collegamenti sul lato server. Una risorsa con collegamenti riconosciuti avrà un elenco di &quot;Riferimenti&quot; elencato nella vista Proprietà della risorsa InDesign.
 
-### Miglioramenti disponibili dall’app desktop AEM 1.8.x{#enhancements-available-since-aem-desktop-app-18x}
+### Miglioramenti disponibili dall’app desktop AEM 1.8.x {#enhancements-available-since-aem-desktop-app-18x}
 
 L’app desktop AEM 1.8.1, che segue rapidamente, ha apportato miglioramenti all’apertura simultanea di più file dall’interfaccia utente di AEM alla versione 1.8 (CQ-4237747, CQ-4238780). I miglioramenti nell&#39;app desktop AEM 1.8 sono:
 
@@ -138,7 +138,7 @@ L’app desktop AEM 1.8.1, che segue rapidamente, ha apportato miglioramenti all
    * Finestra di dialogo Ulteriori informazioni sulla risorsa: talvolta la barra delle azioni non era visibile (CQ-4208540)
    * (Win) È ora possibile sincronizzare il file dopo il ripristino di una versione precedente dall&#39;interfaccia utente di Risorse AEM (CQ-4216411)
 
-### Miglioramenti disponibili dall’app desktop AEM 1.7{#Enhancements-Available-Since-AEM-Desktop-App-17}
+### Miglioramenti disponibili dall’app desktop AEM 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * Stabilità:
    * È stata migliorata la stabilità quando l&#39;app desktop AEM si connette a un server AEM sovraccarico (CQ-4224803)
@@ -158,7 +158,7 @@ L’app desktop AEM 1.8.1, che segue rapidamente, ha apportato miglioramenti all
 >
 >I problemi riscontrati nei carichi beta dell’app desktop AEM 1.7 (che non erano presenti nella versione 1.6) non sono riportati nelle note sulla versione.
 
-### Miglioramenti disponibili dall’app desktop AEM 1.6{#Enhancements-Available-Since-AEM-Desktop-App-16}
+### Miglioramenti disponibili dall’app desktop AEM 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
 * Documentazione: Nuove [procedure ottimali per la documentazione dell&#39;app](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) v1.x.
 * È stato migliorato il processo di accesso ad AEM:
@@ -182,7 +182,7 @@ L’app desktop AEM 1.8.1, che segue rapidamente, ha apportato miglioramenti all
    * Utilizzo CPU elevato (CQ-4218070).
    * Errore di trascinamento dei file durante il caricamento in AEM (CQ-4217006).
 
-### Miglioramenti disponibili dall’app desktop AEM 1.5{#Enhancements-Available-Since-AEM-Desktop-App-15}
+### Miglioramenti disponibili dall’app desktop AEM 1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **Versione 1.5.1.5 per Mac OS X:** La versione 1.5.1.5 offre i seguenti vantaggi:
 
@@ -223,7 +223,7 @@ Entrambi questi casi sono previsti e sono effetti collaterali dell&#39;architett
    * Vari miglioramenti nella stabilità (CQ-4207539, CQ-4200378)
    * Gestione migliore dell&#39;URL di Risorse AEM nelle preferenze (CQ-97388)
 
-### Miglioramenti disponibili dall’app desktop AEM 1.4{#Enhancements-Available-Since-AEM-Desktop-App-14}
+### Miglioramenti disponibili dall’app desktop AEM 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Caricamento semplificato di cartelle gerarchiche tramite la nuova azione Crea > Carica cartella nell’interfaccia utente touch
    * Azione avvia un’operazione di caricamento delle cartelle eseguita dall’app desktop
@@ -235,7 +235,7 @@ Entrambi questi casi sono previsti e sono effetti collaterali dell&#39;architett
 * Maggiore compatibilità con le ultime versioni del sistema operativo
 * Correzioni riportate dal cliente
 
-### Miglioramenti disponibili dall’app desktop AEM 1.3{#Enhancements-Available-Since-AEM-Desktop-App-13}
+### Miglioramenti disponibili dall’app desktop AEM 1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * Maggiore efficienza. Gli utenti passano meno tempo in attesa del completamento delle operazioni di rete.
 * Integrazione del Finder migliorata, che offre maggiore stabilità e accesso alle funzionalità, come le miniature.

@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 
 ---
 
@@ -118,11 +118,10 @@ Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unit�
    >
    >L&#39;app crea automaticamente una sottodirectory *&lt;Encoded AEM Endpoint>* ; questo comportamento non è configurabile.
 
-## Altro materiale di riferimento {#additional-resources}
-
+>[!MORELIKETHIS]
 * [Introduzione all’app desktop AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Usare l’app desktop AEM](use-app-v1.md)
-
 * [Informazioni sul check-in/check-out con l’app desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Utilizzo dell&#39;app desktop con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Risoluzione dei problemi dell&#39;app desktop AEM](troubleshoot-app-v1.md)
+

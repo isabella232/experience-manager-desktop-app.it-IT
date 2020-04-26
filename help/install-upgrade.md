@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -55,7 +55,7 @@ Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstall
 1. Scaricate il programma di installazione più recente dalla pagina delle note sulla [versione](release-notes.md) .
 1. Tenete a portata di mano l&#39;URL e le credenziali della distribuzione Experience Manager.
 1. Se state effettuando l&#39;aggiornamento da un&#39;altra versione dell&#39;app, consultate [Aggiornare l&#39;app](#upgrade-from-previous-version)desktop.
-1. Ignora questo passaggio se utilizzi Experience Manager come servizio Cloud, Experience Manager 6.4.4 o versione successiva oppure Experience Manager 6.5.0 o versione successiva. Assicurati che la configurazione di Experience Manager soddisfi i requisiti di compatibilità indicati nelle note sulla [versione](release-notes.md). Se necessario, scaricate il pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilità applicabile e installatelo utilizzando Experience Manager Package Manager come amministratore Experience Manager. Per installare un pacchetto, consultate [Come utilizzare i pacchetti](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+1. Ignora questo passaggio se utilizzi Experience Manager come servizio Cloud, Experience Manager 6.4.4 o versione successiva oppure Experience Manager 6.5.0 o versione successiva. Assicurati che la configurazione di Experience Manager soddisfi i requisiti di compatibilità indicati nelle note sulla [versione](release-notes.md). Se necessario, scaricate il pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) compatibilità applicabile e installatelo utilizzando Experience Manager Package Manager come amministratore Experience Manager. Per installare un pacchetto, consultate [Come utilizzare i pacchetti](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 1. Eseguite il programma di installazione binario e seguite le istruzioni visualizzate per eseguire l&#39;installazione.
 1. In Windows, il programma di installazione potrebbe richiedere l&#39;installazione `Visual Studio C++ Redistributable 2015`. Seguite le istruzioni visualizzate per installarlo. Se l’installazione non riesce, installatela manualmente. Scaricate il programma di installazione da [qui](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e installate sia `vc_redist.x64.exe` che `vc_redist.x86.exe` i file. Eseguite nuovamente il programma di installazione dell&#39;app desktop AEM.
 1. Riavviate il computer come richiesto. Avviate e configurate l&#39;app desktop.
@@ -71,7 +71,7 @@ Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstall
 
    ![Al momento dell&#39;accesso, l&#39;app visualizza i](assets/firstview_da2.png "contenuti DAM. Al momento dell&#39;accesso, l&#39;app visualizza i contenuti DAM")
 
-1. (Experience Manager 6.5.1 o versione successiva) Se utilizzate l&#39;app desktop con Experience Manager 6.5.1 o versione successiva, aggiornate il connettore S3 o Azure alla versione 1.10.4 o successiva. Vedere Connettore [di](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AzureDataStore) Azure o connettore [](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore)S3.
+1. (Experience Manager 6.5.1 o versione successiva) Se utilizzate l&#39;app desktop con Experience Manager 6.5.1 o versione successiva, aggiornate il connettore S3 o Azure alla versione 1.10.4 o successiva. Vedere Connettore [di](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) Azure o connettore [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore)S3.
 
    Se sei un cliente Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe.
 

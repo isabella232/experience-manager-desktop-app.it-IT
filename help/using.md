@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -155,7 +155,7 @@ Per **[!UICONTROL Toggle Check-out]** bloccare la risorsa e evitare conflitti co
 * Hai iniziato a modificare una risorsa senza prima estrarla (ad esempio, aprendola).
 * Iniziate presto a modificare una risorsa e non desiderate che altri utenti la modifichino.
 
-Dopo aver apportato le modifiche, l&#39;app visualizza lo **[!UICONTROL Edited Locally]** stato delle risorse modificate. Tutte le modifiche salvate nelle risorse sono solo locali finché non caricate le modifiche in AEM. Per caricare una o più risorse una per una, fate clic **[!UICONTROL Upload Changes]** sulle relative opzioni. Crea una versione della risorsa in AEM. Utilizzando l’interfaccia Web di Risorse AEM, puoi vedere la cronologia delle risorse nella vista [](https://helpx.adobe.com/experience-manager/6-5/assets/using/activity-stream.html)Timeline.
+Dopo aver apportato le modifiche, l&#39;app visualizza lo **[!UICONTROL Edited Locally]** stato delle risorse modificate. Tutte le modifiche salvate nelle risorse sono solo locali finché non caricate le modifiche in AEM. Per caricare una o più risorse una per una, fate clic **[!UICONTROL Upload Changes]** sulle relative opzioni. Crea una versione della risorsa in AEM. Utilizzando l’interfaccia Web di Risorse AEM, puoi vedere la cronologia delle risorse nella vista [](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)Timeline.
 
 ![Opzione delle modifiche di caricamento nell&#39;opzione delle modifiche](assets/upload_changes_single1_da2.png "appCaricare nell&#39;app")
 
@@ -173,7 +173,7 @@ Se necessario, attivate o disattivate il check-out. La risorsa aggiornata viene 
 
 ## Caricare e aggiungere nuove risorse ad AEM {#upload-and-add-new-assets-to-aem}
 
-Gli utenti possono aggiungere nuove risorse all&#39;archivio DAM. Ad esempio, puoi essere un fotografo di agenzia o un appaltatore che desidera aggiungere un gran numero di foto da un servizio fotografico all’archivio di AEM. Per aggiungere nuovo contenuto ad AEM, fate clic sull’icona ![](assets/do-not-localize/upload_to_cloud_da2.png) Carica nel cloud nella barra superiore dell’app. Individuate i file di risorse nel file system locale e fate clic su **[!UICONTROL Select]**. L&#39;app avvia il caricamento della risorsa e visualizza una barra di avanzamento in basso se il caricamento della risorsa richiede più tempo. Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Risorse](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)AEM.
+Gli utenti possono aggiungere nuove risorse all&#39;archivio DAM. Ad esempio, puoi essere un fotografo di agenzia o un appaltatore che desidera aggiungere un gran numero di foto da un servizio fotografico all’archivio di AEM. Per aggiungere nuovo contenuto ad AEM, fate clic sull’icona ![](assets/do-not-localize/upload_to_cloud_da2.png) Carica nel cloud nella barra superiore dell’app. Individuate i file di risorse nel file system locale e fate clic su **[!UICONTROL Select]**. L&#39;app avvia il caricamento della risorsa e visualizza una barra di avanzamento in basso se il caricamento della risorsa richiede più tempo. Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Risorse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)AEM.
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -228,7 +228,7 @@ Dopo il caricamento, se le modifiche previste non vengono riportate nell&#39;app
 
 >[!NOTE]
 >
->Non utilizzate la funzionalità di caricamento per migrare le risorse tra due distribuzioni AEM. Consultate la guida [alla](https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-migration-guide.html)migrazione.
+>Non utilizzate la funzionalità di caricamento per migrare le risorse tra due distribuzioni AEM. Consultate la guida [alla](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html)migrazione.
 
 ### Elenco delle attività trasferite {#list-of-transferred-assets}
 

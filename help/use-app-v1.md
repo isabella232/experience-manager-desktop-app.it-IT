@@ -9,18 +9,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
 # Usa app desktop AEM v1.x {#use-aem-desktop-app-v1x}
 
-Utilizzando l’app, le risorse in AEM sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente; le modifiche vengono salvate nuovamente in AEM con una nuova versione creata nell’archivio.
+Utilizzando l’app, le risorse all’interno di AEM sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente; le modifiche vengono salvate nuovamente in AEM con una nuova versione creata nell’archivio.
 
 Questa integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse a livello centrale in Risorse AEM e di accedervi in Creative Cloud e altre applicazioni, semplificando al contempo il rispetto dei vari standard, compreso il branding.
 
-Le attività chiave che eseguite con l'app desktop AEM v1 includono:
+Le attività chiave che eseguite con l&#39;app desktop AEM v1 includono:
 
 * [Connessione a un server AEM](#installandconnect)
 
@@ -29,12 +29,12 @@ Le attività chiave che eseguite con l'app desktop AEM v1 includono:
 
 * [Caricare le risorse e le cartelle in blocco](#bulkupload)
 
-Per le varie operazioni e operazioni non consigliate, consultate le procedure [ottimali per l'utilizzo dell'app](best-practices-for-v1.md). Se si verificano dei problemi con l'app, consultate come [risolvere i problemi con AEM Desktop](troubleshoot-app-v1.md).
+Per le varie operazioni e operazioni non consigliate, consultate le procedure [ottimali per l&#39;utilizzo dell&#39;app](best-practices-for-v1.md). Se si verificano dei problemi con l&#39;app, consultate come [risolvere i problemi con AEM Desktop](troubleshoot-app-v1.md).
 
 >[!NOTE]
 >L’app desktop AEM è stata introdotta nella versione AEM 6.1 ed è stata denominata AEM Assets Companion App.
 
-## Punti di contatto dell'app AEM Desktop nel flusso di lavoro creativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## Punti di contatto dell&#39;app AEM Desktop nel flusso di lavoro creativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 L’app desktop AEM, insieme a Risorse AEM, si integra nel flusso di lavoro creativo e offre i seguenti punti di contatto.
 
@@ -42,33 +42,33 @@ L’app desktop AEM, insieme a Risorse AEM, si integra nel flusso di lavoro crea
 
 L’app AEM Desktop permette di toccare i punti di contatto del flusso di lavoro creativo
 
-## Installare e collegare l'app desktop AEM al server AEM {#installandconnect}
+## Installare e collegare l&#39;app desktop AEM al server AEM {#installandconnect}
 
 Prima di iniziare a creare o modificare le risorse creative, collega l’applicazione desktop al server Risorse AEM per scaricare e caricare le risorse nell’archivio. Effettuare le seguenti operazioni:
 
-1. [Installate l'app](#installapp).
+1. [Installate l&#39;app](#installapp).
 1. [Impostare le preferenze](#inapppref) e i dettagli di connessione.
 1. [Connettiti a un server](#connect) AEM e monta il repository delle risorse come unità locale.
 1. [Abilitare le azioni](#desktopactions) desktop sul server AEM.
 
-L'app desktop AEM utilizza una connessione HTTPS per connettersi al server AEM e trasferire in modo sicuro e affidabile le risorse.
+L&#39;app desktop AEM utilizza una connessione HTTPS per connettersi al server AEM e trasferire in modo sicuro e affidabile le risorse.
 
 >[!NOTE]
 >Per tutta o parte dei passaggi di installazione e configurazione, potrebbe essere necessario aiuto dall’amministratore di sistema o dall’amministratore di sistema di AEM.
 
-### Installare l'applicazione {#installapp}
+### Installare l&#39;applicazione {#installapp}
 
-Per utilizzare l'app desktop AEM, accertatevi che la versione del server AEM sia supportata dall'app desktop AEM. Scaricate il file di installazione appropriato (binario) per il sistema operativo in uso (Mac o Windows) e installate l'app.
+Per utilizzare l&#39;app desktop AEM, accertatevi che la versione del server AEM sia supportata dall&#39;app desktop AEM. Scaricate il file di installazione appropriato (binario) per il sistema operativo in uso (Mac o Windows) e installate l&#39;app.
 
-La configurazione dettagliata può essere necessaria a seconda delle preferenze di rete e di sistema. Per ulteriori informazioni, consultate [Installare e configurare l'app](install-configure-app-v1.md) desktop AEM.
+La configurazione dettagliata può essere necessaria a seconda delle preferenze di rete e di sistema. Per ulteriori informazioni, consultate [Installare e configurare l&#39;app](install-configure-app-v1.md) desktop AEM.
 
-1. Andate alla pagina [di download dell'app desktop](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html) AEM e scaricate il binario appropriato per il sistema operativo in uso.
-1. Avviate il file di installazione scaricato e seguite le istruzioni visualizzate per installare l'app.
+1. Andate alla pagina [di download dell&#39;app desktop](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html) AEM e scaricate il binario appropriato per il sistema operativo in uso.
+1. Avviate il file di installazione scaricato e seguite le istruzioni visualizzate per installare l&#39;app.
 
    >[!NOTE]
-   >È possibile installare e attivare una sola istanza dell'app desktop AEM alla volta.
+   >È possibile installare e attivare una sola istanza dell&#39;app desktop AEM alla volta.
 
-### Informazioni sulle opzioni e preferenze in-app {#inapppref}
+### Comprendere le opzioni e preferenze in-app {#inapppref}
 
 L’applicazione consente alle impostazioni di connettersi e disconnettersi dai server AEM, visualizzare lo stato dei caricamenti, gestire la cache locale e così via. Le impostazioni predefinite funzionano per un utente tipico dell’applicazione. Potete modificare le impostazioni per ottenere di più dall’applicazione e dall’integrazione con il server AEM. Le varie impostazioni sono descritte di seguito.
 
@@ -76,23 +76,23 @@ L’applicazione consente alle impostazioni di connettersi e disconnettersi dai 
 
 **Visualizza stato** della risorsa Quando vengono caricate risorse modificate o vengono aggiunte nuove risorse all’archivio di Risorse AEM, l’applicazione carica le risorse in background. Il caricamento in background consente di effettuare operazioni senza dover attendere il completamento del caricamento, in particolare per le risorse di grandi dimensioni. È possibile salvare le modifiche localmente e dimenticarle. L’invio di queste risorse al server da parte dell’applicazione richiede del tempo, a seconda della larghezza di banda disponibile. Potete controllare lo stato del caricamento, insieme ad alcune informazioni di base.
 
-**Opzioni** Fare clic/toccare Opzioni dalla barra delle applicazioni di AEM Desktop per accedere alle impostazioni per avviare l'applicazione all'avvio del sistema; per connettersi al server AEM all’avvio dell’app; e per cambiare la lettera dell’unità locale in cui Risorse AEM è disponibile dopo il montaggio.
+**Opzioni** Fare clic/toccare Opzioni dalla barra delle applicazioni di AEM Desktop per accedere alle impostazioni per avviare l&#39;applicazione all&#39;avvio del sistema; per connettersi al server AEM all’avvio dell’app; e per cambiare la lettera dell’unità locale in cui Risorse AEM è disponibile dopo il montaggio.
 
-**Avanzate &gt; Gestione cache** È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets sono memorizzati nella cache locale per un’esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Quando cancellate la cache, vengono mantenute le modifiche non salvate. Eventuali risorse non archiviate nel server AEM vengono mantenute e non eliminate.
+**Avanzate > Gestione cache** È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets sono memorizzati nella cache locale per un’esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Quando si cancella la cache, vengono mantenute le modifiche non salvate. Eventuali risorse non archiviate nel server AEM vengono mantenute e non eliminate.
 
 ### Connessione a un server AEM {#connect}
 
-L'app supporta la configurazione proxy su Mac e Windows. La configurazione viene letta all'avvio dell'app. Se modificate le impostazioni proxy, riavviate l'app per rendere effettive le modifiche.
+L&#39;app supporta la configurazione proxy su Mac e Windows. La configurazione viene letta all&#39;avvio dell&#39;app. Se modificate le impostazioni proxy, riavviate l&#39;app per rendere effettive le modifiche.
 
 >[!NOTE]
 >
->Se modificate le impostazioni proxy, riavviate l'app per rendere effettive le modifiche. In caso contrario, l'app continua a utilizzare il server proxy configurato in precedenza.
+>Se modificate le impostazioni proxy, riavviate l&#39;app per rendere effettive le modifiche. In caso contrario, l&#39;app continua a utilizzare il server proxy configurato in precedenza.
 
-1. Avviate l'app AEM Desktop. Per mappare l’istanza di AEM con l’app, specificate il server AEM nel formato `https://[aem-server-url]:[port]`.
+1. Avviate l&#39;app AEM Desktop. Per mappare l’istanza di AEM con l’app, specificate il server AEM nel formato `https://[aem-server-url]:[port]`.
 
-   ![Effettuare l'autenticazione su Mac e fornire l'URL del server AEM](assets/aem_desktop_app_server_url.png)
+   ![Effettuare l&#39;autenticazione su Mac e fornire l&#39;URL del server AEM](assets/aem_desktop_app_server_url.png)
 
-1. Nella schermata di login, specificate il nome utente e la password dell’istanza. Per specificare un'istanza AEM alternativa, selezionate l' **[!UICONTROL Alternate Login URL]** opzione.
+1. Nella schermata di login, specificate il nome utente e la password dell’istanza. Per specificare un&#39;istanza AEM alternativa, selezionate l&#39; **[!UICONTROL Alternate Login URL]** opzione.
 
    ![Fornire le credenziali del server AEM nella schermata di accesso su AEM Desktop](assets/chlimage_1-2.png)
 
@@ -111,7 +111,7 @@ Dall’interfaccia utente delle risorse in un browser, puoi esplorare i percorsi
 ## Accesso e apertura di risorse sul desktop {#openondesktop}
 
 >[!NOTE]
->In Windows, l'impostazione [](https://support.microsoft.com/en-us/kb/2668751) predefinita di Windows 7 impedisce all'app desktop AEM di gestire risorse superiori a 50 MB.
+>In Windows, l&#39;impostazione [](https://support.microsoft.com/en-us/kb/2668751) predefinita di Windows 7 impedisce all&#39;app desktop AEM di gestire risorse superiori a 50 MB.
 
 ### Rivela la posizione delle risorse mappate dall’interfaccia Web di AEM {#reveal-the-location-of-mapped-assets-from-aem-web-interface}
 
@@ -137,29 +137,29 @@ Dopo aver mappato l’archivio di Risorse AEM sull’unità locale, potete abili
 
 In Mac, selezionate Apri dal menu di scelta rapida per aprire una risorsa tramite AEM Desktop.
 
-Per i file Adobe InDesign (INDD), selezionate **[!UICONTROL Open]** dal menu di scelta rapida. Quando fate clic su questa opzione, l'app scarica le risorse collegate nel file system locale e quindi apre il file INDD in Adobe InDesign. Questo metodo garantisce che le risorse necessarie siano disponibili localmente quando si modifica il file INDD.
+Per i file Adobe InDesign (INDD), selezionate **[!UICONTROL Open]** dal menu di scelta rapida. Quando fate clic su questa opzione, l&#39;app scarica le risorse collegate nel file system locale e quindi apre il file INDD in Adobe InDesign. Questo metodo garantisce che le risorse necessarie siano disponibili localmente quando si modifica il file INDD.
 
 In Windows, selezionate Apri sul Web dal menu di scelta rapida per aprire la risorsa. Dalla finestra Stato risorsa, toccate o fate clic sull’icona ![](assets/aemassets_icon_openondesktop.png) Apri sul desktop per aprire la risorsa.
 
-![Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l'app AEM Desktop](assets/aem_desktopapp_mac_context_menu.png)
+![Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app AEM Desktop](assets/aem_desktopapp_mac_context_menu.png)
 
-Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l'app AEM Desktop
+Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app AEM Desktop
 
 ### Comprendere gli stati delle risorse {#understand-the-asset-statuses}
 
-| ![Icona app predefinita di Windows](assets/win_default.png) | L'app è connessa al server e tutte le risorse sono sincronizzate. |
+| ![Icona app predefinita di Windows](assets/win_default.png) | L&#39;app è connessa al server e tutte le risorse sono sincronizzate. |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Icona disattivata per Windows](assets/win_disabled.png) | L'app è avviata ma non è connessa al server. Alcune risorse potrebbero essere in attesa di sincronizzazione. |
-| ![Icona di sincronizzazione file Windows](assets/win_sync.png) | Le risorse vengono sincronizzate. I file vengono caricati o scaricati. Potete visualizzare gli stati esatti e sospendere i trasferimenti dalla finestra Stato risorsa. |
-| ![Icona di riconnessione Windows](assets/win_refresh.png) | L'app sta tentando di riconnettersi. Potenzialmente i problemi di rete stanno causando la sua disconnessione. |
+| ![Icona disattivata per Windows](assets/win_disabled.png) | L&#39;app è avviata ma non è connessa al server. Alcune risorse potrebbero essere in attesa di sincronizzazione. |
+| ![Icona di sincronizzazione file Windows](assets/win_sync.png) | Le risorse vengono sincronizzate. I file vengono caricati o scaricati. Potete visualizzare gli stati esatti e mettere in pausa i trasferimenti dalla finestra Stato risorsa. |
+| ![Icona di riconnessione Windows](assets/win_refresh.png) | L&#39;app sta tentando di riconnettersi. Potenzialmente i problemi di rete stanno causando la sua disconnessione. |
 
-## Risorse {#workonassets}
+## Operazioni con le risorse {#workonassets}
 
 ### Estrarre risorse dall’interfaccia Web di AEM {#check-out-assets-from-the-aem-web-interface}
 
-Risorse AEM consente di estrarre le risorse per la modifica e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa e impedisce ad altri utenti di eseguire una di queste operazioni. Per poter estrarre/archiviare le risorse, è necessario disporre dell'accesso in scrittura.
+Risorse AEM consente di estrarre le risorse per la modifica e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa e impedisce ad altri utenti di eseguire una di queste operazioni. Per poter estrarre/archiviare le risorse, è necessario disporre dell&#39;accesso in scrittura.
 
-Esistono due modi per estrarre le risorse dall’interfaccia Web di AEM. Per informazioni dettagliate sul primo metodo, consulta [archiviare ed estrarre i file dall’interfaccia](https://helpx.adobe.com/in/experience-manager/6-4/assets/using/check-out-and-submit-assets.html)di Assets. Seguite questi passaggi per i secondi metodi per estrarre e aprire la risorsa quando è installata l'app AEM Desktop.
+Esistono due modi per estrarre le risorse dall’interfaccia Web di AEM. Per informazioni dettagliate sul primo metodo, consulta [archiviare ed estrarre i file dall’interfaccia](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)di Assets. Seguite questi passaggi per i secondi metodi per estrarre e aprire la risorsa quando è installata l&#39;app AEM Desktop.
 
 1. Apri l’interfaccia di Risorse AEM e passa il puntatore su una cartella o una risorsa per visualizzare le azioni desktop come azioni rapide nella vista a schede.
 
@@ -183,13 +183,13 @@ Esistono due modi per estrarre le risorse dall’interfaccia Web di AEM. Per inf
 
 ### Estrarre risorse su Mac {#check-out-assets-on-mac}
 
-L'app consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui state lavorando.
+L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui state lavorando.
 
-1. Dal menu di scelta rapida Mac, selezionate Apri cartella Risorse AEM per aprire il Finder.
+1. Dal menu di scelta rapida di Mac, selezionate Apri cartella Risorse AEM per aprire il Finder.
 
-   ![Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l'app AEM Desktop](assets/aem_desktopapp_mac_context_menu.png)
+   ![Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app AEM Desktop](assets/aem_desktopapp_mac_context_menu.png)
 
-   Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l'app AEM Desktop
+   Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app AEM Desktop
 
 1. Andate alla risorsa da estrarre.
 
@@ -204,7 +204,7 @@ L'app consente di estrarre i file di risorse per impedire ad altri utenti di mod
 
 ### Estrarre risorse in Windows {#check-out-assets-on-windows}
 
-L'app consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui state lavorando.
+L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui state lavorando.
 
 1. Dal menu di scelta rapida, selezionate Esplora risorse per aprire Esplora risorse.
 1. In Esplora risorse, andate alla posizione della risorsa da estrarre.
@@ -219,17 +219,17 @@ L'app consente di estrarre i file di risorse per impedire ad altri utenti di mod
 1. Rivedete la risorsa in Esplora risorse. L’icona a forma di lucchetto sull’icona ![a forma di](assets/aemassets_icon_lockcheckout.png) risorsa indica che la risorsa è stata estratta.
 
    >[!NOTE]
-   >L'icona Blocca potrebbe essere visualizzata dopo alcuni minuti di ritardo. L'app desktop AEM memorizza nella cache le risorse per un accesso rapido, pertanto l'aggiornamento dello stato bloccato potrebbe richiedere alcuni minuti.
+   >L&#39;icona Blocca potrebbe essere visualizzata dopo alcuni minuti di ritardo. L&#39;app desktop AEM memorizza nella cache le risorse per un accesso rapido, pertanto l&#39;aggiornamento dello stato bloccato potrebbe richiedere alcuni istanti.
 
 1. Per archiviare la risorsa in modo che sia disponibile per gli altri utenti, toccate o fate clic sull’icona di check-in nella finestra di dialogo Informazioni **** risorsa.
 
-### Archiviare una risorsa utilizzando il Finder o Esplora risorse e l'interfaccia Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
+### Archiviare una risorsa utilizzando il Finder o Esplora risorse e l&#39;interfaccia Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
 Dopo aver modificato le risorse, salvatele nell’applicazione desktop. Dal menu di scelta rapida, selezionate Ulteriori informazioni sulle risorse e toccate o fate clic sul check-in.
 
 Le risorse vengono caricate nel server AEM. Facoltativamente, potete controllare lo stato del caricamento selezionando Visualizza stato risorsa dall’icona del vassoio.
 
-![Finestra di stato del trasferimento e del caricamento di file app AEM Desktop](assets/aem_desktopapp_upload_status.png)
+![Finestra di stato del trasferimento e del caricamento di file dell&#39;app AEM Desktop](assets/aem_desktopapp_upload_status.png)
 
 In alternativa, puoi archiviare una risorsa dall’interfaccia Web di AEM. Tocca o fai clic sulle risorse estratte o selezionarle. Dalla barra degli strumenti, tocca o fai clic sull’icona di ![check-in](assets/aemassets_icon_checkin.png).
 
@@ -248,15 +248,15 @@ Con AEM Desktop potete caricare un’intera cartella contenente risorse dalla di
    >[!NOTE]
    >Per sospendere o annullare manualmente il caricamento, toccate o fate clic sull’icona appropriata.
 
-1. Dopo il caricamento della cartella, chiudi la finestra di dialogo e passa all’interfaccia utente Risorse. La cartella caricata viene visualizzata nell’interfaccia Web.
+1. Dopo il caricamento della cartella, chiudi la finestra di dialogo e passa all’interfaccia utente delle risorse. La cartella caricata viene visualizzata nell’interfaccia Web.
 
-È *sconsigliato* copiare e incollare o trascinare un numero maggiore di file/cartelle nidificate dal disco locale in Finder o Esplora risorse nell'area di condivisione di rete mappata dall'app desktop AEM. È molto meno affidabile della funzionalità Carica cartella descritta in precedenza.
+È *sconsigliato* copiare e incollare o trascinare un numero maggiore di file/cartelle nidificate dal disco locale in Finder o Esplora risorse nell&#39;area di condivisione di rete mappata dall&#39;app desktop AEM. È molto meno affidabile della funzionalità Carica cartella descritta in precedenza.
 
-Un'altra alternativa, se preferite lavorare sul desktop, consiste nel selezionare i file/le cartelle da caricare in AEM nel Finder o in Esplora risorse, copiarli negli Appunti del sistema, quindi passare alla cartella di destinazione nell'area di condivisione della rete e, dal menu di scelta rapida dell'app desktop AEM, selezionare "Incolla risorse". In questo modo, l’app desktop AEM avvia il caricamento delle risorse incollate in modo simile alla cartella di caricamento descritta in precedenza.
+Un&#39;altra alternativa, se preferite lavorare sul desktop, consiste nel selezionare i file/le cartelle da caricare in AEM nel Finder o in Esplora risorse, copiarli negli Appunti del sistema, quindi passare alla cartella di destinazione nell&#39;area di condivisione della rete e, dal menu di scelta rapida dell&#39;app desktop AEM, selezionare &quot;Incolla risorse&quot;. In questo modo, l’app desktop AEM avvia il caricamento delle risorse incollate in modo simile alla cartella di caricamento descritta in precedenza.
 
 >[!MORELIKETHIS]
 >
->* [Introduzione all’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
->* [Informazioni sul check-in/check-out con l’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+>* [Introduzione all’app desktop AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
+>* [Informazioni sul check-in/check-out con l’app desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 >* [Risoluzione dei problemi relativi all’applicazione desktop AEM](troubleshoot-app-v1.md)
 

@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -24,7 +24,7 @@ Per utilizzare l&#39;app desktop AEM,
 
 * Verificate che la versione del server AEM sia supportata dall&#39;app desktop AEM. Vedere la matrice [di](release-notes-of-v1.md#compatibilitymatrix)compatibilità.
 * Scaricate e installate l&#39;applicazione.
-* Verificare la connessione utilizzando alcune risorse. Consultate [Accesso e apertura delle risorse sul desktop](use-app-v1.md#openondesktop).
+* Verificare la connessione utilizzando alcune risorse. Consultate [Accedere e aprire le risorse sul desktop](use-app-v1.md#openondesktop).
 
 ## Requisiti di sistema, prerequisiti e collegamenti per il download {#system-requirements-prerequisites-and-download-links}
 
@@ -40,7 +40,7 @@ Per informazioni dettagliate, consultate [Installare e collegare l&#39;app deskt
 
 ## Supporto proxy {#proxy-support}
 
-L&#39;app desktop AEM utilizza il proxy predefinito del sistema per connettersi a Internet mediante HTTPS. L&#39;app può connettersi solo utilizzando un proxy di rete che non richiede un&#39;autenticazione aggiuntiva.
+L&#39;app desktop AEM utilizza il proxy predefinito del sistema per connettersi a Internet mediante il protocollo HTTPS. L&#39;app può connettersi solo utilizzando un proxy di rete che non richiede un&#39;autenticazione aggiuntiva.
 
 Se configurate o modificate le impostazioni del server proxy per Windows (Opzioni Internet > Impostazioni LAN), riavviate l&#39;app desktop AEM per rendere effettive le modifiche.
 
@@ -75,9 +75,9 @@ Per ulteriori informazioni sulla configurazione del dispatcher per il passaggio 
 
 ## Personalizzare la finestra di dialogo Informazioni risorsa {#customize-the-asset-info-dialog}
 
-Per personalizzare la finestra di dialogo Informazioni risorsa, sovrapponete uno o entrambi i componenti:
+Per personalizzare la finestra di dialogo Informazioni risorsa, sovrapponete uno o entrambi i seguenti componenti:
 
-* La pagina dell&#39;interfaccia utente Granite in `/libs/dam/gui/content/assets/moreinfo`
+* La pagina dell&#39;interfaccia utente Granite all&#39;indirizzo `/libs/dam/gui/content/assets/moreinfo`
 * Il componente HTL `/css/javascript` in `/libs/dam/gui/components/admin/moreinfo`
 
 Il componente sovrapposto dipende dalla natura della personalizzazione. Per modificare i componenti visualizzati come parte della finestra di dialogo Informazioni risorsa, sovrapponete la pagina dell’interfaccia utente Granite. Per modificare il contenuto HTML/CSS/Javascript della finestra di dialogo, sovrapponete il componente HTL.
@@ -90,11 +90,11 @@ In Mac OS X, è presente una directory simile `~/Library/Group Containers/group.
 
 ### Opzione in-app per gestire la cache {#in-app-option-to-manage-cache}
 
-È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets sono memorizzati nella cache locale per un’esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Per impostare le opzioni desiderate, fate clic sull&#39;icona dell&#39;applicazione e fate clic su **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**. ****
+È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets sono memorizzati nella cache locale per un’esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Per impostare le opzioni desiderate, fate clic sull&#39;icona dell&#39;applicazione e fate clic su **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
->Quando cancellate la cache, vengono mantenute le modifiche non salvate. Eventuali risorse non archiviate nel server AEM vengono mantenute e non eliminate.
+>Quando si cancella la cache, vengono mantenute le modifiche non salvate. Eventuali risorse non archiviate nel server AEM vengono mantenute e non eliminate.
 
 ### Modifica della posizione della cache in Windows {#change-location-of-cache-on-windows}
 
@@ -110,7 +110,7 @@ Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unit�
 1. Andate alla directory di installazione dell&#39;app. Il percorso predefinito in Windows è `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop`.
 1. Modificate il file Adobe Experience Manager Desktop.exe.config con un editor di testo.
 
-   Per salvare le modifiche apportate al file sono necessari privilegi di amministratore.
+   Per salvare le modifiche apportate a questo file sono necessari privilegi di amministratore.
 
 1. Cercare la stringa &quot;ProxyCacheRoot&quot;. Il valore è impostato sulla posizione della cache &quot;%LocalAppData%\Adobe\AssetsCompanion\Cache&quot;. È sufficiente modificare questo valore in qualsiasi percorso valido.
 
@@ -120,9 +120,9 @@ Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unit�
 
 ## Altro materiale di riferimento {#additional-resources}
 
-* [Introduzione all’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [Introduzione all’app desktop AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 * [Usare l’app desktop AEM](use-app-v1.md)
 
-* [Informazioni sul check-in/check-out con l’app desktop AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
-* [Utilizzo dell&#39;app desktop con AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
+* [Informazioni sul check-in/check-out con l’app desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+* [Utilizzo dell&#39;app desktop con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 * [Risoluzione dei problemi dell&#39;app desktop AEM](troubleshoot-app-v1.md)

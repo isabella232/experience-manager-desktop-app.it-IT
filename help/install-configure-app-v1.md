@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -38,14 +38,6 @@ Per informazioni dettagliate, consultate [Installare e collegare l&#39;app deskt
 >
 >È possibile installare e attivare una sola istanza dell&#39;app desktop AEM alla volta.
 
-## Supporto proxy {#proxy-support}
-
-L&#39;app desktop AEM utilizza il proxy predefinito del sistema per connettersi a Internet mediante il protocollo HTTPS. L&#39;app può connettersi solo utilizzando un proxy di rete che non richiede un&#39;autenticazione aggiuntiva.
-
-Se configurate o modificate le impostazioni del server proxy per Windows (Opzioni Internet > Impostazioni LAN), riavviate l&#39;app desktop AEM per rendere effettive le modifiche.
-
-Se il proxy richiede l’autenticazione, il team IT può inserire l’URL di Risorse AEM nelle impostazioni del server proxy per consentire il passaggio del traffico dell’applicazione.
-
 ## Gestione dei file {#file-handling}
 
 Quando si modifica un file da un percorso di condivisione di rete montato dall&#39;app desktop, i file vengono salvati in tale percorso in due fasi. Nella prima fase, un file viene salvato localmente. Un utente può salvare il file e continuare a lavorare sul file, senza attendere il completamento del trasferimento.
@@ -69,9 +61,21 @@ I metodi di copia e spostamento nell’API Assets richiedono il passaggio ad AEM
 * Profondità X
 * Sovrascrivi X
 
-AEM Desktop si connette ad AEM utilizzando un URL che include la porta predefinita. Pertanto, l&#39; `virtualhosts` impostazione nella configurazione del dispatcher deve includere il numero di porta predefinito. Per ulteriori informazioni sulla `virtualhosts` configurazione, consultate [Identificazione degli host](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuali.
+Il desktop AEM si connette ad AEM utilizzando un URL che include la porta predefinita. Pertanto, l&#39; `virtualhosts` impostazione nella configurazione del dispatcher deve includere il numero di porta predefinito. Per ulteriori informazioni sulla `virtualhosts` configurazione, vedi [identificare gli host](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuali.
 
 Per ulteriori informazioni sulla configurazione del dispatcher per il passaggio tra queste intestazioni aggiuntive, vedere [Specifica delle intestazioni](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
+
+### Supporto proxy {#proxy-support}
+
+L&#39;app desktop AEM utilizza il proxy predefinito del sistema per connettersi a Internet mediante il protocollo HTTPS. L&#39;app può connettersi solo utilizzando un proxy di rete che non richiede un&#39;autenticazione aggiuntiva.
+
+Se configurate o modificate le impostazioni del server proxy per Windows (Opzioni Internet > Impostazioni LAN), riavviate l&#39;app desktop AEM per rendere effettive le modifiche.
+
+>[!NOTE]
+>
+>La configurazione del proxy viene applicata solo quando avviate l&#39;app desktop. Chiudete e riavviate l&#39;app per rendere effettive eventuali modifiche.
+
+Se il proxy richiede l’autenticazione, il team IT può inserire l’URL di Risorse AEM nelle impostazioni del server proxy per consentire il passaggio del traffico dell’applicazione.
 
 ## Personalizzare la finestra di dialogo Informazioni risorsa {#customize-the-asset-info-dialog}
 

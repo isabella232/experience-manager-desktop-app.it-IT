@@ -1,15 +1,9 @@
 ---
-title: Usa app desktop AEM versione 1.x
+title: Utilizzate l'app desktop AEM versione 1.x.
 description: Scopri come utilizzare l’app desktop Adobe Experience Manager versione 1.x e ottimizzare il lavoro con le risorse sul desktop.
-uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -22,19 +16,18 @@ Questa integrazione consente a diversi ruoli dell’organizzazione di gestire le
 
 Le attività chiave che eseguite con l&#39;app desktop AEM v1 includono:
 
-* [Connessione a un server AEM](#installandconnect)
+1. [Connessione a un server AEM](#installandconnect)
+1. [Aprire le risorse direttamente sul desktop](#openondesktop)
+1. [Modificare e estrarre le risorse dal desktop](#workonassets)
+1. [Caricare le risorse e le cartelle in blocco](#bulkupload)
 
-* [Aprire le risorse direttamente sul desktop](#openondesktop)
-* [Modificare e estrarre le risorse dal desktop](#workonassets)
-
-* [Caricare le risorse e le cartelle in blocco](#bulkupload)
-
-Per le varie operazioni e operazioni non consigliate, consultate le procedure [ottimali per l&#39;utilizzo dell&#39;app](best-practices-for-v1.md). Se si verificano dei problemi con l&#39;app, consultate come [risolvere i problemi con AEM Desktop](troubleshoot-app-v1.md).
+Per le varie operazioni e operazioni non consigliate, consultate le procedure [ottimali per l&#39;utilizzo dell&#39;app](best-practices-for-v1.md). Se riscontri dei problemi con l’app, consulta come [risolvere i problemi relativi a AEM desktop](troubleshoot-app-v1.md).
 
 >[!NOTE]
+>
 >L’app desktop AEM è stata introdotta nella versione AEM 6.1 ed è stata denominata AEM Assets Companion App.
 
-## Punti di contatto dell&#39;app AEM Desktop nel flusso di lavoro creativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## Punti di contatto dell’app desktop AEM nel flusso di lavoro creativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 L’app desktop AEM, insieme a Risorse AEM, si integra nel flusso di lavoro creativo e offre i seguenti punti di contatto.
 
@@ -98,22 +91,39 @@ L&#39;app supporta la configurazione proxy su Mac e Windows. La configurazione v
 
 ### Abilitare le azioni desktop nell’interfaccia Web di AEM {#desktopactions}
 
-Dall’interfaccia utente delle risorse in un browser, puoi esplorare i percorsi delle risorse o uscire e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate Azioni desktop e non sono abilitate per impostazione predefinita. Per attivarla, effettuate le seguenti operazioni.
+Dall’interfaccia utente di Risorse, puoi esplorare le posizioni delle risorse o estrarne e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate azioni desktop e non sono abilitate per impostazione predefinita. Per attivarla, effettuate le seguenti operazioni.
 
-1. Nella console Risorse, tocca o fai clic sull’icona **Utente** nella barra degli strumenti.
-1. Tocca o fai clic sul pulsante **[!UICONTROL My Preferences]** per visualizzare la **[!UICONTROL Preferences]** finestra di dialogo.
-1. Nella finestra di dialogo Preferenze utente, selezionate **[!UICONTROL Show Desktop Actions For Assets]**. Tocca o fai clic **[!UICONTROL Accept]**.
+1. Nell’interfaccia Risorse, tocca o fai clic sull’icona Utente nell’angolo in alto a destra della barra degli strumenti.
+1. Fate clic **[!UICONTROL My Preferences]** per visualizzare la **[!UICONTROL Preferences]** finestra di dialogo.
+
+   ![Interfaccia AEM con le preferenze utente](assets/aem_ui_user_preferences.png)
+
+1. Nella finestra di dialogo Preferenze utente, selezionate **[!UICONTROL Show Desktop Actions For Assets]**. Clic **[!UICONTROL Accept]**.
 
    ![Controlla Mostra azioni desktop per risorse per abilitare le azioni desktop](assets/chlimage_1-3.png)
 
-   Controlla Mostra azioni desktop per risorse per abilitare le azioni desktop
+   *Figura: Per attivare le azioni desktop, selezionate Mostra azioni desktop per risorse.*
 
 ## Accesso e apertura di risorse sul desktop {#openondesktop}
+
+Quando fate clic su **Apri** per aprire una risorsa sul computer locale, l&#39;app scarica la risorsa nella cache interna. L&#39;app avvia l&#39;applicazione desktop nativa associata al tipo di file della risorsa scaricata.
+
+In Mac, selezionate **Apri** dal menu di scelta rapida per aprire una risorsa tramite l’app desktop AEM. In Windows, selezionate Apri sul Web dal menu di scelta rapida per aprire la risorsa. Dalla finestra Stato risorsa, toccate o fate clic sull’icona ![](assets/aemassets_icon_openondesktop.png) Apri sul desktop per aprire la risorsa.
+
+Per i file Adobe InDesign (INDD), selezionate **[!UICONTROL Open]** dal menu di scelta rapida. Quando fate clic su questa opzione, l&#39;app scarica le risorse collegate nel file system locale e quindi apre il file INDD in Adobe InDesign. Questo metodo garantisce che le risorse necessarie siano disponibili localmente quando si modifica il file INDD.
+
+![Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app AEM Desktop](assets/aem_desktopapp_mac_context_menu.png)
+
+*Figura: Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app desktop AEM.*
 
 >[!NOTE]
 >In Windows, l&#39;impostazione [](https://support.microsoft.com/en-us/kb/2668751) predefinita di Windows 7 impedisce all&#39;app desktop AEM di gestire risorse superiori a 50 MB.
 
-### Rivela la posizione delle risorse mappate dall’interfaccia Web di AEM {#reveal-the-location-of-mapped-assets-from-aem-web-interface}
+>[!NOTE]
+>
+>Adobe consiglia di accedere a Opzioni vista Finder su Mac e disattivare le opzioni **Mostra informazioni** elemento, **Mostra anteprima** elemento e **Mostra colonna** di anteprima per la cartella AEM Assets installata. Migliora le prestazioni.
+
+### Opzioni aggiuntive nell’interfaccia AEM {#additional-options-in-aem-assets}
 
 Dopo aver mappato l’archivio di Risorse AEM sull’unità locale, potete abilitare icone aggiuntive e visualizzare la funzione Caricamento cartella per le risorse e le cartelle mappate.
 
@@ -121,31 +131,17 @@ Dopo aver mappato l’archivio di Risorse AEM sull’unità locale, potete abili
 
    ![Nell’interfaccia utente Risorse, apri il menu Azioni rapide per visualizzare le azioni desktop](assets/chlimage_1-4.png)
 
-   Nell’interfaccia utente Risorse, apri il menu Azioni rapide per visualizzare le azioni desktop
+   *Figura: Nell’interfaccia utente Risorse, aprite il menu Azioni rapide per visualizzare le azioni desktop.*
 
-   Queste azioni desktop sono disponibili anche quando tocchi o fai clic sull’icona Azioni **** desktop nella barra degli strumenti dopo aver selezionato la risorsa o dalla barra degli strumenti nella pagina della risorsa.
+   Queste azioni desktop sono disponibili anche quando fate clic sull’icona Azioni **** desktop nella barra degli strumenti dopo aver selezionato la risorsa o dalla barra degli strumenti nella pagina della risorsa.
 
 1. Per aprire la risorsa nell’applicazione desktop associata all’estensione di file specifica, toccate o fate clic sull’icona **Apri sul desktop** , azione rapida ![Apri sul desktop](assets/aemassets_icon_openondesktop.png).
 
    In alternativa, scegliete **Apri** dal menu Azioni **** desktop nella barra degli strumenti.
 
-1. Tocca o fai clic sull’icona **Mostra** azione rapida ![](assets/aemassets_reveal_icon.png) Mostra per individuare la risorsa specifica nel file system locale.
+Per individuare la risorsa specifica nel file system locale, fate clic sull&#39;icona **Mostra** azione rapida ![Mostra](assets/aemassets_reveal_icon.png). In alternativa, scegliete **Mostra** dal menu Azioni **** desktop nella barra degli strumenti.
 
-   In alternativa, scegliete **Mostra** dal menu Azioni **** desktop nella barra degli strumenti.
-
-### Aprire le risorse AEM dal Finder o da Esplora risorse {#open-aem-assets-from-the-finder-or-the-explorer}
-
-In Mac, selezionate Apri dal menu di scelta rapida per aprire una risorsa tramite AEM Desktop.
-
-Per i file Adobe InDesign (INDD), selezionate **[!UICONTROL Open]** dal menu di scelta rapida. Quando fate clic su questa opzione, l&#39;app scarica le risorse collegate nel file system locale e quindi apre il file INDD in Adobe InDesign. Questo metodo garantisce che le risorse necessarie siano disponibili localmente quando si modifica il file INDD.
-
-In Windows, selezionate Apri sul Web dal menu di scelta rapida per aprire la risorsa. Dalla finestra Stato risorsa, toccate o fate clic sull’icona ![](assets/aemassets_icon_openondesktop.png) Apri sul desktop per aprire la risorsa.
-
-![Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app AEM Desktop](assets/aem_desktopapp_mac_context_menu.png)
-
-Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite l&#39;app AEM Desktop
-
-### Comprendere gli stati delle risorse {#understand-the-asset-statuses}
+## Comprendere gli stati delle risorse {#understand-the-asset-statuses}
 
 | ![Icona app predefinita di Windows](assets/win_default.png) | L&#39;app è connessa al server e tutte le risorse sono sincronizzate. |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -181,7 +177,7 @@ Esistono due modi per estrarre le risorse dall’interfaccia Web di AEM. Per inf
 1. Selezionate l’opzione di menu Apri. Le risorse selezionate vengono aperte in modalità di anteprima.
 1. Per modificare le risorse, selezionate l’opzione Modifica. Le risorse vengono aperte in modalità di modifica.
 
-### Estrarre risorse su Mac {#check-out-assets-on-mac}
+### Estrarre risorse dal Finder in Mac OS {#check-out-assets-on-mac}
 
 L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui state lavorando.
 
@@ -219,19 +215,17 @@ L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di
 1. Rivedete la risorsa in Esplora risorse. L’icona a forma di lucchetto sull’icona ![a forma di](assets/aemassets_icon_lockcheckout.png) risorsa indica che la risorsa è stata estratta.
 
    >[!NOTE]
-   >L&#39;icona Blocca potrebbe essere visualizzata dopo alcuni minuti di ritardo. L&#39;app desktop AEM memorizza nella cache le risorse per un accesso rapido, pertanto l&#39;aggiornamento dello stato bloccato potrebbe richiedere alcuni istanti.
+   >L&#39;icona Blocca potrebbe apparire dopo qualche ritardo. L’app desktop AEM memorizza nella cache le risorse per un accesso rapido, pertanto l’aggiornamento dello stato bloccato potrebbe richiedere alcuni istanti.
 
 1. Per archiviare la risorsa in modo che sia disponibile per gli altri utenti, toccate o fate clic sull’icona di check-in nella finestra di dialogo Informazioni **** risorsa.
 
 ### Archiviare una risorsa utilizzando il Finder o Esplora risorse e l&#39;interfaccia Web {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-Dopo aver modificato le risorse, salvatele nell’applicazione desktop. Dal menu di scelta rapida, selezionate Ulteriori informazioni sulle risorse e toccate o fate clic sul check-in.
+Dopo aver modificato le risorse, salvatele nell’applicazione desktop. Dal menu di scelta rapida, selezionate **Ulteriori informazioni** sulle risorse e fate clic sul check-in.
 
-Le risorse vengono caricate nel server AEM. Facoltativamente, potete controllare lo stato del caricamento selezionando Visualizza stato risorsa dall’icona del vassoio.
+Le risorse vengono caricate nel server AEM. Facoltativamente, potete controllare lo stato del caricamento selezionando **Visualizza stato** risorsa dall’icona della barra delle applicazioni. In alternativa, puoi archiviare una risorsa dall’interfaccia Web di AEM. Fate clic sulle risorse estratte o selezionatele. Dalla barra degli strumenti, fate clic sull’icona di ![check-in](assets/aemassets_icon_checkin.png).
 
-![Finestra di stato del trasferimento e del caricamento di file dell&#39;app AEM Desktop](assets/aem_desktopapp_upload_status.png)
-
-In alternativa, puoi archiviare una risorsa dall’interfaccia Web di AEM. Tocca o fai clic sulle risorse estratte o selezionarle. Dalla barra degli strumenti, tocca o fai clic sull’icona di ![check-in](assets/aemassets_icon_checkin.png).
+Una risorsa viene caricata automaticamente in AEM dopo che eventuali modifiche vengono salvate localmente. Il check-in rende la risorsa disponibile per la modifica ad altri utenti AEM.
 
 ### Caricamento in blocco di risorse e cartelle nel server AEM {#bulkupload}
 
@@ -250,13 +244,13 @@ Con AEM Desktop potete caricare un’intera cartella contenente risorse dalla di
 
 1. Dopo il caricamento della cartella, chiudi la finestra di dialogo e passa all’interfaccia utente delle risorse. La cartella caricata viene visualizzata nell’interfaccia Web.
 
-È *sconsigliato* copiare e incollare o trascinare un numero maggiore di file/cartelle nidificate dal disco locale in Finder o Esplora risorse nell&#39;area di condivisione di rete mappata dall&#39;app desktop AEM. È molto meno affidabile della funzionalità Carica cartella descritta in precedenza.
+Adobe non consiglia di copiare-incollare o trascinare un numero maggiore di file o cartelle nidificate dal file system locale nell&#39;area di condivisione della rete. L&#39;app non è in grado di controllare il processo di caricamento a causa di limiti tecnici e le prestazioni sono insufficienti.
 
-Un&#39;altra alternativa, se preferite lavorare sul desktop, consiste nel selezionare i file/le cartelle da caricare in AEM nel Finder o in Esplora risorse, copiarli negli Appunti del sistema, quindi passare alla cartella di destinazione nell&#39;area di condivisione della rete e, dal menu di scelta rapida dell&#39;app desktop AEM, selezionare &quot;Incolla risorse&quot;. In questo modo, l’app desktop AEM avvia il caricamento delle risorse incollate in modo simile alla cartella di caricamento descritta in precedenza.
+In alternativa, selezionate i file/le cartelle da caricare in AEM in Finder o in Esplora risorse, copiateli negli Appunti del sistema, individuate la cartella di destinazione nell’area di condivisione di rete e, dal menu di scelta rapida dell’app desktop AEM, selezionate **Incolla risorse**. In questo modo, l’app desktop AEM avvia il caricamento delle risorse incollate in modo simile all’opzione **Carica cartella** disponibile nell’interfaccia Web di AEM.
 
 >[!MORELIKETHIS]
 >
 >* [Introduzione all’app desktop AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 >* [Informazioni sul check-in/check-out con l’app desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
->* [Risoluzione dei problemi relativi all’applicazione desktop AEM](troubleshoot-app-v1.md)
+>* [Risoluzione dei problemi relativi all&#39;applicazione dell&#39;app desktop AEM](troubleshoot-app-v1.md)
 

@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
 
 ---
 
@@ -24,7 +24,7 @@ Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure
 
 Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e risolvere eventuali problemi.
 
-* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorri alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra l&#39;interfaccia utente Web e il desktop, la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedete [come funziona](release-notes.md#how-app-works).
+* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorrete alcuni minuti a sapere come funziona l&#39;app. Scopri i collegamenti tra l’interfaccia Web e il desktop di Experience Manager, la mappatura dell’archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedete [come funziona](release-notes.md#how-app-works).
 
 * **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders). Alcuni casi di utilizzo di Adobe Experience Manager potrebbero essere influenzati da caratteri non supportati nel nome della cartella.
 
@@ -134,8 +134,8 @@ Le librerie utilizzate dall’app desktop AEM per la comunicazione HTTP utilizza
 
 Raramente l&#39;applicazione potrebbe non rispondere, visualizzare solo uno schermo bianco, o visualizzare un errore nella parte inferiore dell&#39;interfaccia senza alcuna opzione sull&#39;interfaccia. Effettuate le seguenti operazioni nell&#39;ordine:
 
-1. Fare clic con il pulsante destro del mouse sull&#39;interfaccia dell&#39;applicazione e scegliere **[!UICONTROL Refresh]**.
-1. Uscire dall’applicazione e riavviarla.
+* Fare clic con il pulsante destro del mouse sull&#39;interfaccia dell&#39;applicazione e scegliere **[!UICONTROL Refresh]**.
+* Uscite dall’applicazione e apritela di nuovo.
 
 In entrambi i metodi, l&#39;app inizia dalla cartella DAM principale.
 

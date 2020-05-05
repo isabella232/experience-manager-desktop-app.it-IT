@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: aca68b0c2eb363e33c8a6edec2370758124a4b9e
+source-git-commit: 63cb82b6bdafeb87d296a895d68cb3912045839a
 
 ---
 
@@ -75,7 +75,7 @@ Le correzioni e gli aggiornamenti dei bug sono:
 * È stato risolto un problema relativo ai caricamenti di risorse quando i nomi di file o i percorsi contengono alcuni caratteri GB18030. <!-- CQ-4283494 -->
 * L’opzione Ordina per rilevanza è disponibile dopo il passaggio a un altro tipo di ordinamento nei risultati della ricerca. <!-- CQ-4286874 -->
 * L&#39;app desktop ora elenca le sottocartelle senza la necessità di aggiornare esplicitamente. <!-- CQ-4285711 -->
-* (Windows) È stato risolto un raro problema di interfaccia app non utilizzabile su alcuni computer Windows. Gli utenti non possono fare clic sull&#39;interfaccia dell&#39;app perché risulta distorta con l&#39;area di clic degli elementi dell&#39;interfaccia &#39;spostato&#39; lateralmente. <!-- CQ-4280785 -->
+* (Windows) È stato risolto un raro problema di interfaccia app non utilizzabile su alcuni computer Windows. Gli utenti non possono fare clic sull&#39;interfaccia dell&#39;app in quanto risulta distorta con l&#39;area di clic degli elementi di interfaccia &#39;spostato&#39; lateralmente. <!-- CQ-4280785 -->
 
 **Aggiornamenti nell&#39;app v2.0.1**
 

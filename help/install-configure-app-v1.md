@@ -1,6 +1,6 @@
 ---
 title: Installare e configurare l'app desktop AEM versione 1.x
-description: Installa e configura l’app desktop AEM versione 1.x per lavorare con i server Risorse AEM e mappa le risorse da montare come unità sul desktop.
+description: Installa e configura l’app desktop AEM versione 1.x per lavorare con i server AEM Assets e mappare le risorse da montare come unità sul desktop.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,7 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 Utilizzando l’app desktop AEM, le risorse all’interno di AEM sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente; le modifiche vengono salvate nuovamente in AEM al momento del caricamento e viene creata una nuova versione nell’archivio.
 
-Questa integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse a livello centrale in Risorse AEM e di accedervi in Creative Cloud e altre applicazioni, semplificando al contempo il rispetto dei vari standard, compreso il branding.
+Tale integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse centralmente negli AEM Assets e di accedervi in Creative Cloud e altre applicazioni, semplificando al contempo il rispetto dei vari standard, compreso il branding.
 
 Per utilizzare l&#39;app desktop AEM,
 
@@ -44,7 +47,7 @@ Quando si modifica un file da un percorso di condivisione di rete montato dall&#
 
 Nella seconda fase, l&#39;app desktop carica il file aggiornato nel server AEM dopo un ritardo predefinito (ad esempio, 30). Questa operazione si verifica in background. Usate l’opzione Visualizza stato risorsa per visualizzare lo stato dell’operazione di caricamento.
 
-1. Carica una risorsa in AEM Assets.
+1. Caricate una risorsa in AEM Assets.
 1. Tocca o fai clic sull&#39;icona dell&#39;app desktop AEM dalla barra degli strumenti.
 1. Dal menu, selezionate l’opzione Visualizza stato risorsa.
 1. Dalla finestra di dialogo, controllate lo stato dell’operazione di caricamento.
@@ -75,7 +78,7 @@ Se configurate o modificate le impostazioni del server proxy per Windows (Opzion
 >
 >La configurazione del proxy viene applicata solo quando avviate l&#39;app desktop. Chiudete e riavviate l&#39;app per rendere effettive eventuali modifiche.
 
-Se il proxy richiede l’autenticazione, il team IT può inserire l’URL di Risorse AEM nelle impostazioni del server proxy per consentire il passaggio del traffico dell’applicazione.
+Se il proxy richiede l’autenticazione, il team IT può consentire il passaggio dell’URL  Experience Manager Assets nelle impostazioni del server proxy.
 
 ## Personalizzare la finestra di dialogo Informazioni risorsa {#customize-the-asset-info-dialog}
 
@@ -94,7 +97,7 @@ In Mac OS X, è presente una directory simile `~/Library/Group Containers/group.
 
 ### Opzione in-app per gestire la cache {#in-app-option-to-manage-cache}
 
-È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets sono memorizzati nella cache locale per un’esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Per impostare le opzioni desiderate, fate clic sull&#39;icona dell&#39;applicazione e fate clic su **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
+È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets vengono memorizzati nella cache locale per un&#39;esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Per impostare le opzioni desiderate, fate clic sull&#39;icona dell&#39;applicazione e fate clic su **[!UICONTROL Advanced]** > **[!UICONTROL Manage Cache]**. ****
 
 >[!NOTE]
 >
@@ -112,7 +115,7 @@ Il percorso predefinito della cache per l&#39;app desktop AEM è:
 Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unità, modificare il file di configurazione dell&#39;applicazione.
 
 1. Andate alla directory di installazione dell&#39;app. Il percorso predefinito in Windows è `C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop`.
-1. Modificate il file Adobe Experience Manager Desktop.exe.config con un editor di testo.
+1. Modificare  file Desktop.exe.config di Adobe Experience Manager con un editor di testo.
 
    Per salvare le modifiche apportate a questo file sono necessari privilegi di amministratore.
 

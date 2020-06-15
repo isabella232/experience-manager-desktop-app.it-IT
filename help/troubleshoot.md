@@ -1,5 +1,5 @@
 ---
-title: Procedure ottimali per la risoluzione dei problemi relativi all’app desktop Adobe Experience Manager
+title: Procedure ottimali per la risoluzione di problemi e 'app desktop Adobe Experience Manager
 description: Seguite le procedure ottimali e risolvete eventuali problemi relativi a installazione, aggiornamento, configurazione e così via.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
@@ -9,14 +9,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
+source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 1%
 
 ---
 
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-L’app desktop Adobe Experience Manager (AEM) si connette a un archivio DAM (Digital Asset Management) di una distribuzione remota di Experience Manager. L&#39;app raccoglie informazioni sull&#39;archivio e risultati della ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con l&#39;interfaccia utente di Risorse AEM.
+&#39;app desktop AEM (Adobe Experience Manager) si connette a un archivio DAM (Digital Asset Management)  distribuzione Experience Manager remoto. L&#39;app raccoglie informazioni sull&#39;archivio e risultati di ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con l&#39;interfaccia utente AEM Assets.
 
 Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure ottimali e individuare i limiti.
 
@@ -24,23 +27,23 @@ Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure
 
 Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e risolvere eventuali problemi.
 
-* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorrete alcuni minuti a sapere come funziona l&#39;app. Scopri i collegamenti tra l’interfaccia Web e il desktop di Experience Manager, la mappatura dell’archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedete [come funziona](release-notes.md#how-app-works).
+* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorrete alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra &#39;interfaccia Web e il desktop Experience Manager, la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedete [come funziona](release-notes.md#how-app-works).
 
-* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders). Alcuni casi di utilizzo di Adobe Experience Manager potrebbero essere influenzati da caratteri non supportati nel nome della cartella.
+* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta l’elenco dei caratteri in [Creazione di cartelle in  Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders). Alcuni casi di utilizzo  Adobe Experience Manager possono essere influenzati da caratteri non supportati nel nome della cartella.
 
 * **Procedure ottimali per evitare conflitti**: Per evitare potenziali conflitti durante la collaborazione su più risorse, consultate [evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 
-* **Usate il caricamento delle cartelle per le cartelle** gerarchiche di grandi dimensioni: Invece di usare l’interfaccia Web di Assets o altri metodi, usa l’app desktop Experience Manager per caricare cartelle di grandi dimensioni. L&#39;app carica le risorse in background con registrazione e monitoraggio. Consultate Caricare [in blocco le risorse](using.md#bulk-upload-assets).
+* **Usate il caricamento delle cartelle per le cartelle** gerarchiche di grandi dimensioni: Invece di usare l’interfaccia Web di Risorse o altri metodi, utilizzate ’app desktop Experience Manager per caricare cartelle di grandi dimensioni. L&#39;app carica le risorse in background con registrazione e monitoraggio. Consultate Caricare [in blocco le risorse](using.md#bulk-upload-assets).
 
-* **Utilizzate la versione** più recente: Utilizzate la versione più recente dell&#39;app e verificate sempre la compatibilità prima di installare una nuova versione dell&#39;app o prima di eseguire l&#39;aggiornamento a una versione più recente di Adobe Experience Manager. See [release notes](release-notes.md).
+* **Utilizzate la versione** più recente: Utilizzate la versione dell&#39;app più recente e verificate sempre la compatibilità prima di installare una nuova versione dell&#39;app o prima di eseguire l&#39;aggiornamento a una versione di Adobe Experience Manager  più recente. See [release notes](release-notes.md).
 
-* **Utilizzare la stessa lettera** di unità: Utilizzate la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura su Adobe Experience Manager DAM. Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. L&#39;utilizzo della stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
+* **Utilizzare la stessa lettera** di unità: Utilizzare la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura sul DAM del Adobe Experience Manager . Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. L&#39;utilizzo della stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
 
-* **Tenere presente la rete**: Le prestazioni di rete sono fondamentali per le prestazioni dell&#39;app desktop Experience Manager. Se devi affrontare una risposta rallentata a trasferimenti di file o operazioni in blocco, disattiva le funzionalità o le app che potrebbero causare un sacco di traffico di rete.
+* **Tenere presente la rete**: Le prestazioni di rete sono fondamentali per  le prestazioni dell&#39;app desktop Experience Manager. Se devi affrontare una risposta rallentata a trasferimenti di file o operazioni in blocco, disattiva le funzionalità o le app che potrebbero causare un sacco di traffico di rete.
 
 * **Casi di utilizzo non supportati per l’app** desktop: non utilizzate l&#39;app per la migrazione delle risorse (necessita di pianificazione e altri strumenti); per operazioni DAM complesse (come lo spostamento di grandi cartelle, caricamenti di grandi dimensioni, la ricerca di file tramite ricerche avanzate di metadati); come client di sincronizzazione (i principi di progettazione e i pattern di utilizzo sono diversi dai client in-sync come Microsoft OneDrive o Adobe Creative Cloud Desktop Sync).
 
-* **Timeout**: Attualmente, l&#39;app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra il server Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
+* **Timeout**: Al momento, l&#39;app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra  server Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
 
 ## Come risolvere i problemi {#troubleshooting-prep}
 

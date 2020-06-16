@@ -11,10 +11,10 @@ mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.it-IT
 index: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: e9a59807d48ea2d8619d3b03255c4291fca85138
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 9%
 
 ---
 
@@ -25,17 +25,17 @@ Il file metadata.md include metadati a livello di repo che passano ai file TOC.m
 
 | metadata | cosa |
 |--- |--- |
-| solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| solution-hub-url | Apre la pagina principale del supporto |
-| solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato |
-| getting-started | Link alla pagina iniziale |
-| tutorials-url | Collegamento alle esercitazioni video: esercitazioni helpx o esercitazioni KT |
-| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. il valore predefinito è 2 |
-| git-repo | Specifica la posizione del repo principale per uso interno |
+| solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
+| solution-hub-url | Apre la pagina Hub Informazioni e supporto. |
+| solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato. |
+| getting-started | Link alla pagina iniziale. |
+| tutorials-url | Collegate le esercitazioni video. |
+| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. Il valore predefinito è 2. |
+| git-repo | Specifica la posizione del repo principale per uso interno. |
 
 In un file TOC.md
 
 | metadata | cosa |
 |--- |--- |
-| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| user-guide-url | Apre la pagina centrale helpx |
+| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
+| user-guide-url | Apre la pagina Hub Informazioni e supporto. |

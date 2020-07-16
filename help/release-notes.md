@@ -1,6 +1,6 @@
 ---
-title: Note sulla versione dell’app desktop Adobe Experience Manager
-description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download per l’app desktop Adobe Experience Manager.
+title: Note sulla versione dell'app desktop  Adobe Experience Manager
+description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download  app desktop di Adobe Experience Manager.
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,61 +10,61 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7a803edce0b6300b4a4142dcdc2f61d8347acea
+source-git-commit: eda366b969edb3c266ae8a5900ea7c0409846db0
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 49%
+source-wordcount: '1326'
+ht-degree: 48%
 
 ---
 
 
-# Note sulla versione dell’app desktop Adobe Experience Manager {#release-notes-v2}
+# Note sulla versione dell&#39;app desktop  Adobe Experience Manager {#release-notes-v2}
 
 | Prodotti | App desktop Adobe Experience Manager |
 |----|----|
 | Versione dell’app (revisione) | 2.0 (2.0.2.0) |
-| Versioni di AEM supportate | AEM come servizio cloud; AEM 6.5; AEM 6.4; AEM 6.3 (con pacchetto di compatibilità) |
+| Versioni di AEM supportate | AEM come Cloud Service; AEM 6.5; AEM 6.4; AEM 6.3 (con pacchetto di compatibilità) |
 | Tipo | Rilascio secondario |
 | Data di rilascio | 15 aprile 2020 (Mac e Win) |
 | URL di download | [macOS a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows a 32 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
 
 ## Requisiti di sistema e prerequisiti {#system-requirements-and-prerequisites-v2}
 
-L’app desktop Adobe Experience Manager è compatibile con i seguenti sistemi operativi:
+&#39;app desktop Adobe Experience Manager è compatibile con i seguenti sistemi operativi:
 
 * Mac OS X 10.14 o versione successiva, con le correzioni di bug più recenti.
 * Windows 7 e Windows 10 con Service Pack e correzioni di bug più recenti.
 
-L&#39;app funziona con le seguenti versioni di Experience Manager, sia che sia distribuita come servizio cloud, sui servizi gestiti Adobe (AMS) o in sede:
+L&#39;app funziona con le seguenti versioni  Experience Manager, sia che sia distribuita come Cloud Service, su  Adobe Managed Services (AMS) o in sede:
 
 * [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/home.html)
 * [Experience Manager 6.5.0](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) o successivo
 * [Experience Manager 6.4.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) o successivo
-* Experience Manager 6.4.0 - 6.4.3 con pacchetto di [compatibilità](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+*  Experience Manager 6.4.0 - 6.4.3 con pacchetto di [compatibilità](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->Il supporto delle app desktop per Experience Manager 6.3 è obsoleto. Adobe consiglia di effettuare l&#39;aggiornamento a una versione più recente e supportata di Adobe Experience Manager.
->Experience Manager 6.3.3.1 o versione successiva funziona con l&#39;app desktop dopo l&#39;installazione del pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilità. Nessun pacchetto di questo tipo è disponibile per Experience Manager 6.3 in quanto non sono pianificati [pacchetti di](https://helpx.adobe.com/it/experience-manager/maintenance-releases-roadmap.html)servizi.
+>Il supporto delle app desktop per  Experience Manager 6.3 è obsoleto. Adobe consiglia di effettuare l&#39;aggiornamento a una versione di Adobe Experience Manager  più recente e supportata.
+> Experience Manager 6.3.3.1 o versione successiva funziona con l&#39;app desktop dopo l&#39;installazione del pacchetto [di](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilità. Nessun pacchetto di questo tipo è disponibile per  Experience Manager 6.3 in quanto non sono previsti [pacchetti di](https://helpx.adobe.com/it/experience-manager/maintenance-releases-roadmap.html)servizi.
 
-La versione dell’app che intendi installare nel computer locale richiede una versione specifica del server Adobe Experience Manager o componenti aggiuntivi lato server (Service Pack, hotfix o feature pack). Contatta il tuo amministratore Adobe Experience Manager per assistenza.
+La versione dell’app che intendi installare nel computer locale richiede una versione specifica del server Adobe Experience Manager o componenti aggiuntivi lato server (Service Pack, hotfix o feature pack). Per assistenza, contattate l’amministratore  Adobe Experience Manager.
 
 ### Support for different assets and file types {#support-for-file-types}
 
-L’applicazione supporta le risorse memorizzate in Adobe Experience Manager che rappresentano file binari per le operazioni di base. L’apertura di file nell’applicazione desktop nativa si basa sull’associazione del sistema operativo dei tipi di file specifici, come PNG o JPG, ad applicazioni specifiche, come Mac Preview o Adobe Photoshop.
+L&#39;applicazione supporta le risorse memorizzate in  Adobe Experience Manager che rappresentano un file binario per le operazioni di base. L’apertura di file nell’applicazione desktop nativa si basa sull’associazione del sistema operativo dei tipi di file specifici, come PNG o JPG, ad applicazioni specifiche, come Mac Preview o Adobe Photoshop.
 
-Alcuni tipi di file supportano il posizionamento di risorse collegate nel file binario. L’applicazione pre-scarica le risorse collegate se la risorsa è presente nell’archivio Experience Manager quando tali file binari vengono aperti tramite l’app desktop. I tipi di file attualmente supportati sono:
+Alcuni tipi di file supportano il posizionamento di risorse collegate nel file binario. L’applicazione pre-scarica le risorse collegate se la risorsa è presente nell’archivio di Experience Manager  quando tali file binari vengono aperti tramite l’app desktop. I tipi di file attualmente supportati sono:
 
 * File Adobe InDesign (formato INDD)
 * File Adobe Illustrator (formato AI)
 * File Adobe Photoshop (formato PS)
 
-Questa funzione è supportata dalle versioni di Adobe Creative Cloud 2018 e Adobe Creative Cloud 2019 dell&#39;applicazione precedente. L’app utilizza un approccio euristico e con la migliore corrispondenza per mappare i percorsi desktop locali delle risorse collegate agli URL sul server Experience Manager. Si basa su alcuni presupposti descritti di seguito:
+Questa funzione è supportata dalle versioni di Adobe Creative Cloud 2018 e Adobe Creative Cloud 2019 dell&#39;applicazione precedente. L’app utilizza un approccio euristico e di migliore corrispondenza per mappare i percorsi desktop locali delle risorse collegate agli URL sul server Experience Manager . Si basa su alcuni presupposti descritti di seguito:
 
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * I percorsi vengono memorizzati nel record XMP del file dall&#39;app nativa.
-* Experience Manager ha estratto il record XMP con i percorsi del record di metadati della risorsa.
-* I percorsi possono essere associati alle risorse in Experience Manager, ovvero i file inseriti si trovano anche in Experience Manager con un percorso corrispondente.
+*  Experience Manager ha estratto il record XMP con i percorsi del record di metadati della risorsa.
+* I percorsi possono essere associati alle risorse  Experience Manager, ovvero i file inseriti si trovano anche in  Experience Manager in un percorso corrispondente.
 
 ## Nuove funzioni e miglioramenti {#whats-new-added}
 
@@ -85,7 +85,7 @@ Le correzioni e gli aggiornamenti dei bug sono:
 Le correzioni e gli aggiornamenti dei bug sono:
 
 * Consenti di configurare la `%Temp%` directory in modo che corrisponda al `%APPDATA%` percorso. <!-- CQ-4282665 -->
-* Consentire agli utenti di accedere a AEM Author tramite l&#39;autenticazione Okta SAML. <!-- CQ-4278134 -->
+* Consentire agli utenti di accedere al AEM Author tramite l&#39;autenticazione Okta SAML. <!-- CQ-4278134 -->
 
 ## Istruzioni di installazione {#installation-instructions-v2}
 
@@ -133,9 +133,9 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 
 >[!MORELIKETHIS]
 >
->* [AEM come documentazione del servizio cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
->* [AEM come documentazione delle risorse del servizio cloud](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/home.html)
->* [Come utilizzare l&#39;app desktop Experience Manager](using.md)
+>* [AEM come documentazione Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
+>* [AEM come documentazione di Cloud Service Assets](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/home.html)
+>* [Come utilizzare &#39;app desktop Experience Manager](using.md)
 >* [Installare e aggiornare l’app desktop](install-upgrade.md)
 >* [Best practice e suggerimenti per la risoluzione dei problemi](troubleshoot.md)
 

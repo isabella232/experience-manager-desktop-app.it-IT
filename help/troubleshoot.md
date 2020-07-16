@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
+source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1242'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e
 
 * **Casi di utilizzo non supportati per l’app** desktop: non utilizzate l&#39;app per la migrazione delle risorse (necessita di pianificazione e altri strumenti); per operazioni DAM complesse (come lo spostamento di grandi cartelle, caricamenti di grandi dimensioni, la ricerca di file tramite ricerche avanzate di metadati); come client di sincronizzazione (i principi di progettazione e i pattern di utilizzo sono diversi dai client in-sync come Microsoft OneDrive o Adobe Creative Cloud Desktop Sync).
 
-* **Timeout**: Attualmente, l&#39;app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra  server Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
+* **Timeout**: Al momento, l&#39;app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra  server Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
 
 ## Come risolvere i problemi {#troubleshooting-prep}
 
@@ -61,7 +61,7 @@ Per abilitare la modalità di debug in Windows, procedere come segue:
 
 1. Individuate `logging.json` il file nella cartella di installazione dell&#39;app desktop. By default, the folder is `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`.
 
-1. Nel `logging.json` file, individuare tutte le istanze di `"level": "info"`. Modificate i valori da `info` a `debug`. Salvate e chiudete il file.
+1. Nel `logging.json` file, individuare tutte le istanze di `"level": "info"`. Modificate i valori da `info` a `debug`, ovvero `"level": "debug"`. Salvate e chiudete il file.
 
 1. Cancellare le directory memorizzate nella cache che si trovano nel percorso impostato nelle [Preferenze](/help/install-upgrade.md#set-preferences)dell’applicazione.
 

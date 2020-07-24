@@ -1,28 +1,31 @@
 ---
-title: Utilizzo dell’app desktop Adobe Experience Manager
-description: Scopri come installare e utilizzare l’app desktop Adobe Experience Manager per lavorare sulle risorse Adobe Experience Manager DAM direttamente dal desktop Win o Mac. Scopri le procedure ottimali e le informazioni sulla risoluzione dei problemi.
+title: Usa app desktop  Adobe Experience Manager
+description: Scoprite come installare e utilizzare  app desktop Adobe Experience Manager, per lavorare su  risorse DAM Adobe Experience Manager direttamente dal desktop Win o Mac. Scopri le procedure ottimali e le informazioni sulla risoluzione dei problemi.
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 27cc0ba26622016ce82b758fb0607652176f6992
+workflow-type: tm+mt
+source-wordcount: '3995'
+ht-degree: 0%
 
 ---
 
 
 # Use Adobe Experience Manager desktop app {#use-aem-desktop-app-v2}
 
-Utilizza l’app desktop Adobe Experience Manager (AEM) per accedere facilmente alle risorse Adobe Experience Manager DAM sul desktop locale e utilizzarle in qualsiasi applicazione desktop. Potete aprire le risorse nelle applicazioni desktop e modificarle localmente. Caricate nuovamente le modifiche in Experience Manager con controllo versione, per condividere gli aggiornamenti con altri utenti. Puoi anche caricare nuovi file e gerarchie di cartelle in Experience Manager, creare cartelle ed eliminare risorse o cartelle da Experience Manager DAM.
+Utilizzate l&#39;app desktop  Adobe Experience Manager (AEM) per accedere facilmente alle risorse DAM  Adobe Experience Manager sul desktop locale e utilizzarle in qualsiasi applicazione desktop. Potete aprire le risorse nelle applicazioni desktop e modificare localmente le risorse. Caricate nuovamente  Experience Manager con controllo versione, per condividere gli aggiornamenti con altri utenti. Potete anche caricare nuovi file e gerarchie di cartelle su  Experience Manager, creare cartelle ed eliminare risorse o cartelle da  Experience Manager DAM.
 
-L’integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse a livello centrale in Experience Manager Assets e di accedere alle risorse sul desktop locale nelle applicazioni native in Windows o Mac OS.
+L’integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse centralmente in  Experience Manager Assets e di accedere alle risorse sul desktop locale nelle applicazioni native in Windows o Mac OS.
 
-Quando apri l’applicazione dopo la disconnessione o per la prima volta, immetti l’URL del server Experience Manager. Fate clic su Connect. Fornite le vostre credenziali per collegare l&#39;app al server.
+Quando aprite l’applicazione dopo la disconnessione o per la prima volta, immettete l’URL del server Experience Manager . Fate clic su Connect. Fornite le vostre credenziali per collegare l&#39;app al server.
 
-Le attività principali che eseguite utilizzando l&#39;app desktop Experience Manager sono:
+Le attività principali che eseguite utilizzando l&#39;app desktop  Experience Manager sono:
 
-![Flussi di lavoro e attività che puoi eseguire utilizzando l’](assets/aem_desktop_app_usecases_v2.png "app desktop Experience ManagerFlussi di lavoro e attività che puoi eseguire utilizzando l’app")desktop Adobe Experience Manager [Scarica questo](assets/aem_desktop_app_usecases_print.pdf) file PDF pronto per la stampa.
+![Flussi di lavoro e attività eseguibili utilizzando [!DNL Experience Manager] l&#39;](assets/aem_desktop_app_usecases_v2.png "app desktopFlussi di lavoro e attività eseguibili con &#39;app")desktop di Adobe Experience Manager Scaricate [questo](assets/aem_desktop_app_usecases_print.pdf) file PDF pronto per la stampa.
 
 ## Funzionamento dell&#39;app desktop {#how-app-works2}
 
@@ -30,15 +33,15 @@ Prima di iniziare a utilizzare l&#39;applicazione, scopri [come funziona](releas
 
 * **[!UICONTROL Desktop Actions]**: Dall’interfaccia Web di Risorse, dall’interno di un browser, potete esplorare i percorsi delle risorse o il check-out e aprire la risorsa per la modifica nell’applicazione desktop nativa. Queste azioni sono disponibili dall&#39;interfaccia Web e utilizzano la funzionalità dell&#39;app desktop. Vedere [come abilitare le azioni](using.md#desktopactions-v2)desktop.
 
-* Lo stato del file è **[!UICONTROL Cloud Only]**: Tali risorse non vengono scaricate sul computer locale e sono disponibili solo sul server Experience Manager.
+* Lo stato del file è **[!UICONTROL Cloud Only]**: Tali risorse non vengono scaricate sul computer locale e sono disponibili solo  server Experience Manager.
 
 * Lo stato del file è **[!UICONTROL Available locally]**: Le risorse vengono scaricate e disponibili sul computer locale così come sono. Le risorse non vengono modificate.
 
-* Lo stato del file è **[!UICONTROL Edited locally]**: Tali risorse vengono modificate localmente e le modifiche rimangono nel server Experience Manager caricato. Dopo il caricamento, lo stato cambia in [!UICONTROL Available locally]. Consultate [Modificare le risorse](using.md#edit-assets-upload-updated-assets).
+* Lo stato del file è **[!UICONTROL Edited locally]**: Tali risorse vengono modificate localmente e le modifiche rimangono nel server  Experience Manager. Dopo il caricamento, lo stato cambia in [!UICONTROL Available locally]. Consultate [Modificare le risorse](using.md#edit-assets-upload-updated-assets).
 
 * Lo stato del file è **[!UICONTROL Editing conflict]**: Se voi e altri utenti modificate una risorsa contemporaneamente, l&#39;app indica che si è verificato un conflitto di modifica. L&#39;app fornisce inoltre opzioni per mantenere o ignorare le modifiche. Scopri [come evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 
-* Lo stato del file è **[!UICONTROL Modified remotely]**: L’app indica se una risorsa che avete scaricato viene modificata nel server Experience Manager. L&#39;app offre inoltre l&#39;opzione per scaricare la versione più recente e aggiornare la copia locale. Scopri [come evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
+* Lo stato del file è **[!UICONTROL Modified remotely]**: L&#39;app indica se una risorsa scaricata viene modificata nel server Experience Manager . L&#39;app offre inoltre l&#39;opzione per scaricare la versione più recente e aggiornare la copia locale. Scopri [come evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 
 * **[!UICONTROL Check-out]**: Se si sta modificando un file o si intende modificarlo, è possibile attivare o disattivare lo stato per il check-out. Aggiunge un’icona a forma di lucchetto alla risorsa nell’interfaccia Web dell’app e di AEM. L’icona a forma di lucchetto indica agli altri utenti di evitare la modifica simultanea della stessa risorsa, causando un conflitto di modifica.
 
@@ -155,7 +158,7 @@ Per **[!UICONTROL Toggle Check-out]** bloccare la risorsa e evitare conflitti co
 * Hai iniziato a modificare una risorsa senza prima estrarla (ad esempio, aprendola).
 * Iniziate presto a modificare una risorsa e non desiderate che altri utenti la modifichino.
 
-Dopo aver apportato le modifiche, l&#39;app visualizza lo **[!UICONTROL Edited Locally]** stato delle risorse modificate. Tutte le modifiche salvate nelle risorse sono solo locali finché non caricate le modifiche in AEM. Per caricare una o più risorse una per una, fate clic **[!UICONTROL Upload Changes]** sulle relative opzioni. Crea una versione della risorsa in AEM. Utilizzando l’interfaccia Web di Risorse AEM, puoi vedere la cronologia delle risorse nella vista [](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)Timeline.
+Dopo aver apportato le modifiche, l&#39;app visualizza lo **[!UICONTROL Edited Locally]** stato delle risorse modificate. Tutte le modifiche salvate nelle risorse sono solo locali finché non caricate le modifiche in AEM. Per caricare una o più risorse una per una, fate clic **[!UICONTROL Upload Changes]** sulle relative opzioni. Crea una versione della risorsa in AEM. Utilizzando l’interfaccia Web dei AEM Assets, potete visualizzare la cronologia delle risorse nella vista [](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)Timeline.
 
 ![Opzione delle modifiche di caricamento nell&#39;opzione delle modifiche](assets/upload_changes_single1_da2.png "appCaricare nell&#39;app")
 
@@ -173,7 +176,7 @@ Se necessario, attivate o disattivate il check-out. La risorsa aggiornata viene 
 
 ## Caricare e aggiungere nuove risorse ad AEM {#upload-and-add-new-assets-to-aem}
 
-Gli utenti possono aggiungere nuove risorse all&#39;archivio DAM. Ad esempio, puoi essere un fotografo di agenzia o un appaltatore che desidera aggiungere un gran numero di foto da un servizio fotografico all’archivio di AEM. Per aggiungere nuovo contenuto ad AEM, fate clic sull’icona ![](assets/do-not-localize/upload_to_cloud_da2.png) Carica nel cloud nella barra superiore dell’app. Individuate i file di risorse nel file system locale e fate clic su **[!UICONTROL Select]**. L&#39;app avvia il caricamento della risorsa e visualizza una barra di avanzamento in basso se il caricamento della risorsa richiede più tempo. Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consulta un elenco di caratteri in [Creazione di cartelle in Risorse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)AEM.
+Gli utenti possono aggiungere nuove risorse all&#39;archivio DAM. Ad esempio, puoi essere un fotografo di agenzia o un appaltatore che desidera aggiungere un gran numero di foto da un servizio fotografico all’archivio di AEM. Per aggiungere nuovo contenuto ad AEM, fate clic sull’icona ![](assets/do-not-localize/upload_to_cloud_da2.png) Carica nel cloud nella barra superiore dell’app. Individuate i file di risorse nel file system locale e fate clic su **[!UICONTROL Select]**. L&#39;app avvia il caricamento della risorsa e visualizza una barra di avanzamento in basso se il caricamento della risorsa richiede più tempo. Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consultate un elenco di caratteri in [Create folder in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)(Crea cartelle).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -220,7 +223,7 @@ L&#39;applicazione fornisce una visualizzazione, chiamata **[!UICONTROL Edited l
 
 ### Caricare in blocco le risorse {#bulk-upload-assets}
 
-Gli utenti o l’organizzazione, come fotografi o agenzie creative, possono creare numerose risorse locali in scenari diversi, ad esempio scatti fotografici, ritocchi o selezioni da un set più ampio creato al di fuori di AEM. Possono caricare queste grandi cartelle locali in Risorse AEM direttamente dall’app desktop. Le gerarchie di cartelle vengono mantenute e vengono caricate tutte le sottocartelle nidificate e le risorse incluse. Le risorse caricate sono immediatamente disponibili per l’uso anche ad altri utenti dello stesso server. Le risorse vengono caricate in background, pertanto l’operazione non è legata a una sessione del browser Web.
+Gli utenti o l’organizzazione, come fotografi o agenzie creative, possono creare numerose risorse locali in scenari diversi, ad esempio scatti fotografici, ritocchi o selezioni da un set più ampio creato al di fuori di AEM. Possono caricare queste grandi cartelle locali sugli AEM Assets direttamente dall&#39;app desktop. Le gerarchie di cartelle vengono mantenute e vengono caricate tutte le sottocartelle nidificate e le risorse incluse. Le risorse caricate sono immediatamente disponibili per l’uso anche ad altri utenti dello stesso server. Le risorse vengono caricate in background, pertanto l’operazione non è legata a una sessione del browser Web.
 
 ![Caricamento in blocco di più cartelle locali dal desktop in](assets/upload_local_folders_da2.png "AEMBulkCaricamento in AEM di più cartelle locali dal desktop")
 
@@ -234,9 +237,9 @@ Dopo il caricamento, se le modifiche previste non vengono riportate nell&#39;app
 
 Per visualizzare l’elenco delle risorse trasferite in una determinata sessione, consultate [Caricare risorse in AEM](#upload-and-add-new-assets-to-aem).
 
-## Flusso di lavoro avanzato: inizia dall’interfaccia Web di AEM Assets {#adv-workflow-start-from-aem-ui}
+## Flusso di lavoro avanzato: inizia dall&#39;interfaccia Web AEM Assets {#adv-workflow-start-from-aem-ui}
 
-Se necessario, avvia il flusso di lavoro dall’interfaccia Web di Risorse AEM. L’app desktop si integra con AEM per sostituirla quando richiesto mediante le azioni desktop.
+Se necessario, avviate il flusso di lavoro dall’interfaccia Web dei AEM Assets. L’app desktop si integra con AEM per sostituirla quando richiesto mediante le azioni desktop.
 
 Un caso particolare di avvio del flusso di lavoro dall’interfaccia Web è rappresentato dall’individuazione delle risorse. La barra di ricerca Omniture nell’interfaccia utente Risorse offre un’esperienza di ricerca avanzata e avanzata. Potrebbe essere necessario individuare prima una risorsa desiderata sul Web e avviare il flusso di lavoro nell&#39;app utilizzando [!UICONTROL Desktop Actions]. Alcuni esempi di casi includono il filtraggio dei risultati di ricerca utilizzando facet, l’individuazione di una risorsa specifica con licenza Adobe Stock o una personalizzazione implementata dall’organizzazione che consente una migliore individuazione dall’interfaccia Web.
 
@@ -252,7 +255,7 @@ Ad esempio, le azioni sull&#39;interfaccia Web disponibili per una risorsa estra
 
 >[!NOTE]
 >
->Il browser potrebbe richiedere di consentire l&#39;avvio di Adobe Experience Manager Desktop. Per un trasferimento ininterrotto dal browser all&#39;app, seleziona la casella di controllo appropriata per consentire sempre all&#39;app di prendere il controllo.
+>Il browser potrebbe richiedere di consentire l&#39;avvio di  desktop Adobe Experience Manager. Per un trasferimento ininterrotto dal browser all&#39;app, seleziona la casella di controllo appropriata per consentire sempre all&#39;app di prendere il controllo.
 
 Non è possibile trovare le informazioni o il flusso di lavoro seguenti utilizzando l&#39;interfaccia Web. Utilizzate l&#39;app desktop perché l&#39;interfaccia Web non tiene traccia delle modifiche locali e non è a conoscenza dei seguenti elementi:
 

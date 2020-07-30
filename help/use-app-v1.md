@@ -3,7 +3,7 @@ title: Utilizzate AEM'app desktop versione 1.x.
 description: Scoprite come utilizzare  app desktop di Adobe Experience Manager versione 1.x e ottimizzare il lavoro con le risorse sul desktop.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1bd50a439059ac66e0368eeefc6af67ff160d9b
+source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
 workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 0%
@@ -72,7 +72,7 @@ L&#39;applicazione consente la connessione e la disconnessione delle impostazion
 
 **Esplora risorse** Apri l’unità locale in cui è montato l’archivio AEM Assets. In altre parole, esplorate le risorse ora disponibili nel computer locale.
 
-**Visualizzazione dello stato** della risorsa Quando vengono caricate risorse modificate o vengono aggiunte nuove risorse all’archivio AEM Assets, l’applicazione carica le risorse in background. Il caricamento in background consente di effettuare operazioni senza dover attendere il completamento del caricamento, in particolare per le risorse di grandi dimensioni. È possibile salvare le modifiche localmente e dimenticarle. L’invio di queste risorse al server da parte dell’applicazione richiede del tempo, a seconda della larghezza di banda disponibile. Potete controllare lo stato del caricamento, insieme ad alcune informazioni di base.
+**Visualizza stato** della risorsa Quando vengono caricate risorse modificate o vengono aggiunte nuove risorse all’archivio AEM Assets, l’applicazione carica le risorse in background. Il caricamento in background consente di effettuare operazioni senza dover attendere il completamento del caricamento, in particolare per le risorse di grandi dimensioni. È possibile salvare le modifiche localmente e dimenticarle. L’invio di queste risorse al server da parte dell’applicazione richiede del tempo, a seconda della larghezza di banda disponibile. Potete controllare lo stato del caricamento, insieme ad alcune informazioni di base.
 
 **Opzioni** Fare clic/toccare Opzioni dalla barra delle applicazioni AEM Desktop per accedere alle impostazioni per avviare l&#39;applicazione all&#39;avvio del sistema; per connettersi al server AEM quando l&#39;app viene avviata; e per cambiare la lettera dell&#39;unità locale in cui sono disponibili AEM Assets dopo il montaggio.
 
@@ -113,7 +113,7 @@ Dall’interfaccia utente di Risorse, puoi esplorare le posizioni delle risorse 
 
 Quando fate clic su **Apri** per aprire una risorsa sul computer locale, l&#39;app scarica la risorsa nella cache interna. L&#39;app avvia l&#39;applicazione desktop nativa associata al tipo di file della risorsa scaricata.
 
-In Mac, selezionate **Apri** dal menu di scelta rapida per aprire una risorsa tramite AEM&#39;app desktop. In Windows, selezionate Apri sul Web dal menu di scelta rapida per aprire la risorsa. Dalla finestra Stato risorsa, toccate o fate clic sull’icona ![](assets/aemassets_icon_openondesktop.png) Apri sul desktop per aprire la risorsa.
+In Mac, selezionate **Apri** dal menu di scelta rapida per aprire una risorsa tramite AEM&#39;app desktop. In Windows, selezionate Apri sul Web dal menu di scelta rapida per aprire la risorsa. Dalla finestra Stato risorsa, toccate o fate clic sull’icona ![](assets/do-not-localize/aemassets_icon_openondesktop.png) Apri sul desktop per aprire la risorsa.
 
 Per  file Adobe InDesign (INDD), selezionate **[!UICONTROL Open]** dal menu di scelta rapida. Quando fate clic su questa opzione, l&#39;app scarica le risorse collegate nel file system locale e quindi apre il file INDD in  Adobe InDesign. Questo metodo garantisce che le risorse necessarie siano disponibili localmente quando si modifica il file INDD.
 
@@ -141,19 +141,19 @@ Dopo aver mappato l’archivio AEM Assets sull’unità locale, potete attivare 
 
    Queste azioni desktop sono disponibili anche quando fate clic sull’icona Azioni **** desktop nella barra degli strumenti dopo aver selezionato la risorsa o dalla barra degli strumenti nella pagina della risorsa.
 
-1. Per aprire la risorsa nell’applicazione desktop associata all’estensione di file specifica, toccate o fate clic sull’icona **Apri sul desktop** , azione rapida ![Apri sul desktop](assets/aemassets_icon_openondesktop.png).
+1. Per aprire la risorsa nell’applicazione desktop associata all’estensione di file specifica, toccate o fate clic sull’icona **Apri sul desktop** , azione rapida ![Apri sul desktop](assets/do-not-localize/aemassets_icon_openondesktop.png).
 
    In alternativa, scegliete **Apri** dal menu Azioni **** desktop nella barra degli strumenti.
 
-Per individuare la risorsa specifica nel file system locale, fate clic sull&#39;icona **Mostra** azione rapida ![Mostra](assets/aemassets_reveal_icon.png). In alternativa, scegliete **Mostra** dal menu Azioni **** desktop nella barra degli strumenti.
+Per individuare la risorsa specifica nel file system locale, fate clic sull&#39;icona **Mostra** azione rapida ![Mostra](assets/do-not-localize/aemassets_reveal_icon.png). In alternativa, scegliete **Mostra** dal menu Azioni **** desktop nella barra degli strumenti.
 
 ## Comprendere gli stati delle risorse {#understand-the-asset-statuses}
 
-| ![Icona app predefinita di Windows](assets/win_default.png) | L&#39;app è connessa al server e tutte le risorse sono sincronizzate. |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Icona disattivata per Windows](assets/win_disabled.png) | L&#39;app è avviata ma non è connessa al server. Alcune risorse potrebbero essere in attesa di sincronizzazione. |
-| ![Icona di sincronizzazione file Windows](assets/win_sync.png) | Le risorse vengono sincronizzate. I file vengono caricati o scaricati. Potete visualizzare gli stati esatti e mettere in pausa i trasferimenti dalla finestra Stato risorsa. |
-| ![Icona di riconnessione Windows](assets/win_refresh.png) | L&#39;app sta tentando di riconnettersi. Potenzialmente i problemi di rete stanno causando la sua disconnessione. |
+| ![Icona app predefinita di Windows](assets/do-not-localize/win_default.png) | L&#39;app è connessa al server e tutte le risorse sono sincronizzate. |
+--- |--- |
+| ![Icona disattivata per Windows](assets/do-not-localize/win_disabled.png) | L&#39;app è avviata ma non è connessa al server. Alcune risorse potrebbero essere in attesa di sincronizzazione. |
+| ![Icona di sincronizzazione file Windows](assets/do-not-localize/win_sync.png) | Le risorse vengono sincronizzate. I file vengono caricati o scaricati. Potete visualizzare gli stati esatti e mettere in pausa i trasferimenti dalla finestra Stato risorsa. |
+| ![Icona di riconnessione Windows](assets/do-not-localize/win_refresh.png) | L&#39;app sta tentando di riconnettersi. Potenzialmente i problemi di rete stanno causando la sua disconnessione. |
 
 ## Operazioni con le risorse {#workonassets}
 
@@ -169,7 +169,7 @@ Esistono due modi per estrarre le risorse dall’interfaccia Web AEM. Per inform
 
    Queste azioni desktop sono disponibili anche quando tocchi o fai clic sull’icona Azioni desktop nella barra degli strumenti dopo aver selezionato la risorsa o dalla barra degli strumenti nella pagina della risorsa.
 
-1. Per aprire la risorsa, toccate o fate clic sull’icona ![Apri sul desktop azione rapida](assets/aemassets_icon_openondesktop.png)Apri sul desktop.
+1. Per aprire la risorsa, toccate o fate clic sull’icona ![Apri sul desktop azione rapida](assets/do-not-localize/aemassets_icon_openondesktop.png)Apri sul desktop.
 
    In alternativa, scegliete Apri dal menu Azioni desktop nella barra degli strumenti.
 
@@ -177,7 +177,7 @@ Esistono due modi per estrarre le risorse dall’interfaccia Web AEM. Per inform
    >
    >Quando modificate un file che è appena aperto e non estratto, gli altri utenti non sono a conoscenza del fatto che una risorsa viene aggiornata automaticamente.
 
-1. Per aprire una risorsa da modificare in un’applicazione Adobe Creative Cloud, toccate o fate clic sull’icona ![Modifica azione rapida desktop](assets/aemassets_icon_editdesktop.png)Modifica desktop. Viene inoltre estratta la risorsa per la modifica. Dopo aver completato la modifica, archiviate la risorsa per aggiornare le modifiche in AEM Assets.
+1. Per aprire una risorsa da modificare in un’applicazione Adobe Creative Cloud, toccate o fate clic sull’icona ![Modifica azione rapida desktop](assets/do-not-localize/aemassets_icon_editdesktop.png)Modifica desktop. Viene inoltre estratta la risorsa per la modifica. Dopo aver completato la modifica, archiviate la risorsa per aggiornare le modifiche in AEM Assets.
 
    In alternativa, scegliete Modifica dal menu Azioni desktop nella barra degli strumenti.
 
@@ -219,7 +219,7 @@ L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di
 
    ![Icona Checkout](assets/chlimage_1-8.png)
 
-1. Rivedete la risorsa in Esplora risorse. L’icona a forma di lucchetto sull’icona ![a forma di](assets/aemassets_icon_lockcheckout.png) risorsa indica che la risorsa è stata estratta.
+1. Rivedete la risorsa in Esplora risorse. L’icona a forma di lucchetto sull’icona ![a forma di](assets/do-not-localize/aemassets_icon_lockcheckout.png) risorsa indica che la risorsa è stata estratta.
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di
 
 Dopo aver modificato le risorse, salvatele nell’applicazione desktop. Dal menu di scelta rapida, selezionate **Ulteriori informazioni** sulle risorse e fate clic sul check-in.
 
-Le risorse vengono caricate AEM server. Facoltativamente, potete controllare lo stato del caricamento selezionando **Visualizza stato** risorsa dall’icona della barra delle applicazioni. In alternativa, potete archiviare una risorsa dall’interfaccia Web AEM. Fate clic sulle risorse estratte o selezionatele. Dalla barra degli strumenti, fate clic sull’icona di ![check-in](assets/aemassets_icon_checkin.png).
+Le risorse vengono caricate AEM server. Facoltativamente, potete controllare lo stato del caricamento selezionando **Visualizza stato** risorsa dall’icona della barra delle applicazioni. In alternativa, potete archiviare una risorsa dall’interfaccia Web AEM. Fate clic sulle risorse estratte o selezionatele. Dalla barra degli strumenti, fate clic sull’icona di ![check-in](assets/do-not-localize/aemassets_icon_checkin.png).
 
 Una risorsa viene caricata in AEM automaticamente dopo che le modifiche vengono salvate localmente. Il check-in rende la risorsa disponibile per la modifica ad altri utenti AEM.
 

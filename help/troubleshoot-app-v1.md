@@ -1,6 +1,6 @@
 ---
-title: Risoluzione dei problemi relativi all'app desktop AEM versione 1.x
-description: Risolvi i problemi relativi a installazione, aggiornamento, configurazione e così via relativi all'app desktop AEM versione 1.x.
+title: Risoluzione dei problemi AEM app desktop versione 1.x
+description: Risolvere AEM problemi relativi all'installazione, all'aggiornamento, alla configurazione e così via'app desktop versione 1.x.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,84 +9,87 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+workflow-type: tm+mt
+source-wordcount: '3374'
+ht-degree: 1%
 
 ---
 
 
-# Risoluzione dei problemi relativi all&#39;app desktop AEM v1.x {#troubleshoot-aem-desktop-app}
+# Risoluzione dei problemi AEM&#39;app desktop v1.x {#troubleshoot-aem-desktop-app}
 
-Risolvi i problemi relativi a installazione, aggiornamento, configurazione e così via relativi all’app desktop AEM.
+Risolvi AEM problemi relativi a installazione, aggiornamento, configurazione e così via.
 
-L’app desktop Adobe Experience Manager (AEM) include utility che consentono di mappare l’archivio di Risorse AEM come condivisione di rete su computer desktop (condivisione SMB su Mac OS). La condivisione di rete è una tecnologia del sistema operativo che consente alle origini remote di essere trattate come se fossero parte del file system locale di un computer. Nel caso dell&#39;app desktop, la struttura del repository di gestione delle risorse digitali (DAM) di un&#39;istanza remota di AEM viene indirizzata come origine file remota. Il diagramma seguente descrive la topologia dell&#39;app desktop:
+&#39;app desktop per Adobi Experience Manager (AEM) include utility che consentono di mappare l&#39;archivio AEM Assets come condivisione di rete sul desktop (condivisione SMB su Mac OS). La condivisione di rete è una tecnologia del sistema operativo che consente alle origini remote di essere trattate come se fossero parte del file system locale di un computer. Nel caso dell&#39;app desktop, la struttura dell&#39;archivio DAM (Digital Asset Management) di un&#39;istanza AEM remota viene indirizzata come origine file remota. Il diagramma seguente descrive la topologia dell&#39;app desktop:
 
 ![diagramma app desktop](assets/aem-desktopapp-architecture.png)
 
-Con questa architettura, le app desktop intercettano le chiamate del file system (aperte, vicine, lette, in scrittura, ecc.) per la condivisione di rete montata e le traducono in chiamate AEM HTTP native al server AEM. I file vengono memorizzati nella cache locale. Per ulteriori dettagli, consultate [Utilizzare l&#39;app desktop AEM v1.x](use-app-v1.md).
+Con questa architettura, l&#39;app desktop intercetta le chiamate del file system (aperte, vicine, lette, scritte e così via) per la condivisione di rete montata e le converte in chiamate HTTP native AEM al server AEM. I file vengono memorizzati nella cache locale. Per ulteriori dettagli, consultate [Utilizzo AEM app desktop v1.x](use-app-v1.md).
 
 ## AEM desktop app component overview {#desktop-app-component-overview}
 
 l&#39;app desktop include i seguenti componenti:
 
 * **Applicazione** desktop: L&#39;applicazione installa o smonta DAM come file system remoto e traduce le chiamate del file system tra la condivisione di rete montata localmente e l&#39;istanza AEM remota a cui si connette.
-* **Client** WebDAV/SMB del sistema operativo: Gestisce la comunicazione tra Windows Explorer/Finder e l&#39;app desktop. Se un file viene recuperato, creato, modificato, eliminato, spostato o copiato, il client WebDAV/SMB del sistema operativo (OS) comunica questa operazione all&#39;app desktop. Dopo aver ricevuto la comunicazione, l&#39;app desktop la trasforma in chiamate API remote AEM native. Ad esempio, se un utente crea un file nella directory montata, il client WebDAV/SMB avvia una richiesta che l&#39;app desktop converte in una richiesta HTTP che crea il file in DAM. Il client WebDAV/SMB è un componente integrato del sistema operativo. Non è in alcun modo collegato all&#39;app desktop, AEM o Adobe.
-* **Istanza** Adobe Experience Manager: Consente di accedere alle risorse memorizzate nell&#39;archivio DAM di AEM Assets. Inoltre, esegue le azioni richieste dall&#39;app desktop per conto delle applicazioni desktop locali che interagiscono con la condivisione di rete montata. L’istanza AEM di destinazione deve eseguire AEM versione 6.1 o successiva. Le istanze di AEM che eseguono versioni precedenti di AEM potrebbero richiedere l&#39;installazione di pacchetti di funzioni aggiuntivi e di hotfix per diventare completamente funzionanti.
+* **Client** WebDAV/SMB del sistema operativo: Gestisce la comunicazione tra Windows Explorer/Finder e l&#39;app desktop. Se un file viene recuperato, creato, modificato, eliminato, spostato o copiato, il client WebDAV/SMB del sistema operativo (OS) comunica questa operazione all&#39;app desktop. Dopo aver ricevuto la comunicazione, l&#39;app desktop la trasforma in chiamate API native AEM remote. Ad esempio, se un utente crea un file nella directory montata, il client WebDAV/SMB avvia una richiesta che l&#39;app desktop converte in una richiesta HTTP che crea il file in DAM. Il client WebDAV/SMB è un componente integrato del sistema operativo. Non è in alcun modo collegato all&#39;app desktop, AEM o  Adobe.
+* **Adobe Experience Manager**: Consente l&#39;accesso alle risorse memorizzate nell&#39;archivio AEM Assets DAM. Inoltre, esegue le azioni richieste dall&#39;app desktop per conto delle applicazioni desktop locali che interagiscono con la condivisione di rete montata. L&#39;istanza AEM di destinazione deve essere eseguita AEM versione 6.1 o successiva. AEM istanze che eseguono versioni precedenti AEM potrebbero richiedere pacchetti di funzioni aggiuntivi e hotfix installati per diventare completamente funzionanti.
 
-## Casi di utilizzo previsti per l&#39;app desktop AEM {#intended-use-cases-for-aem-desktop-app}
+## Casi di utilizzo previsti per AEM&#39;app desktop {#intended-use-cases-for-aem-desktop-app}
 
-L&#39;app desktop AEM utilizza la tecnologia di condivisione di rete per mappare un archivio AEM remoto su un desktop locale. Tuttavia, non è inteso come sostituzione di una condivisione di rete con risorse, in cui gli utenti eseguono operazioni di gestione delle risorse digitali direttamente dal desktop locale. Questi includono lo spostamento o la copia di più file o il trascinamento di grandi strutture di cartelle nella condivisione di rete di Risorse AEM direttamente in Finder/Explorer.
+AEM&#39;app desktop utilizza la tecnologia di condivisione di rete per mappare un repository AEM remoto su un desktop locale. Tuttavia, non è inteso come sostituzione di una condivisione di rete con risorse, in cui gli utenti eseguono operazioni di gestione delle risorse digitali direttamente dal desktop locale. Questi includono lo spostamento o la copia di più file, o il trascinamento di grandi strutture di cartelle nella condivisione di rete AEM Assets direttamente in Finder/Explorer.
 
-L&#39;app desktop AEM fornisce un modo pratico per accedere (aprire) e modificare (salvare) le risorse DAM tra l&#39;interfaccia utente touch di AEM Assets e il desktop locale. Collega le risorse del server AEM Assets ai flussi di lavoro basati su desktop.
+AEM&#39;app desktop offre un modo pratico per accedere (aprire) e modificare (salvare) le risorse DAM tra l&#39;interfaccia utente touch dei AEM Assets e il desktop locale. Collega le risorse del server AEM Assets con i flussi di lavoro basati sul desktop.
 
-L&#39;esempio seguente illustra come utilizzare AEM Desktop:
+L’esempio seguente illustra come AEM Desktop deve essere utilizzato:
 
-* Un utente accede ad AEM e utilizza l’interfaccia utente Web per individuare una risorsa.
-* Utilizzando le funzionalità di azione desktop dell’interfaccia utente Web di AEM, l’utente può aprire, visualizzare o modificare la risorsa sul desktop, a seconda delle necessità.
+* Un utente accede a AEM e utilizza l’interfaccia utente Web per individuare una risorsa.
+* Utilizzando le funzionalità di azione desktop dell’interfaccia AEM Web, l’utente può aprire, visualizzare o modificare la risorsa sul desktop, a seconda delle necessità.
 * AEM Desktop apre la risorsa nell’editor predefinito per il tipo di file della risorsa.
 * L’utente apporta le modifiche desiderate alla risorsa.
-* Dopo che un file è stato modificato, l&#39;utente può visualizzare lo stato di sincronizzazione del file tramite la finestra di stato della sincronizzazione in background di AEM Desktop.
-* Utilizzando il menu di scelta rapida di AEM Desktop, l&#39;utente può archiviare o estrarre la risorsa o tornare all&#39;interfaccia utente di DAM.
-* Dopo aver completato le modifiche al file, l&#39;utente torna all&#39;interfaccia utente Web di AEM
+* Dopo che un file è stato modificato, l&#39;utente può visualizzare lo stato di sincronizzazione del file utilizzando AEM finestra di stato della sincronizzazione in background di Desktop.
+* Utilizzando il menu di scelta rapida di AEM Desktop, l&#39;utente può archiviare/estrarre la risorsa o tornare all&#39;interfaccia utente di DAM.
+* Dopo aver completato le modifiche al file, l&#39;utente ritorna all&#39;interfaccia AEM Web
 
-Questo non è l&#39;unico caso d&#39;uso. Tuttavia, mostra come AEM Desktop sia un meccanismo pratico per accedere/modificare localmente le risorse. È consigliabile utilizzare l&#39;interfaccia utente Web di DAM il più possibile, in quanto offre un&#39;esperienza migliore. Offre ad Adobe maggiore flessibilità per soddisfare le esigenze dei clienti.
+Questo non è l&#39;unico caso d&#39;uso. Tuttavia, AEM Desktop è un meccanismo pratico per accedere e modificare localmente le risorse. È consigliabile utilizzare l&#39;interfaccia utente Web di DAM il più possibile, in quanto offre un&#39;esperienza migliore. Offre  Adobe maggiore flessibilità per soddisfare le esigenze dei clienti.
 
 ## Limitazioni  {#limitations}
 
-La condivisione di rete WebDAV/SMB1 consente di utilizzare i file in una finestra Esplora risorse/Finder. Tuttavia, Explorer/Finder e AEM comunicano mediante una connessione di rete con determinate limitazioni. Ad esempio, il tempo necessario per copiare un file da 1 GB nella directory WebDAV/SMB installata è circa lo stesso del tempo richiesto per caricare un file da 1 GB in un sito Web utilizzando un browser Web. Infatti, nel primo caso, la durata potrebbe essere maggiore a causa di inefficienze del protocollo WebDAV/SMB e dei client WebDAV/SMB del sistema operativo (in particolare Mac OS X).
+La condivisione di rete WebDAV/SMB1 consente di utilizzare i file in una finestra Esplora risorse/Finder. Esplora risorse/Finder e AEM comunicare attraverso una connessione di rete con determinate limitazioni. Ad esempio, il tempo necessario per copiare un file da 1 GB nella directory WebDAV/SMB installata è circa lo stesso del tempo richiesto per caricare un file da 1 GB in un sito Web utilizzando un browser Web. Infatti, nel primo caso, la durata potrebbe essere maggiore a causa di inefficienze del protocollo WebDAV/SMB e dei client WebDAV/SMB del sistema operativo (in particolare Mac OS X).
 
 Esistono limitazioni ai tipi di attività che possono essere eseguite da una directory montata. In generale, l&#39;utilizzo di file di grandi dimensioni, in particolare su una connessione di rete con latenza bassa/bassa, potrebbe risultare difficoltoso, soprattutto quando si modificano file di grandi dimensioni.
 
-Adobe consiglia di eseguire alcuni test di casi d’uso prima di impegnarsi con un cliente per verificare che determinati tipi di file possano essere modificati in modo efficiente al posto della directory montata.
+ Adobe consiglia di eseguire alcuni test di esempio prima di impegnarsi con un client per verificare che alcuni tipi di file possano essere modificati in modo efficiente nella posizione locale dalla directory montata.
 
-AEM Desktop non è adatto per eseguire operazioni di manipolazione intensiva del file system, compresi, tra l&#39;altro, i seguenti elementi:
+AEM Desktop non è adatto per l&#39;esecuzione di operazioni di manipolazione intensiva del file system, compresi, tra l&#39;altro, i seguenti elementi:
 
 * Spostamento o copia di file e directory
-* Aggiunta di più risorse ad AEM
+* Aggiunta di più risorse a AEM
 * Ricerca e apertura di file attraverso il file system, fatta eccezione per la navigazione delle cartelle
 * Compressione o decompressione degli archivi di file
 
 A causa delle limitazioni del sistema operativo, Windows ha un limite di dimensione file di 4.294.967.295 byte (circa 4,29 GB). È dovuto a un&#39;impostazione del Registro di sistema che definisce le dimensioni di un file in una condivisione di rete. Il valore dell&#39;impostazione del Registro di sistema è un DWORD con una dimensione massima uguale al numero di riferimento.
 
-L&#39;app desktop Experience Manager non dispone di un valore di timeout configurabile che disconnette la connessione tra il server Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
+&#39;app desktop di Experience Manager non dispone di un valore di timeout configurabile che disconnette la connessione tra  server di Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
 
-## Memorizzazione nella cache e comunicazione con AEM {#caching-and-communication-with-aem}
+## Caching e comunicazione con AEM {#caching-and-communication-with-aem}
 
-L&#39;app desktop AEM offre funzioni di caching interno e caricamento in background per migliorare l&#39;esperienza dell&#39;utente finale. Quando salvate un file di grandi dimensioni, questo viene prima salvato localmente per consentirvi di continuare a lavorare. Dopo un certo periodo di tempo (al momento 30 secondi), il file viene quindi inviato in background al server AEM.
+AEM&#39;app desktop offre funzionalità di caching interno e caricamento in background per migliorare l&#39;esperienza dell&#39;utente finale. Quando salvate un file di grandi dimensioni, questo viene prima salvato localmente per consentirvi di continuare a lavorare. Dopo un certo tempo (al momento 30 secondi), il file viene inviato al server AEM in background.
 
-A differenza di Creative Cloud Desktop o altre soluzioni di sincronizzazione file, come Microsoft One Drive, l&#39;app desktop AEM non è un client di sincronizzazione desktop completo. Questo consente di accedere all’intero archivio di Risorse AEM, che può essere di grandi dimensioni (centinaia di gigabyte o terabyte) per una sincronizzazione completa.
+A differenza di Creative Cloud Desktop o altre soluzioni di sincronizzazione file, come Microsoft One Drive, AEM app desktop non è un client di sincronizzazione desktop completo. Questo consente di accedere all&#39;intero repository di AEM Assets, che può essere estremamente grande (centinaia di gigabyte o terabyte) per una sincronizzazione completa.
 
 La memorizzazione nella cache consente di limitare il sovraccarico di rete/storage solo a un sottoinsieme di risorse rilevanti per l’utente.
 
 >[!CAUTION]
 >
->Adobe consiglia di disattivare la generazione delle miniature per velocizzare la navigazione. Se abilitate le anteprime delle icone, l&#39;app memorizza nella cache le risorse digitali quando vi spostate nella cartella montata. L&#39;app scarica anche risorse di cui l&#39;utente potrebbe non interessarsi, che aumentano il carico sul server, consumano la larghezza di banda dell&#39;utente e utilizzano più spazio su disco dell&#39;utente.
+> Adobe consiglia di disattivare la generazione delle miniature per velocizzare la navigazione. Se abilitate le anteprime delle icone, l&#39;app memorizza nella cache le risorse digitali quando vi spostate nella cartella montata. L&#39;app scarica anche risorse di cui l&#39;utente potrebbe non interessarsi, che aumentano il carico sul server, consumano la larghezza di banda dell&#39;utente e utilizzano più spazio su disco dell&#39;utente.
 
-Ecco come l&#39;app desktop AEM esegue la memorizzazione nella cache:
+Ecco come AEM&#39;app desktop esegue la memorizzazione nella cache:
 
 * Quando aprite una cartella nel Finder e vengono visualizzate miniature/anteprime dei file, o quando aprite un file in un’applicazione, l’app desktop memorizza nella cache il file binario.
 * Quando si memorizzano i file tramite Finder o altre applicazioni desktop, il file viene memorizzato localmente per primo (nella cache) e il sistema operativo riceve una notifica. Il file viene quindi messo in coda per il caricamento sul server in background e caricato in rete. In caso di errore di rete, l&#39;app desktop tenta nuovamente di caricare l&#39;intero file per un massimo di tre volte. Se il caricamento non riesce dopo tre tentativi, il file viene contrassegnato come in conflitto e lo stato viene visualizzato tramite la finestra Stato coda di caricamento in background. l&#39;app desktop non tenta più di aggiornare il file. L&#39;utente deve aggiornare il file e ricaricarlo dopo il ripristino della connettività
 
-Ogni operazione non viene memorizzata nella cache locale. Le seguenti informazioni vengono trasmesse immediatamente ad AEM Server senza memorizzazione nella cache locale:
+Ogni operazione non viene memorizzata nella cache locale. Le seguenti informazioni vengono trasmesse immediatamente al server AEM senza caching locale:
 
 * Qualsiasi operazione sulle cartelle, ad esempio creazione, eliminazione e così via
 * La funzione di caricamento delle cartelle introdotta nella versione 1.4 carica una gerarchia di cartelle locale senza memorizzare i file nella cache locale
@@ -99,39 +102,39 @@ Per la risoluzione dei problemi relativi alle prestazioni ottimizzate per singol
 
 La larghezza di banda disponibile per un singolo utente svolge un ruolo fondamentale nelle prestazioni del client WebDAV/SMB.
 
-Adobe consiglia di avvicinare la velocità di caricamento di un singolo utente a 10 Mbps. Per le connessioni wireless, la larghezza di banda è spesso condivisa tra più utenti. Se più utenti eseguono contemporaneamente attività che richiedono larghezza di banda di rete, le prestazioni possono peggiorare ulteriormente. Per evitare tali problemi, utilizzate una connessione cablata.
+ Adobe consiglia di avvicinare la velocità di caricamento di un singolo utente a 10 Mbps. Per le connessioni wireless, la larghezza di banda è spesso condivisa tra più utenti. Se più utenti eseguono contemporaneamente attività che richiedono larghezza di banda di rete, le prestazioni possono peggiorare ulteriormente. Per evitare tali problemi, utilizzate una connessione cablata.
 
 ## Configurazioni specifiche di Windows {#windows-specific-configurations}
 
-Se si esegue AEM su Windows, è possibile configurare Windows per migliorare le prestazioni del client WebDAV. Per ulteriori informazioni, visitate [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
+Se si esegue AEM in Windows, è possibile configurare Windows per migliorare le prestazioni del client WebDAV. Per ulteriori informazioni, visitate [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
 
 In Windows 7, la modifica delle impostazioni IE può migliorare le prestazioni di WebDAV. Per informazioni dettagliate, visitate [http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/](http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
 
 ## Operazioni simultanee {#concurrent-operations}
 
-Quando interagisci con un file localmente, AEM Desktop verifica se una versione più recente del file è disponibile in AEM. Se è disponibile una nuova versione, l&#39;applicazione scarica una nuova copia del file nella cache locale. Tuttavia, AEM Desktop non sovrascrive un file memorizzato nella cache locale se è stato modificato. Questa funzione impedisce che il lavoro venga sovrascritto accidentalmente.
+Quando interagite con un file localmente, AEM Desktop verifica se una versione più recente del file è disponibile in AEM. Se è disponibile una nuova versione, l&#39;applicazione scarica una nuova copia del file nella cache locale. Tuttavia, AEM desktop non sovrascrive un file memorizzato nella cache locale se è stato modificato. Questa funzione impedisce che il lavoro venga sovrascritto accidentalmente.
 
 Quando lo stesso file viene modificato sia localmente che in AEM, la versione modificata localmente sovrascrive la versione in AEM. In questo caso, la versione precedente è disponibile nella timeline della risorsa. È possibile verificare entrambe le versioni e risolvere eventuali conflitti.
 
-Se un file locale non è coerente con la versione disponibile nel server, la finestra di dialogo dello stato di caricamento in background segnala il conflitto. Per risolvere il problema, aprite il file in conflitto e salvatelo. Salvando il file, AEM Desktop sincronizza le ultime modifiche locali con AEM. Potete visualizzare le versioni precedenti della risorsa nella timeline e risolvere eventuali conflitti.
+Se un file locale non è coerente con la versione disponibile nel server, la finestra di dialogo dello stato di caricamento in background segnala il conflitto. Per risolvere il problema, aprite il file in conflitto e salvatelo. Salvando i file, AEM Desktop sincronizza le ultime modifiche locali su AEM. Potete visualizzare le versioni precedenti della risorsa nella timeline e risolvere eventuali conflitti.
 
-È necessario tenere conto di fattori aggiuntivi quando più utenti tentano di lavorare in directory montate separate per la stessa istanza di AEM. In particolare, sono importanti i seguenti fattori:
+È necessario tenere conto di fattori aggiuntivi quando più utenti tentano di lavorare in directory montate separate per la stessa istanza AEM. In particolare, sono importanti i seguenti fattori:
 
 * Quantità di larghezza di banda disponibile sulla rete di origine degli utenti
 * Configurazione della rete, ad esempio firewall o proxy, della rete di origine
-* Quantità di larghezza di banda disponibile nella rete dell’istanza AEM di destinazione
-* Se un dispatcher è presente prima dell’istanza AEM di destinazione
-* Carico corrente sull’istanza AEM di destinazione
+* Quantità di larghezza di banda disponibile nella rete dell&#39;istanza di AEM di destinazione
+* Indica se un dispatcher è presente prima dell&#39;istanza di AEM di destinazione
+* Carico corrente sull&#39;istanza di AEM di destinazione
 
 ## Configurazioni AEM aggiuntive {#additional-aem-configurations}
 
-Se le prestazioni WebDAV/SMB subiscono un drastico calo quando più utenti lavorano contemporaneamente, in AEM è possibile configurare alcuni elementi che possono contribuire a migliorare le prestazioni.
+Se le prestazioni WebDAV/SMB subiscono un drastico calo quando più utenti lavorano contemporaneamente, è possibile configurare alcuni elementi in AEM, il che può contribuire a migliorare le prestazioni.
 
 ## Aggiornare i flussi di lavoro transitori delle risorse {#update-asset-transient-workflows}
 
-Puoi migliorare le prestazioni sul lato AEM abilitando flussi di lavoro transitori per il flusso di lavoro Risorse aggiornamento DAM. L’attivazione di flussi di lavoro transitori riduce la potenza di elaborazione necessaria per aggiornare le risorse quando vengono create o modificate in AEM.
+Puoi migliorare le prestazioni sul lato AEM abilitando flussi di lavoro transitori per il flusso di lavoro DAM Update Asset. L’attivazione di flussi di lavoro transitori riduce la potenza di elaborazione necessaria per aggiornare le risorse quando vengono create o modificate in AEM.
 
-1. Passa `/miscadmin` all’istanza di AEM da configurare (ad esempio, `http://[Server]:[Port]/miscadmin`).
+1. Individuate `/miscadmin` l&#39;istanza AEM da configurare (ad esempio, `http://[Server]:[Port]/miscadmin`).
 1. Dalla struttura di navigazione, espandi **Strumenti** > **Flusso di lavoro** > **Modelli** > **dam**.
 1. Fate doppio clic su **DAM Update Asset (Aggiorna risorsa** DAM).
 1. Dal pannello degli strumenti mobili, passate alla scheda **Pagina** e fate clic su Proprietà **** pagina.
@@ -139,39 +142,39 @@ Puoi migliorare le prestazioni sul lato AEM abilitando flussi di lavoro transito
 
 ### Regolare la coda del flusso di lavoro transitorio di Granite {#adjust-granite-transient-workflow-queue}
 
-Un altro metodo per migliorare le prestazioni di AEM consiste nel configurare il valore dei processi paralleli massimi per il processo Coda flusso di lavoro transitoria Granite. Il valore consigliato è circa la metà del numero di CPU disponibile con il server. Per regolare il valore, effettuare le seguenti operazioni:
+Un altro metodo per migliorare AEM prestazioni consiste nel configurare il valore dei processi paralleli massimi per il processo Coda flusso di lavoro transitoria Granite. Il valore consigliato è circa la metà del numero di CPU disponibile con il server. Per regolare il valore, effettuare le seguenti operazioni:
 
-1. Andate a */system/console/configMgr* nell’istanza AEM da configurare (ad esempio, <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
-1. Cercate **QueueConfiguration** e fate clic per aprire ciascun processo fino a individuare il processo **Granite Transient Workflow Queue** . Fate clic sull’icona Modifica accanto a essa.
+1. Andate a */system/console/configMgr* nell&#39;istanza AEM da configurare (ad esempio, <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
+1. Cercate **QueueConfiguration** e fate clic per aprire ciascun processo fino a individuare il processo **Granite Transient Workflow Queue** . Fate clic su Modifica accanto a esso.
 1. Modificate il valore Processi **paralleli** massimi e fate clic su **Salva**.
 
 ## Configurazione AWS {#aws-configuration}
 
-A causa delle limitazioni della larghezza di banda di rete, le prestazioni di WebDAV/SMB possono peggiorare se più utenti lavorano contemporaneamente. Adobe consiglia di aumentare le dimensioni dell’istanza AWS per un’istanza AEM di destinazione in esecuzione su AWS per migliorare le prestazioni di WebDAV/SMB.
+A causa delle limitazioni della larghezza di banda di rete, le prestazioni di WebDAV/SMB possono peggiorare se più utenti lavorano contemporaneamente.  Adobe consiglia di aumentare le dimensioni dell&#39;istanza AWS per un&#39;istanza AEM di destinazione in esecuzione su AWS per migliorare le prestazioni di WebDAV/SMB.
 
 Questa misura aumenta in modo specifico la quantità di larghezza di banda disponibile per il server. Di seguito sono riportati alcuni dettagli:
 
 * La quantità di larghezza di banda di rete dedicata a un&#39;istanza AWS aumenta con l&#39;aumentare delle dimensioni dell&#39;istanza. Per informazioni sulla larghezza di banda disponibile per ogni dimensione di istanza, consultate la documentazione [](https://aws.amazon.com/ec2/instance-types/)AWS.
-* Durante la risoluzione dei problemi relativi a un client di grandi dimensioni, Adobe ha configurato la dimensione dell’istanza AEM su c4.8xlarge, principalmente per i 4000 Mbps di larghezza di banda dedicata forniti.
-* Se l’istanza di AEM è preceduta da un dispatcher, accertati che sia di dimensioni appropriate. Se l’istanza di AEM fornisce 4000 Mbps ma il dispatcher fornisce solo 500 Mbps, la larghezza di banda effettiva è solo 500 Mbps. È perché il dispatcher crea un collo di bottiglia della rete.
+* Durante la risoluzione dei problemi per un client di grandi dimensioni,  Adobe ha configurato la dimensione dell&#39;istanza AEM su c4.8xlarge, principalmente per i 4000 Mbps di larghezza di banda dedicata che fornisce.
+* Se l&#39;istanza AEM è preceduta da un dispatcher, assicurarsi che sia di dimensioni appropriate. Se l’istanza AEM fornisce 4000 Mbps ma il dispatcher fornisce solo 500 Mbps, la larghezza di banda effettiva è solo 500 Mbps. È perché il dispatcher crea un collo di bottiglia della rete.
 
 ## Limitazioni del file estratto {#checked-out-file-limitations}
 
-Esistono alcuni limiti noti per l&#39;interazione con i file estratti tramite Esplora risorse/Finder. Se un file è estratto, deve essere di sola lettura per chiunque, ad eccezione dell&#39;utente che ha estratto il file. L’implementazione del protocollo WebDAV/SMB1 in AEM applica questa regola. Tuttavia, i client WebDAV/SMB del sistema operativo spesso non interagiscono con i file estratti. Alcune stranezze sono descritte di seguito.
+Esistono alcuni limiti noti per l&#39;interazione con i file estratti tramite Esplora risorse/Finder. Se un file è estratto, deve essere di sola lettura per chiunque, ad eccezione dell&#39;utente che ha estratto il file. L&#39;implementazione del protocollo WebDAV/SMB1 in AEM applica questa regola. Tuttavia, i client WebDAV/SMB del sistema operativo spesso non interagiscono con i file estratti. Alcune stranezze sono descritte di seguito.
 
 ### Generale {#general}
 
-Quando si scrive in un file estratto, il blocco viene applicato solo all’implementazione WebDAV di AEM. Di conseguenza, il blocco è imposto solo dai client che utilizzano WebDAV, ad esempio l&#39;app desktop. Il blocco non viene imposto tramite l&#39;interfaccia Web di AEM. L&#39;interfaccia di AEM mostra semplicemente un&#39;icona a forma di lucchetto nella vista a schede per le risorse sottoposte a Check-Out. L’icona è cosmetica e non ha alcun effetto sul comportamento di AEM.
+Quando si scrive in un file estratto, il blocco viene applicato solo all&#39;interno AEM&#39;implementazione WebDAV. Di conseguenza, il blocco è imposto solo dai client che utilizzano WebDAV, ad esempio l&#39;app desktop. Il blocco non viene imposto tramite AEM&#39;interfaccia Web. L&#39;interfaccia AEM mostra semplicemente un&#39;icona a forma di lucchetto nella vista a schede per le risorse sottoposte a Check-Out. L&#39;icona è cosmetica e non ha alcun effetto sul comportamento di AEM.
 
-In generale, i client WebDAV non si comportano sempre come previsto. Potrebbero verificarsi altri problemi. Tuttavia, l’aggiornamento o il controllo della risorsa in AEM è un metodo efficace per verificare che non venga modificata. Questo comportamento è tipico dei client WebDAV del sistema operativo, che non è sotto il controllo di Adobe.
+In generale, i client WebDAV non si comportano sempre come previsto. Potrebbero verificarsi altri problemi. Tuttavia, l’aggiornamento o il controllo della risorsa in AEM è un metodo efficace per verificare che la risorsa non venga modificata. Questo comportamento è tipico dei client WebDAV del sistema operativo, che non è sotto  controllo  Adobe.
 
 ### Windows {#windows}
 
-L&#39;eliminazione di un file sembra aver esito positivo perché il file scompare dall&#39;elenco dei file in Windows. Tuttavia, l’aggiornamento della directory e il check-in delle risorse AEM mostrano che il file è ancora presente. Inoltre, la modifica dei file sembra aver esito positivo (non vengono visualizzate finestre di dialogo di avviso o messaggi di errore). Tuttavia, se riaprite il file o archiviate le risorse AEM, il file rimane invariato.
+L&#39;eliminazione di un file sembra aver esito positivo perché il file scompare dall&#39;elenco dei file in Windows. Tuttavia, l’aggiornamento della directory e il check-in AEM risorse mostrano che il file è ancora presente. Inoltre, la modifica dei file sembra aver esito positivo (non vengono visualizzate finestre di dialogo di avviso o messaggi di errore). Tuttavia, se si riapre il file o si archivia AEM risorse, il file rimane invariato.
 
 #### Mac OS X {#mac-os-x}
 
-La sostituzione di un file non visualizza un avviso o un errore, ma se si verifica la risorsa in AEM, la risorsa rimane invariata. Aggiorna o verifica la risorsa in AEM per verificare che non venga modificata.
+La sostituzione di un file non visualizza un avviso o un errore, ma il controllo della risorsa in AEM rivela che rimane invariata. Aggiorna o controlla la risorsa in AEM per verificare che non venga modificata.
 
 ## Risoluzione dei problemi relativi alle icone delle app desktop (Mac OS X) {#troubleshooting-desktop-app-icon-issues-mac-os-x}
 
@@ -187,7 +190,7 @@ Dopo l&#39;installazione dell&#39;app desktop, l&#39;icona del menu dell&#39;app
 1. Digitate il comando seguente e premete Invio:
 
    ```shell
-   rm -r com.adobe.aem.assetscompanion 
+   rm -r com.adobe.aem.assetscompanion
    ```
 
 1. Digitate il comando seguente e premete Invio:
@@ -210,41 +213,42 @@ Dopo l&#39;installazione dell&#39;app desktop, l&#39;icona del menu dell&#39;app
 
 1. Riavviate il sistema.
 
-AEM Desktop tenta di sincronizzare ogni file tre volte. Se la sincronizzazione del file non riesce dopo il terzo tentativo, AEM Desktop considera il file in conflitto e invia una notifica tramite la finestra di stato del caricamento in background. Uno stato di conflitto indica che le ultime modifiche sono ancora disponibili localmente, ma non vengono sincronizzate di nuovo in AEM. L&#39;app desktop AEM non tenta più di eseguire la sincronizzazione.
+AEM Desktop tenta di sincronizzare tre volte un determinato file. Se la sincronizzazione del file non riesce dopo il terzo tentativo, AEM Desktop considera il file in conflitto e invia una notifica tramite la finestra di stato del caricamento in background. Uno stato di conflitto indica che le ultime modifiche sono ancora disponibili localmente, ma non vengono sincronizzate di nuovo in AEM. AEM&#39;app desktop non tenta più di eseguire la sincronizzazione.
 
-Il modo più semplice per risolvere questa situazione è aprire il file in conflitto e salvarlo di nuovo. Forza AEM Desktop a tentare la sincronizzazione per altre tre volte. Se il file non viene ancora sincronizzato, consulta le sezioni seguenti per ulteriore assistenza.
+Il modo più semplice per risolvere questa situazione è aprire il file in conflitto e salvarlo di nuovo. Forza AEM Desktop a tentare la sincronizzazione per altre tre occasioni. Se il file non viene ancora sincronizzato, consulta le sezioni seguenti per ulteriore assistenza.
 
-## Cancellazione della cache desktop di AEM {#clearing-aem-desktop-cache}
+## Cancellazione AEM cache desktop {#clearing-aem-desktop-cache}
 
-La cancellazione della cache di AEM Desktop è un&#39;attività preliminare di risoluzione dei problemi che può risolvere diversi problemi relativi a AEM Desktop.
+La cancellazione AEM cache del desktop è un&#39;attività preliminare di risoluzione dei problemi che può risolvere diversi problemi AEM Desktop.
 
-Potete cancellare la cache eliminando la directory della cache dell&#39;applicazione nelle seguenti posizioni: Windows: %LocalAppData%\Adobe\AssetsCompanion\Cache\
+È possibile cancellare la cache eliminando la directory della cache dell&#39;applicazione nelle seguenti posizioni.
+In Windows, `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
-Mac: ~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/
+In Mac, `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-Tuttavia, la posizione può cambiare in base all&#39;endpoint AEM configurato da AEM Desktop. Il valore è una versione codificata dell’URL di destinazione. Ad esempio, se l&#39;applicazione esegue il targeting `http://localhost:4502`, il nome della directory è `http%3A%2F%2Flocalhost%3A4502%2F`.
+Tuttavia, la posizione può cambiare a seconda AEM&#39;endpoint AEM configurato da Desktop. Il valore è una versione codificata dell’URL di destinazione. Ad esempio, se l&#39;applicazione esegue il targeting `http://localhost:4502`, il nome della directory è `http%3A%2F%2Flocalhost%3A4502%2F`.
 
-Per cancellare la cache, eliminate la directory &lt;Endpoint AEM codificato>.
-
->[!NOTE]
->
->Se cancellate la cache di AEM Desktop, le modifiche ai file locali non sincronizzate con AEM andranno perse.
+Per cancellare la cache, eliminate la directory &lt;Encoded AEM Endpoint>.
 
 >[!NOTE]
 >
->A partire dalla versione 1.5 dell&#39;app desktop AEM, è disponibile un&#39;opzione nell&#39;interfaccia utente dell&#39;app desktop per cancellare la cache.
+>Se cancellate AEM cache del desktop, le modifiche ai file locali che non sono sincronizzate con AEM vengono perse.
 
-## Ricerca della versione desktop di AEM {#finding-the-aem-desktop-version}
+>[!NOTE]
+>
+>A partire dalla versione 1.5 AEM&#39;app desktop, è disponibile un&#39;opzione nell&#39;interfaccia utente dell&#39;app desktop per cancellare la cache.
 
-La procedura per verificare la versione di AEM Desktop è la stessa per Windows e Mac OS.
+## Ricerca della versione AEM Desktop {#finding-the-aem-desktop-version}
+
+La procedura per verificare la versione AEM Desktop è la stessa per Windows e Mac OS.
 
 Fate clic sull&#39;icona AEM Desktop, quindi scegliete **Informazioni su**. Il numero di versione viene visualizzato sullo schermo.
 
-## Aggiornamento dell&#39;app desktop AEM su macOS {#upgrading-aem-desktop-app-on-macos}
+## Aggiornamento AEM&#39;app desktop su macOS {#upgrading-aem-desktop-app-on-macos}
 
-Talvolta possono verificarsi problemi durante l&#39;aggiornamento dell&#39;app desktop AEM su macOS. Ciò è causato dalla cartella di sistema precedente per l&#39;app desktop AEM che non consente il caricamento corretto delle nuove versioni di AEM Desktop. Per risolvere questo problema, è possibile rimuovere manualmente le cartelle e i file seguenti.
+A volte possono verificarsi problemi durante l&#39;aggiornamento AEM&#39;app desktop su macOS. Ciò è causato dalla cartella di sistema precedente per AEM app desktop che impedisce il corretto caricamento delle nuove versioni di AEM Desktop. Per risolvere questo problema, è possibile rimuovere manualmente le cartelle e i file seguenti.
 
-Prima di eseguire i passaggi indicati di seguito, trascinate l’applicazione &quot;Adobe Experience Manager Desktop&quot; dalla cartella delle applicazioni macOS al cestino. Aprite quindi il terminale ed eseguite il comando seguente, fornendo la password quando richiesto.
+Prima di eseguire i passaggi descritti di seguito, trascinate l’applicazione &quot; Adobe Experience Manager desktop&quot; dalla cartella delle applicazioni macOS al cestino. Aprite quindi il terminale ed eseguite il comando seguente, fornendo la password quando richiesto.
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -261,32 +265,32 @@ Le limitazioni tecniche del sistema operativo impediscono agli utenti di avere u
 
 In questo caso, chiudendo e riaprendo il file è possibile che il contenuto non venga modificato. Tuttavia, alcune applicazioni possono memorizzare un backup del file in modo che le modifiche possano essere applicate.
 
-Indipendentemente dal comportamento, il file rimane invariato al momento del check-in. Anche se viene visualizzata una versione diversa del file, le modifiche non vengono sincronizzate in AEM.
+Indipendentemente dal comportamento, il file rimane invariato al momento del check-in. Anche se viene visualizzata una versione diversa del file, le modifiche non vengono sincronizzate su AEM.
 
 ## Risoluzione dei problemi relativi allo spostamento dei file {#troubleshooting-problems-around-moving-files}
 
-L&#39;API server richiede intestazioni aggiuntive, X-Destination, X-Depth e X-Overwrite, da trasmettere per il funzionamento delle operazioni di spostamento e copia. Il dispatcher non trasmette queste intestazioni per impostazione predefinita, causando il fallimento delle operazioni. Per ulteriori informazioni, consultate [Connessione ad AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
+L&#39;API server richiede intestazioni aggiuntive, X-Destination, X-Depth e X-Overwrite, da trasmettere per il funzionamento delle operazioni di spostamento e copia. Il dispatcher non trasmette queste intestazioni per impostazione predefinita, causando il fallimento delle operazioni. Per ulteriori informazioni, vedere [Connessione a AEM dietro un Dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
-## Risoluzione dei problemi di connessione AEM Desktop {#troubleshooting-aem-desktop-connection-issues}
+## Risoluzione dei problemi AEM connessione desktop {#troubleshooting-aem-desktop-connection-issues}
 
 ### Problema di reindirizzamento SAML {#saml-redirect-issue}
 
-Il motivo più comune dei problemi riscontrati con AEM Desktop che si collega all’istanza AEM abilitata per SSO (SAML) è che il processo SAML non viene reindirizzato al percorso originariamente richiesto. In alternativa, la connessione può essere reindirizzata a un host non configurato in AEM desktop. Effettuate le seguenti operazioni per verificare il processo di accesso:
+Il motivo più comune per i problemi con AEM Desktop che si collega all&#39;istanza AEM SSO (SAML) è che il processo SAML non viene reindirizzato al percorso originariamente richiesto. In alternativa, la connessione può essere reindirizzata a un host che non è configurato AEM desktop. Effettuate le seguenti operazioni per verificare il processo di accesso:
 
 1. Aprite un browser Web.
 1. Nella barra degli indirizzi, specificate l’URL `/content/dam.json`.
 1. Sostituite l’URL con l’istanza AEM di destinazione, ad esempio `http://localhost:4502/content/dam.json`.
-1. Accedete ad AEM.
+1. Accedi a AEM.
 1. Dopo l&#39;accesso, controllate l&#39;indirizzo corrente del browser nella barra degli indirizzi. Deve corrispondere all’URL immesso inizialmente.
 1. Verificate che tutti gli elementi prima `/content/dam.json` corrispondano al valore AEM di destinazione configurato in AEM Desktop.
 
 ### Problema di configurazione SSL {#ssl-configuration-issue}
 
-Le librerie utilizzate dall’app desktop AEM per la comunicazione HTTP utilizzano l’applicazione SSL restrittiva. Talvolta, una connessione può avere esito positivo utilizzando un browser ma non può essere utilizzata correttamente dall&#39;app desktop AEM. Per configurare SSL in modo appropriato, installate il certificato intermedio mancante in Apache. Vedere [Come installare un certificato CA intermedio in Apache](https://access.redhat.com/solutions/43575).
+Le librerie che AEM&#39;app desktop utilizza per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. A volte, una connessione può avere esito positivo utilizzando un browser ma non può essere utilizzata AEM&#39;app desktop. Per configurare SSL in modo appropriato, installate il certificato intermedio mancante in Apache. Vedere [Come installare un certificato CA intermedio in Apache](https://access.redhat.com/solutions/43575).
 
 ## Utilizzo di AEM Desktop con dispatcher {#using-aem-desktop-with-dispatcher}
 
-AEM Desktop funziona con le distribuzioni AEM dietro un dispatcher, che è una configurazione predefinita e consigliata per i server AEM. I dispatcher AEM davanti agli ambienti di authoring di AEM sono generalmente configurati per ignorare la memorizzazione nella cache delle risorse DAM. Pertanto, i dispatcher non forniscono memorizzazione nella cache aggiuntiva dal punto di vista di AEM Desktop. Verificate che la configurazione del dispatcher sia regolata in modo da funzionare per AEM Desktop. Per ulteriori dettagli, consultate [Connessione ad AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
+AEM Desktop funziona con distribuzioni AEM dietro un dispatcher, una configurazione predefinita e consigliata per AEM server. AEM dispatcher davanti AEM ambienti di authoring sono generalmente configurati per saltare la memorizzazione nella cache delle risorse DAM. Pertanto, i dispatcher non forniscono memorizzazione nella cache aggiuntiva dal punto di vista AEM Desktop. Verificate che la configurazione del dispatcher sia regolata in modo da funzionare per AEM Desktop. Per ulteriori dettagli, vedere [Connessione a AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher).
 
 ## Verifica dei file di registro {#checking-for-log-files}
 

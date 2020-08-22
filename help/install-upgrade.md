@@ -1,6 +1,6 @@
 ---
-title: Installare e configurare 'app desktop Adobe Experience Manager
-description: Installa e configura 'app desktop di Adobe Experience Manager per lavorare con  server Risorse Adobe Experience Manager e scarica le risorse nel file system locale.
+title: Installare e configurare l'app desktop Adobe Experience Manager
+description: Installa e configura l’app desktop Adobe Experience Manager per lavorare con i server Adobe Experience Manager Assets e scarica le risorse nel file system locale.
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Install Adobe Experience Manager desktop app {#install-app-v2}
 
-Utilizzando l’app desktop  Adobe Experience Manager, le risorse all’interno  Experience Manager sono facilmente disponibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop nativa. Le risorse possono essere visualizzate in anteprima, aperte nelle applicazioni desktop native, visualizzate in Mac Finder o Windows Explorer per l&#39;inserimento in altri documenti e modificate localmente; le modifiche vengono salvate in  Experience Manager al momento del caricamento e viene creata una nuova versione nell&#39;archivio.
+Utilizzando l’app desktop Adobe Experience Manager, le risorse all’interno  Experience Manager sono facilmente disponibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop nativa. Le risorse possono essere visualizzate in anteprima, aperte nelle applicazioni desktop native, visualizzate in Mac Finder o Windows Explorer per l&#39;inserimento in altri documenti e modificate localmente; le modifiche vengono salvate in  Experience Manager al momento del caricamento e viene creata una nuova versione nell&#39;archivio.
 
 Tale integrazione consente a vari ruoli dell&#39;organizzazione di:
 
@@ -59,7 +59,7 @@ Per effettuare l&#39;aggiornamento da una versione precedente dell&#39;app, segu
 
 ## Installare la versione {#install-v2}
 
-Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstallate l&#39;app desktop  Adobe Experience Manager esistente v1.x prima di installare l&#39;app più recente. Per ulteriori informazioni, vedi sopra.
+Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstallare qualsiasi app desktop Adobe Experience Manager esistente v1.x prima di installare l&#39;app più recente. Per ulteriori informazioni, vedi sopra.
 
 1. Scaricate il programma di installazione più recente dalla pagina delle note sulla [versione](release-notes.md) .
 
@@ -81,7 +81,7 @@ Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstall
 
    *Figura: Schermata di connessione all&#39;indirizzo del server di input*
 
-   >[!Caution]
+   >[!CAUTION]
    >
    >Assicurarsi che non ci siano spazi iniziali o finali prima o dopo l&#39;indirizzo del server AEM. In caso contrario, l&#39;app non può connettersi al server AEM.
 
@@ -93,7 +93,7 @@ Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstall
 
 1. ( Experience Manager 6.5.1 o successivo) Se si utilizza l&#39;app desktop con  Experience Manager 6.5.1 o successivo, aggiornare il connettore S3 o Azure alla versione 1.10.4 o successiva. Vedere Connettore [di](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) Azure o connettore [](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore)S3.
 
-   Se sei un cliente di Adobi Managed Services  (AMS), contatta  Assistenza clienti del Adobe.
+   Se sei un cliente Adobe Managed Services (AMS), contatta &#39;Assistenza clienti del Adobe.
 
 ## Impostare le preferenze {#set-preferences}
 

@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 9de9d086be4c0eccda7a60bd3dcbe68735394fad
 workflow-type: tm+mt
-source-wordcount: '3857'
+source-wordcount: '3869'
 ht-degree: 2%
 
 ---
@@ -35,10 +35,15 @@ Per l&#39;app desktop versione 1.x, quanto segue sono riportati i collegamenti p
 
 ## Requisiti di sistema e prerequisiti {#system-requirements-and-prerequisites}
 
-AEM Desktop è compatibile con i seguenti sistemi operativi:
+[!DNL Adobe Experience Manager]L’app desktop è compatibile con i seguenti sistemi operativi:
 
 * Mac OS X 10.10 o versione successiva, con correzioni di bug più recenti.
-* Windows 7 e Windows 10 con Service Pack e correzioni di bug più recenti.
+
+* Windows 10 con i Service Pack più recenti e le correzioni di bug.
+
+>[!NOTE]
+>
+>Windows 7 non è più supportato dal fornitore (https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020).
 
  Adobe consiglia vivamente di utilizzare la versione più recente dell&#39;app desktop AEM per utilizzare le funzionalità più recenti, le correzioni di bug più recenti e le prestazioni migliori.
 
@@ -88,7 +93,7 @@ Questa versione estende e sostituisce le versioni precedenti dell&#39;app deskto
 
 ### Miglioramenti disponibili a partire AEM app desktop 1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
 
-&#39;app desktop (AEM) 1.9.1 è stata una patch release per risolvere alcuni problemi chiave dei clienti relativi al checkout delle risorse e alla copia di file dalla condivisione di rete a una directory locale.
+L&#39;app desktop Adobe Experience Manager (AEM) 1.9.1 era una patch release per risolvere alcuni problemi chiave dei clienti relativi al checkout delle risorse e alla copia dei file dalla condivisione di rete a una directory locale.
 
 * Le risorse sottoposte a check-out da parte di un utente non devono essere disponibili per la modifica per altri utenti (CQ-4246009)
 
@@ -130,7 +135,7 @@ AEM&#39;app desktop 1.9 si è concentrata sul miglioramento dell&#39;esperienza 
 
 * Se un utente sceglie di aprire o modificare più file dall&#39;interfaccia utente Web di Risorse Experience Manager , questi verranno raggruppati. Ad esempio, myasset.jpeg e altri 4 file.
 
-* Quando scaricate  documenti InDesign, comprese le risorse collegate memorizzate in AEM Assets, l&#39;app desktop scaricherà prima tutte le risorse collegate, prima di aprire il [!UICONTROL Adobe InDesign] documento e indicare il download delle risorse collegate. Ad esempio, 5 di 24.
+* Quando si scaricano  documenti InDesign, comprese le risorse collegate memorizzate in  AEM Assets, l&#39;app desktop scaricherà prima tutte le risorse collegate, prima di aprire il [!UICONTROL Adobe InDesign] documento e indicare il download delle risorse collegate. Ad esempio, 5 di 24.
 
 [!UICONTROL Bulk Uploads]
 
@@ -148,7 +153,7 @@ Se si caricano gerarchie di cartelle grandi tramite [!UICONTROL Create] > [!UICO
 
 L&#39;icona dell&#39;applicazione indica lo stato delle operazioni in background per fornire agli utenti un migliore segnale visivo. Ad esempio, quando l’applicazione non è connessa a AEM l’icona viene disattivata, quando è presente un caricamento attivo viene visualizzata una sovrapposizione &quot;sincronizzazione&quot;, ecc.
 
-**Recupero preventivo delle risorse collegate**
+**Pre-acquisizione delle risorse collegate**
 
 Per migliorare l&#39;esperienza dell&#39;utente quando lavorate con  documenti InDesign che includono risorse collegate memorizzate in AEM, l&#39;app desktop tenterà di recuperare questi file collegati nella cache locale prima di scaricare e aprire il documento InDesign . In questo modo l&#39;utente potrà avere localmente i file collegati e non dovrà più aspettare per accedervi in  InDesign (nel pannello Collegamenti).
 Il preacquisizione funziona solo se AEM riconosce i collegamenti sul lato server. Una risorsa con collegamenti riconosciuti avrà un elenco di &quot;Riferimenti&quot; elencati nella vista Proprietà della risorsa InDesign .
@@ -181,7 +186,7 @@ AEM’app desktop versione 1.8.1, che segue rapidamente, sono stati aggiunti mig
 
    * Finestra di dialogo Ulteriori informazioni sulla risorsa: talvolta la barra delle azioni non era visibile (CQ-4208540).
 
-   * (Win) È ora possibile sincronizzare il file dopo il ripristino di una versione precedente dall&#39;interfaccia utente AEM Assets (CQ-4216411).
+   * (Win) È ora possibile sincronizzare il file dopo il ripristino di una versione precedente dall&#39;interfaccia utente  AEM Assets (CQ-4216411).
 
 ### Miglioramenti disponibili a partire AEM app desktop 1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
@@ -295,7 +300,7 @@ Entrambi questi casi sono previsti e sono effetti collaterali dell&#39;architett
 
 * Migliorare la stabilità e la resilienza contro le questioni legate alla rete.
 
-   * Mappatura più stabile delle cartelle AEM Assets (CQ-103276, CQ-4204669, CQ-4203957).
+   * Mappatura più stabile delle  cartelle AEM Assets (CQ-103276, CQ-4204669, CQ-4203957).
 
    * Gestione migliore dei file memorizzati nella cache (CQ-4204336, CQ-4206263).
 
@@ -318,13 +323,13 @@ Entrambi questi casi sono previsti e sono effetti collaterali dell&#39;architett
 
    * Diversi miglioramenti nella stabilità (CQ-4207539, CQ-4200378).
 
-   * Gestione migliore dell&#39;URL dei AEM Assets nelle preferenze (CQ-97388).
+   * Gestione migliore  URL AEM Assets nelle preferenze (CQ-97388).
 
 ### Miglioramenti disponibili a partire AEM app desktop 1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * Caricamento semplificato di cartelle gerarchiche tramite la nuova azione Crea > Carica cartella nell’interfaccia utente touch.
    * Azione avvia un’operazione di caricamento delle cartelle eseguita dall’app desktop
-   * L&#39;app desktop attraversa la gerarchia di cartelle specificata sul desktop in background e carica i file sui AEM Assets
+   * L&#39;app desktop attraversa la gerarchia di cartelle specificata sul desktop in background e carica i file  AEM Assets
    * L’utente può monitorare l’avanzamento nella nuova finestra Stato coda di caricamento con la barra di avanzamento per le operazioni in corso
    * Lo stato della coda di caricamento fornisce anche informazioni migliori sulla risoluzione dei problemi (ad esempio, nessuna connessione al server)
 * Nuova azione di modifica nell’interfaccia utente touch, che combina le operazioni Check-Out e Open in un’unica
@@ -350,7 +355,7 @@ Entrambi questi casi sono previsti e sono effetti collaterali dell&#39;architett
 
 A partire da MacOS 10.12 (Sierra), Apple ha modificato le autorizzazioni sulla cartella /Volumes utilizzata per installare unità e dispositivi di rete in modo più restrittivo. La creazione di un nuovo punto di montaggio richiedeva diritti amministrativi. Questo problema è stato risolto in MacOS 10.12.5.
 
-Poiché AEM&#39;app desktop deve essere eseguita per gli utenti che non dispongono dei diritti di amministratore nel computer locale, il punto di montaggio per l&#39;archivio AEM Assets è stato modificato in 1.4 e 1.5 in una sottocartella DAM nella cartella locale dell&#39;utente in MacOS (CQ-104183).
+Poiché AEM&#39;app desktop deve essere eseguita per gli utenti che non dispongono dei diritti di amministratore nel computer locale, il punto di montaggio per  repository di AEM Assets è stato modificato in 1.4 e 1.5 in una sottocartella DAM nella cartella locale dell&#39;utente in MacOS (CQ-104183).
 
 Poiché la cartella /Volumes non richiede più diritti amministrativi, questa modifica è stata ripristinata in 1.5.1. Questo consente anche di condividere  documenti InDesign che hanno inserito AEM risorse tra gli utenti MacOS.
 
@@ -380,11 +385,11 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
 
 **Caricamento cartella.** Si consiglia di utilizzare la nuova funzione di caricamento delle cartelle per caricare in AEM cartelle gerarchiche più grandi, invece di utilizzare una copia/trascinamento e rilasciare in un archivio AEM montato a livello di Finder/Explorer. Quando si utilizza la funzione di caricamento delle cartelle, l&#39;app desktop comunica direttamente con AEM e quindi ha un controllo molto migliore sul processo complessivo.
 
-**Mantenete AEM sessione disponibile.** AEM&#39;app desktop dipende da una sessione aperta al server AEM Assets per garantire il corretto funzionamento. Per gli utenti che lavorano con l&#39;app desktop ogni giorno, si consiglia di disinstallare i AEM Assets alla fine della giornata per forzare la disconnessione, e poi &quot;Mount AEM Assets&quot; la mattina per assicurarsi che siano connessi e la condivisione di rete sia operativa.
+**Mantenete AEM sessione disponibile.** AEM&#39;app desktop dipende da una sessione aperta  server AEM Assets per garantire il corretto funzionamento. Per gli utenti che lavorano con l&#39;app desktop ogni giorno, si consiglia di disinstallare  AEM Assets alla fine della giornata per forzare la disconnessione, e poi &quot;Mount  AEM Assets&quot; la mattina per assicurarsi che siano connessi e la condivisione di rete sia operativa.
 
 **Disattivate &quot;Icon Preview&quot; nel Finder.** Per una ricerca efficace di grandi cartelle con il Finder, soprattutto con una scarsa connettività di rete, assicurarsi che sia &quot;Icon&quot; che &quot;Icon Preview&quot; sia disattivato. In caso contrario, il Finder inizierà a scaricare ciascuna risorsa in una cartella per generare un’anteprima di piccole dimensioni, che può comportare prestazioni scadenti e un utilizzo elevato della larghezza di banda (CQ-4219779)
 
-* Nel Finder, andate alla cartella di rete condivisa dei AEM Assets
+* In Finder, andate  cartella di rete condivisa AEM Assets
 * Fare clic con il pulsante destro del mouse sul punto di montaggio DAM
 * Seleziona Mostra opzioni visualizzazione
 * Deselezionare &quot;Mostra anteprima icona&quot;
@@ -411,7 +416,7 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
    * Quando si trascinano o si trascinano file di grandi dimensioni, è possibile che si verifichi un timeout durante il trasferimento dei file in background. Questo si traduce in un `Error - 36`. La soluzione alternativa consiste nel trascinare o aprire di nuovo la risorsa (CQ-4219628)
    * Il ricaricamento manuale delle cartelle non sempre funziona. Soluzione:  attendere 30 s per aggiornare automaticamente la cartella. (CQ-97389)
    * Ulteriori informazioni sulla risorsa... è limitato alle selezioni di file singoli (CQ-89542, CQ-87656)
-   * Apri in AEM Assets... è limitato alle selezioni di singoli file e cartelle (CQ-83382)
+   * Apri in  AEM Assets... è limitato alle selezioni di singoli file e cartelle (CQ-83382)
    * Errore durante la ridenominazione di risorse senza estensione (CQ-4218971)
 * Funzionalità Copia/Incolla: Incolla è disponibile se non è stata copiata alcuna risorsa negli Appunti
 * Windows:

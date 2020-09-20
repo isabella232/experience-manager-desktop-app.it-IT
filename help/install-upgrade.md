@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
+source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,9 @@ Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstall
 
 1. Riavviate il computer come richiesto. Avviate e configurate l&#39;app desktop.
 
-1. Per collegare l&#39;app a un archivio AEM, fate clic sull&#39;icona dell&#39;app nella barra delle applicazioni per avviare l&#39;app. Fornire l&#39;indirizzo dell&#39;istanza AEM. Fare clic su **[!UICONTROL Connect]** e specificare le credenziali.
+1. Per collegare l&#39;app a un archivio AEM, fate clic sull&#39;icona dell&#39;app nella barra delle applicazioni e avviate l&#39;app. Fornire l&#39;indirizzo del server AEM nel formato `https://[aem-server-url]:[port]/`.
+
+   Fare clic su **[!UICONTROL Connect]** e specificare le credenziali.
 
    ![Schermata di connessione dell&#39;app desktop all&#39;indirizzo del server di input](assets/connect_da2.png)
 

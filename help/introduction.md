@@ -1,12 +1,12 @@
 ---
-title: Introduzione all'app desktop  Adobe Experience Manager
-description: Scoprite come utilizzare 'app desktop Adobe Experience Manager per ottimizzare i flussi di lavoro di gestione delle risorse per gli utenti creativi quando si utilizzano  risorse di Adobe Experience Manager direttamente dal desktop.
+title: Introduzione all'app desktop Adobe Experience Manager
+description: Scopri come utilizzare l’app desktop Adobe Experience Manager per ottimizzare i flussi di lavoro di gestione delle risorse per gli utenti creativi quando si utilizzano le risorse Adobe Experience Manager direttamente dal desktop.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 67%
@@ -18,13 +18,13 @@ ht-degree: 67%
 
 Adobe offre flussi di lavoro collegati tra le sue soluzioni per garantire una produttività di livello superiore per utenti aziendali e creativi. L’app desktop Adobe Experience Manager collega archivi e applicazioni desktop, sia Adobe che di terze parti, per offrire accesso più rapido alle risorse e flussi di lavoro semplificati. Risparmiando tempo e riducendo l’impegno necessario per completare le operazioni, si ottimizza il lavoro degli utenti che utilizzano risorse di Adobe Experience Manager nei propri flussi di lavoro desktop.
 
-Utilizzando l&#39;app, le risorse all&#39;interno  risorse di Adobe Experience Manager sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Puoi aprire e modificare le risorse nelle applicazioni desktop preferite. Le modifiche locali sono disponibili  Adobe Experience Manager come nuova versione della risorsa solo quando scegliete di caricare le modifiche, per gestire in modo efficiente la modifica delle risorse in corso sul desktop. L&#39;app supporta il caricamento di risorse e cartelle nidificate  Experience Manager, semplificando l&#39;aggiunta di nuovi contenuti alla directory archivio.
+Utilizzando l’app, le risorse incluse in Risorse Adobe Experience Manager sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Puoi aprire e modificare le risorse nelle applicazioni desktop preferite. Le modifiche locali vengono rese disponibili in Adobe Experience Manager come nuova versione della risorsa solo quando scegliete di caricare le modifiche, per gestire in modo efficiente il lavoro in corso di modifica delle risorse sul desktop. L&#39;app supporta il caricamento di risorse e cartelle nidificate  Experience Manager, semplificando l&#39;aggiunta di nuovi contenuti alla directory archivio.
 
 Tale integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse a livello centrale in  risorse Experienci Manager. Gli addetti al marketing e gli utenti aziendali possono garantire la conformità ai vari standard, inclusi branding e licenze. I creativi, che dispongono anche di uno strumento [Adobe Asset Link](https://www.adobe.com/it/marketing/experience-manager-assets/adobe-asset-link.html) per lavorare con le risorse in Adobe Photoshop, Illustrator e InDesign, possono accedere anche alle risorse sul desktop in Creative Cloud e in altre applicazioni native.
 
 >[!NOTE]
 >
->&#39;app desktop di Adobe Experience Manager è stata introdotta in  versione 6.1 dell&#39;Adobe Experience Manager ed è stata precedentemente denominata  app ausiliaria risorse Adobe Experience Manager. Per informazioni sulla versione 1.x dell’app, fai riferimento al sommario nella barra laterale sinistra. Adobe consiglia di effettuare l’aggiornamento all’ultima versione, ovvero la versione 2.
+>L’app desktop Adobe Experience Manager è stata introdotta nella versione Adobe Experience Manager 6.1 ed era precedentemente denominata Adobe Experience Manager Assets Companion App. Per informazioni sulla versione 1.x dell’app, fai riferimento al sommario nella barra laterale sinistra. Adobe consiglia di effettuare l’aggiornamento all’ultima versione, ovvero la versione 2.
 
 La documentazione dell’app desktop contiene informazioni relative ai seguenti ruoli e casi d’uso.
 

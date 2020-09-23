@@ -1,15 +1,15 @@
 ---
-title: Procedure ottimali per la risoluzione di problemi e 'app desktop Adobe Experience Manager
+title: Procedure ottimali per la risoluzione dei problemi relativi all'app desktop Adobe Experience Manager
 description: Seguite le procedure ottimali e risolvete eventuali problemi relativi a installazione, aggiornamento, configurazione e così via.
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-&#39;app desktop (AEM) Adobe Experience Manager si connette a un archivio DAM (Digital Asset Management) Experience Manager distribuzione remota  . L&#39;app raccoglie informazioni sull&#39;archivio e risultati di ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con l&#39;interfaccia utente AEM Assets.
+L&#39;app desktop Adobe Experience Manager (AEM) si connette a un archivio DAM (Digital Asset Management)  remoto Experience Manager distribuzione del . L&#39;app raccoglie informazioni sull&#39;archivio e risultati di ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con &#39;interfaccia utente AEM Assets.
 
 Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure ottimali e individuare i limiti.
 
@@ -29,15 +29,15 @@ Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e
 
 * **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorrete alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra l&#39;interfaccia Web  Experience Manager e il desktop, la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedete [come funziona](release-notes.md#how-app-works).
 
-* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consultate un elenco di caratteri in [Creazione di cartelle in  risorse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)Experience Manager. Alcuni casi di utilizzo  Adobe Experience Manager possono essere influenzati da caratteri non supportati nel nome della cartella.
+* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consultate un elenco di caratteri in [Creazione di cartelle in  risorse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)Experience Manager. Alcuni casi di utilizzo di Adobe Experience Manager possono essere influenzati da caratteri non supportati nel nome della cartella.
 
 * **Procedure ottimali per evitare conflitti**: Per evitare potenziali conflitti durante la collaborazione su più risorse, consultate [evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)di modifica.
 
 * **Usate il caricamento delle cartelle per le cartelle** gerarchiche di grandi dimensioni: Invece di usare l’interfaccia Web o altri metodi di Risorse, utilizzate ’app desktop Experience Manager per caricare cartelle di grandi dimensioni. L&#39;app carica le risorse in background con registrazione e monitoraggio. Consultate Caricare [in blocco le risorse](using.md#bulk-upload-assets).
 
-* **Utilizzate la versione** più recente: Utilizzate la versione dell&#39;app più recente e verificate sempre la compatibilità prima di installare una nuova versione dell&#39;app o prima di eseguire l&#39;aggiornamento a una versione di Adobe Experience Manager  più recente. See [release notes](release-notes.md).
+* **Utilizzate la versione** più recente: Utilizzate la versione più recente dell&#39;app e verificate sempre la compatibilità prima di installare una nuova versione dell&#39;app o prima di eseguire l&#39;aggiornamento a una versione più recente di Adobe Experience Manager. See [release notes](release-notes.md).
 
-* **Utilizzare la stessa lettera** di unità: Utilizzare la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura sul DAM del Adobe Experience Manager . Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. L&#39;utilizzo della stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
+* **Utilizzare la stessa lettera** di unità: Utilizzare la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura su Adobe Experience Manager DAM. Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. L&#39;utilizzo della stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
 
 * **Tenere presente la rete**: Le prestazioni di rete sono fondamentali per  le prestazioni dell&#39;app desktop di Experience Manager. Se devi affrontare una risposta rallentata a trasferimenti di file o operazioni in blocco, disattiva le funzionalità o le app che potrebbero causare un sacco di traffico di rete.
 

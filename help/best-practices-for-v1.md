@@ -3,13 +3,13 @@ title: Best practice per AEM app desktop versione 1.x
 description: Funzionalità chiave e uso consigliato dell'app desktop Adobe Experience Manager versione 1.x.
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -25,7 +25,7 @@ L&#39;app desktop Adobe Experience Manager (AEM) collega la soluzione Digital As
 
 AEM&#39;app desktop elimina la possibilità di aggiornare copie locali non corrette o di aggiornare una risorsa errata in AEM. il flusso di lavoro di facile utilizzo dell&#39;app desktop viene attivato utilizzando la tecnologia di condivisione di rete fornita dai sistemi operativi desktop.
 
-L&#39;app desktop installa l&#39;archivio  AEM Assets come condivisione di rete sul desktop. Pertanto, le cartelle e i file vengono visualizzati come se fossero locali. Tuttavia, non è consigliabile eseguire operazioni di gestione delle risorse digitali direttamente dal desktop nella condivisione di rete montata in Finder o Explorer.  Adobe consiglia invece di utilizzare &#39;interfaccia utente Web di AEM Assets per eseguire operazioni quali copiare o spostare un gran numero di risorse.
+L&#39;app desktop installa l&#39;archivio  AEM Assets come condivisione di rete sul desktop. Pertanto, le cartelle e i file vengono visualizzati come se fossero locali. Tuttavia, non è consigliabile eseguire operazioni di gestione delle risorse digitali direttamente dal desktop nella condivisione di rete montata in Finder o Explorer.  Adobe consiglia invece di utilizzare &#39;interfaccia utente Web di AEM Assets per eseguire operazioni quali copiare o spostare un numero elevato di risorse.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Le funzionalità chiave AEM&#39;app desktop includono:
 
 * **Apertura di file dallinterfaccia utente Web di AEM Assets sul desktop**. Dall’interfaccia utente Web, potete visualizzare le risorse sul desktop (nel Finder, in Esplora risorse) oppure aprire una risorsa mediante un’applicazione desktop.
 
-* **Check-out e check-in**. Le risorse possono essere sottoposte a check-out per la modifica e sono contrassegnate come bloccate per l’utente in  AEM Assets. Dopo la modifica, la risorsa può essere archiviata per sbloccarla.
+* **Check-out e check-in**. Le risorse possono essere ritirate per la modifica, sono contrassegnate come bloccate per l’utente in  AEM Assets. Dopo la modifica, la risorsa può essere archiviata per sbloccarla.
 
 * **Salvare le modifiche apportate ai file**. Qualsiasi modifica salvata nel file nella condivisione di rete viene caricata AEM automaticamente e viene creata una nuova versione.
 
@@ -93,7 +93,7 @@ AEM&#39;app desktop consente l&#39;accesso virtuale all&#39;intero archivio DAM 
 
 Per cercare un file da aprire sul desktop:
 
-* Utilizzate l’interfaccia utente Web di  AEM Assets per individuare la risorsa. Non solo la ricerca in  AEM Assets potente (facet di ricerca, ricerche salvate), ma fornisce anche funzionalità aggiuntive per trovare la risorsa giusta. Questi includono filtri aggiuntivi, come la possibilità di cercare risorse in base allo stato (approvazione, scadenza), raccolte, attività, notifiche e condivisione di cartelle/raccolte con altri utenti/gruppi.
+* Utilizzate l’interfaccia utente Web di  AEM Assets per individuare la risorsa. Non solo la ricerca in  AEM Assets è potente (facet di ricerca, ricerche salvate), ma offre anche funzionalità aggiuntive per trovare la risorsa giusta. Tra questi vi sono altri filtri, come la possibilità di cercare risorse in base allo stato (approvazione, scadenza), raccolte, attività, notifiche e condivisione di cartelle/raccolte con altri utenti/gruppi.
 
 * Dopo aver individuato la risorsa, utilizza Azioni desktop AEM interfaccia utente per accedere alla risorsa sul desktop.
 
@@ -131,7 +131,7 @@ Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, co
 
 * **Utilizzare il dispatcher** configurato correttamente. Utilizzate AEM Dispatcher per ulteriore protezione e accertatevi che sia configurato per la connessione [AEM app desktop AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
-* **Risparmia larghezza di banda**. È consigliabile disattivare l&#39;anteprima dell&#39;icona nel Finder su Mac - quando si sfoglia il repository montato tramite Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l&#39;utente potrebbe anche diminuire l&#39;esperienza dell&#39;utente sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
+* **Risparmia larghezza di banda**. È consigliabile disattivare l&#39;anteprima dell&#39;icona nel Finder su Mac, quando si sfoglia il repository montato utilizzando il Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l&#39;utente potrebbe anche diminuire l&#39;esperienza dell&#39;utente sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
 
 >[!NOTE]
 >

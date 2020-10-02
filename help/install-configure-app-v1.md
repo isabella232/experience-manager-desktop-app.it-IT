@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Il percorso predefinito della cache per l&#39;app desktop AEM è il seguente:
 
 * In Mac, `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`.
 
-`EncodedAEMEndpoint` è AEM l&#39;URL AEM endpoint configurato dall&#39;app desktop. Il valore è una versione codificata dell&#39;URL di targeting del server AEM. Ad esempio, se l&#39;applicazione esegue il targeting `http://localhost:4502`, il nome della directory è `http%3A%2F%2Flocalhost%3A4502`. Il percorso di Windows alla directory della cache in questo esempio è %LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502.
+`EncodedAEMEndpoint` è AEM l&#39;URL AEM endpoint configurato dall&#39;app desktop. Il valore è una versione codificata dell&#39;URL di targeting del server AEM. Ad esempio, se l&#39;applicazione esegue il targeting `http://localhost:4502`, il nome della directory è `http%3A%2F%2Flocalhost%3A4502`. Il percorso di Windows alla directory della cache in questo esempio è `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`.
 
 Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unità, modificare il file di configurazione dell&#39;applicazione.
 
@@ -127,7 +127,7 @@ Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unit�
 
    Per salvare le modifiche apportate a questo file sono necessari privilegi di amministratore.
 
-1. Cercare la stringa &quot;ProxyCacheRoot&quot;. Il valore è impostato sulla posizione della cache &quot;%LocalAppData%\Adobe\AssetsCompanion\Cache&quot;. È sufficiente modificare questo valore in qualsiasi percorso valido.
+1. Cercare la stringa &quot;ProxyCacheRoot&quot;. Il relativo valore è impostato sulla posizione della cache `%LocalAppData%\Adobe\AssetsCompanion\Cache`. È sufficiente modificare questo valore in qualsiasi percorso valido.
 
    >[!NOTE]
    >

@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
+source-git-commit: 540821ad10f14ad855c66a2b93d356ba118515c7
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 0%
@@ -143,7 +143,7 @@ La cache viene cancellata eliminando la directory della cache dell&#39;applicazi
 
 Per cancellare la cache, elimina la directory [!DNL Adobe Experience Manager] Endpoint codificato desiderata. In alternativa, eliminando l&#39;intera directory specificata nelle preferenze, la cache per tutte le istanze utilizzate dall&#39;applicazione verrà cancellata.
 
-Cancellazione [!DNL Adobe Experience Manager]] della cache dell&#39;app desktop è un&#39;attività preliminare di risoluzione dei problemi che può risolvere diversi problemi. Cancella la cache dalle preferenze dell&#39;app. Consultate [Impostare le preferenze](install-upgrade.md#set-preferences). Il percorso predefinito della cartella della cache è:
+La cancellazione della cache dell&#39;app [!DNL Adobe Experience Manager] desktop è un&#39;attività preliminare di risoluzione dei problemi che può risolvere diversi problemi. Cancella la cache dalle preferenze dell&#39;app. Consultate [Impostare le preferenze](install-upgrade.md#set-preferences). Il percorso predefinito della cartella della cache è:
 
 ### Conoscere la versione dell&#39;app [!DNL Adobe Experience Manager] desktop {#know-app-version-v2}
 

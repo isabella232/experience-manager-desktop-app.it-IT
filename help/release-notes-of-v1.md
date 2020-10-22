@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 2%
+source-wordcount: '3920'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Per l&#39;app desktop versione 1.x, quanto segue sono riportati i collegamenti p
 | Versione | 1.10 (1.10.0.6 su Mac e 1.10.0.3 su Windows) |
 | Tipo | Rilascio secondario |
 | Data | 1.10.0.6 (Mac): 15 aprile 2020; 1.10.0.3 (Win): 31 agosto 2018 |
-| URL di download | [Mac OS X a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.6.dmg); [Windows a 32 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows a 64 bit](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| URL di download | [Mac OS X a 64 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg); [Windows a 32 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe); [Windows a 64 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
 | Compatibilità | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]

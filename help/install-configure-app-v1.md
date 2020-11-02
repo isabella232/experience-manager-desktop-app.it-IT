@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -134,9 +134,7 @@ Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unit�
    >L&#39;app crea automaticamente una sottodirectory *&lt;Encoded AEM Endpoint>* . Questo comportamento non è configurabile.
 
 >[!MORELIKETHIS]
-* [Introduzione all’app desktop AEM](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
-* [Usare l’app desktop AEM](use-app-v1.md)
-* [Informazioni sul check-in/check-out con AEM&#39;app desktop](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Utilizzo dell&#39;app desktop con  AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [Risoluzione dei problemi AEM&#39;app desktop](troubleshoot-app-v1.md)
+* [Introduzione all’app desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Usare l’app desktop AEM](use-app-v1.md).
+* [Risoluzione dei problemi AEM&#39;app](troubleshoot-app-v1.md)desktop.
 

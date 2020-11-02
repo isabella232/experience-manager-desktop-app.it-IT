@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -144,7 +144,7 @@ Puoi migliorare le prestazioni sul lato AEM abilitando flussi di lavoro transito
 
 Un altro metodo per migliorare AEM prestazioni consiste nel configurare il valore dei processi paralleli massimi per il processo Coda flusso di lavoro transitoria Granite. Il valore consigliato è circa la metà del numero di CPU disponibile con il server. Per regolare il valore, effettuare le seguenti operazioni:
 
-1. Andate a */system/console/configMgr* nell&#39;istanza AEM da configurare (ad esempio, <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>).
+1. Andate a */system/console/configMgr* nell&#39;istanza AEM da configurare (ad esempio, `http://[aem_server]:[port]/system/console/configMgr`).
 1. Cercate **QueueConfiguration** e fate clic per aprire ciascun processo fino a individuare il processo **Granite Transient Workflow Queue** . Fate clic su Modifica accanto a esso.
 1. Modificate il valore Processi **paralleli** massimi e fate clic su **Salva**.
 

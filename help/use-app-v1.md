@@ -1,11 +1,11 @@
 ---
 title: Utilizzate AEM'app desktop versione 1.x.
-description: Scoprite come utilizzare  app desktop di Adobe Experience Manager versione 1.x e ottimizzare il lavoro con le risorse sul desktop.
+description: Scoprite come utilizzare l’app desktop Adobe Experience Manager versione 1.x e ottimizzare il lavoro con le risorse sul desktop.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Utilizzando l&#39;app, le risorse all&#39;interno AEM sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in AEM con una nuova versione creata nell&#39;archivio.
 
-Tale integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse centralmente negli AEM Assets e di accedervi nella Creative Cloud e in altre applicazioni, semplificando al contempo il rispetto dei vari standard, tra cui il branding.
+Tale integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse centralmente in  AEM Assets e di accedervi nella Creative Cloud e in altre applicazioni, semplificando al contempo il rispetto dei vari standard, tra cui il branding.
 
 Le attività chiave che eseguite con l&#39;app desktop AEM v1 includono:
 
@@ -28,11 +28,11 @@ Per le varie operazioni e operazioni non consigliate, consultate le procedure [o
 
 >[!NOTE]
 >
->AEM&#39;app desktop è stata introdotta nella versione AEM 6.1 ed è stata denominata AEM Assets Companion App.
+>AEM&#39;app desktop è stata introdotta nella versione AEM 6.1 ed è stata denominata  AEM Assets Companion App.
 
 ## AEM punti di contatto dell’app desktop nel flusso di lavoro creativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
-AEM&#39;app desktop, insieme ai AEM Assets, si integra nel flusso di lavoro creativo e offre i seguenti punti di contatto.
+AEM&#39;app desktop, insieme  AEM Assets, si integra nel flusso di lavoro creativo e offre i seguenti punti di contatto.
 
 ![AEM&#39;app desktop, i punti di contatto del flusso di lavoro creativo](assets/aem_desktopapp_workflow.png)
 
@@ -40,7 +40,7 @@ AEM&#39;app desktop, i punti di contatto del flusso di lavoro creativo
 
 ## Installare e collegare AEM&#39;app desktop al server AEM {#installandconnect}
 
-Prima di iniziare a creare o modificare le risorse creative, collegate l’applicazione desktop al server AEM Assets per scaricare e caricare le risorse nell’archivio. Effettuare le seguenti operazioni:
+Prima di iniziare a creare o modificare le risorse creative, collegate l’applicazione desktop al server AEM Assets  per scaricare e caricare le risorse nell’archivio. Effettuare le seguenti operazioni:
 
 1. [Installate l&#39;app](#installapp).
 1. [Impostare le preferenze](#inapppref) e i dettagli di connessione.
@@ -70,13 +70,13 @@ La configurazione dettagliata può essere necessaria a seconda delle preferenze 
 
 L&#39;applicazione consente la connessione e la disconnessione delle impostazioni AEM server, la visualizzazione dello stato dei caricamenti, la gestione della cache locale e così via. Le impostazioni predefinite funzionano per un utente tipico dell’applicazione. Potete modificare le impostazioni per ottenere di più dall’applicazione e dall’integrazione con AEM server. Le varie impostazioni sono descritte di seguito.
 
-**Esplora risorse** Apri l’unità locale in cui è montato l’archivio AEM Assets. In altre parole, esplorate le risorse ora disponibili nel computer locale.
+**Esplora risorse** Apri l’unità locale in cui è montato l’archivio di AEM Assets . In altre parole, esplorate le risorse ora disponibili nel computer locale.
 
-**Visualizza stato** della risorsa Quando vengono caricate risorse modificate o vengono aggiunte nuove risorse all’archivio AEM Assets, l’applicazione carica le risorse in background. Il caricamento in background consente di effettuare operazioni senza dover attendere il completamento del caricamento, in particolare per le risorse di grandi dimensioni. È possibile salvare le modifiche localmente e dimenticarle. L’invio di queste risorse al server da parte dell’applicazione richiede del tempo, a seconda della larghezza di banda disponibile. Potete controllare lo stato del caricamento, insieme ad alcune informazioni di base.
+**Visualizza stato** della risorsa Quando vengono caricate risorse modificate o vengono aggiunte nuove risorse all’archivio di AEM Assets , l’applicazione carica le risorse in background. Il caricamento in background consente di effettuare operazioni senza dover attendere il completamento del caricamento, in particolare per le risorse di grandi dimensioni. È possibile salvare le modifiche localmente e dimenticarle. L’invio di queste risorse al server da parte dell’applicazione richiede del tempo, a seconda della larghezza di banda disponibile. Potete controllare lo stato del caricamento, insieme ad alcune informazioni di base.
 
-**Opzioni** Fare clic/toccare Opzioni dalla barra delle applicazioni AEM Desktop per accedere alle impostazioni per avviare l&#39;applicazione all&#39;avvio del sistema; per connettersi al server AEM quando l&#39;app viene avviata; e per cambiare la lettera dell&#39;unità locale in cui sono disponibili AEM Assets dopo il montaggio.
+**Opzioni** Fare clic/toccare Opzioni dalla barra delle applicazioni AEM Desktop per accedere alle impostazioni per avviare l&#39;applicazione all&#39;avvio del sistema; per connettersi al server AEM quando l&#39;app viene avviata; e per cambiare la lettera dell&#39;unità locale in cui  AEM Assets è disponibile dopo il montaggio.
 
-**Avanzate > Gestione cache** È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets vengono memorizzati nella cache locale per un&#39;esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Quando si cancella la cache, vengono mantenute le modifiche non salvate. Tutte le risorse non archiviate AEM server vengono mantenute e non eliminate.
+**Avanzate > Gestione cache** È possibile controllare la quantità di spazio su disco disponibile per il caching locale. Gli artefatti del server AEM Assets  vengono memorizzati nella cache locale per un&#39;esperienza più fluida. Potete modificare le impostazioni predefinite in base alle vostre esigenze. Inoltre, potete cancellare la cache per recuperare nuovamente tutte le risorse. Quando si cancella la cache, vengono mantenute le modifiche non salvate. Tutte le risorse non archiviate AEM server vengono mantenute e non eliminate.
 
 ### Connessione a un server AEM {#connect}
 
@@ -92,7 +92,7 @@ L&#39;app supporta la configurazione proxy su Mac e Windows. La configurazione v
 
 1. Nella schermata di login, specificate il nome utente e la password dell’istanza. Per specificare un&#39;istanza AEM alternativa, selezionare l&#39; **[!UICONTROL Alternate Login URL]** opzione.
 
-   ![Fornire AEM credenziali del server nella schermata di accesso su AEM Desktop](assets/chlimage_1-2.png)
+   ![Fornire AEM credenziali del server nella schermata di accesso AEM&#39;app desktop](assets/login_screen_v1.png)
 
 ### Abilitare le azioni desktop nell&#39;interfaccia AEM Web {#desktopactions}
 
@@ -105,7 +105,7 @@ Dall’interfaccia utente di Risorse, puoi esplorare le posizioni delle risorse 
 
 1. Nella finestra di dialogo Preferenze utente, selezionate **[!UICONTROL Show Desktop Actions For Assets]**. Clic **[!UICONTROL Accept]**.
 
-   ![Controlla Mostra azioni desktop per risorse per abilitare le azioni desktop](assets/chlimage_1-3.png)
+   ![Controlla [!UICONTROL Show Desktop Actions For Assets] per abilitare le azioni desktop](assets/enable_desktop_actions.png)
 
    *Figura: Per attivare le azioni desktop, selezionate Mostra azioni desktop per risorse.*
 
@@ -127,21 +127,21 @@ Per  file Adobe InDesign (INDD), selezionate **[!UICONTROL Open]** dal menu di s
 
 >[!NOTE]
 >
-> Adobe consiglia di passare a Opzioni vista Finder su Mac e disattivare le opzioni **Mostra informazioni** elemento, **Mostra anteprima** elemento e **Mostra colonna** di anteprima per la cartella dei AEM Assets montati. Migliora le prestazioni.
+> Adobe consiglia di passare a Opzioni vista Finder su Mac e disattivare le opzioni **Mostra informazioni** elemento, **Mostra anteprima** elemento e **Mostra colonna** anteprima per la cartella AEM Assets  montata. Migliora le prestazioni.
 
 ### Opzioni aggiuntive nell&#39;interfaccia AEM {#additional-options-in-aem-assets}
 
-Dopo aver mappato l’archivio AEM Assets sull’unità locale, potete attivare icone aggiuntive e visualizzare la funzione di caricamento delle cartelle per le risorse e le cartelle mappate.
+Dopo aver mappato l’archivio  AEM Assets sull’unità locale, potete attivare icone aggiuntive e visualizzare la funzione di caricamento delle cartelle per le risorse e le cartelle mappate.
 
-1. Aprite l’interfaccia dei AEM Assets e passate il puntatore del mouse su una cartella o una risorsa per visualizzare le azioni desktop come azioni rapide nella vista Scheda.
+1. Aprite l&#39;interfaccia  AEM Assets e passate il puntatore del mouse su una cartella o una risorsa per visualizzare le azioni desktop come azioni rapide nella vista Scheda.
 
-   ![Nell’interfaccia utente Risorse, apri il menu Azioni rapide per visualizzare le azioni desktop](assets/chlimage_1-4.png)
+   ![Nell’interfaccia utente Risorse, apri il menu Azioni rapide per visualizzare le azioni desktop](assets/desktop_actions_in_card_view.png)
 
    *Figura: Nell’interfaccia utente Risorse, aprite il menu Azioni rapide per visualizzare le azioni desktop.*
 
-   Queste azioni desktop sono disponibili anche quando fate clic sull’icona Azioni **** desktop nella barra degli strumenti dopo aver selezionato la risorsa o dalla barra degli strumenti nella pagina della risorsa.
+   Queste azioni desktop sono disponibili anche quando fate clic sull’opzione Azioni **** desktop nella barra degli strumenti dopo aver selezionato la risorsa o dalla barra degli strumenti nella pagina della risorsa.
 
-1. Per aprire la risorsa nell’applicazione desktop associata all’estensione di file specifica, toccate o fate clic sull’icona **Apri sul desktop** , azione rapida ![Apri sul desktop](assets/do-not-localize/aemassets_icon_openondesktop.png).
+1. Per aprire la risorsa nell’applicazione desktop associata all’estensione di file specifica, fate clic sull’icona **Apri sul desktop** , azione rapida ![Apri sul desktop](assets/do-not-localize/aemassets_icon_openondesktop.png), icona.
 
    In alternativa, scegliete **Apri** dal menu Azioni **** desktop nella barra degli strumenti.
 
@@ -159,13 +159,13 @@ Per individuare la risorsa specifica nel file system locale, fate clic sull&#39;
 
 ### Estrarre risorse dall&#39;interfaccia Web AEM {#check-out-assets-from-the-aem-web-interface}
 
-AEM Assets consente di estrarre le risorse per la modifica e di archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa e impedisce ad altri utenti di eseguire una di queste operazioni. Per poter estrarre/archiviare le risorse, è necessario disporre dell&#39;accesso in scrittura.
+ AEM Assets consente di estrarre le risorse per la modifica e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa e impedisce ad altri utenti di eseguire una di queste operazioni. Per poter estrarre/archiviare le risorse, è necessario disporre dell&#39;accesso in scrittura.
 
 Esistono due modi per estrarre le risorse dall’interfaccia Web AEM. Per informazioni dettagliate sul primo metodo, consulta [archiviare ed estrarre i file dall’interfaccia](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)di Assets. Seguite questi passaggi per i secondi metodi per estrarre e aprire la risorsa quando è installata AEM&#39;app desktop.
 
-1. Aprite l’interfaccia dei AEM Assets e passate il puntatore del mouse su una cartella o una risorsa per visualizzare le azioni desktop come azioni rapide nella vista Scheda.
+1. Aprite l&#39;interfaccia  AEM Assets e passate il puntatore del mouse su una cartella o una risorsa per visualizzare le azioni desktop come azioni rapide nella vista Scheda.
 
-   ![Opzione Proprietà nella vista a schede](assets/chlimage_1-4.png)
+   ![Opzione Proprietà nella vista a schede](assets/desktop_actions_in_card_view.png)
 
    Queste azioni desktop sono disponibili anche quando tocchi o fai clic sull’icona Azioni desktop nella barra degli strumenti dopo aver selezionato la risorsa o dalla barra degli strumenti nella pagina della risorsa.
 
@@ -177,7 +177,7 @@ Esistono due modi per estrarre le risorse dall’interfaccia Web AEM. Per inform
    >
    >Quando modificate un file che è appena aperto e non estratto, gli altri utenti non sono a conoscenza del fatto che una risorsa viene aggiornata automaticamente.
 
-1. Per aprire una risorsa da modificare in un’applicazione Adobe Creative Cloud, toccate o fate clic sull’icona ![Modifica azione rapida desktop](assets/do-not-localize/aemassets_icon_editdesktop.png)Modifica desktop. Viene inoltre estratta la risorsa per la modifica. Dopo aver completato la modifica, archiviate la risorsa per aggiornare le modifiche in AEM Assets.
+1. Per aprire una risorsa da modificare in un’applicazione Adobe Creative Cloud, toccate o fate clic sull’icona ![Modifica azione rapida desktop](assets/do-not-localize/aemassets_icon_editdesktop.png)Modifica desktop. Viene inoltre estratta la risorsa per la modifica. Dopo aver completato la modifica, archiviate la risorsa per aggiornare le modifiche in  AEM Assets.
 
    In alternativa, scegliete Modifica dal menu Azioni desktop nella barra degli strumenti.
 
@@ -188,20 +188,17 @@ Esistono due modi per estrarre le risorse dall’interfaccia Web AEM. Per inform
 
 L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui state lavorando.
 
-1. Dal menu di scelta rapida di Mac, selezionate Apri cartella AEM Assets per aprire il Finder.
+1. Dal menu di scelta rapida di Mac, selezionate Apri  cartella AEM Assets per aprire il Finder.
 
    ![Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite AEM&#39;app desktop](assets/aem_desktopapp_mac_context_menu.png)
 
    Opzioni del menu di scelta rapida per accedere e aprire le risorse tramite AEM&#39;app desktop
 
 1. Andate alla risorsa da estrarre.
-
-   ![Apri nel menu di scelta rapida AEM Assets in Mac](assets/chlimage_1-5.png)
-
 1. Fai clic con il pulsante destro del mouse sulla risorsa e seleziona Ulteriori informazioni sulle risorse dal menu di scelta rapida.
 1. Nella finestra di dialogo Informazioni risorsa, toccate o fate clic sull’icona Checkout per estrarre la risorsa. Dopo aver fatto clic o toccato sull’icona Checkout, l’icona Checkout viene attivata per passare all’icona check-in.
 
-   ![Passa alla risorsa da estrarre](assets/chlimage_1-6.png)
+   ![Passa alla risorsa da estrarre](assets/browse_assets_to_checkout.png)
 
 1. Per archiviare la risorsa in modo che sia disponibile per gli altri utenti, toccate o fate clic sull’icona di check-in nella finestra di dialogo Informazioni risorsa.
 
@@ -211,13 +208,10 @@ L&#39;app consente di estrarre i file di risorse per impedire ad altri utenti di
 
 1. Dal menu di scelta rapida, selezionate Esplora risorse per aprire Esplora risorse.
 1. In Esplora risorse, andate alla posizione della risorsa da estrarre.
-
-   ![Icona Checkout](assets/chlimage_1-7.png)
-
 1. Fai clic con il pulsante destro del mouse sulla risorsa e seleziona Apri sul Web dal menu di scelta rapida.
 1. Nella finestra di dialogo Informazioni risorsa, toccate o fate clic sull’icona Checkout. L’icona Checkout (Checkout) consente di passare all’icona Check-In.
 
-   ![Icona Checkout](assets/chlimage_1-8.png)
+   ![Icona Checkout](assets/checkout_icon_toggles.png)
 
 1. Rivedete la risorsa in Esplora risorse. L’icona a forma di lucchetto sull’icona ![a forma di](assets/do-not-localize/aemassets_icon_lockcheckout.png) risorsa indica che la risorsa è stata estratta.
 
@@ -237,7 +231,7 @@ Una risorsa viene caricata in AEM automaticamente dopo che le modifiche vengono 
 
 ### Caricare in massa risorse e cartelle AEM server {#bulkupload}
 
-Con AEM Desktop potete caricare un’intera cartella contenente le risorse dalla directory del file locale ai AEM Assets. In questo modo, tutte le risorse all’interno della cartella vengono caricate in blocco anziché caricarle una alla volta.
+Con AEM Desktop potete caricare un’intera cartella contenente risorse dalla directory del file locale in  AEM Assets. In questo modo, tutte le risorse all’interno della cartella vengono caricate in blocco anziché caricarle una alla volta.
 
 1. Nell’interfaccia utente delle risorse, tocca o fai clic su **Crea** nella barra degli strumenti, quindi dal menu scegli **Carica cartella** .
 1. Individuate la cartella da caricare e selezionatela.

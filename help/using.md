@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '3999'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Dall’interfaccia utente di Risorse in un browser, puoi esplorare le posizioni 
 1. Tocca o fai clic sul pulsante **[!UICONTROL My Preferences]** per visualizzare la **[!UICONTROL Preferences]** finestra di dialogo.
 1. Nella finestra di dialogo Preferenze utente, selezionate **[!UICONTROL Show Desktop Actions For Assets]**. Tocca o fai clic **[!UICONTROL Accept]**.
 
-   ![Controlla Mostra azioni desktop per risorse per abilitare le azioni desktop](assets/chlimage_1-3.png)
+   ![Controlla Mostra azioni desktop per risorse per abilitare le azioni desktop](assets/enable_desktop_actions.png)
 
    Controlla [!UICONTROL Show Desktop Actions For Assets] per abilitare le azioni desktop
 

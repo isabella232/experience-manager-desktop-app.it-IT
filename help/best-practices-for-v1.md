@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -35,7 +35,7 @@ L&#39;app desktop installa l&#39;archivio  AEM Assets come condivisione di rete 
 
 AEM&#39;app desktop utilizza condivisioni di rete WebDAV (Windows) o SMB (Mac) per montare le condivisioni di rete. La condivisione di rete installata è solo locale. AEM&#39;app desktop intercetta le chiamate (apertura, lettura, scrittura) e fornisce ulteriore caching locale. Traduce le chiamate remote al server AEM Assets  per ottimizzare AEM richieste HTTP. Nel diagramma seguente è illustrata l&#39;architettura dell&#39;app desktop AEM.
 
-![AEM&#39;architettura dell&#39;app desktop](assets/chlimage_1.png)
+![AEM&#39;architettura dell&#39;app desktop](assets/arch_v1.png)
 
 *Figura: architettura dell&#39;app desktop*
 

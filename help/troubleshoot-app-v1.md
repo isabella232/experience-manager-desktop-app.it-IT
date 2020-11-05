@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '3374'
+source-wordcount: '3379'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ La larghezza di banda disponibile per un singolo utente svolge un ruolo fondamen
 
 Se si esegue AEM in Windows, è possibile configurare Windows per migliorare le prestazioni del client WebDAV. Per ulteriori informazioni, visitate [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
 
-In Windows 7, la modifica delle impostazioni IE può migliorare le prestazioni di WebDAV. Per informazioni dettagliate, visitate [http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/](http://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
+In Windows 7, la modifica delle impostazioni IE può migliorare le prestazioni di WebDAV. Per informazioni dettagliate, vedere come [correggere le prestazioni WebDAV lente in Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
 
 ## Operazioni simultanee {#concurrent-operations}
 

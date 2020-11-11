@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 42%
+source-wordcount: '1406'
+ht-degree: 41%
 
 ---
 
@@ -42,11 +42,11 @@ L&#39;app desktop Adobe Experience Manager è compatibile con i seguenti sistemi
 
 L&#39;app funziona con le seguenti versioni  Experience Manager, sia distribuite come Cloud Service, su Adobe Managed Services (AMS) o in sede:
 
-* [Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/home.html).
+* [Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 
-* [Experience Manager 6.5.0](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) o successivo.
+* [Experience Manager 6.5.0](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) o successivo.
 
-* [Experience Manager 6.4.4](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) o successivo.
+* [Experience Manager 6.4.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) o successivo.
 
 *  Experience Manager 6.4.0 - 6.4.3 con pacchetto [di](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)compatibilità.
 
@@ -169,8 +169,8 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 
 >[!MORELIKETHIS]
 >
->* [AEM come documentazione di Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)
->* [AEM come documentazione di Risorse di Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/home.html)
+>* [AEM come documentazione di Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [AEM come documentazione di Risorse di Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [Come utilizzare &#39;app desktop Experience Manager](using.md)
 >* [Installare e aggiornare l’app desktop](install-upgrade.md)
 >* [Best practice e suggerimenti per la risoluzione dei problemi](troubleshoot.md)

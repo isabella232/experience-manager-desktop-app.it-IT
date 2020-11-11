@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 9c11f0b8ace17e7f596bcfe26e69f4ca649e0126
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ I metodi di copia e spostamento nell’API Assets richiedono il passaggio delle 
 * Profondità X
 * Sovrascrivi X
 
-AEM desktop si connette a AEM utilizzando un URL che include la porta predefinita. Pertanto, l&#39; `virtualhosts` impostazione nella configurazione del dispatcher deve includere il numero di porta predefinito. Per ulteriori informazioni sulla `virtualhosts` configurazione, vedi [identificare gli host](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuali.
+AEM desktop si connette a AEM utilizzando un URL che include la porta predefinita. Pertanto, l&#39; `virtualhosts` impostazione nella configurazione del dispatcher deve includere il numero di porta predefinito. Per ulteriori informazioni sulla `virtualhosts` configurazione, vedi [identificare gli host](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)virtuali.
 
-Per ulteriori informazioni sulla configurazione del dispatcher per il passaggio tra queste intestazioni aggiuntive, vedere [Specifica delle intestazioni](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
+Per ulteriori informazioni sulla configurazione del dispatcher per il passaggio tra queste intestazioni aggiuntive, vedere [Specifica delle intestazioni](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)HTTP.
 
 ### Supporto proxy {#proxy-support}
 
@@ -134,7 +134,7 @@ Per indirizzare l&#39;applicazione a una cartella diversa o a un&#39;altra unit�
    >L&#39;app crea automaticamente una sottodirectory *&lt;Encoded AEM Endpoint>* . Questo comportamento non è configurabile.
 
 >[!MORELIKETHIS]
-* [Introduzione all’app desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [Introduzione all’app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
 * [Usare l’app desktop AEM](use-app-v1.md).
 * [Risoluzione dei problemi AEM&#39;app](troubleshoot-app-v1.md)desktop.
 

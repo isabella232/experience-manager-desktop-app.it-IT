@@ -1,17 +1,10 @@
 ---
 title: Best practice per AEM app desktop versione 1.x
 description: Funzionalità chiave e uso consigliato dell'app desktop Adobe Experience Manager versione 1.x.
-uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -29,7 +22,7 @@ L&#39;app desktop installa l&#39;archivio  AEM Assets come condivisione di rete 
 
 >[!NOTE]
 >
->Prima di leggere questo documento, potete esaminare le best practice [generali per l&#39;integrazione di](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) AEM e Creative Cloud per una panoramica di livello superiore dell&#39;argomento.
+>Prima di leggere questo documento, potete esaminare le best practice [generali per l&#39;integrazione di](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) AEM e Creative Cloud per una panoramica di livello superiore dell&#39;argomento.
 
 ## AEM desktop app architecture {#aem-desktop-app-architecture}
 
@@ -71,7 +64,7 @@ Le funzionalità chiave AEM&#39;app desktop includono:
 
 * Non utilizzate AEM unità di rete dell&#39;app desktop per salvare le risorse frequentemente. Tutte le operazioni di salvataggio vengono trasmesse a  AEM Assets. Pertanto, non è possibile eseguire operazioni di editing intensive direttamente nell&#39;archivio AEM Assets  installato. La modifica di una risorsa direttamente nell’archivio montato causa la presenza di versioni irrilevanti nella timeline della risorsa e impone costi aggiuntivi sul server.
 
-* Non utilizzate AEM app desktop per la migrazione di grandi quantità di dati da un&#39;istanza AEM a un&#39;altra. Consulta la Guida alla [migrazione](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) per pianificare ed eseguire le migrazioni delle risorse. Al contrario, l&#39;app desktop [supporta il caricamento](use-app-v1.md#bulkupload) in blocco di un gran numero di risorse per la prima volta in [!DNL Adobe Experience Manager].
+* Non utilizzate AEM app desktop per la migrazione di grandi quantità di dati da un&#39;istanza AEM a un&#39;altra. Consulta la Guida alla [migrazione](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) per pianificare ed eseguire le migrazioni delle risorse. Al contrario, l&#39;app desktop [supporta il caricamento](use-app-v1.md#bulkupload) in blocco di un gran numero di risorse per la prima volta in [!DNL Adobe Experience Manager].
 
 ## Recommendations per i casi di utilizzo selezionati {#recommendations-for-selected-use-cases}
 
@@ -127,7 +120,7 @@ Una buona esperienza per gli utenti che utilizzano l&#39;app desktop AEM dipende
 
 ### Considerazioni sulla rete {#network-considerations}
 
-Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, consultare il documento [Considerazioni](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) sulla rete AEM Assets. Alcuni degli aspetti importanti che consentono di ottimizzare AEM&#39;esperienza dell&#39;app desktop per gli utenti includono:
+Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, consultare il documento [Considerazioni](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-migration-guide.html) sulla rete AEM Assets. Alcuni degli aspetti importanti che consentono di ottimizzare AEM&#39;esperienza dell&#39;app desktop per gli utenti includono:
 
 * **Utilizzare il dispatcher** configurato correttamente. Utilizzate AEM Dispatcher per ulteriore protezione e accertatevi che sia configurato per la connessione [AEM app desktop AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
@@ -139,8 +132,8 @@ Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, co
 
 ### Ottimizzazione delle prestazioni del server {#optimizing-server-performance}
 
-Per capire come  server AEM Assets deve essere ottimizzato per le prestazioni, fare riferimento a [AEM Assets Performance Tuning Guide](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html). Alcuni degli aspetti importanti delle prestazioni del server per AEM app desktop riguardano l’ottimizzazione della configurazione del flusso di lavoro, in modo che possa essere eseguita correttamente per il caricamento delle risorse:
+Per capire come  server AEM Assets deve essere ottimizzato per le prestazioni, fare riferimento a [AEM Assets Performance Tuning Guide](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html). Alcuni degli aspetti importanti delle prestazioni del server per AEM app desktop riguardano l’ottimizzazione della configurazione del flusso di lavoro, in modo che possa essere eseguita correttamente per il caricamento delle risorse:
 
-* **Caricamento** di risorse più performante. Configurate il modello di flusso di lavoro [AEM Aggiornamento risorse in modo che sia transitorio](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows).
+* **Caricamento** di risorse più performante. Configurate il modello di flusso di lavoro [AEM Aggiornamento risorse in modo che sia transitorio](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html).
 
 * **Limita la CPU del server per i caricamenti**. Assicuratevi che il parametro dei processi di flusso di lavoro parallelo massimo sia impostato correttamente, in modo che i caricamenti non esauriscano tutta la CPU.

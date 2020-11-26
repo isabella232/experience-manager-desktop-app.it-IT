@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -71,23 +71,23 @@ Per installare l&#39;app desktop, attenetevi alla seguente procedura. Disinstall
 
 1. Eseguite il programma di installazione binario e seguite le istruzioni visualizzate per eseguire l&#39;installazione.
 
-1. In Windows, il programma di installazione potrebbe richiedere l&#39;installazione `Visual Studio C++ Redistributable 2015`. Seguite le istruzioni visualizzate per installarlo. Se l’installazione non riesce, installatela manualmente. Scaricate il programma di installazione da [qui](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e installate sia `vc_redist.x64.exe` che `vc_redist.x86.exe` i file. Eseguite nuovamente il programma di installazione AEM&#39;app desktop.
+1. In Windows, il programma di installazione potrebbe richiedere l&#39;installazione `Visual Studio C++ Redistributable 2015`. Seguite le istruzioni visualizzate per installarlo. Se l’installazione non riesce, installatela manualmente. Scaricate il programma di installazione da [qui](https://www.microsoft.com/en-us/download/details.aspx?id=52685) e installate sia `vc_redist.x64.exe` che `vc_redist.x86.exe` i file. Eseguite nuovamente il programma di installazione dell&#39;app [!DNL Experience Manager] desktop.
 
 1. Riavviate il computer come richiesto. Avviate e configurate l&#39;app desktop.
 
-1. Per collegare l&#39;app a un archivio AEM, fate clic sull&#39;icona dell&#39;app nella barra delle applicazioni e avviate l&#39;app. Fornire l&#39;indirizzo del server AEM nel formato `https://[aem-server-url]:[port]/`.
+1. Per collegare l&#39;app a un [!DNL Experience Manager] repository, fate clic sull&#39;icona dell&#39;app nella barra delle applicazioni e avviate l&#39;app. Fornire l&#39;indirizzo del [!DNL Experience Manager] server nel formato `https://[aem_server]:[port]/`.
 
    Fare clic su **[!UICONTROL Connect]** e specificare le credenziali.
 
    ![Schermata di connessione dell&#39;app desktop all&#39;indirizzo del server di input](assets/connect_da2.png)
 
-   *Figura: Schermata di connessione all&#39;indirizzo del server di input*
+   *Figura: Schermata di connessione all&#39;indirizzo del server di input.*
 
    >[!CAUTION]
    >
-   >Assicurarsi che non ci siano spazi iniziali o finali prima o dopo l&#39;indirizzo del server AEM. In caso contrario, l&#39;app non può connettersi al server AEM.
+   >Verificare che non siano presenti spazi iniziali o finali prima o dopo l&#39;indirizzo del [!DNL Experience Manager] server. In caso contrario, l&#39;app non può connettersi al [!DNL Experience Manager] server.
 
-1. Dopo la connessione, puoi visualizzare l’elenco delle cartelle e delle risorse disponibili nella cartella principale del AEM DAM. Potete sfogliare le cartelle dall&#39;interno dell&#39;app.
+1. Dopo la connessione, puoi visualizzare l’elenco delle cartelle e delle risorse disponibili nella cartella principale di [!DNL Experience Manager] DAM. Potete sfogliare le cartelle dall&#39;interno dell&#39;app.
 
    ![Al momento dell&#39;accesso, l&#39;app visualizza il contenuto DAM](assets/firstview_da2.png)
 
@@ -107,7 +107,7 @@ Per modificare le preferenze, fate clic sull&#39;icona ![Altre opzioni](assets/d
 
 * **[!UICONTROL Cache Directory]**: Posizione della cache locale dell&#39;app (contiene le risorse scaricate localmente).
 
-* **[!UICONTROL Network Drive Letter]**: La lettera di unità utilizzata per eseguire la mappatura sul AEM DAM. Non cambiate questo se non siete sicuri. L&#39;app può mappare a qualsiasi lettera di unità in Windows. Se due utenti inseriscono risorse da diverse lettere di unità, non potranno vedere le risorse inserite l’uno dall’altro. Il percorso delle risorse cambia. Le risorse rimangono inserite nel file binario (ad esempio, INDD) e non vengono rimosse. L&#39;app elenca tutte le lettere dell&#39;unità disponibili e per impostazione predefinita utilizza l&#39;ultima lettera disponibile che è in genere `Z`.
+* **[!UICONTROL Network Drive Letter]**: La lettera di unità utilizzata per mappare il [!DNL Experience Manager] DAM. Non cambiate questo se non siete sicuri. L&#39;app può mappare a qualsiasi lettera di unità in Windows. Se due utenti inseriscono risorse da diverse lettere di unità, non potranno vedere le risorse inserite l’uno dall’altro. Il percorso delle risorse cambia. Le risorse rimangono inserite nel file binario (ad esempio, INDD) e non vengono rimosse. L&#39;app elenca tutte le lettere dell&#39;unità disponibili e per impostazione predefinita utilizza l&#39;ultima lettera disponibile che è in genere `Z`.
 
 * **[!UICONTROL Maximum Cache Size]**: Cache consentita su disco rigido in GB utilizzata per la memorizzazione delle risorse scaricate localmente.
 
@@ -119,17 +119,17 @@ Per modificare le preferenze, fate clic sull&#39;icona ![Altre opzioni](assets/d
 
 * **[!UICONTROL Upload Acceleration]**: Quando caricate delle risorse, l’applicazione può usare caricamenti simultanei per migliorare la velocità di caricamento. Per aumentare la concorrenza del caricamento, spostate il cursore verso destra. Il cursore sul lato sinistro indica che non esiste una concorrenza (caricamento a thread singolo), che la posizione centrale corrisponde a 10 thread simultanei e che il limite massimo sul lato destro corrisponde a 20 thread simultanei. Un limite di concorrenza più elevato richiede un maggiore consumo di risorse del processore del computer locale.
 
-Per aggiornare le preferenze non disponibili, disconnettetevi dal server AEM. Dopo aver aggiornato le preferenze, fate clic su ![Salva preferenze](assets/do-not-localize/save_preferences_da2.png) per salvare le modifiche.
+Per aggiornare le preferenze non disponibili, disconnettetevi dal [!DNL Experience Manager] server. Dopo aver aggiornato le preferenze, fate clic su ![Salva preferenze](assets/do-not-localize/save_preferences_da2.png) per salvare le modifiche.
 
 ![Preferenze e impostazioni dell&#39;app desktop](assets/preferences_da2.png)
 
-*Figura: Preferenze per app desktop*
+*Figura: Preferenze per l&#39;app desktop.*
 
 ## Disinstallare l&#39;app {#uninstall-the-app}
 
 Per disinstallare l’applicazione in Windows, effettuate le seguenti operazioni:
 
-1. Caricate tutte le modifiche in AEM per evitare di perdere eventuali modifiche. Consultate [Modificare le risorse e caricare le risorse aggiornate in AEM](using.md#edit-assets-upload-updated-assets). Disconnettetevi e [!UICONTROL Exit] l&#39;app.
+1. Caricate tutte le modifiche in [!DNL Experience Manager] modo da evitare di perdere eventuali modifiche. Consultate [Modificare le risorse e caricare le risorse aggiornate in [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Disconnettetevi e [!UICONTROL Exit] l&#39;app.
 
 1. Rimuovete l&#39;app quando rimuovete un&#39;altra applicazione del sistema operativo. Disinstallarlo da Aggiungi e rimuovi programmi in Windows.
 
@@ -141,7 +141,7 @@ Per disinstallare l’applicazione in Windows, effettuate le seguenti operazioni
 
 Per disinstallare l’applicazione in Mac, effettuate le seguenti operazioni:
 
-1. Caricate tutte le modifiche in AEM per evitare di perdere eventuali modifiche. Consultate [Modificare le risorse e caricare le risorse aggiornate in AEM](using.md#edit-assets-upload-updated-assets). Disconnettetevi e [!UICONTROL Exit] l&#39;app.
+1. Caricate tutte le modifiche in [!DNL Experience Manager] modo da evitare di perdere eventuali modifiche. Consultate [Modificare le risorse e caricare le risorse aggiornate in [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Disconnettetevi e [!UICONTROL Exit] l&#39;app.
 
 1. Rimuovere la `Adobe Experience Manager Desktop.app` da `/Applications`.
 

@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-L&#39;app desktop Adobe Experience Manager (AEM) si connette a un archivio DAM (Digital Asset Management)  remoto Experience Manager distribuzione del . L&#39;app raccoglie informazioni sull&#39;archivio e risultati di ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con &#39;interfaccia utente AEM Assets.
+L&#39;app desktop Adobe Experience Manager si connette a un archivio DAM (Digital Asset Management) di distribuzione  Experience Manager remoto. L&#39;app raccoglie informazioni sull&#39;archivio e risultati di ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con l&#39;interfaccia utente di Assets.
 
 Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure ottimali e individuare i limiti.
 
@@ -119,7 +119,7 @@ Per abilitare la modalità di debug in Windows:
 
 Effettuate le seguenti operazioni:
 
-1. Avviare l&#39;applicazione e collegare l&#39;istanza AEM.
+1. Avviare l&#39;applicazione e collegare l&#39;istanza del Experience Manager .
 
 1. Aprite le preferenze dell&#39;applicazione facendo clic sulle ellissi nell&#39;angolo superiore destro e selezionando [!UICONTROL Preferences].
 
@@ -163,9 +163,9 @@ Se non riuscite a visualizzare le risorse inserite nei file di supporto da voi o
 
 * Dimensione file. Il download e la visualizzazione delle risorse grandi richiedono più tempo.
 
-* Coerenza con le lettere dell&#39;unità. Se le risorse sono state inserite da un collaboratore durante la mappatura del DAM AEM a una lettera di unità diversa, le risorse inserite non vengono visualizzate.
+* Coerenza con le lettere dell&#39;unità. Se le risorse sono state inserite da un collaboratore durante la mappatura del DAM del Experience Manager  a un&#39;altra lettera di unità, le risorse inserite non vengono visualizzate.
 
-* Autorizzazioni. Per verificare se disponete delle autorizzazioni necessarie per recuperare le risorse inserite, contattate l’amministratore AEM.
+* Autorizzazioni. Per verificare se disponete delle autorizzazioni necessarie per recuperare le risorse inserite, contattate l’amministratore di Experience Manager .
 
 ### Le modifiche apportate ai file nell&#39;interfaccia utente dell&#39;app desktop non si riflettono [!DNL Adobe Experience Manager] immediatamente {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +173,7 @@ Se non riuscite a visualizzare le risorse inserite nei file di supporto da voi o
 
 ### Problemi durante l&#39;aggiornamento su macOS {#issues-when-upgrading-on-macos}
 
-A volte possono verificarsi problemi durante l&#39;aggiornamento AEM&#39;app desktop su macOS. Ciò è causato dalla cartella di sistema precedente per AEM app desktop che impedisce il corretto caricamento delle nuove versioni AEM app desktop. Per risolvere questo problema, è possibile rimuovere manualmente le cartelle e i file seguenti.
+A volte possono verificarsi problemi durante l&#39;aggiornamento &#39;app desktop Experience Manager su macOS. Ciò è causato dalla cartella di sistema precedente per  app desktop Experience Manager che impedisce il corretto caricamento delle nuove versioni  app desktop Experience Manager. Per risolvere questo problema, è possibile rimuovere manualmente le cartelle e i file seguenti.
 
 Prima di eseguire i seguenti passaggi, trascinate l’ `Adobe Experience Manager Desktop` applicazione dalla cartella delle applicazioni macOS al cestino. Aprite quindi il terminale, eseguite il comando seguente e fornite la password quando richiesto.
 
@@ -188,7 +188,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### Impossibile caricare i file {#upload-fails}
 
-Se si utilizza l&#39;app desktop con AEM 6.5.1 o versione successiva, aggiornare il connettore S3 o Azure alla versione 1.10.4 o successiva. Risolve il problema di errore di caricamento dei file relativo a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consultate [le istruzioni](install-upgrade.md#install-v2)di installazione.
+Se si utilizza l&#39;app desktop con  Experience Manager 6.5.1 o successivo, aggiornare il connettore S3 o Azure alla versione 1.10.4 o successiva. Risolve il problema di errore di caricamento dei file relativo a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Consultate [le istruzioni](install-upgrade.md#install-v2)di installazione.
 
 ### [!DNL Experience Manager] problemi di connessione all&#39;app desktop {#connection-issues}
 
@@ -213,13 +213,9 @@ Se l&#39;app [!DNL Experience Manager] desktop non si connette all&#39; [!DNL Ad
 
 A volte il processo SAML non effettua il reindirizzamento al percorso originariamente richiesto, oppure il reindirizzamento finale è a un host che è diverso da quello configurato nell&#39;app [!DNL Adobe Experience Manager] desktop. Per verificare che non sia così:
 
-1. Aprite un browser Web.
+1. Aprite un browser Web. Access `https://[aem_server]:[port]/content/dam.json` URL.
 
-1. Immettete l’URL `<AEM host>/content/dam.json` nella barra degli indirizzi.
-
-   Sostituire `<AEM host>` con l&#39; [!DNL Adobe Experience Manager] istanza target, ad esempio `http://localhost:4502/content/dam.json`.
-
-1. Effettuate l&#39;accesso all&#39; [!DNL Adobe Experience Manager] istanza.
+1. Effettuate l&#39;accesso alla [!DNL Adobe Experience Manager] distribuzione.
 
 1. Al termine dell&#39;accesso, controllate l&#39;indirizzo corrente del browser nella barra degli indirizzi. Deve corrispondere esattamente all’URL immesso inizialmente.
 
@@ -260,10 +256,9 @@ Osservare la sequenza URL caricata può facilitare la risoluzione dei problemi a
 
 #### Problema di configurazione SSL {#ssl-config-v2}
 
-Le librerie che AEM&#39;app desktop utilizza per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. A volte, una connessione può avere esito positivo utilizzando un browser ma non può essere utilizzata AEM&#39;app desktop. Per configurare SSL in modo appropriato, installate il certificato intermedio mancante in Apache. Vedere [Come installare un certificato CA intermedio in Apache](https://access.redhat.com/solutions/43575).
+Le librerie che &#39;app desktop di Experience Manager utilizza per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. In alcuni casi, una connessione può avere esito positivo utilizzando un browser ma non riesce utilizzando &#39;app desktop Experience Manager. Per configurare SSL in modo appropriato, installate il certificato intermedio mancante in Apache. Vedere [Come installare un certificato CA intermedio in Apache](https://access.redhat.com/solutions/43575).
 
-
-Le librerie che AEM Desktop utilizza per la comunicazione HTTP utilizzano l’applicazione SSL rigorosa. In alcuni casi, le connessioni SSL riuscite tramite un browser non funzionano con l&#39;app [!DNL Adobe Experience Manager] desktop. Ciò è positivo perché incoraggia la corretta configurazione di SSL e aumenta la sicurezza, ma può risultare frustrante quando l&#39;applicazione non è in grado di connettersi.
+Le librerie che  Experience Manager Desktop utilizza per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. In alcuni casi, le connessioni SSL riuscite tramite un browser non funzionano con l&#39;app [!DNL Adobe Experience Manager] desktop. Ciò è positivo perché incoraggia la corretta configurazione di SSL e aumenta la sicurezza, ma può risultare frustrante quando l&#39;applicazione non è in grado di connettersi.
 
 In questo caso, si consiglia di utilizzare uno strumento per analizzare il certificato SSL di un server e identificare i problemi che possono essere corretti. Esistono siti Web che ispezionano il certificato di un server quando ne fornisce l&#39;URL.
 
@@ -305,21 +300,23 @@ Raramente l&#39;applicazione potrebbe non rispondere, visualizzare solo uno sche
 
 In entrambi i metodi, l&#39;app inizia dalla cartella DAM principale.
 
-### Serve ulteriore aiuto per l&#39;app [!DNL Experience Manager] desktop {#additional-help}
+<!--
+### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
 
-Crea biglietto Jira con le seguenti informazioni:
+Create Jira ticket with the following information:
 
-* Utilizzate `DAM - Companion App` come [!UICONTROL Component].
+* Use `DAM - Companion App` as the [!UICONTROL Component].
 
-* Procedura dettagliata per riprodurre il problema in [!UICONTROL Description].
+* Detailed steps to reproduce the issue in [!UICONTROL Description].
 
-* Registri di livello DEBUG acquisiti durante la riproduzione del problema.
+* DEBUG level logs that were captured while reproducing the issue.
 
-* Versione di destinazione AEM.
+* Target Experience Manager version.
 
-* Versione del sistema operativo.
+* Operating system version.
 
-* [!DNL Adobe Experience Manager] versione dell&#39;app desktop. Per conoscere la versione dell&#39;app, consultate [Individuazione della versione](#know-app-version-v2)dell&#39;app desktop.
+* [!DNL Adobe Experience Manager] desktop app version. To know your app version, see [finding the desktop app version](#know-app-version-v2).
+-->
 
 >[!MORELIKETHIS]
 >

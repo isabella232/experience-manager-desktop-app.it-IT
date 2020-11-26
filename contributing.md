@@ -1,8 +1,8 @@
 ---
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,11 @@ Questo file descrive come contribuire e indica le linee guida da seguire per app
 
 ## Codice di condotta open source  Adobe
 
-Questo progetto ha adottato il [codice di condotta](code-of-conduct.md)open source. Contribuendo AEM documentazione, l&#39;utente accetta di aderire a questo codice di condotta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Questo progetto ha adottato il [codice di condotta](code-of-conduct.md)open source. Contribuendo alla [!DNL Adobe Experience Manager] documentazione, l&#39;Utente accetta di aderire a questo codice di condotta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Linee guida per il contributo
 
-Pur accogliendo con favore qualsiasi contributo volto a migliorare AEM documentazione, chiediamo che i contributi rispettino, ove possibile, determinate linee guida e determinati standard. Per ulteriori informazioni, consulta le [Linee guida per il contributo alla documentazione](guidelines.md) AEM.
+Pur accogliendo con favore qualsiasi contributo per migliorare la [!DNL Experience Manager] documentazione, chiediamo che i contributi rispettino, ove possibile, determinate linee guida e determinati standard. Per ulteriori informazioni, consulta le [Linee guida [!DNL Experience Manager] per la documentazione](guidelines.md) .
 
 ## Come contribuire
 
@@ -37,11 +37,11 @@ Il metodo scelto dipende dalla comodità con cui state modificando la documentaz
 
 Hai un suggerimento, un&#39;osservazione sui documenti attuali, o hai dei dubbi sul modo in cui qualcosa viene descritto? Quindi create un problema. I problemi sono anche eccellenti se si ha qualcosa da contribuire, ma non sentirsi a proprio agio nel modificare i documenti o fare una richiesta pull.
 
-I problemi ti consentono di descrivere facilmente la tua idea per il miglioramento dei documenti e un membro del Team Docs AEM può esaminarla. È sufficiente fare clic sul collegamento **Registra un problema** nella parte superiore del pannello di navigazione a destra in qualsiasi pagina per creare un problema.
+I problemi ti consentono di descrivere facilmente la tua idea di miglioramento ai documenti e un membro del team [!DNL Experience Manager] Docs può esaminarla. È sufficiente fare clic sul collegamento **Registra un problema** nella parte superiore del pannello di navigazione a destra in qualsiasi pagina per creare un problema.
 
 ### Creare una richiesta pull {#create-a-pull-request}
 
-Se si verifica un problema e si sa esattamente come risolverlo, è consigliabile creare una richiesta pull. Le richieste pull consentono di apportare le proprie modifiche alla documentazione, che vengono poi riviste per essere incluse da un membro del team AEM Docs. È sufficiente fare clic sul collegamento **Modifica pagina** nella parte superiore del pannello di navigazione a destra su qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
+Se si verifica un problema e si sa esattamente come risolverlo, è consigliabile creare una richiesta pull. Le richieste pull consentono di apportare le proprie modifiche alla documentazione, che vengono poi riviste per essere incluse da un membro del team [!DNL Experience Manager] Docs. È sufficiente fare clic sul collegamento **Modifica pagina** nella parte superiore del pannello di navigazione a destra su qualsiasi pagina per apportare le modifiche suggerite e creare la richiesta di pull.
 
 Tutte le richieste pull devono essere accompagnate da un contratto di licenza per [collaboratori firmato o da un contratto di licenza per i collaboratori.](https://opensource.adobe.com/cla.html)  In tal modo è concesso ad Adobe il permesso di ridistribuire i contributi come parte del progetto. È sufficiente inviare un contratto di licenza di Adobe  una sola volta, quindi se ne hai già inoltrato uno in precedenza, puoi iniziare!
 

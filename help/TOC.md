@@ -19,7 +19,7 @@ ht-degree: 48%
 ---
 
 
-# Adobe desktop app Guide {#using}
+# Guida all&#39;app desktop  Adobe {#using}
 
 + [Panoramica](introduction.md)
 + [Note sulla versione](release-notes.md)

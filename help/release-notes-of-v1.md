@@ -26,7 +26,7 @@ Per l&#39;app desktop versione 1.x, quanto segue sono riportati i collegamenti p
 | Versione | 1.10 (1.10.0.6 su Mac e 1.10.0.3 su Windows) |
 | Tipo | Rilascio secondario |
 | Data | 1.10.0.6 (Mac): 15 aprile 2020; 1.10.0.3 (Win): 31 agosto 2018 |
-| URL di download | [Mac OS X a 64 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg); [Windows a 32 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe); [Windows a 64 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
+| URL di download | [Mac OS X a 64 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg);  [Windows a 32 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe);  [Windows a 64 bit](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
 | Compatibilità | AEM 6.5.x; AEM 6.4.x; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
@@ -49,19 +49,19 @@ Per l&#39;app desktop versione 1.x, quanto segue sono riportati i collegamenti p
 
 La versione dell&#39;app desktop AEM che si intende installare sul computer locale richiede una versione AEM server/componenti aggiuntivi lato server (Service Pack, hotfix o feature pack) specifici. Prima di collegarsi ad esso per la prima volta, verificate che il server AEM sia configurato correttamente. Se avete bisogno di aiuto, contattate il vostro amministratore AEM.
 
-Consultate la matrice [di compatibilità](#compatibilitymatrix) dettagliata alla fine di questo documento per valutare i prerequisiti per la configurazione.
+Vedere la [matrice di compatibilità dettagliata](#compatibilitymatrix) alla fine di questo documento per valutare i prerequisiti per la configurazione.
 
-## What&#39;s New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
+## Novità AEM app desktop 1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM&#39;app desktop 1.10 è incentrata sul miglioramento dell&#39;esperienza utente in relazione a caricamenti di grandi dimensioni, informazioni sulle operazioni in background e un&#39;esperienza ottimizzata quando si aprono risorse con file collegati (come  InDesign).
 
 >[!NOTE]
 >
->Se utilizzate macOS 10.15.4 o versioni successive, utilizzate almeno la versione 1.10.0.6 dell&#39;app. Questa versione della patch è conforme ai requisiti di notarizzazione [Apple](https://developer.apple.com/news/?id=04102019a).
+>Se utilizzate macOS 10.15.4 o versioni successive, utilizzate almeno la versione 1.10.0.6 dell&#39;app. Questa versione della patch è conforme ai [requisiti di notarizzazione Apple](https://developer.apple.com/news/?id=04102019a).
 
 **Modifica locale/Check-Out**: Nella finestra di stato è possibile disattivare il caricamento automatico delle modifiche salvate nelle risorse. In questo modo l’utente può continuare a lavorare sui file e salvare le modifiche e, quando sono pronti, decidere di caricare tutte le modifiche.
 
-**Finestra** Stato risorsa semplificata. La finestra di stato è stata semplificata. La [!UICONTROL Uploads] scheda ora mostra sia le singole risorse, sia i caricamenti di cartelle o di massa. La scheda Caricamenti di massa precedente è stata rimossa.
+**Finestra** Stato risorsa semplificata. La finestra di stato è stata semplificata. La scheda [!UICONTROL Uploads] ora mostra sia le singole risorse, sia i caricamenti di cartelle o di massa. La scheda Caricamenti di massa precedente è stata rimossa.
 
 **Icona dell&#39;applicazione per indicare i caricamenti** in blocco. L’icona dell’applicazione indica che è in corso un caricamento in blocco, mostrando una sovrapposizione &quot;transfer&quot;.
 
@@ -71,9 +71,9 @@ AEM&#39;app desktop 1.10 è incentrata sul miglioramento dell&#39;esperienza ute
 
 ## Istruzioni di installazione {#installation-instructions}
 
-Per istruzioni dettagliate, consultate [Installare e configurare AEM&#39;app](install-configure-app-v1.md)desktop.
+Per istruzioni dettagliate, consultate [Installare e configurare AEM&#39;app desktop](install-configure-app-v1.md).
 
-## Miglioramenti delle versioni precedenti {#enhancements-in-the-previous-versions}
+## Miglioramenti nelle versioni precedenti {#enhancements-in-the-previous-versions}
 
 Questa versione estende e sostituisce le versioni precedenti dell&#39;app desktop  Experience Manager, che hanno fornito i seguenti miglioramenti chiave:
 
@@ -101,9 +101,11 @@ L&#39;app desktop Adobe Experience Manager (AEM) 1.9.1 era una patch release per
 
 AEM&#39;app desktop 1.9 si è concentrata sul miglioramento dell&#39;esperienza utente in relazione a caricamenti di grandi dimensioni, informazioni sulle operazioni in background e sull&#39;esperienza ottimizzata quando si aprono risorse con file collegati (come  InDesign).
 
-**Caricamenti** Per i caricamenti, in particolare attorno a file di grandi dimensioni, è disponibile un’opzione per interromperli o riprenderli nella nuova finestra Stato risorsa.
+****
+Caricamenti ripetibili: per i caricamenti, soprattutto attorno a file di grandi dimensioni, è disponibile un’opzione per interromperli o riprenderli nella nuova finestra Stato risorsa.
 
-**Finestra** Stato risorsa migliorata Una finestra di stato delle risorse migliorata fornisce le seguenti informazioni sulle risorse.
+**Miglioramento della**
+finestra Stato risorsaUna finestra di stato delle risorse migliorata fornisce le seguenti informazioni sulle risorse.
 
 [!UICONTROL Changes]
 
@@ -135,11 +137,11 @@ AEM&#39;app desktop 1.9 si è concentrata sul miglioramento dell&#39;esperienza 
 
 * Se un utente sceglie di aprire o modificare più file dall&#39;interfaccia utente Web di Risorse Experience Manager , questi verranno raggruppati. Ad esempio, myasset.jpeg e altri 4 file.
 
-* Quando si scaricano  documenti InDesign, comprese le risorse collegate memorizzate in  AEM Assets, l&#39;app desktop scaricherà prima tutte le risorse collegate, prima di aprire il [!UICONTROL Adobe InDesign] documento e indicare il download delle risorse collegate. Ad esempio, 5 di 24.
+* Quando si scaricano  documenti InDesign, comprese le risorse collegate memorizzate in  AEM Assets, l&#39;app desktop scaricherà prima tutte le risorse collegate, prima di aprire il documento [!UICONTROL Adobe InDesign] e indicare il download delle risorse collegate. Ad esempio, 5 di 24.
 
 [!UICONTROL Bulk Uploads]
 
-Se si caricano gerarchie di cartelle grandi tramite [!UICONTROL Create] > [!UICONTROL Upload Folder] nell&#39;interfaccia utente AEM Web o si copia e si seleziona &quot;Incolla risorse&quot; nel Finder o in Esplora risorse nel menu di scelta rapida dell&#39;app desktop, l&#39;utilizzo di questa finestra di dialogo verrà attivato.
+Se si caricano gerarchie di cartelle grandi tramite [!UICONTROL Create] > [!UICONTROL Upload Folder] nell&#39;interfaccia AEM Web, se si copia e si seleziona &quot;Incolla risorse&quot; nel Finder o in Esplora risorse nel menu di scelta rapida dell&#39;app desktop, l&#39;utilizzo di questa finestra di dialogo verrà attivato.
 
 * Visualizza i caricamenti in corso, inclusa una barra di avanzamento e il nome del file attualmente in fase di trasferimento.
 
@@ -212,7 +214,7 @@ AEM’app desktop versione 1.8.1, che segue rapidamente, sono stati aggiunti mig
 
    * (Win) Disinstallazione di Cleaner (CQ-4220906).
 
-   * [Il programma di installazione a 32 bit] di Windows non riesce a installare Microsoft .NET Framework v. 4.5 (CQ-4218084).
+   * [Windows 32 ] bitInstaller non riesce a installare Microsoft .NET Framework v. 4.5 (CQ-4218084).
 
    * (Mac) Script manuale per la rimozione completa dei file delle app desktop (CQ-4216489).
 
@@ -222,7 +224,7 @@ AEM’app desktop versione 1.8.1, che segue rapidamente, sono stati aggiunti mig
 
 ### Miglioramenti disponibili a partire AEM app desktop 1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
-* Documentazione: Nuove [procedure ottimali per la documentazione dell&#39;app](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) v1.x.
+* Documentazione: Nuova documentazione [Best practice per l&#39;app v1.x](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html).
 
 * Processo di accesso migliorato per AEM:
 
@@ -296,7 +298,7 @@ Questo comportamento è lo stesso per le risorse su disco locale e le risorse in
 
 Entrambi questi casi sono previsti e sono effetti collaterali dell&#39;architettura di &quot;sincronizzazione ritardata&quot; di AEM Desktop.
 
-**Versione 1.5.0.x per Mac OS X e Windows:** Questa versione dell&#39;app AEM desktop offre i seguenti vantaggi:
+**Versione 1.5.0.x per Mac OS X e Windows:** Questa release di AEM app desktop offre i seguenti vantaggi:
 
 * Migliorare la stabilità e la resilienza contro le questioni legate alla rete.
 
@@ -371,7 +373,7 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
 
 >[!NOTE]
 >
->In Mac OS X, la modifica del protocollo dell&#39;unità di rete locale da WebDAV a SMB1 determina un percorso locale diverso per la stessa risorsa nell&#39;archivio. Ciò potrebbe influenzare i collegamenti ai file inseriti nelle applicazioni Adobe Creative Cloud tramite il comando &quot;Inserisci&quot;. Per ulteriori informazioni, consultate [Utilizzare AEM app](use-app-v1.md) desktop.
+>In Mac OS X, la modifica del protocollo dell&#39;unità di rete locale da WebDAV a SMB1 determina un percorso locale diverso per la stessa risorsa nell&#39;archivio. Ciò potrebbe influenzare i collegamenti ai file inseriti nelle applicazioni Adobe Creative Cloud tramite il comando &quot;Inserisci&quot;. Per ulteriori informazioni, vedere [Utilizza AEM app desktop](use-app-v1.md).
 
 ### Gestione dei file (dal 1.3) {#file-handling-since}
 
@@ -379,7 +381,7 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
 * I file estratti da altri utenti sono contrassegnati come di sola lettura.
 * I file vengono salvati in una posizione dell&#39;unità di rete montata tramite l&#39;app desktop in due fasi.
 * Nella prima fase, un file viene salvato localmente. In questo modo, l&#39;utente che salva il file non deve attendere che il file venga trasferito completamente a AEM e può riprendere il lavoro non appena viene salvato.
-* Nella seconda fase, l&#39;app desktop carica un file aggiornato AEM server dopo un ritardo predefinito (ad esempio, 30). Questa operazione si verifica in background. Usate l’opzione **Mostra stato** sincronizzazione file in background per visualizzare lo stato dell’operazione di caricamento.
+* Nella seconda fase, l&#39;app desktop carica un file aggiornato AEM server dopo un ritardo predefinito (ad esempio, 30). Questa operazione si verifica in background. Utilizzate l&#39;opzione **Mostra stato sincronizzazione file in background** per visualizzare lo stato dell&#39;operazione di caricamento.
 
 ## Avvisi importanti {#important-notices}
 
@@ -402,10 +404,10 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
 ## Problemi noti {#known-issues}
 
 * Generale:
-   * Gli URL del server devono essere indirizzati al server senza un percorso (ad es. `http://server`, `https://server`, `http://server:port`o `https://server:port`). I percorsi e le sottocartelle di contesto diversi da /content/dam non sono supportati (CQ-89343, CQ-87272)
+   * Gli URL del server devono essere indirizzati al server senza un percorso (ad es. `http://server`, `https://server`, `http://server:port` o `https://server:port`). I percorsi e le sottocartelle di contesto diversi da /content/dam non sono supportati (CQ-89343, CQ-87272)
 * Nomi file / localizzazione:
    * I nomi di file e cartelle con caratteri riservati non vengono gestiti correttamente. Accertatevi di utilizzare nomi di file e cartelle che soddisfino i requisiti AEM (CQ-93361, CQ-93308, CQ-89276, CQ-4217183)
-   * Alcune applicazioni come  Adobe Illustrator potrebbero creare file con nomi non supportati in AEM. Ad esempio, l&#39;aggiunta `Converted` dopo la conversione di un file, ne impedisce il caricamento (CQ-4216985)
+   * Alcune applicazioni come  Adobe Illustrator potrebbero creare file con nomi non supportati in AEM. Ad esempio, l&#39;aggiunta di `Converted` dopo la conversione di un file, che ne impedisce il caricamento (CQ-4216985)
    * Le risorse con nomi internazionali possono essere visualizzate e scomparire ogni pochi secondi
 * Check-in e check-out:
    * Una risorsa estratta da un utente non può essere aperta per un altro utente, né tramite l’azione Apri dall’interfaccia utente touch, né direttamente sul desktop. Alcune applicazioni potrebbero segnalarlo come bloccato, ma anche danneggiato o anche appeso durante il tentativo di aprire. (CQ-4199234)
@@ -413,8 +415,8 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
    * Alcune applicazioni non supportano correttamente il flag di sola lettura che consente all&#39;utente di salvare un file estratto da un altro utente. Il file modificato non viene trasferito finché l&#39;altro utente non lo controlla. Entrambe le modifiche sono disponibili in AEM come versioni diverse della risorsa (CQ-89551, CQ-87572, CQ-89615)
    * Lo stato di check-out e di sola lettura viene riportato in modo indipendente nel Finder. Quando un utente estrae una risorsa, si ottengono quindi 2 icone di blocco (CQ-89507)
 * Integrazione con il Finder:
-   * Quando si trascinano o si trascinano file di grandi dimensioni, è possibile che si verifichi un timeout durante il trasferimento dei file in background. Questo si traduce in un `Error - 36`. La soluzione alternativa consiste nel trascinare o aprire di nuovo la risorsa (CQ-4219628)
-   * Il ricaricamento manuale delle cartelle non sempre funziona. Soluzione:  attendere 30 s per aggiornare automaticamente la cartella. (CQ-97389)
+   * Quando si trascinano o si trascinano file di grandi dimensioni, è possibile che si verifichi un timeout durante il trasferimento dei file in background. Questo determina un `Error - 36`. La soluzione alternativa consiste nel trascinare o aprire di nuovo la risorsa (CQ-4219628)
+   * Il ricaricamento manuale delle cartelle non sempre funziona. Soluzione:  wait   30 secondi per aggiornare automaticamente la cartella. (CQ-97389)
    * Ulteriori informazioni sulla risorsa... è limitato alle selezioni di file singoli (CQ-89542, CQ-87656)
    * Apri in  AEM Assets... è limitato alle selezioni di singoli file e cartelle (CQ-83382)
    * Errore durante la ridenominazione di risorse senza estensione (CQ-4218971)
@@ -436,7 +438,7 @@ AEM&#39;app desktop funziona con diverse versioni di AEM. Visualizzare la matric
 
 | Versione | Revisione | Data di rilascio | Compatibilità |
 |--- |--- |--- |--- |
-| 1.10 | 1.10.0.3 (Mac e Win) | 31 agosto 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.9 | 1.9.1.1 (Mac e Win) | 21 giugno 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.8 | 1.8.1.0 (Mac e Win) | 28 marzo 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
-| 1.7 | 1.7.0.3 (Mac e Win) | 10 gennaio 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,10 | 1.10.0.3 (Mac e Win) | 31 agosto 2018 | AEM 6.5; AEM 6.4 SP1; AEM 6.3 SP2; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,9 | 1.9.1.1 (Mac e Win) | 21 giugno 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,8 | 1.8.1.0 (Mac e Win) | 28 marzo 2018 | AEM 6.4; AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |
+| 1,7 | 1.7.0.3 (Mac e Win) | 10 gennaio 2018 | AEM 6.3 SP1; AEM 6.2 SP1 CFP2+; AEM 6.1 SP2 CFP7+ |

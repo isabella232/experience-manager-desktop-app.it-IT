@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Best practice per AEM app desktop v1.x {#aem-desktop-app-best-practices}
+# AEM delle best practice per l&#39;app desktop v1.x {#aem-desktop-app-best-practices}
 
 ## Panoramica {#overview}
 
@@ -22,9 +22,9 @@ L&#39;app desktop installa l&#39;archivio  AEM Assets come condivisione di rete 
 
 >[!NOTE]
 >
->Prima di leggere questo documento, potete esaminare le best practice [generali per l&#39;integrazione di](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) AEM e Creative Cloud per una panoramica di livello superiore dell&#39;argomento.
+>Prima di leggere questo documento, è possibile esaminare le [procedure ottimali per l&#39;integrazione delle AEM e delle Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) per una panoramica di livello superiore dell&#39;argomento.
 
-## AEM desktop app architecture {#aem-desktop-app-architecture}
+## AEM architettura dell&#39;app desktop {#aem-desktop-app-architecture}
 
 AEM&#39;app desktop utilizza condivisioni di rete WebDAV (Windows) o SMB (Mac) per montare le condivisioni di rete. La condivisione di rete installata è solo locale. AEM&#39;app desktop intercetta le chiamate (apertura, lettura, scrittura) e fornisce ulteriore caching locale. Traduce le chiamate remote al server AEM Assets  per ottimizzare AEM richieste HTTP. Nel diagramma seguente è illustrata l&#39;architettura dell&#39;app desktop AEM.
 
@@ -44,29 +44,29 @@ Le funzionalità chiave AEM&#39;app desktop includono:
 
 * **Salvare le modifiche apportate ai file**. Qualsiasi modifica salvata nel file nella condivisione di rete viene caricata AEM automaticamente e viene creata una nuova versione.
 
-* **Inserire risorse collegate in altri documenti**. Nelle applicazioni, come Creative Cloud ([!DNL Adobe Photoshop], [!DNL Adobe InDesign]e [!DNL Adobe Illustrator]), potete inserire un file esterno come collegamento. Ad esempio, potete inserire un&#39;immagine in un documento InDesign . In questo caso, il montaggio per la condivisione di rete consente di sfogliare e selezionare le risorse da AEM per il posizionamento. L&#39;inserimento di file collegati funziona anche in alcune app non  Adobe, come MS Office.
+* **Inserire risorse collegate in altri documenti**. Nelle applicazioni, come Creative Cloud ([!DNL Adobe Photoshop], [!DNL Adobe InDesign] e [!DNL Adobe Illustrator]), potete inserire un file esterno come collegamento. Ad esempio, potete inserire un&#39;immagine in un documento InDesign . In questo caso, il montaggio per la condivisione di rete consente di sfogliare e selezionare le risorse da AEM per il posizionamento. L&#39;inserimento di file collegati funziona anche in alcune app non  Adobe, come MS Office.
 
 * **Risoluzione di riferimento in AEM**. Se entrambi i file inseriti e quelli principali con collegamento sono memorizzati in AEM possono fornire automaticamente informazioni lato server sui riferimenti delle risorse.
 
-* **Accedete alla risorsa dal desktop**. Nella condivisione di rete montata, un menu contestuale fornisce una [!UICONTROL More Info] finestra di dialogo (anteprima più grande, metadati chiave) e la possibilità di aprire una risorsa nell’interfaccia AEM.
+* **Accedete alla risorsa dal desktop**. Nella condivisione di rete montata, un menu contestuale fornisce una finestra di dialogo [!UICONTROL More Info] (anteprima più grande, metadati chiave) e la possibilità di aprire una risorsa nell&#39;interfaccia AEM.
 
 * **Caricamento in blocco** di cartelle gerarchiche di grandi dimensioni. Se utilizzate l&#39;opzione Crea > Caricamento cartella AEM&#39;interfaccia utente per caricare le risorse, AEM&#39;app desktop carica la gerarchia di cartelle selezionata in AEM in background. L&#39;avanzamento del caricamento può essere monitorato con un&#39;interfaccia utente specifica nell&#39;app desktop.
 
-## Utilizzo non appropriato AEM app desktop {#inappropriate-use-of-aem-desktop-app}
+## Utilizzo non appropriato AEM&#39;app desktop {#inappropriate-use-of-aem-desktop-app}
 
 * Non utilizzate AEM&#39;app desktop per gestire le risorse dal desktop. AEM&#39;app desktop non è stata creata come sostituzione per le unità di rete. Utilizzate invece le seguenti funzionalità:
 
    *  interfaccia utente Web di AEM Assets per la gestione delle risorse digitali (ricerca o condivisione di risorse, metadati e copia o spostamento).
 
-   * AEM app desktop [!UICONTROL Folder Upload] per caricare cartelle gerarchiche di grandi dimensioni.
+   * AEM l&#39;app desktop [!UICONTROL Folder Upload] per caricare cartelle gerarchiche di grandi dimensioni.
 
 * Non trattate AEM app desktop come client di &quot;sincronizzazione desktop&quot; per  AEM Assets. Il vantaggio principale di AEM&#39;app desktop è che fornisce l&#39;accesso &quot;virtuale&quot; all&#39;intero repository, e le applicazioni di sincronizzazione desktop in genere sincronizzano solo le risorse appartenenti a un utente. AEM&#39;app desktop offre un certo livello di memorizzazione nella cache e di caricamento in background; tuttavia, funziona in modo molto diverso dalle tipiche applicazioni &quot;Sync&quot;, come l&#39;app desktop Adobe Creative Cloud o Microsoft OneDrive.
 
 * Non utilizzate AEM unità di rete dell&#39;app desktop per salvare le risorse frequentemente. Tutte le operazioni di salvataggio vengono trasmesse a  AEM Assets. Pertanto, non è possibile eseguire operazioni di editing intensive direttamente nell&#39;archivio AEM Assets  installato. La modifica di una risorsa direttamente nell’archivio montato causa la presenza di versioni irrilevanti nella timeline della risorsa e impone costi aggiuntivi sul server.
 
-* Non utilizzate AEM app desktop per la migrazione di grandi quantità di dati da un&#39;istanza AEM a un&#39;altra. Consulta la Guida alla [migrazione](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) per pianificare ed eseguire le migrazioni delle risorse. Al contrario, l&#39;app desktop [supporta il caricamento](use-app-v1.md#bulkupload) in blocco di un gran numero di risorse per la prima volta in [!DNL Adobe Experience Manager].
+* Non utilizzate AEM app desktop per la migrazione di grandi quantità di dati da un&#39;istanza AEM a un&#39;altra. Per pianificare ed eseguire la migrazione delle risorse, vedi la [Guida alla migrazione](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html). Al contrario, l&#39;app desktop [supporta il caricamento in blocco di ](use-app-v1.md#bulkupload) un gran numero di risorse per la prima volta in [!DNL Adobe Experience Manager].
 
-## Recommendations per i casi di utilizzo selezionati {#recommendations-for-selected-use-cases}
+## Recommendations per i casi d&#39;uso selezionati {#recommendations-for-selected-use-cases}
 
 ### Accesso alle risorse per gli utenti creativi {#access-to-assets-for-creative-users}
 
@@ -82,7 +82,7 @@ AEM&#39;app desktop consente l&#39;accesso virtuale all&#39;intero archivio DAM 
 
    * Solo le risorse che richiedono modifiche o ritocco devono essere abilitate in scrittura per gli utenti creativi. Alcune organizzazioni utilizzano AEM progetti e le cartelle create per ospitare le risorse ancora soggette a modifiche.
 
-### Ricerca delle risorse {#searching-assets}
+### Ricerca risorse {#searching-assets}
 
 Per cercare un file da aprire sul desktop:
 
@@ -96,7 +96,7 @@ Se modificate una risorsa direttamente nel percorso mappato da  AEM Assets a una
 
 Se una risorsa memorizzata in AEM necessita di un aggiornamento:
 
-* Per **piccoli aggiornamenti**, ad esempio richieste di ritocco secondarie nel processo di approvazione:
+* Per **aggiornamenti secondari**, ad esempio richieste di ritocco secondarie nel processo di approvazione:
 
    * Estrarre il file e aprirlo sul desktop.
 
@@ -104,7 +104,7 @@ Se una risorsa memorizzata in AEM necessita di un aggiornamento:
 
    * Salvate la versione aggiornata. La risorsa viene aggiornata e la timeline visualizza la versione originale per il confronto.
 
-* Per gli aggiornamenti **** principali, ad esempio una richiesta di modifica che richiede un ciclo WIP creativo di piccole dimensioni:
+* Per **aggiornamenti principali**, ad esempio una richiesta di modifica che richiede un ciclo WIP creativo di piccole dimensioni:
 
    * Usate l’opzione Mostra per aprire la cartella appropriata sul desktop.
 
@@ -120,9 +120,9 @@ Una buona esperienza per gli utenti che utilizzano l&#39;app desktop AEM dipende
 
 ### Considerazioni sulla rete {#network-considerations}
 
-Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, consultare il documento [Considerazioni](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-migration-guide.html) sulla rete AEM Assets. Alcuni degli aspetti importanti che consentono di ottimizzare AEM&#39;esperienza dell&#39;app desktop per gli utenti includono:
+Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, consultare il documento [ AEM Assets Network Considerations](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-migration-guide.html). Alcuni degli aspetti importanti che consentono di ottimizzare AEM&#39;esperienza dell&#39;app desktop per gli utenti includono:
 
-* **Utilizzare il dispatcher** configurato correttamente. Utilizzate AEM Dispatcher per ulteriore protezione e accertatevi che sia configurato per la connessione [AEM app desktop AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
+* **Utilizzare il dispatcher** configurato correttamente. Utilizzate AEM Dispatcher per ulteriore protezione e accertatevi che sia configurato per la connessione dell&#39;app desktop [AEM a AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **Risparmia larghezza di banda**. È consigliabile disattivare l&#39;anteprima dell&#39;icona nel Finder su Mac, quando si sfoglia il repository montato utilizzando il Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l&#39;utente potrebbe anche diminuire l&#39;esperienza dell&#39;utente sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
 
@@ -132,7 +132,7 @@ Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, co
 
 ### Ottimizzazione delle prestazioni del server {#optimizing-server-performance}
 
-Per capire come  server AEM Assets deve essere ottimizzato per le prestazioni, fare riferimento a [AEM Assets Performance Tuning Guide](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html). Alcuni degli aspetti importanti delle prestazioni del server per AEM app desktop riguardano l’ottimizzazione della configurazione del flusso di lavoro, in modo che possa essere eseguita correttamente per il caricamento delle risorse:
+Per capire come  server AEM Assets deve essere ottimizzato per le prestazioni, fare riferimento a [ AEM Assets Performance Tuning Guide](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html). Alcuni degli aspetti importanti delle prestazioni del server per AEM app desktop riguardano l’ottimizzazione della configurazione del flusso di lavoro, in modo che possa essere eseguita correttamente per il caricamento delle risorse:
 
 * **Caricamento** di risorse più performante. Configurate il modello di flusso di lavoro [AEM Aggiornamento risorse in modo che sia transitorio](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html).
 

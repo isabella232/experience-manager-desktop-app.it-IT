@@ -1,25 +1,18 @@
 ---
-title: Procedure ottimali per la risoluzione dei problemi relativi all'app desktop Adobe Experience Manager
+title: 'Procedure ottimali per la risoluzione dei problemi e la risoluzione dei problemi relativi all''app desktop [!DNL Adobe Experience Manager] '
 description: Seguite le procedure ottimali e risolvete eventuali problemi relativi a installazione, aggiornamento, configurazione e così via.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
 
 
-# Risoluzione dei problemi relativi all&#39;app desktop Adobe Experience Manager {#troubleshoot-v2}
+# Risoluzione dei problemi relativi all&#39;app desktop [!DNL Adobe Experience Manager] {#troubleshoot-v2}
 
-L&#39;app desktop Adobe Experience Manager si connette a un archivio DAM (Digital Asset Management) di distribuzione  Experience Manager remoto. L&#39;app raccoglie informazioni sull&#39;archivio e risultati di ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con l&#39;interfaccia utente di Assets.
+[!DNL Adobe Experience Manager] l&#39;app desktop si connette all&#39;archivio DAM (Digital Asset Management) di una  [!DNL Experience Manager] distribuzione. L&#39;app raccoglie informazioni sull&#39;archivio e risultati di ricerca sul computer, scarica e carica file e cartelle, e include funzionalità per gestire i conflitti con l&#39;interfaccia utente di Assets.
 
 Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure ottimali e individuare i limiti.
 
@@ -27,23 +20,23 @@ Continua a leggere per risolvere i problemi dell&#39;app, conoscere le procedure
 
 Seguite le procedure ottimali riportate di seguito per evitare problemi comuni e risolvere eventuali problemi.
 
-* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorrete alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra l&#39;interfaccia Web  Experience Manager e il desktop, la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedere [come funziona](release-notes.md#how-app-works).
+* **Scoprite come funziona** l&#39;app desktop: Prima di iniziare a utilizzare l&#39;applicazione, trascorrete alcuni minuti a sapere come funziona l&#39;app. Informazioni sui collegamenti tra l&#39;interfaccia Web e il desktop [!DNL Experience Manager], la mappatura dell&#39;archivio, il caching delle risorse, il salvataggio locale e il caricamento in background. Vedere [come funziona](release-notes.md#how-app-works).
 
-* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Consultate l&#39;elenco dei caratteri in [Crea cartelle in  Experience Manager Risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Alcuni casi di utilizzo di Adobe Experience Manager possono essere influenzati da caratteri non supportati nel nome della cartella.
+* **Evitate i caratteri non supportati nei nomi** delle cartelle: Non utilizzate spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Visualizzare un elenco di caratteri in [Crea cartelle in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders). Alcuni casi di utilizzo [!DNL Experience Manager] possono essere influenzati da caratteri non supportati nel nome della cartella.
 
 * **Procedure ottimali per evitare conflitti**: Per evitare potenziali conflitti durante la collaborazione su più risorse, consultate  [evitare conflitti](using.md#adv-workflow-collaborate-avoid-conflicts) di modifica.
 
-* **Usate il caricamento delle cartelle per le cartelle** gerarchiche di grandi dimensioni: Invece di usare l’interfaccia Web o altri metodi di Risorse, utilizzate ’app desktop Experience Manager per caricare cartelle di grandi dimensioni. L&#39;app carica le risorse in background con registrazione e monitoraggio. Consultate [risorse per il caricamento in blocco](using.md#bulk-upload-assets).
+* **Usate il caricamento delle cartelle per le cartelle** gerarchiche di grandi dimensioni: Invece di usare l’interfaccia Web di Risorse o altri metodi, utilizzate l’app  [!DNL Experience Manager] desktop per caricare cartelle di grandi dimensioni. L&#39;app carica le risorse in background con registrazione e monitoraggio. Consultate [risorse per il caricamento in blocco](using.md#bulk-upload-assets).
 
-* **Utilizzate la versione** più recente: Utilizzate la versione più recente dell&#39;app e verificate sempre la compatibilità prima di installare una nuova versione dell&#39;app o prima di eseguire l&#39;aggiornamento a una versione più recente di Adobe Experience Manager. Vedere [note sulla versione](release-notes.md).
+* **Utilizzate la versione** più recente: Utilizzate la versione più recente dell&#39;app e verificate sempre la compatibilità prima di installare una nuova versione dell&#39;app o prima di eseguire l&#39;aggiornamento a una  [!DNL Experience Manager] versione più recente. Vedere [note sulla versione](release-notes.md).
 
-* **Utilizzare la stessa lettera** di unità: Utilizzare la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura su Adobe Experience Manager DAM. Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. L&#39;utilizzo della stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
+* **Utilizzare la stessa lettera** di unità: Utilizzare la stessa lettera di unità all&#39;interno di un&#39;organizzazione per eseguire la mappatura sul  [!DNL Experience Manager] DAM. Per visualizzare le risorse inserite da altri utenti, i percorsi devono essere identici. L&#39;utilizzo della stessa lettera di unità assicura un percorso costante alle risorse DAM. Le risorse rimangono posizionate e non vengono rimosse anche se diversi utenti utilizzano lettere di unità.
 
-* **Tenere presente la rete**: Le prestazioni di rete sono fondamentali per  le prestazioni dell&#39;app desktop di Experience Manager. Se devi affrontare una risposta rallentata a trasferimenti di file o operazioni in blocco, disattiva le funzionalità o le app che potrebbero causare un sacco di traffico di rete.
+* **Tenere presente la rete**: Le prestazioni di rete sono fondamentali per le prestazioni dell&#39;app  [!DNL Experience Manager] desktop. Se devi affrontare una risposta rallentata a trasferimenti di file o operazioni in blocco, disattiva le funzionalità o le app che potrebbero causare un sacco di traffico di rete.
 
 * **Casi di utilizzo non supportati per l’app** desktop: non utilizzate l&#39;app per la migrazione delle risorse (necessita di pianificazione e altri strumenti); per operazioni DAM complesse (come lo spostamento di grandi cartelle, caricamenti di grandi dimensioni, la ricerca di file tramite ricerche avanzate di metadati); e come client di sincronizzazione (i principi di progettazione e i pattern di utilizzo sono diversi dai client in-sync come Microsoft OneDrive o la sincronizzazione desktop Adobe Creative Cloud).
 
-* **Timeout**: Al momento, l&#39;app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra  server di Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
+* **Timeout**: Al momento, l&#39;app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra il  [!DNL Experience Manager] server e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
 
 ## Come risolvere i problemi di {#troubleshooting-prep}
 
@@ -119,7 +112,7 @@ Per abilitare la modalità di debug in Windows:
 
 Effettuate le seguenti operazioni:
 
-1. Avviare l&#39;applicazione e collegare l&#39;istanza del Experience Manager .
+1. Avviare l&#39;applicazione e collegare l&#39;istanza [!DNL Experience Manager].
 
 1. Aprite le preferenze dell&#39;applicazione facendo clic sulle ellissi nell&#39;angolo superiore destro e selezionando [!UICONTROL Preferences].
 
@@ -163,9 +156,9 @@ Se non riuscite a visualizzare le risorse inserite nei file di supporto da voi o
 
 * Dimensione file. Il download e la visualizzazione delle risorse grandi richiedono più tempo.
 
-* Coerenza con le lettere dell&#39;unità. Se le risorse sono state inserite da un collaboratore durante la mappatura del DAM del Experience Manager  a un&#39;altra lettera di unità, le risorse inserite non vengono visualizzate.
+* Coerenza con le lettere dell&#39;unità. Se le risorse sono state inserite da un collaboratore durante la mappatura del DAM [!DNL Experience Manager] a un&#39;altra lettera di unità, le risorse inserite non vengono visualizzate.
 
-* Autorizzazioni. Per verificare se disponete delle autorizzazioni necessarie per recuperare le risorse inserite, contattate l’amministratore di Experience Manager .
+* Autorizzazioni. Per verificare se disponete delle autorizzazioni necessarie per recuperare le risorse inserite, contattate l&#39;amministratore di [!DNL Experience Manager].
 
 ### Le modifiche apportate ai file nell&#39;interfaccia utente dell&#39;app desktop non si riflettono in [!DNL Adobe Experience Manager] immediatamente {#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +166,7 @@ Se non riuscite a visualizzare le risorse inserite nei file di supporto da voi o
 
 ### Problemi durante l&#39;aggiornamento su macOS {#issues-when-upgrading-on-macos}
 
-A volte possono verificarsi problemi durante l&#39;aggiornamento &#39;app desktop Experience Manager su macOS. Ciò è causato dalla cartella di sistema precedente per  app desktop Experience Manager che impedisce il corretto caricamento delle nuove versioni  app desktop Experience Manager. Per risolvere questo problema, è possibile rimuovere manualmente le cartelle e i file seguenti.
+Talvolta possono verificarsi problemi durante l&#39;aggiornamento dell&#39;app desktop [!DNL Experience Manager] in macOS. Ciò è causato dalla cartella di sistema precedente per l&#39;app desktop [!DNL Experience Manager] che impedisce il caricamento corretto delle nuove versioni dell&#39;app desktop [!DNL Experience Manager]. Per risolvere questo problema, è possibile rimuovere manualmente le cartelle e i file seguenti.
 
 Prima di eseguire i seguenti passaggi, trascinate l&#39;applicazione `Adobe Experience Manager Desktop` dalla cartella delle applicazioni macOS al cestino. Aprite quindi il terminale, eseguite il comando seguente e fornite la password quando richiesto.
 
@@ -188,7 +181,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### Impossibile caricare i file {#upload-fails}
 
-Se si utilizza l&#39;app desktop con  Experience Manager 6.5.1 o successivo, aggiornare il connettore S3 o Azure alla versione 1.10.4 o successiva. Risolve il problema di errore nel caricamento dei file relativo a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Vedere [istruzioni di installazione](install-upgrade.md#install-v2).
+Se si utilizza l&#39;app desktop con [!DNL Experience Manager] 6.5.1 o versione successiva, aggiornare il connettore S3 o Azure alla versione 1.10.4 o successiva. Risolve il problema di errore nel caricamento dei file relativo a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Vedere [istruzioni di installazione](install-upgrade.md#install-v2).
 
 ### [!DNL Experience Manager] problemi di connessione all&#39;app desktop  {#connection-issues}
 
@@ -256,9 +249,9 @@ Osservare la sequenza URL caricata può facilitare la risoluzione dei problemi a
 
 #### Problema di configurazione SSL {#ssl-config-v2}
 
-Le librerie che &#39;app desktop di Experience Manager utilizza per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. In alcuni casi, una connessione può avere esito positivo utilizzando un browser ma non riesce utilizzando &#39;app desktop Experience Manager. Per configurare SSL in modo appropriato, installate il certificato intermedio mancante in Apache. Vedere [Come installare un certificato CA intermedio in Apache](https://access.redhat.com/solutions/43575).
+Le librerie utilizzate dall&#39;app desktop [!DNL Experience Manager] per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. A volte, una connessione può avere esito positivo utilizzando un browser ma non riesce utilizzando l&#39;app desktop [!DNL Experience Manager]. Per configurare SSL in modo appropriato, installate il certificato intermedio mancante in Apache. Vedere [Come installare un certificato CA intermedio in Apache](https://access.redhat.com/solutions/43575).
 
-Le librerie che  Experience Manager Desktop utilizza per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. In alcuni casi, le connessioni SSL riuscite tramite un browser non vanno a buon fine con l&#39;app desktop [!DNL Adobe Experience Manager]. Ciò è positivo perché incoraggia la corretta configurazione di SSL e aumenta la sicurezza, ma può risultare frustrante quando l&#39;applicazione non è in grado di connettersi.
+Le librerie che l&#39;app desktop [!DNL Experience Manager] utilizza per la comunicazione HTTP utilizzano l&#39;applicazione SSL rigorosa. In alcuni casi, le connessioni SSL riuscite tramite un browser non vanno a buon fine con l&#39;app desktop [!DNL Adobe Experience Manager]. Ciò è positivo perché incoraggia la corretta configurazione di SSL e aumenta la sicurezza, ma può risultare frustrante quando l&#39;applicazione non è in grado di connettersi.
 
 In questo caso, si consiglia di utilizzare uno strumento per analizzare il certificato SSL di un server e identificare i problemi che possono essere corretti. Esistono siti Web che ispezionano il certificato di un server quando ne fornisce l&#39;URL.
 

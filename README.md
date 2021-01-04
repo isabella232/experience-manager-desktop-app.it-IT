@@ -1,17 +1,25 @@
 ---
-source-git-commit: 637d132ad0379fd3866dbd7fad8018c5751d271a
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '75'
-ht-degree: 0%
+source-wordcount: '321'
+ht-degree: 22%
 
 ---
-# Documentazione sulle app desktop Adobe Experience Manager
+# Informazioni sull&#39;app desktop [!DNL Adobe Experience Manager]
 
-Questa è la documentazione dell&#39;app desktop Adobe Experience Manager.
+L&#39;app desktop [!DNL Adobe Experience Manager] collega [!DNL Experience Manager] l&#39;archivio DAM al desktop, per fornire un accesso più rapido alle risorse e flussi di lavoro semplificati. Questa riduzione consente di migliorare l’efficienza degli utenti che lavorano con le risorse digitali nei loro flussi di lavoro desktop. Utilizzando l&#39;app, le risorse all&#39;interno di [!DNL Experience Manager Assets] sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Puoi aprire e modificare le risorse nelle applicazioni desktop preferite. Le modifiche locali possono essere rese disponibili nell&#39;archivio [!DNL Experience Manager] DAM. Qualsiasi nuova risorsa aggiunta alla directory archivio da qualsiasi origine può essere resa disponibile anche sul desktop.
 
-I vostri contributi alla documentazione sono i benvenuti. Consulta le risorse seguenti:
+Grazie a tale integrazione diversi ruoli dell’organizzazione possono gestire centralmente le risorse in [!DNL Experience Manager Assets]. Gli addetti al marketing e gli utenti aziendali possono garantire la conformità ai vari standard, inclusi branding e licenze. Gli utenti creativi possono inoltre accedere alle risorse sul desktop in [!DNL Creative Cloud] e in altre applicazioni native.
 
-* [contribute.](contributing.md) mdPer una panoramica di come contribuire alla documentazione.
-* [guidelines.](guidelines.md) mdPer una panoramica di quanto ci si aspetta dai contributi e come comporre i contributi della documentazione.
-* [code-of-Conduct.](code-of-conduct.md) mdPer una panoramica degli standard di comportamento che ci aspettiamo nel corso del progetto di documentazione.
+## Contribuire alla documentazione
+
+Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md).
+
+**Modifiche minori**: Fate clic su Modifica nel margine destro di un articolo per iniziare a apportare correzioni o chiarimenti minori e a inviarli. In alternativa, create un problema in questo repository che descrive le modifiche. Tali contributi minori sono coperti dalle condizioni d&#39;uso  Adobe.
+
+**Modifiche** principali: Fate clic su Modifica in un articolo, contribuite e create una richiesta pull o create un’edizione. In entrambi i casi, un membro del team di dottori interagisce con voi per ottenere ulteriori informazioni. Prima di contribuire a qualsiasi documento  Adobe, è necessario firmare il contratto di licenza  Adobe una volta sola. Vedere [come contribuire](contributing.md) articolo.
+
+**Per  dipendenti** del Adobe: Se sei un dipendente  Adobe, utilizza Git aziendale per contribuire. Vedere [contributori.md](contributing.md). Per apportare importanti aggiornamenti, apri un problema e un membro del team ti contatterà.
+
+Per gli standard di comportamento che ci aspettiamo che tu contribuisca, vedi [codice di condotta](code-of-conduct.md).

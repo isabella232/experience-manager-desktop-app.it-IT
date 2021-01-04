@@ -1,8 +1,8 @@
 ---
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18cebce065f9b55259bf96d14cb50cf5bc6c8ec6
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Guardate il seguente video per una rapida panoramica su come creare problemi e t
 
 ### Contributi da  dipendenti Adobi
 
-Se sei un dipendente  Adobe e hai un contributo, ti chiediamo di utilizzare l&#39;organizzazione `AdobeDocs` nel git aziendale. È possibile contribuire a questo repository pubblico su GitHub.com, ma i contributi sono più facili da elaborare sul repo aziendale. Assicuratevi che qualsiasi informazione proprietaria o non rilasciata sia discussa solo nel repo aziendale.
+Se sei un dipendente  Adobe e hai un contributo, ti chiediamo di utilizzare l&#39;organizzazione `AdobeDocs` nel git aziendale. È possibile contribuire a questo repository pubblico su GitHub.com, ma i contributi sono più facili da elaborare sul repo aziendale. Assicuratevi che qualsiasi informazione proprietaria o non rilasciata sia discussa solo nel repo aziendale.  dipendenti del Adobe non devono firmare l’accordo di licenza.
 
 ## Informazioni  piattaforma di authoring GitHub  piattaforma e Markdown
 

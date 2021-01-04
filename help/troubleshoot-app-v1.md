@@ -1,27 +1,20 @@
 ---
-title: Risoluzione dei problemi AEM app desktop versione 1.x
-description: Risolvere AEM problemi relativi all'installazione, all'aggiornamento, alla configurazione e così via'app desktop versione 1.x.
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
+title: 'Risoluzione dei problemi relativi all''app desktop versione 1.x [!DNL Adobe Experience Manager] '
+description: Risolvete i problemi relativi all'installazione, all'aggiornamento e alla configurazione dell'app desktop  [!DNL Adobe Experience Manager] versione 1.x.
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '3379'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 
-# Risoluzione dei problemi AEM&#39;app desktop v1.x {#troubleshoot-aem-desktop-app}
+# Risoluzione dei problemi relativi all&#39;app desktop [!DNL Adobe Experience Manager] v1.x {#troubleshoot-aem-desktop-app}
 
 Risolvi AEM problemi relativi a installazione, aggiornamento, configurazione e così via.
 
-L&#39;app desktop Adobe Experience Manager (AEM) include utility che consentono di mappare l&#39;archivio AEM Assets  come condivisione di rete sul desktop (condivisione SMB su Mac OS). La condivisione di rete è una tecnologia del sistema operativo che consente alle origini remote di essere trattate come se fossero parte del file system locale di un computer. Nel caso dell&#39;app desktop, la struttura dell&#39;archivio DAM (Digital Asset Management) di un&#39;istanza AEM remota viene indirizzata come origine file remota. Il diagramma seguente descrive la topologia dell&#39;app desktop:
+[!DNL Adobe Experience Manager] l&#39;app desktop include utility che consentono di mappare l&#39;archivio AEM Assets  come condivisione di rete sul desktop (condivisione SMB su Mac OS). La condivisione di rete è una tecnologia del sistema operativo che consente alle origini remote di essere trattate come se fossero parte del file system locale di un computer. Nel caso dell&#39;app desktop, la struttura dell&#39;archivio DAM (Digital Asset Management) di un&#39;istanza AEM remota viene indirizzata come origine file remota. Il diagramma seguente descrive la topologia dell&#39;app desktop:
 
 ![diagramma app desktop](assets/aem-desktopapp-architecture.png)
 
@@ -70,7 +63,7 @@ AEM Desktop non è adatto per l&#39;esecuzione di operazioni di manipolazione in
 
 A causa delle limitazioni del sistema operativo, Windows ha un limite di dimensione file di 4.294.967.295 byte (circa 4,29 GB). È dovuto a un&#39;impostazione del Registro di sistema che definisce le dimensioni di un file in una condivisione di rete. Il valore dell&#39;impostazione del Registro di sistema è un DWORD con una dimensione massima uguale al numero di riferimento.
 
-&#39;app desktop di Experience Manager non dispone di un valore di timeout configurabile che disconnette la connessione tra  server di Experience Manager e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
+[!DNL Experience Manager] l&#39;app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra il  [!DNL Experience Manager] server e l&#39;app desktop dopo un intervallo di tempo fisso. Quando caricate risorse di grandi dimensioni, se la connessione riceve il timeout dopo un po&#39;, l&#39;app tenta nuovamente di caricare la risorsa alcune volte aumentando il timeout di caricamento. Non è consigliato modificare le impostazioni di timeout predefinite.
 
 ## Memorizzazione nella cache e comunicazione con AEM {#caching-and-communication-with-aem}
 

@@ -1,46 +1,46 @@
 ---
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '721'
 ht-degree: 5%
 
 ---
-# Linee guida per il contributo alla documentazione Adobe Experience Manager
+# Linee guida per il contributo alla documentazione [!DNL Adobe Experience Manager]
 
 ## Filosofia della documentazione
 
-Sappiamo che gli utenti Adobe Experience Manager lavorano in ambienti altamente competitivi, cercando di creare esperienze digitali che li distinguano dalla concorrenza. Pertanto, è fondamentale che, quando  Adobe offre nuovi strumenti avanzati in [!DNL Experience Manager], questi strumenti siano integrati da una documentazione accurata e chiara che consenta al cliente di sfruttare immediatamente il proprio [!DNL Experience Manager] investimento e massimizzare il ROI.
+Sappiamo che gli utenti [!DNL Adobe Experience Manager] lavorano in ambienti altamente competitivi, cercando di creare esperienze digitali che li distinguano dai loro concorrenti. Pertanto è fondamentale che, quando  Adobe offre nuovi strumenti avanzati in [!DNL Experience Manager], questi strumenti siano integrati da una documentazione accurata e chiara che consenta al cliente di sfruttare immediatamente il proprio [!DNL Experience Manager] investimento e massimizzare il ROI.
 
-L&#39;obiettivo della [!DNL Experience Manager] documentazione è mettere la documentazione nelle mani degli [!DNL Experience Manager] utenti il prima possibile. Pertanto, diamo priorità a una documentazione accurata e utilizzabile e ci impegniamo a aggiornarla e a migliorarla continuamente.
+L&#39;obiettivo della documentazione [!DNL Experience Manager] è quello di mettere la documentazione nelle mani degli utenti [!DNL Experience Manager] il prima possibile. Pertanto, diamo priorità a una documentazione accurata e utilizzabile e ci impegniamo a aggiornarla e a migliorarla continuamente.
 
 ## Contributi alla documentazione
 
-Al fine di migliorare continuamente la [!DNL Experience Manager] documentazione, l&#39;intera comunità di [!DNL Experience Manager] utenti è benvenuta. Sia attraverso richieste pull o problemi, i miglioramenti alla documentazione possono essere correzioni, chiarimenti, espansioni ed esempi aggiuntivi.
+Al fine di migliorare continuamente la documentazione [!DNL Experience Manager], l&#39;intera comunità di utenti [!DNL Experience Manager] è invitata a contribuire alla documentazione. Sia attraverso richieste pull o problemi, i miglioramenti alla documentazione possono essere correzioni, chiarimenti, espansioni ed esempi aggiuntivi.
 
 ## Standard di documentazione
 
-Pur accogliendo con favore i contributi alla documentazione, qualsiasi contributo alla [!DNL Experience Manager] documentazione, sotto forma di richiesta di pull o di un problema, dovrebbe essere conforme ai nostri standard di contributo e documentazione.
+Pur accogliendo con favore i contributi alla documentazione, qualsiasi contributo alla documentazione [!DNL Experience Manager], sotto forma di richiesta pull o di un problema, dovrebbe essere conforme ai nostri standard di contributo e documentazione.
 
 I contributi che non soddisfano tali standard possono essere rifiutati.
 
 ### Documentiamo casi di utilizzo standard
 
-[!DNL Experience Manager] la documentazione copre i casi di utilizzo standard. I casi di utilizzo che esulano dall&#39;ambito di installazione e utilizzo standard del prodotto non fanno parte della [!DNL Experience Manager] documentazione.
+[!DNL Experience Manager] la documentazione copre i casi di utilizzo standard. I casi di utilizzo che esulano dall&#39;ambito dell&#39;installazione e dell&#39;utilizzo standard del prodotto non fanno parte della documentazione [!DNL Experience Manager].
 
 ### In genere non documentiamo i bug o le loro soluzioni
 
 [!DNL Experience Manager] la documentazione copre i casi di utilizzo standard. Per questo motivo, i bug, gli effetti causati da bug e le soluzioni alternative per i bug non sono generalmente documentati.
 
-Le eccezioni a questa regola si applicano alle note sulla versione in cui possono essere elencati i problemi noti con possibili soluzioni approvate dalla [!DNL Experience Manager] Gestione prodotto.
+Le eccezioni a questa regola si applicano alle note sulla versione in cui possono essere elencati i problemi noti con possibili soluzioni approvate da [!DNL Experience Manager] Product Management.
 
 ### I contributi alla documentazione non sono destinati a rispondere a domande tecniche
 
-Eventuali idee che potrebbero essere necessarie per migliorare la [!DNL Experience Manager] documentazione sono i benvenuti come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo ai *contributi* . Non sono destinati a rispondere alle tue domande su come utilizzare [!DNL Experience Manager], implementare il tuo [!DNL Experience Manager] progetto o risolvere problemi tecnici.
+Eventuali idee da migliorare [!DNL Experience Manager] la documentazione sono i benvenuti come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo a *contributi*. Non sono destinati a rispondere alle tue domande su come utilizzare [!DNL Experience Manager], implementare il tuo progetto [!DNL Experience Manager] o risolvere problemi tecnici.
 
-Eventuali domande sull&#39;utilizzo di errori [!DNL Experience Manager] o tecnici possono essere segnalate attraverso il normale processo di assistenza tramite il [portale](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) Enterprise Support di Experience Cloud o discusse nella community [di](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
+Eventuali domande sull&#39;utilizzo di [!DNL Experience Manager] o eventuali errori tecnici dovrebbero essere segnalate attraverso il normale processo di assistenza tramite il [ portale di assistenza aziendale del Experience Cloud](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o discusse nella [ comunità di Experienci Manager](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
 
-***[!DNL Experience Manager]i contributi alla documentazione non sostituiscono &#39;Assistenza*** clienti del Adobe e tutti i contributi richiesti per ottenere risposte alle domande relative al supporto verranno rifiutati.
+***[!DNL Experience Manager]i contributi alla documentazione non sostituiscono  Adobe*** Careale per i clienti e qualsiasi contributo di questo tipo alla ricerca di risposte alle domande relative al supporto verrà rifiutato.
 
 ### I contributi devono fare riferimento in modo chiaro alle pagine della documentazione interessate.
 
@@ -62,11 +62,11 @@ Seguendo queste linee guida è più semplice rivedere il proprio contributo e l&
 * Tenete delle frasi il più semplici possibile.
 * Tenete la lingua chiara e concisa.
 
-Ricordate, i lettori di [!DNL Experience Manager] documentazione sono in tutto il mondo e non ci si può aspettare che siano madrelingua o parlanti inglesi fluenti. Evitare i colloquialismi e mantenere la lingua il più possibile chiara e semplice.
+Ricordate, i lettori della documentazione [!DNL Experience Manager] sono in tutto il mondo e non ci si può aspettare che siano madrelingua o parlanti inglesi fluenti. Evitare i colloquialismi e mantenere la lingua il più possibile chiara e semplice.
 
 #### Segui il manuale di stile di Microsoft
 
-[Il Manuale di Stile](https://docs.microsoft.com/en-us/style-guide/welcome/) Microsoft è una guida di stile della documentazione disponibile liberamente che si concentra sulla documentazione del software e la documentazione segue la presente guida ove possibile [!DNL Experience Manager] .
+[Il Manuale di ](https://docs.microsoft.com/en-us/style-guide/welcome/) Styleis di Microsoft è una guida di stile della documentazione disponibile liberamente che si concentra sulla documentazione e  [!DNL Experience Manager] documentazione del software segue questa guida quando possibile.
 
 ### Formattazione
 
@@ -88,6 +88,6 @@ Cercate di evitare, quando possibile, riferimenti diretti a una versione specifi
 
 ### Utilizzo di Day, [!DNL Experience Manager], CQ, CRX
 
-Il prodotto deve sempre essere indicato con il suo nome completo **Adobe Experience Manager** per la prima volta in un articolo e può essere successivamente denominato **Experience Manager**.
+Per il primo utilizzo di un articolo, fare riferimento al prodotto con il nome completo **Adobe Experience Manager**, quindi fare riferimento ad esso come **Experience Manager**.
 
-Day, Day Software, CQ e CRX non devono essere utilizzati a meno che non sia inevitabile, ad esempio nei nomi di classe o che faccia riferimento alla cronologia di [!DNL Experience Manager].
+Non utilizzare i termini Day, Day Software, CQ e CRX, tranne nei casi in cui ciò sia inevitabile, ad esempio nei nomi di classe o con riferimento alla cronologia di [!DNL Experience Manager].

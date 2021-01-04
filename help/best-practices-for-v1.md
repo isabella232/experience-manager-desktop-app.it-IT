@@ -1,10 +1,10 @@
 ---
-title: Best practice per AEM app desktop versione 1.x
-description: Funzionalità chiave e uso consigliato dell'app desktop Adobe Experience Manager versione 1.x.
+title: '[!DNL Adobe Experience Manager] procedure ottimali per l''app desktop versione 1.x'
+description: Funzionalità chiave e uso consigliato dell'app desktop versione 1.x [!DNL Adobe Experience Manager] 1.x.
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-L&#39;app desktop Adobe Experience Manager (AEM) collega la soluzione Digital Asset Management (DAM) con il desktop, consentendo di aprire i file disponibili nell&#39;interfaccia AEM Web direttamente sul desktop. Se salvate una risorsa dal desktop, questa viene caricata in AEM nel percorso appropriato.
+[!DNL Adobe Experience Manager] l&#39;app desktop collega la soluzione Digital Asset Management (DAM) con il desktop, in modo da poter aprire i file disponibili nell&#39;interfaccia AEM Web direttamente sul desktop. Se salvate una risorsa dal desktop, questa viene caricata in AEM nel percorso appropriato.
 
 AEM&#39;app desktop elimina la possibilità di aggiornare copie locali non corrette o di aggiornare una risorsa errata in AEM. il flusso di lavoro di facile utilizzo dell&#39;app desktop viene attivato utilizzando la tecnologia di condivisione di rete fornita dai sistemi operativi desktop.
 

@@ -1,11 +1,11 @@
 ---
-title: 'Introduzione all''app desktop [!DNL Adobe Experience Manager] '
+title: 'Introduzione all''app desktop [!DNL Experience Manager] '
 description: Scopri come utilizzare [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] direttamente dal desktop.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 70%
+source-wordcount: '619'
+ht-degree: 66%
 
 ---
 
@@ -20,20 +20,20 @@ Grazie a tale integrazione diversi ruoli dell’organizzazione possono gestire c
 
 >[!NOTE]
 >
->[!DNL Adobe Experience Manager] l&#39;app desktop è stata introdotta nella versione  [!DNL Adobe Experience Manager] 6.1 ed era precedentemente denominata  [!DNL Adobe Experience Manager Assets] Companion App. Per informazioni sulla versione 1.x dell’app, fai riferimento al sommario nella barra laterale sinistra. Adobe consiglia di effettuare l’aggiornamento all’ultima versione, ovvero la versione 2.
+>L&#39;app è stata introdotta nella versione [!DNL Adobe Experience Manager] 6.1 ed è stata precedentemente denominata [!DNL Adobe Experience Manager Assets] Companion App. Per informazioni sulla versione 1.x dell&#39;app, vedete il sommario nella barra laterale sinistra. Adobe consiglia di effettuare l’aggiornamento all’ultima versione, ovvero la versione.
 
 La documentazione dell’app desktop contiene informazioni relative ai seguenti ruoli e casi d’uso.
 
 | Informazioni richieste | Contenuto dell’Aiuto |
 |--- |--- |
-| Vuoi dare una rapida occhiata alle nuove funzioni e ai miglioramenti apportati nell’ultima versione? | [Novità dell’app](#whats-new-v2) |
+| Vuoi dare una rapida occhiata alle nuove funzioni e ai miglioramenti apportati nell’ultima versione? | [Novità nell&#39;app](#whats-new-v2) |
 | Vuoi conoscere i prerequisiti e le specifiche tecniche? Cerchi i collegamenti di download? | [Note sulla versione](release-notes.md) |
 | Usi già l’app desktop, vuoi aggiornarla e passare senza problemi alla nuova versione? | [Eseguire l’aggiornamento dalla versione precedente](install-upgrade.md#upgrade-from-previous-version) |
 | Sei pronto per iniziare e vuoi modificare le preferenze predefinite? | [Installare e configurare l’app](install-upgrade.md) |
 | Vuoi scoprire come utilizzare l’app per sfogliare, individuare, modificare, caricare, risolvere i conflitti, eseguire operazioni in serie e così via? | [App  [!DNL Experience Manager] desktop](using.md) |
 | Si è verificato un problema e hai bisogno di aiuto per risolverlo? | [ [!DNL Experience Manager] Risolvere i problemi relativi all’app desktop ](troubleshoot.md) |
 
-## Novità dell’app {#whats-new-v2}
+## Novità nell&#39;app {#whats-new-v2}
 
 La versione 2.0 dell’app è stata creata da zero e include numerosi miglioramenti rispetto alle versioni precedenti. La nuova app è più semplice da usare e offre un’esperienza desktop dedicata con una nuova interfaccia utente. Gli utenti possono individuare le risorse tramite ricerca o navigazione, aprire, modificare e caricare le modifiche, nonché caricare nuove risorse, senza che l&#39;utente debba utilizzare l&#39;interfaccia [!DNL Experience Manager]. Questa versione supporta anche l&#39;apertura di file dall&#39;interfaccia [!DNL Experience Manager].
 

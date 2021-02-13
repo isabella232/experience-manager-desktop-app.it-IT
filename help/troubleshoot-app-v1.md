@@ -1,10 +1,10 @@
 ---
-title: 'Risoluzione dei problemi relativi all''app desktop versione 1.x [!DNL Adobe Experience Manager] '
-description: Risolvete i problemi relativi all'installazione, all'aggiornamento e alla configurazione dell'app desktop  [!DNL Adobe Experience Manager] versione 1.x.
+title: Risoluzione dei problemi relativi all'app desktop versione 1.10.
+description: Risolvete i problemi relativi all'installazione, all'aggiornamento e alla configurazione dell'app desktop  [!DNL Adobe Experience Manager] versione 1.10.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Quando si risolvono problemi di prestazioni ottimizzate per singoli utenti, prim
 
 La larghezza di banda disponibile per un singolo utente svolge un ruolo fondamentale nelle prestazioni del client WebDAV/SMB.
 
- Adobe consiglia di avvicinare la velocità di caricamento di un singolo utente a 10 Mbps. Per le connessioni wireless, la larghezza di banda è spesso condivisa tra più utenti. Se più utenti eseguono contemporaneamente attività che richiedono larghezza di banda di rete, le prestazioni possono peggiorare ulteriormente. Per evitare tali problemi, utilizzate una connessione cablata.
+ Adobe consiglia di avvicinare la velocità di caricamento di un singolo utente a 10 Mbps. Per le connessioni wireless, la larghezza di banda è spesso condivisa tra più utenti. Se più utenti eseguono contemporaneamente attività che richiedono larghezza di banda di rete, le prestazioni possono peggiorare ulteriormente. Per evitare tali problemi, utilizzate una connessione via cavo.
 
 ## Configurazioni specifiche di Windows {#windows-specific-configurations}
 
@@ -214,7 +214,7 @@ Il modo più semplice per risolvere questa situazione è aprire il file in confl
 
 La cancellazione AEM cache del desktop è un&#39;attività preliminare di risoluzione dei problemi che può risolvere diversi problemi AEM Desktop.
 
-Potete cancellare la cache eliminando la directory della cache dell&#39;applicazione nelle seguenti posizioni.
+È possibile cancellare la cache eliminando la directory della cache dell&#39;applicazione nelle seguenti posizioni.
 In Windows, `%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
 In Mac, `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`

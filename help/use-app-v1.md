@@ -1,16 +1,16 @@
 ---
-title: Utilizza l'app desktop versione 1.x [!DNL Experience Manager] a.
-description: Scoprite come utilizzare l’app desktop Adobe Experience Manager versione 1.x e ottimizzare il lavoro con le risorse sul desktop.
+title: Utilizzate la versione 1.10 dell'app desktop [!DNL Experience Manager] .
+description: Scoprite come utilizzare l’app desktop Adobe Experience Manager versione 1.10 e ottimizzare il lavoro con le risorse sul desktop.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2377'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzare l&#39;app desktop [!DNL Experience Manager] v1.x {#use-aem-desktop-app-v1x}
+# Utilizzate l&#39;app desktop [!DNL Experience Manager] v1.10 {#use-aem-desktop-app-v1x}
 
 Utilizzando l&#39;app, le risorse all&#39;interno di [!DNL Experience Manager] sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nell&#39;archivio.
 
@@ -27,7 +27,7 @@ Per le varie operazioni e operazioni non consigliate, consultate le [best practi
 
 >[!NOTE]
 >
->[!DNL Experience Manager] l&#39;app desktop è stata introdotta nella versione  [!DNL Experience Manager] 6.1 ed è stata chiamata  [!DNL Experience Manager Assets Companion App].
+>L&#39;app desktop è stata introdotta nella versione [!DNL Experience Manager] 6.1 ed è stata denominata [!DNL Experience Manager Assets Companion App].
 
 ## [!DNL Experience Manager] punti di contatto dell’app desktop nel flusso di lavoro creativo  {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
@@ -126,7 +126,7 @@ Per  file Adobe InDesign (INDD), selezionate **[!UICONTROL Open]** dal menu di s
 
 >[!NOTE]
 >
-> Adobe consiglia di passare a Opzioni vista Finder su Mac e disattivare le opzioni **Mostra informazioni elemento**, **Mostra anteprima elemento** e **Mostra colonna anteprima** per la cartella [!DNL Assets] montata. Migliora le prestazioni.
+> Adobe consiglia di passare a Opzioni visualizzazione Finder su Mac e disattivare le opzioni **Mostra informazioni elemento**, **Mostra anteprima elemento** e **Mostra colonna anteprima** per la cartella [!DNL Assets] montata. Migliora le prestazioni.
 
 ### Opzioni aggiuntive nell&#39;interfaccia [!DNL Experience Manager] {#additional-options-in-aem-assets}
 

@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Experience Manager] procedure ottimali per l''app desktop versione 1.x'
 description: Funzionalità chiave e uso consigliato dell'app desktop versione 1.x [!DNL Adobe Experience Manager] 1.x.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Le funzionalità chiave AEM&#39;app desktop includono:
 
 * **Apertura di file dallinterfaccia utente Web di AEM Assets sul desktop**. Dall’interfaccia utente Web, potete visualizzare le risorse sul desktop (nel Finder, in Esplora risorse) oppure aprire una risorsa mediante un’applicazione desktop.
 
-* **Check-out e check-in**. Le risorse possono essere ritirate per la modifica, sono contrassegnate come bloccate per l’utente in  AEM Assets. Dopo la modifica, la risorsa può essere archiviata per sbloccarla.
+* **Check-out e check-in**. Le risorse possono essere sottoposte a check-out per la modifica e sono contrassegnate come bloccate per l’utente in  AEM Assets. Dopo la modifica, la risorsa può essere archiviata per sbloccarla.
 
 * **Salvare le modifiche apportate ai file**. Qualsiasi modifica salvata nel file nella condivisione di rete viene caricata AEM automaticamente e viene creata una nuova versione.
 
@@ -124,11 +124,11 @@ Per informazioni sulle procedure ottimali  configurazione di rete AEM Assets, co
 
 * **Utilizzare il dispatcher** configurato correttamente. Utilizzate AEM Dispatcher per ulteriore protezione e accertatevi che sia configurato per la connessione dell&#39;app desktop [AEM a AEM dietro un dispatcher](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
-* **Risparmia larghezza di banda**. È consigliabile disattivare l&#39;anteprima dell&#39;icona nel Finder su Mac, quando si sfoglia il repository montato utilizzando il Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l&#39;utente potrebbe anche diminuire l&#39;esperienza dell&#39;utente sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
+* **Risparmia larghezza di banda**. È consigliabile disattivare l&#39;anteprima dell&#39;icona nel Finder su Mac - quando si sfoglia il repository montato tramite Finder. Il Finder richiede a ciascun file di generare un’anteprima e fa in modo che l’app desktop scarichi e memorizzi nella cache la risorsa localmente. Durante il salvataggio della larghezza di banda, l&#39;utente potrebbe anche diminuire l&#39;esperienza dell&#39;utente sul desktop, pertanto dovrebbe essere fatto quando si lavora con repository con risorse grandi e/o larghezza di banda limitata.
 
 >[!NOTE]
 >
->Per disattivare le anteprime delle icone, nel Finder passate a Visualizza, selezionate Opzioni di visualizzazione, quindi deselezionate l&#39;opzione &quot;Mostra anteprima icona&quot;. Questo funziona solo per la cartella corrente; per renderla predefinita, fate clic sul pulsante &quot;Usa come predefinito&quot; nella stessa finestra.
+>Per disattivare le anteprime delle icone, nel Finder passate a [!UICONTROL View], selezionate [!UICONTROL View Options], quindi deselezionate l&#39;opzione [!UICONTROL Show icon preview]. Questo funziona solo per la cartella corrente; per renderla predefinita, fate clic sull&#39;opzione [!UICONTROL Use as default] nella stessa finestra di dialogo.
 
 ### Ottimizzazione delle prestazioni del server {#optimizing-server-performance}
 

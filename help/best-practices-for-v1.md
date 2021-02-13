@@ -1,16 +1,16 @@
 ---
-title: '[!DNL Adobe Experience Manager] procedure ottimali per l''app desktop versione 1.x'
-description: Funzionalità chiave e uso consigliato dell'app desktop versione 1.x [!DNL Adobe Experience Manager] 1.x.
+title: Best practice per l'app desktop v1.10
+description: Funzionalità chiave e uso consigliato dell'app desktop versione 1.10 [!DNL Adobe Experience Manager] e
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1674'
 ht-degree: 0%
 
 ---
 
 
-# AEM delle best practice per l&#39;app desktop v1.x {#aem-desktop-app-best-practices}
+# Procedure ottimali AEM app desktop v1.10 {#aem-desktop-app-best-practices}
 
 ## Panoramica {#overview}
 

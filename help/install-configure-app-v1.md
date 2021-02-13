@@ -1,16 +1,16 @@
 ---
-title: 'Installazione e configurazione dell''app desktop versione 1.x [!DNL Experience Manager] '
-description: Installate e configurate i server [!DNL Experience Manager] desktop app version 1.x to work with [!DNL Assets] e mappate le risorse da montare come unità sul desktop.
+title: Installazione e configurazione dell'app desktop v1.10
+description: Installate e configurate i server [!DNL Experience Manager] desktop app version 1.10 to work with [!DNL Assets] e mappate le risorse da montare come unità sul desktop.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
 
-# Installazione e configurazione dell&#39;app desktop [!DNL Experience Manager] v1.x {#install-and-configure-aem-desktop-app}
+# Installazione e configurazione dell&#39;app desktop [!DNL Experience Manager] v1.10 {#install-and-configure-aem-desktop-app}
 
 Utilizzando l&#39;app desktop [!DNL Experience Manager], le risorse all&#39;interno di [!DNL Experience Manager] sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere rivelate facilmente in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente; le modifiche vengono salvate in [!DNL Experience Manager] al momento del caricamento e viene creata una nuova versione nell&#39;archivio.
 

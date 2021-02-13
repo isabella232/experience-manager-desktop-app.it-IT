@@ -2,9 +2,9 @@
 title: AEM note sulla versione dell'app desktop per la versione 1.x
 description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per AEM'app desktop versione 1.x.
 translation-type: tm+mt
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3904'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ AEM&#39;app desktop 1.10 è incentrata sul miglioramento dell&#39;esperienza ute
 
 **Notifiche per conflitti** di aggiornamento. Quando l&#39;applicazione rileva un conflitto durante il tentativo di aggiornamento di una risorsa, visualizzerà una notifica, in modo che l&#39;utente possa controllarla senza dover monitorare la finestra di stato. All&#39;avvio dell&#39;applicazione, l&#39;utente controllerà la presenza di tutti i conflitti, in modo che possano essere risolti.
 
-**Gestione migliore delle perdite** di connessione. Se si verifica una perdita di connessione, i caricamenti di massa verranno messi in pausa e l&#39;utente potrà riprendere in seguito. È disponibile un pulsante Riprova per ripetere il caricamento non riuscito di un singolo file.
+**Gestione migliore delle perdite** di connessione. Se si verifica una perdita di connessione, i caricamenti di massa verranno messi in pausa e l&#39;utente potrà riprendere in seguito. È disponibile un&#39;opzione [!UICONTROL Retry] per ripetere il caricamento non riuscito di un singolo file.
 
 ## Istruzioni di installazione {#installation-instructions}
 
@@ -417,7 +417,7 @@ Poiché la cartella /Volumes non richiede più diritti amministrativi, questa mo
 * Windows:
    * I file con flussi di dati alternativi (ADS) sono supportati solo completamente su NTFS. Copiando tali file nella condivisione WebDAV fornita dall&#39;app desktop si verificherà una finestra di dialogo di avviso che avvisa l&#39;utente che il file ha proprietà che non possono essere copiate nella nuova posizione. In genere va bene, in quanto le proprietà sono relative solo a una particolare applicazione sul desktop dell&#39;utente e non hanno nulla a che fare con il contenuto effettivo del file (CQ-103770) (Win)
    * l&#39;app desktop in Windows deve essere installata dall&#39;utente che la utilizza (CQ-4216389) (win)
-   * L&#39;app può arrestarsi in modo anomalo quando si fa clic sul pulsante Riprova in caso di caricamento non riuscito in determinate circostanze dopo aver ripreso il caricamento batch quando disconnesso (CQ-4251884) (Win)
+   * L&#39;app può arrestarsi in modo anomalo quando si seleziona l&#39;opzione [!UICONTROL Retry] su un caricamento non riuscito in determinate circostanze dopo aver ripreso il caricamento batch quando disconnesso (CQ-4251884) (Win)
 
 ## Risorse utili {#helpful-resources}
 

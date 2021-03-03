@@ -1,41 +1,41 @@
 ---
 cloud: experience-cloud
 solution-title: Informazioni e supporto
-solution-hub-url: https://helpx.adobe.com/it/support/experience-manager/6-5.html
+solution-hub-url: https://experienceleague.adobe.com/docs/
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Guida introduttiva
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Esercitazioni
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.it-IT
 index: y
 translation-type: tm+mt
-source-git-commit: e9a59807d48ea2d8619d3b03255c4291fca85138
+source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 9%
+source-wordcount: '150'
+ht-degree: 66%
 
 ---
 
 
 # Metadati per uso interno
 
-Il file metadata.md include metadati a livello di repo che passano ai file TOC.md della guida utente nella repo. Se desiderate modificare il contenuto metadata.md per qualsiasi guida utente, effettuate questa operazione in qualsiasi file TOC.md.
+Il file metadata.md include metadati a livello di archivio che vengono trasmessi ai file TOC.md della guida utente nell’archivio. Se desideri modificare il contenuto di metadata.md per una guida utente, puoi farlo intervenendo su un file TOC.md.
 
-| metadata | cosa |
+| Metadati | Funzione |
 |--- |--- |
-| solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
-| solution-hub-url | Apre la pagina Hub Informazioni e supporto. |
-| solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato. |
-| getting-started | Link alla pagina iniziale. |
-| tutorials-url | Collegate le esercitazioni video. |
-| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. Il valore predefinito è 2. |
-| git-repo | Specifica la posizione del repo principale per uso interno. |
+| solution-title | Utilizzato nell’intestazione dell’articolo come collegamento. |
+| solution-hub-url | Apre la pagina hub Informazioni e supporto . |
+| solution-icon | Visualizza l’icona della soluzione accanto al titolo della soluzione. Non ancora implementato. |
+| getting-started-url | Collega alla pagina iniziale . |
+| tutorials-url | Collegamento alle esercitazioni video. |
+| mini-toc-levels | Determina quanti livelli di intestazione vengono visualizzati nella barra a destra. Il valore predefinito è 2. |
+| git-repo | Specifica la posizione del repository principale per uso interno. |
 
 In un file TOC.md
 
-| metadata | cosa |
+| Metadati | Funzione |
 |--- |--- |
-| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
-| user-guide-url | Apre la pagina Hub Informazioni e supporto. |
+| user-guide-title | Utilizzato nell’intestazione dell’articolo come collegamento. |
+| user-guide-url | Apre la pagina hub Informazioni e supporto . |

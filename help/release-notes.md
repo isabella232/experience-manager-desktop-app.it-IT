@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] note sulla versione dell’app desktop'
 description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download dell’app desktop [!DNL Adobe Experience Manager] app desktop.
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4288c77036ba992c37ceafc158e0503244a1e600
+source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 27%
@@ -12,8 +12,6 @@ ht-degree: 27%
 
 
 # [!DNL Adobe Experience Manager] note sulla versione dell’app desktop  {#release-notes-v2}
-
-<!-- TBD: Update 6 links and 1 date below. -->
 
 Di seguito sono riportate le informazioni sulla versione più recente dell’app desktop versione 2.1 (2.1.1.0). La data di rilascio è il 5 marzo 2021. Si tratta di una versione secondaria con un miglioramento.
 

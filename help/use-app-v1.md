@@ -1,10 +1,11 @@
 ---
 title: Utilizza la versione 1.10 dell’app desktop  [!DNL Experience Manager] it.
-description: Scopri come utilizzare l’app desktop Adobe Experience Manager versione 1.10 e ottimizza il lavoro con le risorse sul desktop.
+description: Scopri come utilizzare l’app desktop Adobe Experience Manager versione 1.10 e ottimizzare il lavoro con le risorse sul desktop.
+feature: App desktop Experience Manager, gestione delle risorse
 translation-type: tm+mt
-source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Utilizzando l’app, le risorse incluse in [!DNL Experience Manager] sono facilmente accessibili sul desktop locale e possono essere utilizzate in qualsiasi applicazione desktop. Le risorse possono essere facilmente rivelate in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente - le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nell’archivio.
 
-Tale integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse centralmente in Assets e di accedervi in Creative Cloud e altre applicazioni, semplificando al contempo il rispetto dei vari standard, tra cui il branding.
+Questa integrazione consente a diversi ruoli dell’organizzazione di gestire le risorse centralmente in Assets e di accedervi nella Creative Cloud e in altre applicazioni, semplificando al contempo il rispetto dei vari standard, tra cui il branding.
 
 Le attività chiave che esegui utilizzando l’ [!DNL Experience Manager] app desktop v1 includono:
 
@@ -129,7 +130,7 @@ Per i file Adobe InDesign (INDD), seleziona **[!UICONTROL Open]** dal menu di sc
 
 >[!NOTE]
 >
->Adobe consiglia di passare a Opzioni vista Finder su Mac e disattivare le opzioni **Mostra informazioni elemento**, **Mostra anteprima elemento** e **Mostra colonna anteprima** per la cartella montata [!DNL Assets]. Migliora le prestazioni.
+>L&#39;Adobe consiglia di passare a Opzioni visualizzazione Finder su Mac e disattivare le opzioni **Mostra informazioni elemento**, **Mostra anteprima elemento** e **Mostra colonna anteprima** per la cartella montata [!DNL Assets]. Migliora le prestazioni.
 
 ### Opzioni aggiuntive nell&#39;interfaccia [!DNL Experience Manager] {#additional-options-in-aem-assets}
 
@@ -190,7 +191,7 @@ Esistono due modi per estrarre le risorse dall’interfaccia web [!DNL Experienc
 
 L’app ti consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui stai lavorando.
 
-1. Dal menu di scelta rapida Mac, seleziona l’opzione Apri cartella risorse AEM per aprire Finder.
+1. Dal menu di scelta rapida Mac, seleziona Apri cartella AEM Assets per aprire Finder.
 
    ![Opzioni del menu di scelta rapida per accedere e aprire le risorse utilizzando l’app  [!DNL Experience Manager] desktop](assets/aem_desktopapp_mac_context_menu.png)
 
@@ -249,7 +250,7 @@ Utilizzando l’ app desktop [!DNL Experience Manager], puoi caricare su [!DNL A
 
 1. Dopo il caricamento della cartella, chiudi la finestra di dialogo e passa all’interfaccia utente Assets. La cartella caricata viene visualizzata nell’interfaccia Web.
 
-Adobe sconsiglia di copiare-incollare o trascinare un numero maggiore di file o cartelle nidificate dal file system locale nell’area di condivisione di rete. L’app non può controllare il processo di caricamento a causa di limitazioni tecniche e prestazioni scadenti.
+Adobe sconsiglia di copiare-incollare o trascinare un numero maggiore di file o cartelle nidificate dal file system locale nell&#39;area di condivisione di rete. L’app non può controllare il processo di caricamento a causa di limitazioni tecniche e prestazioni scadenti.
 
 In alternativa, seleziona i file/le cartelle da caricare in [!DNL Experience Manager] nel Finder o in Esplora risorse, copiali negli Appunti di sistema, individua la cartella di destinazione nell&#39;area di condivisione di rete e, dal menu di scelta rapida dell&#39;app desktop [!DNL Experience Manager] seleziona **Incolla risorse**. In questo modo, l’ [!DNL Experience Manager] app desktop inizia a caricare le risorse incollate in modo simile all’opzione **Carica cartella** disponibile nell’ interfaccia web [!DNL Experience Manager] .
 

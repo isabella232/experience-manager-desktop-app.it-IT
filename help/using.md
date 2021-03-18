@@ -2,10 +2,11 @@
 title: 'Utilizzare l''app desktop [!DNL Experience Manager] '
 description: Utilizza le risorse [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM direttamente dal desktop Win o Mac e utilizza in altre applicazioni.
 mini-toc-levels: 1
+feature: App desktop Experience Manager, gestione delle risorse
 translation-type: tm+mt
-source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,7 +55,7 @@ Prima di iniziare a utilizzare l&#39;applicazione, scopri [come funziona l&#39;a
 
 * **[!UICONTROL Open In Web]** azione: Per visualizzare la risorsa nell’interfaccia  [!DNL Experience Manager] web, aprila sul web. Puoi avviare più flussi di lavoro dall’interfaccia [!DNL Experience Manager], ad esempio l’aggiornamento dei metadati o l’individuazione delle risorse.
 
-* **[!UICONTROL Delete]** azione: Elimina la risorsa dall’archivio  [!DNL Experience Manager] DAM. L’azione elimina la copia originale della risorsa sul server Experience Manager. Per eliminare solo le modifiche apportate alla risorsa locale, consulta [eliminare le modifiche](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Delete]** azione: Elimina la risorsa dall’archivio  [!DNL Experience Manager] DAM. L’azione elimina la copia originale della risorsa sul server di Experience Manager. Per eliminare solo le modifiche apportate alla risorsa locale, consulta [eliminare le modifiche](using.md#edit-assets-upload-updated-assets).
 
 * **[!UICONTROL Upload Changes]**: L’app desktop carica la risorsa aggiornata solo quando viene eseguito il caricamento esplicito sul  [!DNL Experience Manager] server. Quando salvi le modifiche, queste vengono salvate solo sul computer locale. Al momento del caricamento, la risorsa viene automaticamente archiviata e l&#39;icona di blocco viene rimossa. Consulta [modificare le risorse](using.md#edit-assets-upload-updated-assets).
 
@@ -248,7 +249,7 @@ La funzionalità dell’app desktop viene utilizzata quando tenti le seguenti az
 
 Ad esempio, le azioni nell’interfaccia web disponibili per una risorsa estratta nell’app sono [!UICONTROL Open], [!UICONTROL Reveal] e [!UICONTROL Check-in].
 
-![Azioni desktop nell’interfaccia  [!DNL Experience Manager] web ](assets/assets_web_actions_da2.png "interfaceAzioni desktop nell’interfaccia web di Experience Manager")
+![Azioni desktop nell&#39;interfaccia  [!DNL Experience Manager] web ](assets/assets_web_actions_da2.png "interfaceAzioni desktop nell&#39;interfaccia Web di Experience Manager")
 
 >[!NOTE]
 >
@@ -283,11 +284,11 @@ Se anche una risorsa che stai modificando localmente viene aggiornata sul server
 
 ![Opzioni per risolvere un ](assets/editing_conflict_dialog_da2.png "conflitto di modificaOpzioni per risolvere un conflitto di modifica")
 
-## Flusso di lavoro avanzato: inserire e collegare le risorse nel file InDesign {#adv-workflow-place-assets-indesign}
+## Flusso di lavoro avanzato: inserire e collegare risorse nel file InDesign {#adv-workflow-place-assets-indesign}
 
 Quando utilizzi l’app desktop [!DNL Experience Manager] per aprire file con risorse collegate, le risorse vengono pre-scaricate e vengono visualizzate nelle applicazioni native. Affinché questo flusso di lavoro funzioni, l’applicazione nativa deve supportare il posizionamento di collegamenti alle risorse locali e [!DNL Experience Manager] deve supportare la risoluzione di questi collegamenti nei file binari ai riferimenti lato server.
 
-[!DNL Experience Manager] l’app desktop supporta questo flusso di lavoro con alcune applicazioni desktop Adobe Creative Cloud e formati di file: Adobe InDesign, Adobe Illustrator e Adobe Photoshop. Il flusso di lavoro consente di lavorare in modo efficiente con i file Creative Cloud supportati. Quindi se l&#39;utente A inserisce alcune risorse in un file InDesign e le controlla in [!DNL Experience Manager], l&#39;utente B vede le risorse nel file InDesign anche se le risorse non fanno parte del file. Le risorse vengono scaricate localmente sul computer dell’utente B.
+[!DNL Experience Manager] l’app desktop supporta questo flusso di lavoro con alcune applicazioni desktop Adobe Creative Cloud e formati di file selezionati: Adobe InDesign, Adobe Illustrator e Adobe Photoshop. Il flusso di lavoro consente di lavorare in modo efficiente con i file di Creative Cloud supportati. Quindi, se l’utente A inserisce alcune risorse in un file InDesign e le archivia in [!DNL Experience Manager], l’utente B vede le risorse nel file InDesign anche se le risorse non fanno parte del file . Le risorse vengono scaricate localmente sul computer dell’utente B.
 
 >[!NOTE]
 >
@@ -299,9 +300,9 @@ Per provare questo flusso di lavoro con una risorsa immagine e InDesign, segui q
 
 1. Mantieni a portata di mano un file INDD con le risorse inserite in [!DNL Experience Manager]. Per informazioni su come creare un file INDD di questo tipo, vedere [Inserimento di elementi grafici](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 1. Dall’interno dell’app desktop, **[!UICONTROL Edit]** il file INDD con le risorse inserite in [!DNL Experience Manager].
-1. L’app scarica sia il file InDesign che le risorse collegate. Quando InDesign apre il documento, i collegamenti vengono risolti, le risorse vengono scaricate e le risorse vengono visualizzate nel documento InDesign.
+1. L’app scarica sia il file InDesign che le risorse collegate. Quando InDesign apre il documento, i collegamenti vengono risolti, le risorse vengono scaricate e le risorse vengono visualizzate nel documento di InDesign.
 1. Per inserire un nuovo elemento grafico nel file InDesign, utilizza l’azione **[!UICONTROL Reveal File]** sulla risorsa. L’azione scarica la risorsa localmente e apre il percorso di condivisione di rete locale in Esplora risorse o nel Finder di Mac.
-1. Inserite la risorsa rivelata nel documento InDesign. Questo crea un collegamento nel documento.
+1. Inserisci la risorsa rivelata nel documento InDesign. Questo crea un collegamento nel documento.
 1. Una volta completate le modifiche nel documento InDesign, salvalo e caricalo su [!DNL Experience Manager] utilizzando l’app desktop.
 
 ## Flusso di lavoro avanzato: scarica le risorse localmente {#adv-workflow-download-assets-locally}

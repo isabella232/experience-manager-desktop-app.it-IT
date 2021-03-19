@@ -1,10 +1,11 @@
 ---
 title: Installare e configurare l’app desktop
 description: Installa e configura i server [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] e scarica le risorse sul file system locale.
+feature: Experience Manager Desktop App, Informazioni sulla versione
 translation-type: tm+mt
-source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -52,7 +53,7 @@ Per eseguire l’aggiornamento da una versione precedente dell’app, segui ques
 
 ## Installare la versione {#install-v2}
 
-Per installare l’app desktop, segui questi passaggi. Disinstalla l’app desktop Adobe [!DNL Experience Manager] v1.x esistente prima di installare l’app più recente. Per ulteriori informazioni, vedi sopra.
+Per installare l’app desktop, segui questi passaggi. Disinstalla qualsiasi Adobe esistente [!DNL Experience Manager] app desktop v1.x prima di installare l’app più recente. Per ulteriori informazioni, vedi sopra.
 
 1. Scarica l&#39;ultimo programma di installazione dalla pagina [note sulla versione](release-notes.md) .
 
@@ -106,7 +107,7 @@ Per modificare le preferenze, fare clic sull&#39;icona ![Altre opzioni](assets/d
 
 * **[!UICONTROL Current cache size]**: Dimensione di archiviazione delle risorse scaricate localmente. Le informazioni vengono visualizzate solo dopo il download delle risorse tramite l’app.
 
-* **[!UICONTROL Automatically download linked assets]**: Le risorse inserite nelle app native supportate da Creative Cloud vengono recuperate automaticamente se si scarica il file originale.
+* **[!UICONTROL Automatically download linked assets]**: Le risorse inserite nelle app native supportate vengono recuperate automaticamente se scarichi il file originale.
 
 * **[!UICONTROL Maximum number of downloads]**:  ![avvertenza ](assets/do-not-localize/caution-icon.png) iconChange con cautela. Quando si scaricano le risorse per la prima volta (tramite Mostra, Apri, Modifica, Scarica o un’opzione simile), le risorse vengono scaricate solo se il batch contiene meno di questo numero. Il valore predefinito è 50. Non cambiare se non sei sicuro. L’aumento del valore può causare tempi di attesa più lunghi e la riduzione del valore potrebbe non consentire di scaricare le risorse o le cartelle necessarie in una sola volta.
 

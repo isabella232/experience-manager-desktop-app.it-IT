@@ -2,10 +2,11 @@
 title: '[!DNL Adobe Experience Manager] note sulla versione dell’app desktop'
 description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download dell’app desktop [!DNL Adobe Experience Manager] app desktop.
 mini-toc-levels: 1
+feature: Experience Manager Desktop App, Informazioni sulla versione
 translation-type: tm+mt
-source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1474'
 ht-degree: 27%
 
 ---
@@ -58,9 +59,9 @@ La funzione è supportata con le versioni [!DNL Adobe Creative Cloud] 2018 e [!D
 
 * I percorsi dei file inseriti nell&#39;applicazione nativa utilizzano un percorso desktop globale (inserito dalla condivisione di rete locale mostrata con l&#39;opzione [!UICONTROL Reveal]).
 
-* I percorsi sono memorizzati dall’app nativa nel record XMP del file.
+* I percorsi sono memorizzati nel record XMP del file dall’app nativa.
 
-* [!DNL Experience Manager] ha estratto il record XMP con i percorsi del record di metadati della risorsa.
+* [!DNL Experience Manager] ha estratto il record di XMP con i percorsi del record di metadati della risorsa.
 
 * I percorsi possono essere associati alle risorse in [!DNL Experience Manager], ovvero i file inseriti si trovano anche in [!DNL Experience Manager] sotto un percorso corrispondente.
 
@@ -154,7 +155,7 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 
 * L’applicazione prova a caricare i file anche se contengono caratteri non validi. Potrebbe verificarsi un errore di caricamento sul lato server. <!-- CQ-4273652 -->
 
-* Durante il caricamento di modifiche apportate a una risorsa con commenti, questi vengono memorizzati insieme alla risorsa in [!DNL Experience Manager] ma non sono visibili come commenti nel controllo delle versioni. Questo problema è stato risolto in [!DNL Experience Manager] 6.4.5 e [!DNL Experience Manager] 6.5.1. Adobe consiglia di installare gli ultimi Service Pack. <!-- CQ-4268990 -->
+* Durante il caricamento di modifiche apportate a una risorsa con commenti, questi vengono memorizzati insieme alla risorsa in [!DNL Experience Manager] ma non sono visibili come commenti nel controllo delle versioni. Questo problema è risolto in [!DNL Experience Manager] 6.4.5 e [!DNL Experience Manager] 6.5.1. L&#39;Adobe consiglia di installare gli ultimi Service Pack. <!-- CQ-4268990 -->
 
 * I trasferimenti di risorse non possono essere annullati dall’utente. Se hai attivato per errore un trasferimento di grandi dimensioni, esci dall’applicazione e riavviala. <!-- CQ-4278940 -->
 

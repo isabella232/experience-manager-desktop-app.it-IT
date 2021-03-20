@@ -3,7 +3,7 @@ title: Installare e configurare l’app desktop
 description: Installa e configura i server [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] e scarica le risorse sul file system locale.
 feature: Experience Manager Desktop App, Informazioni sulla versione
 translation-type: tm+mt
-source-git-commit: 3804d684a3a7e78eda7692969f312ef023965ffd
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -111,7 +111,7 @@ Per modificare le preferenze, fare clic sull&#39;icona ![Altre opzioni](assets/d
 
 * **[!UICONTROL Maximum number of downloads]**:  ![avvertenza ](assets/do-not-localize/caution-icon.png) iconChange con cautela. Quando si scaricano le risorse per la prima volta (tramite Mostra, Apri, Modifica, Scarica o un’opzione simile), le risorse vengono scaricate solo se il batch contiene meno di questo numero. Il valore predefinito è 50. Non cambiare se non sei sicuro. L’aumento del valore può causare tempi di attesa più lunghi e la riduzione del valore potrebbe non consentire di scaricare le risorse o le cartelle necessarie in una sola volta.
 
-* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![avvertenza ](assets/do-not-localize/caution-icon.png) iconChange con cautela. Questa impostazione consente all’app di emulare il comportamento dell’app v1.10 durante il caricamento delle cartelle. Nella versione 1.10, i nomi dei nodi creati nell’archivio rispettano gli spazi e la custodia dei nomi delle cartelle forniti dall’utente. Tuttavia, nella versione v2.1 dell’app, gli spazi aggiuntivi nei nomi delle cartelle vengono convertiti in trattini. Ad esempio, caricando `New Folder` o `new   folder` si crea lo stesso nodo nell’archivio se l’opzione non è selezionata e viene mantenuto il comportamento predefinito nella versione v2.1. Se questa opzione è selezionata, vengono creati nodi diversi nell’archivio per le due cartelle di cui sopra e corrisponde al comportamento dell’app v1.10.
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**:  ![avvertenza ](assets/do-not-localize/caution-icon.png) iconChange con cautela. Questa impostazione consente all’app di emulare il comportamento dell’app v1.10 durante il caricamento delle cartelle. Nella versione 1.10, i nomi dei nodi creati nel repository rispettano gli spazi e la custodia dei nomi delle cartelle forniti dall&#39;utente. Tuttavia, nella versione v2.1 dell’app, gli spazi aggiuntivi nei nomi delle cartelle vengono convertiti in trattini. Ad esempio, caricando `New Folder` o `new   folder` si crea lo stesso nodo nell’archivio se l’opzione non è selezionata e viene mantenuto il comportamento predefinito nella versione v2.1. Se questa opzione è selezionata, vengono creati nodi diversi nell’archivio per le due cartelle di cui sopra e corrisponde al comportamento dell’app v1.10.
 
    Il comportamento predefinito della v2.1 continua a rimanere invariato, ovvero sostituire più spazi nei nomi delle cartelle con trattini nel nome del nodo del repository e convertire in nomi di nodo minuscoli.
 

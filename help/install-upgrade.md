@@ -3,9 +3,9 @@ title: Installare e configurare l’app desktop
 description: Installa e configura i server [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] e scarica le risorse sul file system locale.
 feature: Experience Manager Desktop App, Informazioni sulla versione
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1405'
 ht-degree: 1%
 
 ---
@@ -122,6 +122,14 @@ Per aggiornare le preferenze non disponibili, disconnettiti dal server [!DNL Exp
 ![Preferenze e impostazioni dell’app desktop](assets/preferences_da2.png)
 
 *Figura: Preferenze dell’app desktop*
+
+### Supporto proxy {#proxy-support}
+
+[!DNL Experience Manager] l’app desktop utilizza il proxy predefinito di sistema per connettersi a Internet tramite HTTPS. L&#39;app può connettersi solo utilizzando un proxy di rete che non richiede un&#39;autenticazione aggiuntiva.
+
+Se si configurano o si modificano le impostazioni del server proxy per Windows (Opzioni Internet > Impostazioni LAN), riavviare l&#39;app desktop [!DNL Experience Manager] per rendere effettive le modifiche. La configurazione proxy si applica quando si avvia l&#39;app desktop. Chiudi e riavvia l’app per rendere effettive le eventuali modifiche.
+
+Se il proxy richiede l&#39;autenticazione, il team IT può consentire l&#39;URL [!DNL Experience Manager Assets] nelle impostazioni del server proxy per consentire il passaggio del traffico dell&#39;applicazione.
 
 ## Disinstalla l&#39;app {#uninstall-the-app}
 

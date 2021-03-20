@@ -4,7 +4,7 @@ description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibili
 mini-toc-levels: 1
 feature: Experience Manager Desktop App, Informazioni sulla versione
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 27%
@@ -71,7 +71,7 @@ Per conoscere i dettagli, consulta [Novità della versione v2.0](introduction.md
 
 **Aggiornamento nell’app v2.1.1.0**
 
-* Un’impostazione avanzata consente all’app di emulare il comportamento dell’app v1.10 durante il caricamento delle cartelle. Nella versione 1.10, i nomi dei nodi creati nell’archivio rispettano gli spazi e la custodia dei nomi delle cartelle forniti dall’utente. Il comportamento predefinito della v2.1 continua a rimanere invariato, ovvero sostituire più spazi nei nomi delle cartelle con un trattino nel nome del nodo del repository e convertire in nomi di nodo minuscoli. Consulta [le preferenze dell&#39;app](/help/install-upgrade.md#set-preferences).
+* Un’impostazione avanzata consente all’app di emulare il comportamento dell’app v1.10 durante il caricamento delle cartelle. Nella versione 1.10, i nomi dei nodi creati nel repository rispettano gli spazi e la custodia dei nomi delle cartelle forniti dall&#39;utente. Il comportamento predefinito della v2.1 continua a rimanere invariato, ovvero sostituire più spazi nei nomi delle cartelle con un trattino nel nome del nodo del repository e convertire in nomi di nodo minuscoli. Consulta [le preferenze dell&#39;app](/help/install-upgrade.md#set-preferences).
 
 **Aggiornamento nell’app v2.1.0.0**
 

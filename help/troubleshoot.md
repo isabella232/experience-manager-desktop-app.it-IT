@@ -2,9 +2,9 @@
 title: Procedure consigliate per la risoluzione dei problemi relativi all'app desktop [!DNL Adobe Experience Manager] e
 description: Segui le best practice e risolvi eventuali problemi relativi all’installazione, all’aggiornamento, alla configurazione e così via.
 translation-type: tm+mt
-source-git-commit: 9d90bdcab79604e03d1ad3f30ed2aca2eb03e1c5
+source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2175'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,16 @@ Per abilitare la modalità di debug su Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
+### Conoscere la versione [!DNL Adobe Experience Manager] dell’app desktop {#know-app-version-v2}
+
+Per visualizzare il numero di versione:
+
+1. Avvia l&#39;applicazione.
+
+1. Fai clic sui puntini di sospensione nell&#39;angolo in alto a destra, passa il puntatore del mouse su [!UICONTROL Help], quindi fai clic su [!UICONTROL About].
+
+   Il numero di versione è elencato in questa schermata.
+
 ### Cancella cache {#clear-cache-v2}
 
 Esegui i seguenti passaggi:
@@ -138,17 +148,7 @@ Per cancellare la cache, elimina la directory Encoded [!DNL Adobe Experience Man
 
 La cancellazione della cache dell’app desktop [!DNL Adobe Experience Manager] è un’attività preliminare per la risoluzione dei problemi che può risolvere diversi problemi. Elimina la cache dalle preferenze dell&#39;app. Consulta [impostare le preferenze](install-upgrade.md#set-preferences). Il percorso predefinito della cartella cache è:
 
-### Conoscere la versione [!DNL Adobe Experience Manager] dell’app desktop {#know-app-version-v2}
-
-Per visualizzare il numero di versione:
-
-1. Avvia l&#39;applicazione.
-
-1. Fai clic sui puntini di sospensione nell&#39;angolo in alto a destra, passa il puntatore del mouse su [!UICONTROL Help], quindi fai clic su [!UICONTROL About].
-
-   Il numero di versione è elencato in questa schermata.
-
-### Impossibile vedere le risorse inserite {#placed-assets-missing}
+## Impossibile vedere le risorse inserite {#placed-assets-missing}
 
 Se non riesci a visualizzare le risorse inserite nei file di supporto da te o da altri professionisti creativi (ad esempio, file INDD), controlla quanto segue:
 
@@ -179,11 +179,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-### Impossibile caricare i file {#upload-fails}
+## Impossibile caricare i file {#upload-fails}
 
 Se utilizzi l’app desktop con [!DNL Experience Manager] 6.5.1 o versione successiva, aggiorna il connettore S3 o Azure alla versione 1.10.4 o successiva. Risolve il problema di errore di caricamento file relativo a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Vedere [istruzioni di installazione](install-upgrade.md#install-v2).
 
-### [!DNL Experience Manager] problemi di connessione all’app desktop  {#connection-issues}
+## [!DNL Experience Manager] problemi di connessione all’app desktop  {#connection-issues}
 
 Se si verificano problemi di connettività generali, ci sono alcuni modi per ottenere ulteriori informazioni sulle prestazioni dell’app desktop [!DNL Experience Manager].
 
@@ -200,7 +200,7 @@ Se si verificano problemi di connettività generali, ci sono alcuni modi per ott
 La maggior parte delle richieste dell&#39;applicazione si trovano nel registro delle richieste. Tuttavia, se non sono presenti informazioni utili, può essere utile esaminare le richieste inviate dal browser incorporato dell&#39;applicazione.
 Per istruzioni su come visualizzare tali richieste, consulta la sezione [SAML](#da-connection-issue-with-saml-aem) .
 
-#### Autenticazione di accesso SAML non funzionante {#da-connection-issue-with-saml-aem}
+### Autenticazione di accesso SAML non funzionante {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] l’app desktop potrebbe non connettersi alla  [!DNL Adobe Experience Manager] distribuzione con abilitazione SSO (SAML). Il design dell&#39;applicazione cerca di adattarsi alle variazioni e alle complessità delle connessioni e dei processi SSO. Tuttavia, una configurazione potrebbe richiedere ulteriori interventi di risoluzione dei problemi.
 
@@ -247,7 +247,7 @@ Per risolvere ulteriormente i problemi, è possibile visualizzare gli URL esatti
 
 Osservare la sequenza URL caricata può aiutare a risolvere i problemi alla fine di SAML per determinare cosa è sbagliato.
 
-#### Problema di configurazione SSL {#ssl-config-v2}
+### Problema di configurazione SSL {#ssl-config-v2}
 
 Le librerie utilizzate dall’app desktop [!DNL Experience Manager] per la comunicazione HTTP utilizzano l’applicazione SSL restrittiva. A volte, una connessione può avere esito positivo utilizzando un browser ma non riesce a utilizzare l’ [!DNL Experience Manager] app desktop. Per configurare SSL in modo appropriato, installa il certificato intermedio mancante in Apache. Vedere [Come installare un certificato CA intermedio in Apache](https://access.redhat.com/solutions/43575).
 
@@ -284,7 +284,13 @@ Come misura temporanea, è possibile disabilitare l’imposizione SSL restrittiv
 
 1. Salva il file e riavvia l&#39;app desktop [!DNL Adobe Experience Manager].
 
-### L&#39;app non risponde {#unresponsive}
+### Problemi di accesso quando si passa a un server diverso {#cannot-login-cookies-issue}
+
+Dopo aver utilizzato un server [!DNL Experience Manager], quando si tenta di modificare la connessione a un server diverso, potrebbero verificarsi problemi di accesso. È dovuto a vecchi cookie che interferiscono con la nuova autenticazione. È utile un’opzione nel menu principale per [!UICONTROL Clear Cookies] . Esci dalla sessione corrente nell’app e seleziona [!UICONTROL Clear Cookies] prima di procedere alla connessione.
+
+![Cancella i cookie quando si cambia server](assets/main_menu_logout_da2.png)
+
+## L&#39;app non risponde {#unresponsive}
 
 Raramente l&#39;applicazione può diventare non reattiva, visualizzare solo uno schermo bianco o visualizzare un errore nella parte inferiore dell&#39;interfaccia senza alcuna opzione sull&#39;interfaccia. Prova quanto segue nell&#39;ordine:
 

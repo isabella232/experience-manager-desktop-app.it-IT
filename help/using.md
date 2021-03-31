@@ -4,9 +4,9 @@ description: Utilizza le risorse [!DNL Adobe Experience Manager] desktop app, to
 mini-toc-levels: 1
 feature: App desktop Experience Manager, gestione delle risorse
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: d345a0f0ac6826cf623f6e8bbbcc132481ea557c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3907'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,17 @@ Prima di iniziare a utilizzare l&#39;applicazione, scopri [come funziona l&#39;a
 
 ## Abilitare le azioni desktop nell’ interfaccia Web [!DNL Experience Manager] {#desktopactions-v2}
 
-Dall’interno dell’interfaccia utente Assets in un browser, puoi esplorare le posizioni delle risorse o estrarre e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate [!UICONTROL Desktop Actions] e non sono abilitate per impostazione predefinita. Per abilitarlo, segui questi passaggi.
+Dall’interno dell’interfaccia utente di [!DNL Assets] in un browser, puoi esplorare le posizioni delle risorse o estrarre e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate [!UICONTROL Desktop Actions] e non sono abilitate per impostazione predefinita. Per abilitarlo, segui questi passaggi.
 
-1. Nella console Risorse, tocca o fai clic sull’icona **[!UICONTROL User]** nella barra degli strumenti.
-1. Tocca o fai clic su **[!UICONTROL My Preferences]** per visualizzare la finestra di dialogo **[!UICONTROL Preferences]** .
-1. Nella finestra di dialogo Preferenze utente, seleziona **[!UICONTROL Show Desktop Actions For Assets]**. Tocca o fai clic su **[!UICONTROL Accept]**.
+1. Nella console [!DNL Assets], fai clic sull’icona **[!UICONTROL User]** nella barra degli strumenti.
+1. Fare clic su **[!UICONTROL My Preferences]** per visualizzare la finestra di dialogo **[!UICONTROL Preferences]**.
 
-   ![Controlla Mostra azioni desktop per risorse per abilitare le azioni desktop](assets/enable_desktop_actions.png)
+1. Nella finestra di dialogo Preferenze utente, seleziona **[!UICONTROL Show Desktop Actions For Assets]**. Clic **[!UICONTROL Accept]**.
 
-   Seleziona [!UICONTROL Show Desktop Actions For Assets] per abilitare le azioni desktop
+
+   ![Seleziona Mostra azioni desktop per risorse per abilitare le azioni desktop](assets/enable_desktop_actions.png)
+
+   *Figura: Seleziona  [!UICONTROL Show Desktop Actions For Assets] per abilitare le azioni desktop.*
 
 ## Sfogliare, cercare e visualizzare in anteprima le risorse {#browse-search-preview-assets}
 

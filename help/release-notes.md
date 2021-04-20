@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Experience Manager] note sulla versione dell’app desktop'
 description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download dell’app desktop [!DNL Adobe Experience Manager] app desktop.
 mini-toc-levels: 1
-feature: App desktop, informazioni sulla versione
+feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
 source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867

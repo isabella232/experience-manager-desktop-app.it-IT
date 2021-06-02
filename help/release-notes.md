@@ -2,12 +2,11 @@
 title: '[!DNL Adobe Experience Manager] note sulla versione dell’app desktop'
 description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibilità e collegamenti per il download dell’app desktop [!DNL Adobe Experience Manager] app desktop.
 mini-toc-levels: 1
-feature: Desktop App,Release Information
+feature: App desktop, informazioni sulla versione
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-translation-type: tm+mt
-source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1525'
 ht-degree: 26%
 
 ---
@@ -79,7 +78,7 @@ Per conoscere i dettagli, consulta [Novità della versione v2.0](introduction.md
 
 **Aggiornamento nell’app v2.1.0.0**
 
-* Per caricare le risorse, gli utenti possono ora trascinare i file o le cartelle sull&#39;interfaccia dell&#39;applicazione, direttamente da Esplora risorse o dal Finder di Mac. Questo funziona in aggiunta all’opzione di caricamento precedentemente disponibile nell’applicazione. <!-- CQ-4309527 -->
+* Per caricare le risorse, gli utenti possono ora trascinare i file o le cartelle sull&#39;interfaccia dell&#39;applicazione, direttamente da Esplora risorse o dal Finder di Mac. Questo funziona in aggiunta all’opzione di caricamento disponibile nell’applicazione. Consulta [caricare risorse](/help/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
 **Aggiornamento nell’app v2.0.3**
 
@@ -171,7 +170,7 @@ Il diagramma seguente illustra il flusso di risorse e file dal cloud al file sys
 >
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [Come utilizzare l’app  [!DNL Experience Manager] desktop](using.md)
->* [Installare e aggiornare l’app desktop](install-upgrade.md)
->* [Best practice e suggerimenti per la risoluzione dei problemi](troubleshoot.md)
+>* [Come utilizzare [!DNL Experience Manager] l&#39;app desktop](using.md)
+* [Installare e aggiornare l’app desktop](install-upgrade.md)
+* [Best practice e suggerimenti per la risoluzione dei problemi](troubleshoot.md)
 

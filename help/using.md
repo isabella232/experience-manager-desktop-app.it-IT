@@ -4,9 +4,9 @@ description: Utilizza le risorse [!DNL Adobe Experience Manager] desktop app, to
 mini-toc-levels: 1
 feature: App desktop,Gestione risorse
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
+source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
 workflow-type: tm+mt
-source-wordcount: '3923'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -175,9 +175,19 @@ Se necessario, attiva/disattiva il check-out. La risorsa aggiornata viene rimoss
 
 ## Carica e aggiungi nuove risorse in [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-Gli utenti possono aggiungere nuove risorse all’archivio DAM. Ad esempio, puoi essere un fotografo di un&#39;agenzia o un appaltatore che desidera aggiungere un gran numero di foto da un servizio fotografico all&#39;archivio [!DNL Experience Manager]. Per aggiungere nuovi contenuti a [!DNL Experience Manager], seleziona ![opzione di caricamento nel cloud](assets/do-not-localize/upload_to_cloud_da2.png) nella barra superiore dell’app. Individua i file delle risorse nel file system locale e fai clic su **[!UICONTROL Select]**. In alternativa, per caricare le risorse, trascina i file o le cartelle nell’interfaccia dell’applicazione. In Windows, se trascini risorse in una cartella dell’app, queste vengono caricate nella cartella .
+Gli utenti possono aggiungere nuove risorse all’archivio DAM. Ad esempio, puoi essere un fotografo di un&#39;agenzia o un appaltatore che desidera aggiungere un gran numero di foto da un servizio fotografico all&#39;archivio [!DNL Experience Manager]. Per aggiungere nuovi contenuti a [!DNL Experience Manager], seleziona ![opzione di caricamento nel cloud](assets/do-not-localize/upload_to_cloud_da2.png) nella barra superiore dell’app. Individua i file delle risorse nel file system locale e fai clic su **[!UICONTROL Select]**. In alternativa, per caricare le risorse, trascina i file o le cartelle nell’interfaccia dell’applicazione. In Windows, se trascini risorse in una cartella dell’app, queste vengono caricate nella cartella . Se il caricamento richiede più tempo, l&#39;app visualizza una barra di avanzamento.
 
-Se il caricamento richiede più tempo, l&#39;app visualizza una barra di avanzamento in basso. Non utilizzare spazi bianchi e caratteri non validi durante la creazione o il caricamento di cartelle. Vedi un elenco dei caratteri consentiti in [crea cartelle in [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders).
+Quando si denominano i file e le cartelle, non utilizzare i seguenti caratteri (elenco separato da spazi):
+
+* nei nomi dei file `\\`.
+
+   I caratteri `# % { } ? & . / : [ | ] *` sono sostituiti dal trattino nei nomi dei nodi creati in [!DNL Adobe Experience Manager]; ma vengono mantenuti spazi bianchi e casing.
+
+* nei nomi delle cartelle `\\ \t &`.
+
+   Gli spazi bianchi e i caratteri `% ; # , + ? ^ { } " . / : [ ] | *` nei nomi delle cartelle vengono sostituiti dal trattino nei percorsi delle cartelle nei nomi dei nodi creati in [!DNL Adobe Experience Manager]. Inoltre, i caratteri maiuscoli vengono convertiti in minuscole nei percorsi delle cartelle.
+
+Tuttavia, se [!UICONTROL Use legacy conventions when creating nodes for assets and folders] è abilitato in [!UICONTROL Preferences], l’app emula il comportamento dell’app v1.10 durante il caricamento delle cartelle. Nella versione 1.10, i nomi dei nodi creati nel repository rispettano gli spazi e la custodia dei nomi delle cartelle forniti dall&#39;utente. Per ulteriori informazioni, consulta [Preferenze app](/help/install-upgrade.md#set-preferences).
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->

@@ -4,7 +4,7 @@ description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibili
 mini-toc-levels: 1
 feature: App desktop, informazioni sulla versione
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: d642a33c8e8c2f771a6f996a76167b7f6e42c1ce
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 23%
@@ -70,10 +70,6 @@ Per conoscere i dettagli, consulta [Novità della versione v2.0](introduction.md
 
 **Aggiornamenti nell’app v2.1.3.1**
 
-* Viene aggiunta un’opzione che (se selezionata) consente all’app di caricare cartelle e file in modo che i nomi dei nodi creati in [!DNL Adobe Experience Manager] siano uguali ai nomi dei file e delle cartelle locali.
-
-   Questo comportamento è simile a quello predefinito nella versione 1 dell’app desktop. Nella versione corrente, invece, se l’opzione non è abilitata, gli spazi bianchi e i caratteri `% ; # , + ? ^ { } "` nei nomi delle cartelle vengono sostituiti da un trattino nei percorsi delle cartelle. Inoltre, i caratteri maiuscoli vengono convertiti in lettere minuscole nei percorsi delle cartelle. Tuttavia, nei nomi dei file, i caratteri `# % { } ? &` sono sostituiti dal trattino; ma vengono mantenuti spazi bianchi e casing. Per ulteriori informazioni, consulta [Preferenze app](/help/install-upgrade.md#set-preferences) e [Carica e aggiungi nuove risorse](/help/using.md#upload-and-add-new-assets-to-aem).
-
 Il bug corretto nella versione corrente è:
 
 * Le velocità di caricamento e download delle risorse sono migliorate, anche con risorse di grandi dimensioni. È stato corretto un problema a causa del quale il caricamento delle risorse con [!DNL desktop app] non riusciva sempre di più durante il caricamento di file di grandi dimensioni.
@@ -81,6 +77,10 @@ Il bug corretto nella versione corrente è:
 **Aggiornamento nell’app v2.1.2.0**
 
 * Una nuova opzione su [!UICONTROL Clear Cookies] viene aggiunta al menu principale dell&#39;applicazione. Consente di risolvere potenziali problemi di accesso, ad esempio quando si cambia la connessione da un server a un altro. Consulta [cancellare i cookie prima di collegare](/help/troubleshoot.md#cannot-login-cookies-issue).
+
+* Viene aggiunta un’opzione che (se selezionata) consente all’app di caricare cartelle e file in modo che i nomi dei nodi creati in [!DNL Adobe Experience Manager] siano uguali ai nomi dei file e delle cartelle locali.
+
+   Questo comportamento è simile a quello predefinito nella versione 1 dell’app desktop. Nella versione corrente, invece, se l’opzione non è abilitata, gli spazi bianchi e i caratteri `% ; # , + ? ^ { } "` nei nomi delle cartelle vengono sostituiti da un trattino nei percorsi delle cartelle. Inoltre, i caratteri maiuscoli vengono convertiti in lettere minuscole nei percorsi delle cartelle. Tuttavia, nei nomi dei file, i caratteri `# % { } ? &` sono sostituiti dal trattino; ma vengono mantenuti spazi bianchi e casing. Per ulteriori informazioni, consulta [Preferenze app](/help/install-upgrade.md#set-preferences) e [Carica e aggiungi nuove risorse](/help/using.md#upload-and-add-new-assets-to-aem).
 
 **Aggiornamento nell’app v2.1.1.0**
 

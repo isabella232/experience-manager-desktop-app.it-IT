@@ -2,15 +2,14 @@
 title: Procedure consigliate per la risoluzione dei problemi relativi all'app desktop [!DNL Adobe Experience Manager] e
 description: Segui le best practice e risolvi eventuali problemi relativi all’installazione, all’aggiornamento, alla configurazione e così via.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-translation-type: tm+mt
-source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
+source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
 
-# Risolvere i problemi relativi all’ [!DNL Adobe Experience Manager] app desktop {#troubleshoot-v2}
+# Risolvere i problemi relativi all’app desktop [!DNL Adobe Experience Manager] {#troubleshoot-v2}
 
 [!DNL Adobe Experience Manager] l’app desktop si connette all’archivio DAM (Digital Asset Management) di una  [!DNL Experience Manager] distribuzione. L’app recupera le informazioni sull’archivio e i risultati della ricerca sul computer, scarica e carica file e cartelle e include funzionalità per gestire i conflitti con l’interfaccia utente di Assets.
 
@@ -56,7 +55,7 @@ Quando carichi molte risorse, se alcuni file non vengono caricati, consulta il f
 >
 >Quando lavori con l’Assistenza clienti di Adobe su una richiesta di supporto o su un ticket, ti può essere chiesto di condividere i file di registro per aiutare il team di Assistenza clienti a comprendere il problema. Archivia l’intera cartella `Logs` e condividila con il contatto dell’Assistenza clienti.
 
-### Cambia il livello di dettagli nei file di log {#level-of-details-in-log}
+### Modifica del livello di dettagli nei file di registro {#level-of-details-in-log}
 
 Per modificare il livello di dettagli nei file di log:
 
@@ -84,7 +83,7 @@ Per modificare il livello di dettagli nei file di log:
 
 I livelli di registro validi sono DEBUG, INFO, WARN o ERROR. La verbosità dei log è più alta in DEBUG e più bassa in ERROR.
 
-### Attiva la modalità di debug {#enable-debug-mode}
+### Attiva modalità di debug {#enable-debug-mode}
 
 Per risolvere i problemi, puoi abilitare la modalità di debug e ottenere ulteriori informazioni nei registri.
 
@@ -108,7 +107,7 @@ Per abilitare la modalità di debug su Windows:
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`.
 
-### Conoscere la versione [!DNL Adobe Experience Manager] dell’app desktop {#know-app-version-v2}
+### Conoscere la versione dell’app desktop [!DNL Adobe Experience Manager] {#know-app-version-v2}
 
 Per visualizzare il numero di versione:
 
@@ -148,7 +147,7 @@ Per cancellare la cache, elimina la directory Encoded [!DNL Adobe Experience Man
 
 La cancellazione della cache dell’app desktop [!DNL Adobe Experience Manager] è un’attività preliminare per la risoluzione dei problemi che può risolvere diversi problemi. Elimina la cache dalle preferenze dell&#39;app. Consulta [impostare le preferenze](install-upgrade.md#set-preferences). Il percorso predefinito della cartella cache è:
 
-## Impossibile vedere le risorse inserite {#placed-assets-missing}
+## Impossibile vedere le risorse posizionate {#placed-assets-missing}
 
 Se non riesci a visualizzare le risorse inserite nei file di supporto da te o da altri professionisti creativi (ad esempio, file INDD), controlla quanto segue:
 
@@ -160,7 +159,7 @@ Se non riesci a visualizzare le risorse inserite nei file di supporto da te o da
 
 * Autorizzazioni. Per verificare di disporre delle autorizzazioni necessarie per recuperare le risorse inserite, contatta l’ amministratore di [!DNL Experience Manager] .
 
-### Le modifiche apportate ai file nell’interfaccia utente dell’app desktop non si riflettono immediatamente in [!DNL Adobe Experience Manager]{#changes-on-da-not-visible-on-aem}
+### Le modifiche apportate ai file nell’interfaccia utente dell’app desktop non si riflettono immediatamente in [!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}
 
 [!DNL Adobe Experience Manager] l’app desktop lascia all’utente la facoltà di decidere quando tutte le modifiche apportate a un file devono essere completate. A seconda delle dimensioni e della complessità di un file, il trasferimento della nuova versione di un file a [!DNL Adobe Experience Manager] richiede molto tempo. La progettazione dell&#39;applicazione richiede di ridurre al minimo il numero di volte in cui un file viene trasferito avanti e indietro, invece di indovinare quando le modifiche del file sono complete e vengono caricate automaticamente. Si consiglia all&#39;utente di avviare il trasferimento del file su [!DNL Adobe Experience Manager] scegliendo di caricare le modifiche di un file.
 
@@ -183,7 +182,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 Se utilizzi l’app desktop con [!DNL Experience Manager] 6.5.1 o versione successiva, aggiorna il connettore S3 o Azure alla versione 1.10.4 o successiva. Risolve il problema di errore di caricamento file relativo a [OAK-8599](https://issues.apache.org/jira/browse/OAK-8599). Vedere [istruzioni di installazione](install-upgrade.md#install-v2).
 
-## [!DNL Experience Manager] problemi di connessione all’app desktop  {#connection-issues}
+## [!DNL Experience Manager] problemi di connessione all’app desktop {#connection-issues}
 
 Se si verificano problemi di connettività generali, ci sono alcuni modi per ottenere ulteriori informazioni sulle prestazioni dell’app desktop [!DNL Experience Manager].
 
@@ -299,7 +298,7 @@ Raramente l&#39;applicazione può diventare non reattiva, visualizzare solo uno 
 
 In entrambi i metodi, l’app viene avviata dalla cartella DAM principale.
 
-## Nascondi risorse scadute {#hide-expired-assets}
+## Nascondere le risorse scadute {#hide-expired-assets}
 
 Quando esplori le risorse dall’interfaccia utente di [!DNL Experience Manager], le risorse scadute non vengono visualizzate. Per impedire la visualizzazione, la ricerca e il recupero delle risorse scadute durante la navigazione dalle app desktop e da Asset Link, gli amministratori possono effettuare le seguenti operazioni di configurazione. La configurazione funziona per tutti gli utenti, indipendentemente dal privilegio di amministratore.
 
@@ -327,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Problemi noti](release-notes.md#known-issues-v2)
->* [Evitare la modifica dei conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)
+* [Evitare la modifica dei conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)
 

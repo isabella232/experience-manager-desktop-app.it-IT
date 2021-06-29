@@ -1,12 +1,11 @@
 ---
 title: Utilizza la versione 1.10 dell’app desktop  [!DNL Experience Manager] it.
 description: Scopri come utilizzare l’app desktop Adobe Experience Manager versione 1.10 e ottimizzare il lavoro con le risorse sul desktop.
-feature: Desktop App,Asset Management
+feature: App desktop,Gestione risorse
 exl-id: 2fdc1c8d-b822-4cca-ad06-bd875a00aa6d
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
@@ -19,7 +18,7 @@ Questa integrazione consente a diversi ruoli dell’organizzazione di gestire le
 
 Le attività chiave che esegui utilizzando l’ [!DNL Experience Manager] app desktop v1 includono:
 
-1. [Connettersi con  [!DNL Experience Manager] un server](#installandconnect)
+1. [Connettersi a un server [!DNL Experience Manager] ](#installandconnect)
 1. [Apri le risorse direttamente sul desktop](#openondesktop)
 1. [Modifica ed estrazione delle risorse dal desktop](#workonassets)
 1. [Caricare in massa risorse e cartelle](#bulkupload)
@@ -30,7 +29,7 @@ Per le varie operazioni e operazioni non consigliate, consulta le [best practice
 >
 >L’app desktop è stata introdotta nella versione 6.1 di [!DNL Experience Manager] ed è stata chiamata [!DNL Experience Manager Assets Companion App].
 
-## [!DNL Experience Manager] punti di contatto dell’app desktop nel flusso di lavoro creativo  {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## [!DNL Experience Manager] punti di contatto dell’app desktop nel flusso di lavoro creativo {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 [!DNL Experience Manager] l’app desktop si integra nel flusso di lavoro creativo e offre i seguenti punti di contatto.  [!DNL Assets]
 
@@ -38,7 +37,7 @@ Per le varie operazioni e operazioni non consigliate, consulta le [best practice
 
 [!DNL Experience Manager] touch-point dell’app desktop nel flusso di lavoro creativo
 
-## Installa e connetti l&#39;app al server [!DNL Experience Manager] {#installandconnect}
+## Installa e connetti l’app al server [!DNL Experience Manager] {#installandconnect}
 
 Prima di poter iniziare a creare o modificare le risorse creative, connetti l’applicazione desktop al server [!DNL Assets] per scaricare e caricare le risorse nell’archivio. Esegui le seguenti operazioni:
 
@@ -53,7 +52,7 @@ Prima di poter iniziare a creare o modificare le risorse creative, connetti l’
 >
 >Per parte o per tutti i passaggi di installazione e configurazione, potrebbe essere necessario assistenza da parte dell’ amministratore [!DNL Experience Manager] o dell’amministratore di sistema.
 
-### Installa l&#39;applicazione {#installapp}
+### Installare l’applicazione {#installapp}
 
 Per utilizzare l’app desktop [!DNL Experience Manager], assicurati che la versione del server [!DNL Experience Manager] sia supportata dall’app. Scarica il file di installazione appropriato (binario) per il tuo sistema operativo (Mac o Windows) e installa l&#39;app.
 
@@ -94,7 +93,7 @@ L’app supporta la configurazione proxy su Mac e Windows. La configurazione vie
 
    ![Fornire le credenziali  [!DNL Experience Manager] del server nella schermata di accesso nell’app  [!DNL Experience Manager] desktop](assets/login_screen_v1.png)
 
-### Abilitare le azioni desktop nell’ interfaccia Web [!DNL Experience Manager] {#desktopactions}
+### Abilitare le azioni desktop nell’interfaccia web [!DNL Experience Manager] {#desktopactions}
 
 Dall’interfaccia utente di Assets, puoi esplorare le posizioni delle risorse o estrarre e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate azioni desktop e non sono abilitate per impostazione predefinita. Segui questi passaggi per abilitarlo.
 
@@ -103,11 +102,11 @@ Dall’interfaccia utente di Assets, puoi esplorare le posizioni delle risorse o
 
    ![[!DNL Experience Manager] interfaccia con preferenze utente](assets/aem_ui_user_preferences.png)
 
-1. Nella finestra di dialogo Preferenze utente, seleziona **[!UICONTROL Show Desktop Actions For Assets]**. Clic **[!UICONTROL Accept]**.
+1. Nella finestra di dialogo [!UICONTROL User Preferences], seleziona **[!UICONTROL Show Desktop Actions For Assets]**, quindi fai clic su **[!UICONTROL Accept]**.
 
    ![Seleziona  [!UICONTROL Show Desktop Actions For Assets] per abilitare le azioni desktop](assets/enable_desktop_actions.png)
 
-   *Figura: Per abilitare le azioni desktop, seleziona Mostra azioni desktop per risorse .*
+   *Figura: Seleziona  [!UICONTROL Show Desktop Actions For Assets] per abilitare le azioni desktop.*
 
 ## Accedere e aprire le risorse sul desktop {#openondesktop}
 
@@ -132,7 +131,7 @@ Per i file Adobe InDesign (INDD), seleziona **[!UICONTROL Open]** dal menu di sc
 >
 >L&#39;Adobe consiglia di passare a Opzioni visualizzazione Finder su Mac e disattivare le opzioni **Mostra informazioni elemento**, **Mostra anteprima elemento** e **Mostra colonna anteprima** per la cartella montata [!DNL Assets]. Migliora le prestazioni.
 
-### Opzioni aggiuntive nell&#39;interfaccia [!DNL Experience Manager] {#additional-options-in-aem-assets}
+### Opzioni aggiuntive nell’interfaccia [!DNL Experience Manager] {#additional-options-in-aem-assets}
 
 Dopo aver mappato l’archivio [!DNL Assets] nell’unità locale, puoi abilitare icone aggiuntive e la funzione Caricamento cartelle per visualizzare le risorse e le cartelle mappate.
 
@@ -158,9 +157,9 @@ Per individuare la risorsa specifica nel file system locale, fai clic su **Mostr
 | ![Icona di sincronizzazione file Windows](assets/do-not-localize/win_sync.png) | Le risorse vengono sincronizzate. I file vengono caricati o scaricati. È possibile visualizzare gli stati esatti e sospendere i trasferimenti dalla finestra Stato risorsa. |
 | ![Icona di riconnessione di Windows](assets/do-not-localize/win_refresh.png) | L&#39;app sta tentando di riconnettersi. Potenzialmente i problemi di rete lo stanno causando la disconnessione. |
 
-## Lavora sulle tue risorse {#workonassets}
+## Utilizzare le risorse {#workonassets}
 
-### Estrarre risorse dall’ [!DNL Experience Manager] interfaccia web {#check-out-assets-from-the-aem-web-interface}
+### Estrarre risorse dall’interfaccia web [!DNL Experience Manager] {#check-out-assets-from-the-aem-web-interface}
 
 [!DNL Assets] consente di estrarre le risorse da modificare e di archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, puoi modificarla, annotarla, pubblicarla, spostarla o eliminarla. L’estrazione di una risorsa blocca la risorsa e impedisce ad altri utenti di eseguire una di queste operazioni. Per poter estrarre/inserire le risorse, è necessario disporre dell’accesso in scrittura.
 
@@ -205,7 +204,7 @@ L’app ti consente di estrarre i file di risorse per impedire ad altri utenti d
 
 1. Per archiviare la risorsa in modo che sia disponibile per altri utenti, tocca o fai clic sull’icona di accesso nella finestra di dialogo Informazioni risorsa .
 
-### Estrarre risorse in Windows {#check-out-assets-on-windows}
+### Estrai risorse in Windows {#check-out-assets-on-windows}
 
 L’app ti consente di estrarre i file di risorse per impedire ad altri utenti di modificare i file su cui stai lavorando.
 
@@ -256,5 +255,5 @@ In alternativa, seleziona i file/le cartelle da caricare in [!DNL Experience Man
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] Risoluzione dei problemi relativi all’applicazione dell’app desktop](troubleshoot-app-v1.md)
+>* [Risolvere i problemi relativi all&#39;applicazione desktop [!DNL Experience Manager] ](troubleshoot-app-v1.md)
 

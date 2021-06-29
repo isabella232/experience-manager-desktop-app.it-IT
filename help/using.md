@@ -4,9 +4,9 @@ description: Utilizza le risorse [!DNL Adobe Experience Manager] desktop app, to
 mini-toc-levels: 1
 feature: App desktop,Gestione risorse
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
+source-git-commit: dcd29d0bbb32004d970d334c256e659f4a4c39e1
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4053'
 ht-degree: 0%
 
 ---
@@ -58,14 +58,14 @@ Prima di iniziare a utilizzare l&#39;applicazione, scopri [come funziona l&#39;a
 
 * **[!UICONTROL Upload Changes]**: L’app desktop carica la risorsa aggiornata solo quando viene eseguito il caricamento esplicito sul  [!DNL Experience Manager] server. Quando salvi le modifiche, queste vengono salvate solo sul computer locale. Al momento del caricamento, la risorsa viene automaticamente archiviata e l&#39;icona di blocco viene rimossa. Consulta [modificare le risorse](using.md#edit-assets-upload-updated-assets).
 
-## Abilitare le azioni desktop nell’ interfaccia Web [!DNL Experience Manager] {#desktopactions-v2}
+## Abilitare le azioni desktop nell’interfaccia web [!DNL Experience Manager] {#desktopactions-v2}
 
 Dall’interno dell’interfaccia utente di [!DNL Assets] in un browser, puoi esplorare le posizioni delle risorse o estrarre e aprire la risorsa per la modifica nell’applicazione desktop. Queste opzioni sono denominate [!UICONTROL Desktop Actions] e non sono abilitate per impostazione predefinita. Per abilitarlo, segui questi passaggi.
 
 1. Nella console [!DNL Assets], fai clic sull’icona **[!UICONTROL User]** nella barra degli strumenti.
 1. Fare clic su **[!UICONTROL My Preferences]** per visualizzare la finestra di dialogo **[!UICONTROL Preferences]**.
 
-1. Nella finestra di dialogo Preferenze utente, seleziona **[!UICONTROL Show Desktop Actions For Assets]**. Clic **[!UICONTROL Accept]**.
+1. Nella finestra di dialogo [!UICONTROL User Preferences], seleziona **[!UICONTROL Show Desktop Actions For Assets]**, quindi fai clic su **[!UICONTROL Accept]**.
 
 
    ![Seleziona Mostra azioni desktop per risorse per abilitare le azioni desktop](assets/enable_desktop_actions.png)
@@ -173,7 +173,7 @@ Nei casi seguenti, puoi eliminare le modifiche e le modifiche apportate alla ris
 
 Se necessario, attiva/disattiva il check-out. La risorsa aggiornata viene rimossa dalla cartella della cache locale e viene scaricata nuovamente quando la modifichi o la apri.
 
-## Carica e aggiungi nuove risorse in [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
+## Carica e aggiungi nuove risorse a [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
 Gli utenti possono aggiungere nuove risorse all’archivio DAM. Ad esempio, puoi essere un fotografo di un&#39;agenzia o un appaltatore che desidera aggiungere un gran numero di foto da un servizio fotografico all&#39;archivio [!DNL Experience Manager]. Per aggiungere nuovi contenuti a [!DNL Experience Manager], seleziona ![opzione di caricamento nel cloud](assets/do-not-localize/upload_to_cloud_da2.png) nella barra superiore dell’app. Individua i file delle risorse nel file system locale e fai clic su **[!UICONTROL Select]**. In alternativa, per caricare le risorse, trascina i file o le cartelle nell’interfaccia dell’applicazione. In Windows, se trascini risorse in una cartella dell’app, queste vengono caricate nella cartella . Se il caricamento richiede più tempo, l&#39;app visualizza una barra di avanzamento.
 
@@ -267,7 +267,7 @@ Do not use &#92;&#92; in the names of files and &#92;&#116; &#38; in the names o
 
 Gli utenti possono facilmente lavorare con e gestire più risorse utilizzando azioni come il caricamento di tutte le modifiche contemporaneamente o il caricamento di cartelle nidificate in pochi clic.
 
-### Sfoglia cartelle di grandi dimensioni {#browse-large-folders}
+### Sfoglia cartelle grandi {#browse-large-folders}
 
 Quando lavori con cartelle contenenti molte risorse, scorri per visualizzare altre risorse. Per scorrere utilizzando la tastiera, premi alcune volte la scheda per selezionare la risorsa in alto. La risorsa evidenziata deve sapere quando è selezionata. Ora utilizza il tasto freccia giù per spostarsi all’interno dell’elenco delle risorse.
 
@@ -299,11 +299,11 @@ Dopo il caricamento, se le modifiche previste non vengono riportate nell&#39;app
 >
 >Non utilizzare la funzionalità di caricamento per migrare le risorse tra due distribuzioni [!DNL Experience Manager]. Al contrario, consulta la [guida alla migrazione](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html).
 
-### Elenco delle risorse trasferite {#list-of-transferred-assets}
+### Elenco delle attività trasferite {#list-of-transferred-assets}
 
 Per visualizzare l’elenco delle risorse trasferite in una determinata sessione, consulta [Caricare risorse su [!DNL Experience Manager]](#upload-and-add-new-assets-to-aem).
 
-## Flusso di lavoro avanzato: inizia dall’ [!DNL Assets] interfaccia web {#adv-workflow-start-from-aem-ui}
+## Flusso di lavoro avanzato: inizia dall&#39;interfaccia web [!DNL Assets] {#adv-workflow-start-from-aem-ui}
 
 Se necessario, avvia il flusso di lavoro dall’interfaccia web Assets. L’app desktop si integra con [!DNL Experience Manager] per riprendere il controllo quando richiesto utilizzando le azioni desktop.
 
@@ -373,7 +373,7 @@ Per provare questo flusso di lavoro con una risorsa immagine e InDesign, segui q
 1. Inserisci la risorsa rivelata nel documento InDesign. Questo crea un collegamento nel documento.
 1. Una volta completate le modifiche nel documento InDesign, salvalo e caricalo su [!DNL Experience Manager] utilizzando l’app desktop.
 
-## Flusso di lavoro avanzato: scarica le risorse localmente {#adv-workflow-download-assets-locally}
+## Flusso di lavoro avanzato: scaricare le risorse localmente {#adv-workflow-download-assets-locally}
 
 L’app scarica le risorse dal server [!DNL Experience Manager] localmente sul file system in molti scenari. I download richiedono larghezza di banda e spazio su disco. Conoscere gli scenari ti aiuta a ottimizzare il tempo di attesa per il completamento dei download.
 

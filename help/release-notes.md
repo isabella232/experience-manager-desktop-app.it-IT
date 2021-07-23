@@ -4,10 +4,10 @@ description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibili
 mini-toc-levels: 1
 feature: App desktop, informazioni sulla versione
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 23%
+source-wordcount: '1675'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,7 @@ Le **versioni supportate [!DNL Experience Manager]** sono:
 * [!DNL Experience Manager] 6.4.4 o versioni successive, su Adobe Managed Services (AMS) o On-Premise. Consulta le [note sulla versione del service pack](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=it).
 * [!DNL Experience Manager] 6.4.0 - 6.4.3 con il pacchetto di  [compatibilità ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installato, su Adobe Managed Services (AMS) o On-Premise.
 * [!DNL Experience Manager] 6.3 (con pacchetto di compatibilità)
-* [!DNL Experience Manager] 6.3.3.1 o versioni successive con il pacchetto di  [compatibilità ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installato. L’app desktop non è supportata per [!DNL Experience Manager] 6.3.3.0 o versioni precedenti.
+* [!DNL Experience Manager] 6.3.3.1 o versioni successive con il pacchetto di  [compatibilità ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) installato. L’app desktop non è supportata per [!DNL Experience Manager] 6.3.3.0 o versioni precedenti.
 
 [!DNL Adobe Experience Manager] l’app desktop è disponibile per i seguenti sistemi  **operativi**:
 

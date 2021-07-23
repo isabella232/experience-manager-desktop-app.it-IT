@@ -1,13 +1,12 @@
 ---
 title: Installare e configurare l’app desktop
 description: Installa e configura i server [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] e scarica le risorse sul file system locale.
-feature: Desktop App,Release Information
+feature: App desktop, informazioni sulla versione
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 1%
+source-wordcount: '1410'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +32,7 @@ Per utilizzare l’app desktop [!DNL Experience Manager],
 
 Per informazioni dettagliate, consulta le [[!DNL Experience Manager] note sulla versione dell’app desktop](release-notes.md).
 
-## Aggiornamento da una versione precedente {#upgrade-from-previous-version}
+## Eseguire l’aggiornamento da una versione precedente {#upgrade-from-previous-version}
 
 Se sei un utente della versione 1.x dell’app desktop, puoi comprendere le differenze e le somiglianze tra la versione precedente e quella più recente dell’app. Vedi [novità nell&#39;app desktop](introduction.md#whats-new-v2) e [funzionamento dell&#39;app](release-notes.md#how-app-works)
 
@@ -61,7 +60,7 @@ Per installare l’app desktop, segui questi passaggi. Disinstalla qualsiasi Ado
 
 1. Per l&#39;aggiornamento da un&#39;altra versione dell&#39;app, consulta [aggiornare l&#39;app desktop](#upgrade-from-previous-version).
 
-1. Ignora questo passaggio se utilizzi [!DNL Experience Manager] come [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 o successivo o [!DNL Experience Manager] 6.5.0 o successivo. Assicurati che la tua configurazione [!DNL Experience Manager] soddisfi i requisiti di compatibilità indicati nelle [note sulla versione](release-notes.md). Se necessario, scarica il [pacchetto di compatibilità](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) applicabile e installalo utilizzando la [!DNL Experience Manager] Gestione pacchetti come amministratore [!DNL Experience Manager]. Per installare un pacchetto, vedi [Come lavorare con i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Ignora questo passaggio se utilizzi [!DNL Experience Manager] come [!DNL Cloud Service], [!DNL Experience Manager] 6.4.4 o successivo o [!DNL Experience Manager] 6.5.0 o successivo. Assicurati che la tua configurazione [!DNL Experience Manager] soddisfi i requisiti di compatibilità indicati nelle [note sulla versione](release-notes.md). Se necessario, scarica il [pacchetto di compatibilità](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) applicabile e installalo utilizzando la [!DNL Experience Manager] Gestione pacchetti come amministratore [!DNL Experience Manager]. Per installare un pacchetto, vedi [Come lavorare con i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Eseguire il programma di installazione binario e seguire le istruzioni visualizzate per l&#39;installazione.
 
@@ -131,7 +130,7 @@ Se si configurano o si modificano le impostazioni del server proxy per Windows (
 
 Se il proxy richiede l&#39;autenticazione, il team IT può consentire l&#39;URL [!DNL Experience Manager Assets] nelle impostazioni del server proxy per consentire il passaggio del traffico dell&#39;applicazione.
 
-## Disinstalla l&#39;app {#uninstall-the-app}
+## Disinstallare l’app {#uninstall-the-app}
 
 Per disinstallare l&#39;applicazione su Windows, segui questi passaggi:
 

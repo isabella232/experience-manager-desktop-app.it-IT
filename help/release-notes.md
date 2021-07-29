@@ -4,16 +4,16 @@ description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibili
 mini-toc-levels: 1
 feature: App desktop, informazioni sulla versione
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: a7a504d80891d68a0895dcf12d5b3734d7a584ec
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1681'
 ht-degree: 22%
 
 ---
 
 # [!DNL Adobe Experience Manager] note sulla versione dell’app desktop {#release-notes-v2}
 
-Di seguito sono riportate le informazioni sulla versione più recente dell’app desktop versione 2.1 (2.1.3.2). La data di rilascio è il 19 luglio 2021.
+Di seguito sono riportate le informazioni sulla versione più recente dell’app desktop versione 2.1 (2.1.3.3). La data di rilascio è il 29 luglio 2021.
 
 Le **versioni supportate [!DNL Experience Manager]** sono:
 
@@ -33,8 +33,8 @@ Gli **URL di download** per il sistema operativo supportato sono:
 
 | Sistema operativo | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS (v2.1.3.2) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) |
-| Windows a 64 bit (v2.1.3.2) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) |
+| macOS (v2.1.3.3) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) |
+| Windows a 64 bit (v2.1.3.3) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) |
 | Windows a 32 bit (v2.1.3.1) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [Collegamento di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
@@ -68,13 +68,17 @@ La funzione è supportata con le versioni [!DNL Adobe Creative Cloud] 2018 e [!D
 
 Per conoscere i dettagli, consulta [Novità della versione v2.0](introduction.md#whats-new-v2).
 
-**Aggiornamenti nell’app v2.1.3.2**
+**Aggiornamenti nell’app v2.1.3.3**
 
 La nuova versione dell’applicazione offre una correzione di bug.
 
+**Aggiornamenti nell’app v2.1.3.2**
+
+Questa versione dell&#39;applicazione ha offerto una correzione di bug.
+
 **Aggiornamenti nell’app v2.1.3.1**
 
-Il bug corretto nella versione corrente è:
+Il bug corretto in questa versione è:
 
 * Le velocità di caricamento e download delle risorse sono migliorate, anche con risorse di grandi dimensioni. Questo rilascio ha risolto un problema che a volte impediva il caricamento di risorse con [!DNL desktop app] durante il caricamento di file di grandi dimensioni.
 

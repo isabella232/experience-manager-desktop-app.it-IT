@@ -2,7 +2,7 @@
 title: Procedure consigliate per la risoluzione dei problemi relativi all'app desktop [!DNL Adobe Experience Manager] e
 description: Segui le best practice e risolvi eventuali problemi relativi all’installazione, all’aggiornamento, alla configurazione e così via.
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -33,13 +33,13 @@ Segui le best practice riportate di seguito per evitare alcuni problemi e risolv
 
 * **Attenzione alla rete**: Le prestazioni di rete sono fondamentali per le prestazioni dell’app  [!DNL Experience Manager] desktop. Se ti trovi di fronte a una risposta rallentata ai trasferimenti di file o alle operazioni in blocco, disattiva le funzioni o le app che potrebbero causare un sacco di traffico di rete.
 
-* **Casi d’uso non supportati per l’app** desktop: Non utilizzare l’app per la migrazione di Assets (che richiede pianificazione e altri strumenti); per operazioni DAM complesse (come lo spostamento di cartelle di grandi dimensioni, caricamenti di grandi dimensioni, la ricerca di file tramite ricerche avanzate di metadati); e come client di sincronizzazione (i principi di progettazione e i pattern di utilizzo sono diversi dai client in-sync come la sincronizzazione desktop Microsoft OneDrive o Adobe Creative Cloud).
+* **Casi d’uso non supportati per l’app** desktop: Non utilizzare l’app per la migrazione di Assets (che richiede pianificazione e altri strumenti); per operazioni DAM complesse (come lo spostamento di cartelle di grandi dimensioni, caricamenti di grandi dimensioni, la ricerca di file tramite ricerche avanzate di metadati); e come client di sincronizzazione (i principi di progettazione e i pattern di utilizzo sono diversi dai client in-sync come Microsoft OneDrive o la sincronizzazione desktop Adobe Creative Cloud).
 
 * **Timeout**: Al momento, l’app desktop non dispone di un valore di timeout configurabile che disconnette la connessione tra app  [!DNL Experience Manager] server e desktop dopo un intervallo di tempo fisso. Quando carichi risorse di grandi dimensioni, se la connessione si interrompe dopo un po&#39; di tempo, l’app tenta nuovamente di caricare la risorsa qualche volta aumentando il timeout di caricamento. Non è consigliabile modificare le impostazioni di timeout predefinite.
 
 ## Come risolvere i problemi {#troubleshooting-prep}
 
-Per risolvere i problemi relativi all’app desktop, tieni presente quanto segue. Inoltre, ti prepara a comunicare meglio i problemi ad Adobe Customer Care se scegli di cercare il supporto.
+Per risolvere i problemi relativi all’app desktop, tieni presente quanto segue. Inoltre, ti prepara a comunicare meglio i problemi all’Assistenza clienti Adobe se scegli di cercare il supporto.
 
 ### Posizione dei file di registro {#check-log-files-v2}
 
@@ -163,7 +163,7 @@ Se non riesci a visualizzare le risorse inserite nei file di supporto da te o da
 
 [!DNL Adobe Experience Manager] l’app desktop lascia all’utente la facoltà di decidere quando tutte le modifiche apportate a un file devono essere completate. A seconda delle dimensioni e della complessità di un file, il trasferimento della nuova versione di un file a [!DNL Adobe Experience Manager] richiede molto tempo. La progettazione dell&#39;applicazione richiede di ridurre al minimo il numero di volte in cui un file viene trasferito avanti e indietro, invece di indovinare quando le modifiche del file sono complete e vengono caricate automaticamente. Si consiglia all&#39;utente di avviare il trasferimento del file su [!DNL Adobe Experience Manager] scegliendo di caricare le modifiche di un file.
 
-### Problemi durante l&#39;aggiornamento su macOS {#issues-when-upgrading-on-macos}
+### Problemi durante l’aggiornamento su macOS {#issues-when-upgrading-on-macos}
 
 Talvolta possono verificarsi problemi durante l’aggiornamento dell’ [!DNL Experience Manager] app desktop su macOS. Ciò è causato dalla cartella di sistema legacy per l’ app desktop [!DNL Experience Manager] che impedisce il caricamento corretto delle nuove versioni dell’ app desktop [!DNL Experience Manager]. Per risolvere questo problema, è possibile rimuovere manualmente le cartelle e i file seguenti.
 
@@ -303,7 +303,7 @@ In entrambi i metodi, l’app viene avviata dalla cartella DAM principale.
 Quando esplori le risorse dall’interfaccia utente di [!DNL Experience Manager], le risorse scadute non vengono visualizzate. Per impedire la visualizzazione, la ricerca e il recupero delle risorse scadute durante la navigazione dalle app desktop e da Asset Link, gli amministratori possono effettuare le seguenti operazioni di configurazione. La configurazione funziona per tutti gli utenti, indipendentemente dal privilegio di amministratore.
 
 * [Configurazione in Experience Manager 6.5 per nascondere le risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api) scadute.
-* [Configurazione in Experience Manager come Cloud Service per nascondere le risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) scadute.
+* [Configurazione in Experience Manager as a Cloud Service per nascondere le risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api) scadute.
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
@@ -326,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [Problemi noti](release-notes.md#known-issues-v2)
-* [Evitare la modifica dei conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)
+>* [Evitare la modifica dei conflitti](using.md#adv-workflow-collaborate-avoid-conflicts)
 

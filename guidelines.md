@@ -1,16 +1,15 @@
 ---
-source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '719'
-ht-degree: 53%
+ht-degree: 50%
 
 ---
 # Linee guida per contribuire alla documentazione di [!DNL Adobe Experience Manager]
 
 ## Filosofia della documentazione
 
-Sappiamo che gli utenti [!DNL Adobe Experience Manager] lavorano in ambienti altamente competitivi, cercando di creare esperienze digitali che li distinguano dai loro concorrenti. Pertanto, è fondamentale che, quando Adobe fornisce nuovi strumenti avanzati in [!DNL Experience Manager], questi siano accompagnati da una documentazione accurata e chiara che consenta al cliente di sfruttare immediatamente il proprio investimento [!DNL Experience Manager] e massimizzare il ROI.
+Sappiamo che gli utenti [!DNL Adobe Experience Manager] lavorano in ambienti altamente competitivi, cercando di creare esperienze digitali che li distinguano dai loro concorrenti. Pertanto, è fondamentale che, quando Adobe fornisce nuovi strumenti avanzati in [!DNL Experience Manager], questi strumenti siano integrati da una documentazione accurata e chiara che consenta al cliente di sfruttare immediatamente il proprio investimento [!DNL Experience Manager] e massimizzare il ROI.
 
 L&#39;obiettivo della documentazione [!DNL Experience Manager] è quello di mettere la documentazione nelle mani degli utenti [!DNL Experience Manager] il prima possibile. Viene quindi data priorità a una documentazione accurata e fruibile, sottoposta ad aggiornamento e miglioramento continuo.
 
@@ -38,9 +37,9 @@ Le eccezioni a questa regola si applicano alle note sulla versione in cui i prob
 
 Qualsiasi idea sia necessaria per migliorare la documentazione di [!DNL Experience Manager] è gradita come contributo. Tuttavia, commenti, problemi e richieste sono intesi solo come *contributi*. Non sono destinati a rispondere a domande su come utilizzare [!DNL Experience Manager], implementare il progetto [!DNL Experience Manager] o risolvere problemi tecnici.
 
-Qualsiasi domanda sull&#39;utilizzo di [!DNL Experience Manager] o su eventuali errori tecnici, deve essere segnalata tramite il normale processo di supporto tramite il [[!DNL Experience Cloud] portale di supporto](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) o discussa nella [community Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Qualsiasi domanda sull&#39;utilizzo di [!DNL Experience Manager] o sugli errori tecnici che potresti riscontrare deve essere segnalata attraverso il normale processo di supporto tramite il [[!DNL Experience Cloud] portale di supporto](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) o discussa nella [community di Experienci Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***[!DNL Experience Manager]I contributi alla documentazione di non sostituiscono l’Assistenza clienti di Adobe***. Pertanto, verranno rifiutati tutti i contributi che richiedono risposte a domande correlate al supporto.
+***[!DNL Experience Manager]i contributi alla documentazione non sostituiscono ad Adobe l’*** Assistenza clienti e tutti i contributi che richiedono risposte a domande correlate al supporto verranno rifiutati.
 
 ### I contributi devono fare riferimento in modo chiaro alle pagine della documentazione interessate.
 

@@ -1,11 +1,11 @@
 ---
 title: Installare e configurare l’app desktop
 description: Installa e configura i server [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] e scarica le risorse sul file system locale.
-feature: App desktop, informazioni sulla versione
+feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Per disinstallare l&#39;applicazione su Windows, segui questi passaggi:
 
 1. Seguire le istruzioni visualizzate. Al termine, riavviare il computer.
 
-Per disinstallare l&#39;applicazione su Mac, segui questi passaggi:
+Per disinstallare l’applicazione su Mac, segui questi passaggi:
 
 1. Carica tutte le modifiche in [!DNL Experience Manager] per evitare di perdere le modifiche. Consulta [Modificare le risorse e caricare le risorse aggiornate in [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Disconnettiti e [!UICONTROL Exit] l’app.
 

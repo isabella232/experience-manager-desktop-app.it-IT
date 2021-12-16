@@ -4,16 +4,16 @@ description: Dettagli sulla versione, miglioramenti, nuove funzioni, compatibili
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 9b7cb9c7114c1518f9b6c2e4c9ed9771f4a1716d
+source-git-commit: 88d74bb9bff7ec5d454600d383f27dcd5dbbe775
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1711'
 ht-degree: 22%
 
 ---
 
 # [!DNL Adobe Experience Manager] note sulla versione dell’app desktop {#release-notes-v2}
 
-Di seguito sono riportate le informazioni sulla versione più recente dell’app desktop versione 2.1 (2.1.3.4). La data di rilascio è il 4 novembre 2021.
+Di seguito sono riportate le informazioni sulla versione più recente dell’app desktop versione 2.1 (2.1.4.0). La data di rilascio è il 16 dicembre 2021.
 
 La **supportato [!DNL Experience Manager] versioni** sono:
 
@@ -64,6 +64,10 @@ La funzione è supportata con [!DNL Adobe Creative Cloud] 2018 e [!DNL Adobe Cre
 ## Nuove funzioni, miglioramenti e correzioni di bug {#what-is-new}
 
 Per conoscere i dettagli, vedi [Novità della versione v2.0](introduction.md#whats-new-v2).
+
+**Aggiornamenti nell’app v2.1.4.0**
+
+La nuova versione dell’applicazione offre una correzione di bug.
 
 **Aggiornamenti nell’app v2.1.3.4**
 

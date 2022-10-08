@@ -3,9 +3,9 @@ title: Installare e configurare l’app desktop
 description: Installare e configurare [!DNL Adobe Experience Manager] app desktop con cui lavorare [!DNL Adobe Experience Manager Assets] e scarica le risorse nel file system locale.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 7b884d89c34a6e45f49d4cacb0f5d537dc769742
+source-git-commit: 5b5970cec02d4a605bd7d826d1daa71fe228b0d9
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,8 @@ Per installare l’app desktop, segui questi passaggi. Disinstalla un Adobe esis
 
    *Figura: Schermata di connessione all&#39;indirizzo del server di input.*
 
+   Seleziona **[!UICONTROL Remember Connection]** per evitare di inserire i dettagli di connessione ogni volta che accedi all’app desktop.
+
    >[!CAUTION]
    >
    >Assicurati che non ci siano spazi iniziali o finali prima o dopo l&#39;indirizzo del [!DNL Experience Manager] server. In caso contrario, l’app non può connettersi al [!DNL Experience Manager] server.
@@ -136,7 +138,7 @@ Per disinstallare l&#39;applicazione su Windows, segui questi passaggi:
 
 1. Carica tutte le modifiche in [!DNL Experience Manager] per evitare di perdere eventuali modifiche. Vedi [Modifica le risorse e carica le risorse aggiornate in [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). Disconnessione e [!UICONTROL Exit] l&#39;app.
 
-1. Rimuovi l&#39;app quando rimuovi qualsiasi altra applicazione OS. Disinstallalo da Aggiungi e rimuovi programmi su Windows.
+1. Rimuovi l&#39;app durante la rimozione di qualsiasi altra applicazione OS. Disinstallalo da Aggiungi e rimuovi programmi su Windows.
 
 1. Per rimuovere la cache e i registri, seleziona la casella di controllo necessaria.
 

@@ -6,12 +6,12 @@ user-guide-title: Guida dell’app desktop Experience Manager
 breadcrumb-title: Guida dell’app desktop
 user-guide-description: Scopri come utilizzare l’app desktop Experience Manager per collegare repository e applicazioni desktop e accedere più rapidamente alle risorse e ai flussi di lavoro semplificati.
 feature-set: Experience Manager Assets,Experience Manager
-feature: App desktop
+feature: Desktop App
 role: User, Admin
 source-git-commit: b661fedb6e33599921d39c0597c7d9f8e576798b
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 90%
+source-wordcount: '63'
+ht-degree: 93%
 
 ---
 

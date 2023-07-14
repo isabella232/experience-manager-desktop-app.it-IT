@@ -3,9 +3,9 @@ title: Installare e configurare l’app desktop
 description: Installare e configurare [!DNL Adobe Experience Manager] app desktop con cui lavorare [!DNL Adobe Experience Manager Assets] e scaricare le risorse sul file system locale.
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,10 @@ Per installare l’app desktop, segui la procedura riportata di seguito. Disinst
    >[!CAUTION]
    >
    >Verificare che non siano presenti spazi iniziali o finali prima o dopo l&#39;indirizzo del [!DNL Experience Manager] server. In caso contrario, l’app non può connettersi al [!DNL Experience Manager] server.
+
+1. Clic **[!UICONTROL I want to connect a different way]** e fai clic su **[!UICONTROL Adobe login]** per accedere al server Experience Manager Assets utilizzando Adobe Identity Management Service (IMS). L’accesso IMS consente all’app desktop di eseguire automaticamente l’aggiornamento del token di accesso, consentendo all’utente di rimanere connesso per un massimo di 14 giorni. Clic **[!UICONTROL Direct login]** per accedere a [!DNL Experience Manager] utilizzando le credenziali.
+
+   ![Accesso Adobe](assets/adobe-login.png)
 
 1. Una volta stabilita la connessione, puoi visualizzare l’elenco delle cartelle e delle risorse disponibili nella cartella principale del [!DNL Experience Manager] DAM Puoi sfogliare le cartelle dall’interno dell’app.
 

@@ -4,7 +4,7 @@ description: Utilizzare [!DNL Adobe Experience Manager] app desktop, per utilizz
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
 workflow-type: tm+mt
 source-wordcount: '4054'
 ht-degree: 0%
@@ -22,6 +22,7 @@ Quando apri l&#39;applicazione dopo la disconnessione o per la prima volta, forn
 Le attività chiave che esegui utilizzando [!DNL Adobe Experience Manager] Le app desktop sono:
 
 ![Flussi di lavoro e attività eseguibili tramite [!DNL Experience Manager] app desktop](assets/aem_desktop_app_usecases_v2.png "Flussi di lavoro e attività eseguibili tramite [!DNL Adobe Experience Manager] app desktop")
+
 Scarica [questo](assets/aem_desktop_app_usecases_print.pdf) file PDF pronto per la stampa.
 
 ## Funzionamento dell’app desktop {#how-app-works2}
@@ -165,7 +166,7 @@ Dopo aver apportato le modifiche, l’app visualizza **[!UICONTROL Edited Locall
 
 Per le best practice sulla modifica collaborativa, consulta [Flusso di lavoro avanzato: collabora agli stessi file ed evita di modificare i conflitti](#adv-workflow-collaborate-avoid-conflicts).
 
-Nei casi seguenti, potrebbe essere utile ignorare le modifiche e le modifiche apportate alla risorsa locale. Clic **[!UICONTROL Discard Changes]**.
+Nei casi seguenti, potrebbe essere utile ignorare le modifiche e le modifiche apportate alla risorsa locale. Fai clic su **[!UICONTROL Discard Changes]**.
 
 * Se non desideri salvare le modifiche locali in [!DNL Experience Manager].
 * Inizia ad apportare modifiche alla risorsa originale dopo aver salvato alcune modifiche.

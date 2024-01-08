@@ -4,9 +4,9 @@ description: Utilizzare [!DNL Adobe Experience Manager] app desktop, per utilizz
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
+source-git-commit: 1139b3359042a134d86900e3b7b7f03d8d920cdc
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ Gli utenti possono aggiungere nuove risorse all’archivio DAM. Ad esempio, un f
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
-È possibile caricare cartelle o singoli file dal file system locale. La gerarchia di una cartella viene mantenuta durante il caricamento. Prima di caricare le risorse in blocco, consulta [Caricamenti in blocco](#bulk-upload-assets).
+È possibile caricare cartelle o singoli file dal file system locale. La gerarchia di una cartella viene mantenuta al momento del caricamento. Prima di caricare le risorse in blocco, consulta [Caricamenti in blocco](#bulk-upload-assets).
 
 Per visualizzare l’elenco delle risorse trasferite in una determinata sessione, fai clic su **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**. L’elenco ti consente di visualizzare e verificare rapidamente i trasferimenti di file della sessione corrente.
 
@@ -217,11 +217,11 @@ Nell’app legacy, i nomi dei nodi creati nell’archivio mantenevano gli spazi 
 
 | Caratteri ‡ | Preferenze legacy nell’app | Quando si verifica nei nomi dei file | Nei nomi delle cartelle | Esempio |
 |---|---|---|---|---|
-| `. / : [ ] | *` | Abilitato o disabilitato | Sostituito con `-` (trattino). A `.` (punto) nell’estensione del nome file viene mantenuto invariato. | Sostituito con `-` (trattino). | `myimage.jpg` rimane invariato e `my.image.jpg` modifiche apportate a `my-image.jpg`. |
+| `. / : [ ] \| *` | Abilitato o disabilitato | Sostituito con `-` (trattino). A `.` (punto) nell’estensione del nome file viene mantenuto invariato. | Sostituito con `-` (trattino). | `myimage.jpg` rimane invariato e `my.image.jpg` modifiche apportate a `my-image.jpg`. |
 | `% ; # , + ? ^ { } "` e spazi vuoti | ![icona deseleziona](assets/do-not-localize/deselect-icon.png) Disabilitato | Gli spazi vuoti vengono mantenuti | Sostituito con `-` (trattino). | `My Folder.` modifiche apportate a `my-folder-`. |
-| `# % { } ? & .` | ![icona deseleziona](assets/do-not-localize/deselect-icon.png) Disabilitato | Sostituito con `-` (trattino). | ND. | `#My New File.` modifiche apportate a `-My New File-`. |
+| `# % { } ? & .` | ![icona deseleziona](assets/do-not-localize/deselect-icon.png) Disabilitato | Sostituito con `-` (trattino). | NA. | `#My New File.` modifiche apportate a `-My New File-`. |
 | Caratteri maiuscoli | ![icona deseleziona](assets/do-not-localize/deselect-icon.png) Disabilitato | Il rivestimento viene mantenuto inalterato. | È stato modificato in caratteri minuscoli. | `My New Folder` modifiche apportate a `my-new-folder`. |
-| Caratteri maiuscoli | ![icona di selezione selezionata](assets/do-not-localize/selection-checked-icon.png) Abilitato | Il rivestimento viene mantenuto inalterato. | Il rivestimento viene mantenuto inalterato. | ND. |
+| Caratteri maiuscoli | ![icona di selezione selezionata](assets/do-not-localize/selection-checked-icon.png) Abilitato | Il rivestimento viene mantenuto inalterato. | Il rivestimento viene mantenuto inalterato. | NA. |
 
 ‡ L’elenco dei caratteri è un elenco separato da spazi.
 
@@ -349,7 +349,7 @@ Se una risorsa scaricata localmente viene aggiornata il [!DNL Experience Manager
 
 ![Opzioni per risolvere il conflitto quando la risorsa viene modificata in remoto](assets/modified_remotely_dialog_da2.png "Opzioni per risolvere il conflitto quando la risorsa viene modificata in remoto")
 
-Se una risorsa che stai modificando localmente viene aggiornata anche sul server a tua insaputa, l’app mostra una **[!UICONTROL Editing Conflict]** stato. È possibile mantenere un set di modifiche: o mantenere gli aggiornamenti (fare clic su **[!UICONTROL Keep Mine]**) ed eliminare le modifiche dell&#39;altro utente o rispettare gli aggiornamenti dell&#39;altro utente ed eliminare le tue (**[!UICONTROL Overwrite Mine]**).
+Se una risorsa che stai modificando localmente viene aggiornata anche sul server a tua insaputa, l’app mostra una **[!UICONTROL Editing Conflict]** stato. È possibile mantenere un set di modifiche: o mantenere gli aggiornamenti (fare clic su **[!UICONTROL Keep Mine]**) ed eliminare la modifica dell&#39;altro utente o rispettare gli aggiornamenti dell&#39;altro utente ed eliminare la tua (**[!UICONTROL Overwrite Mine]**).
 
 ![Opzioni per risolvere un conflitto di modifica](assets/editing_conflict_dialog_da2.png "Opzioni per risolvere un conflitto di modifica")
 

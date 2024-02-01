@@ -5,10 +5,11 @@ type: Documentation
 mini-toc-levels: 1
 git-repo: https://github.com/AdobeDocs/experience-manager-desktop-app.it-IT
 index: y
-source-git-commit: fd29c31e8a353ce6f827f58c58c5ecc36f3c71af
+recommendations: noDisplay
+source-git-commit: 55b50485e965a7d94d3f5a1296fec16b0ad1eba9
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 88%
+source-wordcount: '132'
+ht-degree: 79%
 
 ---
 
@@ -22,7 +23,7 @@ Il file metadata.md include metadati a livello di archivio che vengono trasmessi
 | solution-title | Utilizzato nell’intestazione dell’articolo come collegamento. |
 | solution-hub-url | Apre la pagina hub Informazioni e supporto. |
 | solution-icon | Visualizza l’icona della soluzione accanto al titolo della soluzione. Non ancora implementato. |
-| getting-started-url | Collega alla pagina iniziale . |
+| getting-started-url | Collegamento alla pagina Introduzione. |
 | tutorials-url | Collegamento alle esercitazioni video. |
 | mini-toc-levels | Determina quanti livelli di intestazione vengono visualizzati nella barra a destra. Il valore predefinito è 2. |
 | git-repo | Specifica la posizione dell’archivio principale per uso interno. |
